@@ -1,1 +1,30 @@
-
+cff-version: 1.2.0
+message: "Si utiliza este software o conjunto de datos, cítelo de la siguiente manera."
+title: "SGCV-IA: Sistema de Gestión para Clínicas Veterinarias con Inteligencia Artificial"
+version: "2A"
+date-released: 2026-07-29
+type: software
+authors:
+  - family-names: "Amagua Sacón"
+    given-names: "Robyn Willian"
+    affiliation: "Universidad Técnica Estatal de Quevedo"
+  - family-names: "Barrionuevo Fuentes"
+    given-names: "Carlos Daniel"
+    affiliation: "Universidad Técnica Estatal de Quevedo"
+  - family-names: "Marcillo Ponce"
+    given-names: "Alberto Jeanpool"
+    affiliation: "Universidad Técnica Estatal de Quevedo"
+    orcid: "https://orcid.org/0009-0003-7886-3957"
+  - family-names: "Mesías Quijije"
+    given-names: "Jhon Alexander"
+    affiliation: "Universidad Técnica Estatal de Quevedo"
+  - family-names: "Vera Gómez"
+    given-names: "Anthony Alfredo"
+    affiliation: "Universidad Técnica Estatal de Quevedo"
+license: "MIT"
+repository-code: "https://github.com/ramaguas-ship-it/SGCV-IA"
+keywords:
+  - "Ingeniería de Requerimientos"
+  - "Inteligencia Artificial"
+  - "Gestión veterinaria"
+  - "LOPDP"
