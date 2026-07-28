@@ -1,1 +1,60 @@
+LICENCIA DEL REPOSITORIO — SGCV-IA
 
+Este repositorio contiene dos tipos de contenido con licencias distintas:
+
+1) CÓDIGO FUENTE DEL MVP (carpeta 05_MVP/ y su repositorio Git separado si aplica)
+   Licenciado bajo la Licencia MIT (texto completo abajo).
+
+2) DOCUMENTO ERS/SRS, EVIDENCIAS, DATOS Y DEMÁS CONTENIDO
+   (carpetas 01_ERS/, 02_Evidencias/, 03_Modelado/, 04_Trazabilidad/,
+   06_Experimento/, 07_Publicacion/)
+   Licenciados bajo Creative Commons Attribution 4.0 International (CC BY 4.0).
+   Texto completo disponible en: https://creativecommons.org/licenses/by/4.0/deed.es
+
+===============================================================
+1) LICENCIA MIT — Código fuente del MVP
+===============================================================
+
+MIT License
+
+Copyright (c) 2026 Amagua Sacón Robyn Willian, Barrionuevo Fuentes Carlos Daniel,
+Marcillo Ponce Alberto Jean Pool, Mesías Quijije Jhon Alexander, Vera Gómez Anthony Alfredo
+
+Por la presente se concede permiso, libre de cargos, a toda persona que obtenga una
+copia de este software y de los archivos de documentación asociados (el "Software"),
+para utilizar el Software sin restricción, incluyendo sin limitación los derechos a
+usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y/o vender
+copias del Software, y a permitir a las personas a las que se les proporcione el
+Software a hacer lo mismo, sujeto a las siguientes condiciones:
+
+El aviso de copyright anterior y este aviso de permiso se incluirán en todas las
+copias o partes sustanciales del Software.
+
+EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O
+IMPLÍCITA, INCLUYENDO PERO NO LIMITADO A GARANTÍAS DE COMERCIALIZACIÓN, IDONEIDAD
+PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN. EN NINGÚN CASO LOS AUTORES O
+TITULARES DEL COPYRIGHT SERÁN RESPONSABLES DE NINGUNA RECLAMACIÓN, DAÑO U OTRA
+RESPONSABILIDAD, YA SEA EN UNA ACCIÓN DE CONTRATO, AGRAVIO O CUALQUIER OTRA,
+DERIVADA DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O SU USO U OTRO TIPO DE
+ACCIONES EN EL SOFTWARE.
+
+===============================================================
+2) LICENCIA CC BY 4.0 — Documento ERS/SRS, evidencias y datos
+===============================================================
+
+Este contenido se distribuye bajo la licencia Creative Commons Attribution 4.0
+International (CC BY 4.0). Usted es libre de:
+
+  - Compartir: copiar y redistribuir el material en cualquier medio o formato.
+  - Adaptar: remezclar, transformar y construir a partir del material para
+    cualquier propósito, incluso comercialmente.
+
+Bajo los siguientes términos:
+
+  - Atribución: debe otorgar el crédito adecuado a los autores (Amagua Sacón
+    Robyn Willian, Barrionuevo Fuentes Carlos Daniel, Marcillo Ponce Alberto
+    Jean Pool, Mesías Quijije Jhon Alexander, Vera Gómez Anthony Alfredo —
+    Universidad Técnica Estatal de Quevedo, 2026), proporcionar un enlace a la
+    licencia e indicar si se realizaron cambios.
+
+Texto legal completo: https://creativecommons.org/licenses/by/4.0/legalcode.es
