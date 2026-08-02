@@ -17,7 +17,7 @@ obligatoria del veterinario antes de aplicar cualquier sugerencia.
 | Integrante | Rol en el proyecto |
 |---|---|
 | Anthony Alfredo Vera Gomez | Responsable de C8 (Prototipo funcional MVP) y C9 (Protocolo experimental) |
-| ⟨Nombre integrante 2⟩ | ⟨Rol / criterios a cargo⟩ |
+| Robyn Willian Amagua Sacon |Responsable de C7 (Recolección  de  datos de campos ) |
 | ⟨Nombre integrante 3⟩ | ⟨Rol / criterios a cargo⟩ |
 | ⟨Nombre integrante 4, si aplica⟩ | ⟨Rol / criterios a cargo⟩ |
 
