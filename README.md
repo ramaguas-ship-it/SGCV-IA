@@ -3,11 +3,11 @@
 ## Integrantes y roles
 | Nombre | Rol |
 |---|---|
-| Amagua Sacón Robyn Willian | Integrante |
-| Barrionuevo Fuentes Carlos Daniel | Integrante |
-| Marcillo Ponce Alberto Jeanpool | Integrante |
-| Mesías Quijije Jhon Alexander | Analista líder |
-| Vera Gómez Anthony Alfredo | Integrante |
+| Amagua Sacón Robyn Willian | Documentador |
+| Barrionuevo Fuentes Carlos Daniel | Apoyo - Modelador |
+| Marcillo Ponce Alberto Jeanpool | Analista líder |
+| Mesías Quijije Jhon Alexander | Verificador |
+| Vera Gómez Anthony Alfredo | Modelador |
 | Dr. Guerrero Ulloa Gleiston Cicerón | Docente supervisor |
 
 ## Resumen del dominio
