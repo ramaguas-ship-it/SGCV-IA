@@ -258,10 +258,11 @@ Las futuras versiones pueden incorporar mejoras relacionadas con:
 
 El proyecto fue desarrollado por:
 
-* **Díaz Pontón Steven Santiago**
+* **Barrionuevo Fuentes Carlos Daniel**
 * **Vera Gómez Anthony Alfredo**
-* **Tigasi Sampedro Paul Alexander**
-
+* **Mesias Quijije Jhon Alexander**
+* **Amagua Sacon Robyn William**
+* **Marcillo Ponce Jeanpool Alberto**
 ---
 
 ## Repositorio
