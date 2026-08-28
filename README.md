@@ -1,6 +1,7 @@
 # SGCV-IA — Sistema de Gestión para Clínicas Veterinarias con Inteligencia Artificial
 
 ## Integrantes y roles
+
 | Nombre | Rol |
 |---|---|
 | Amagua Sacón Robyn Willian | Documentador |
@@ -11,21 +12,39 @@
 | Dr. Guerrero Ulloa Gleiston Cicerón | Docente supervisor |
 
 ## Resumen del dominio
+
 El SGCV-IA es un sistema de software real desarrollado para una clínica veterinaria, orientado a
 centralizar la gestión de historiales clínicos, citas, facturación e inventario, e incorporar un módulo
 de apoyo diagnóstico basado en Inteligencia Artificial con supervisión obligatoria del profesional
 veterinario.
 
 ## Enlaces
-- ERS/SRS completo (PDF): [`01_ERS/ERS_SRS_2A_v1.0.pdf`](01_ERS/ERS_SRS_2A_v1.0.pdf)
+
+- ERS/SRS completo (PDF): [`01_ERS/ERS_SRS_2B_v2.0.pdf`](01_ERS/ERS_SRS_2B_v2.0.pdf)
+- Manuscrito final: [pendiente — 07_Publicacion/ solo contiene el esqueleto documentado]
 - MVP funcional: [`05_MVP/README.md`](05_MVP/README.md)
-- Registro previo del protocolo experimental (OSF): [pendiente — completar antes del corte]
-- Conjunto de datos (Zenodo, DOI): [pendiente hasta Entrega 4]
+- Registro previo del protocolo experimental (OSF): [`06_Experimento/OSF_Registration.pdf`](06_Experimento/OSF_Registration.pdf)
+- Conjunto de datos (Zenodo, DOI): [pendiente — no depositado todavía]
+- Archivo de Software Heritage (SWHID): [pendiente]
+
+## Cita recomendada
+
+[Pendiente hasta tener DOI de Zenodo y SWHID asignados]
 
 ## Cómo reproducir el análisis experimental
-1. Clonar este repositorio.
-2. Instalar dependencias: `pip install -r 06_Experimento/scripts_analisis/requirements.txt`
-3. Ejecutar los scripts en `06_Experimento/scripts_analisis/` sobre los datos crudos en `06_Experimento/resultados/`.
-4. Las tablas y figuras generadas deben coincidir con las reportadas en el manuscrito (`07_Publicacion/manuscrito_borrador.pdf`).
 
-## Tabla de contenidos del repositorio
+**Estado actual: no reproducible todavía.** `06_Experimento/scripts_analisis/` contiene únicamente
+un esqueleto documentado (ver su README.md) con la secuencia de 8 scripts planeada. No existe
+código de análisis real ni datos crudos depositados en `06_Experimento/datos_crudos/` (carpeta
+pendiente de crear). Este apartado se actualizará cuando exista contenido ejecutable.
+
+## Sobre la evidencia de campo
+
+La evidencia audiovisual identificable (videos, audios y consentimientos originales de las
+entrevistas) está cifrada con AES-256 en
+[`02_Evidencias/00_Restringido/evidencias_restringidas.7z`](02_Evidencias/00_Restringido/evidencias_restringidas.7z).
+La contraseña se entrega únicamente al docente evaluador, fuera de este repositorio. El detalle
+técnico de cada archivo (duración, códec, hash SHA-256) está en
+[`02_Evidencias/fichas_tecnicas.csv`](02_Evidencias/fichas_tecnicas.csv).
+
+
