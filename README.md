@@ -1,5 +1,13 @@
 # SGCV-IA — Sistema de Gestión para Clínicas Veterinarias con Inteligencia Artificial
 
+> **Nota sobre el historial de Git (27/08/2026):** el historial de este
+> repositorio fue reescrito para cifrar evidencia audiovisual identificable
+> (cumplimiento etico, ver LICENSE y `02_Evidencias/00_Restringido/README.md`).
+> Los commits anteriores al 27/08/2026 mantienen su fecha y autor originales,
+> pero cambiaron de identificador. **Si ya tenia este repositorio clonado,
+> por favor bórrelo y clónelo de nuevo** — un `git pull` normal dará error.
+
+
 ## Integrantes y roles
 
 | Nombre | Rol |
