@@ -58,3 +58,17 @@ Bajo los siguientes términos:
     licencia e indicar si se realizaron cambios.
 
 Texto legal completo: https://creativecommons.org/licenses/by/4.0/legalcode.es
+
+===============================================================
+3) EXCLUSION - Evidencia identificable restringida
+===============================================================
+
+El contenido de 02_Evidencias/00_Restringido/ (audio, video y consentimientos
+originales con datos identificables de los participantes) esta explicitamente
+EXCLUIDO de las licencias MIT y CC BY 4.0 anteriores. Este material:
+
+  - No se licencia para uso, copia, modificacion o redistribucion.
+  - No forma parte del deposito FAIR en Zenodo.
+  - Permanece cifrado (AES-256) dentro del repositorio.
+  - Su acceso se limita al equipo docente evaluador, bajo el proceso de
+    consentimiento informado descrito en 08_Etica/.
