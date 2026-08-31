@@ -1,9 +1,0 @@
-﻿Stakeholder,Poder,Interés,Clasificación,Estrategia de gestión
-Propietario o administrador de la clínica,Alto,Alto,Gestionar de cerca,"Participar en la definición de requisitos, validar funcionalidades y aprobar los avances del proyecto."
-Médico veterinario,Alto,Alto,Gestionar de cerca,"Validar los procesos clínicos, el funcionamiento del asistente de IA y los historiales clínicos."
-Personal administrativo,Medio,Alto,Mantener satisfecho,"Validar los procesos relacionados con citas, inventario, facturación y reportes."
-Equipo de desarrollo,Alto,Alto,Gestionar de cerca,"Planificar, desarrollar, implementar y verificar el cumplimiento de los requisitos del sistema."
-Propietario de la mascota,Bajo,Alto,Mantener informado,Recibir notificaciones y seguimiento oportuno sin participar directamente en el levantamiento de requisitos.
-Comité de ética / protección de datos (LOPDP),Alto,Medio,Gestionar de cerca,Verificar que el tratamiento de datos personales y clínicos cumpla con la Ley Orgánica de Protección de Datos Personales.
-Proveedor del servicio de mensajería,Bajo,Bajo,Monitorear,Supervisar la disponibilidad del canal de notificaciones sin intervención directa en el diseño.
-Docente evaluador,Alto,Medio,Mantener satisfecho,Supervisar el desarrollo del proyecto y verificar el cumplimiento de los criterios académicos establecidos.
