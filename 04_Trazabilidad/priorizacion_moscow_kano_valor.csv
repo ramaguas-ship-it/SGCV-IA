@@ -1,0 +1,46 @@
+ID,MoSCoW,Kano,Valor_de_Negocio,Estado,Criticidad_temporal,Reduccion_riesgo,Tamano,WSJF,Justificacion
+RF-01,Must,Desempeño,Alto,Confirmado,Medio,Alto,2,4.0,Bloquea el acceso multiplataforma; base de todo lo demás
+RF-02,Must,Básico,Alto,Confirmado,Medio,Alto,2,4.0,Centraliza historiales; dependencia de casi todos los demás RF
+RF-03,Must,Desempeño,Alto,Confirmado,Bajo,Medio,1,6.0,"Mejora de usabilidad sobre RF-02, bajo esfuerzo"
+RF-04,Must,Básico,Alto,Confirmado,Medio,Alto,2,4.0,Registro clínico obligatorio; base legal (LOPDP Art. 4)
+RF-05,Must,Desempeño,Alto,Confirmado,Medio,Medio,1,7.0,"Alerta simple, dolor mencionado directamente en entrevistas"
+RF-06,Must,Desempeño,Medio,Confirmado,Medio,Medio,1,6.0,"Alerta simple, mismo módulo que RF-05"
+RF-07,Must,Básico,Alto,Confirmado,Alto,Alto,2,4.5,"Cuello de botella operativo mencionado como ""la parte más demorada"""
+RF-08,Must,Atractivo,Alto,Confirmado,Alto,Alto,2,4.5,"Mismo dolor que RF-07, prioridad de negocio explícita"
+RF-09,Must,Básico,Medio,Confirmado,Bajo,Bajo,1,4.0,"Registro de comunicación, no bloquea operación"
+RF-10,Must,Atractivo,Medio,Confirmado,Bajo,Bajo,1,4.0,"Envío WhatsApp, complementario a RF-09"
+RF-11,Must,Básico,Alto,Confirmado,Medio,Medio,2,3.5,Resuelve pérdida de seguimiento de pacientes
+RF-12,Should,Atractivo,Medio,Confirmado,Bajo,Bajo,1,4.0,"Recordatorio automático, mejora incremental sobre RF-11"
+RF-13,Must,Desempeño,Alto,Confirmado,Medio,Medio,2,3.5,"Seguimiento nutricional, valor clínico directo"
+RF-14,Should,Atractivo,Medio,Confirmado,Bajo,Bajo,1,4.0,"Recomendación derivada de RF-13, bajo esfuerzo adicional"
+RF-15,Should,Atractivo,Medio,Confirmado,Bajo,Bajo,1,4.0,"Recordatorio de indicaciones, complementario"
+RF-16,Should,Desempeño,Medio,Confirmado,Bajo,Medio,1,5.0,"Exportación PDF, requerido por LOPDP Art. 17 (portabilidad)"
+RF-17,Must,Atractivo,Alto,Confirmado,Alto,Alto,3,3.0,Núcleo diferenciador del proyecto (módulo IA); alto riesgo ético/legal
+RF-18,Should,Básico,Alto,Confirmado,Medio,Alto,2,4.0,"Respaldo bibliográfico, mitiga riesgo de confianza en la IA"
+RF-19,Should,Básico,Alto,Confirmado,Alto,Alto,2,4.5,"Control humano obligatorio sobre la IA (RST-05, Art. 20 LOPDP)"
+RF-20,Must,Básico,Alto,Propuesto,Bajo,Medio,1,6.0,"Requisito de usabilidad transversal, bajo esfuerzo técnico"
+RF-21,Should,Atractivo,Medio,Propuesto,Bajo,Bajo,2,2.0,Offline es de baja frecuencia según entrevistas (cortes 2-3/5)
+RF-22,Must,Básico,Alto,Propuesto,Alto,Alto,2,4.5,Base de seguridad (RBAC) de la que dependen otros RNF
+RF-23,Should,Básico,Medio,Propuesto,Medio,Medio,1,6.0,"Trazabilidad de auditoría, requerido por LOPDP"
+RF-24,Must,Básico,Alto,Propuesto,Alto,Alto,2,4.5,Autenticación es bloqueante para todo el sistema
+RF-25,Could,Atractivo,Medio,Propuesto,Bajo,Bajo,2,2.0,"Panel gerencial, valor complementario, no bloqueante"
+RF-26,Must,Básico,Alto,Propuesto,Alto,Alto,2,4.5,"Obligación legal directa (LOPDP Art. 7,8), bloquea otros módulos"
+RF-27,Must,Básico,Alto,Propuesto,Alto,Alto,2,4.5,"Obligación legal directa (LOPDP Art. 12-15), plazo de 15 días"
+RNF-01,Must,Desempeño,Alto,Confirmado,Medio,Medio,2,3.5,Sin justificación específica registrada
+RNF-02,Must,Desempeño,Alto,Confirmado,Medio,Medio,2,3.5,Sin justificación específica registrada
+RNF-03,Should,Desempeño,Medio,Confirmado,Medio,Medio,2,3.0,Sin justificación específica registrada
+RNF-04,Must,Básico,Medio,Confirmado,Medio,Medio,2,3.0,Sin justificación específica registrada
+RNF-05,Must,Básico,Alto,Confirmado,Medio,Medio,2,3.5,Sin justificación específica registrada
+RNF-06,Should,Básico,Medio,Confirmado,Medio,Medio,2,3.0,Sin justificación específica registrada
+RNF-07,Should,Básico,Alto,Confirmado,Medio,Medio,2,3.5,Sin justificación específica registrada
+RNF-08,Must,Indiferente,Bajo,Confirmado,Medio,Medio,2,2.5,Sin justificación específica registrada
+RNF-09,Must,Atractivo,Alto,Confirmado,Medio,Medio,2,3.5,Sin justificación específica registrada
+RNF-10,Could,Indiferente,Bajo,Confirmado,Medio,Medio,2,2.5,Sin justificación específica registrada
+RNF-11,Should,Desempeño,Medio,Propuesto,Bajo,Medio,1,5.0,"Uso de recursos, verificable en pruebas de carga simples"
+RNF-12,Must,Básico,Alto,Propuesto,Alto,Alto,2,4.5,"Cifrado de datos sensibles, obligación legal y de seguridad"
+RNF-13,Must,Básico,Alto,Propuesto,Medio,Alto,2,4.0,"Backups, mitiga riesgo de pérdida total de datos"
+RNF-14,Could,Indiferente,Bajo,Propuesto,Bajo,Bajo,2,1.5,"Cobertura de pruebas, práctica de ingeniería interna"
+RNF-15,Should,Atractivo,Medio,Propuesto,Bajo,Medio,1,5.0,"Medición de satisfacción, no bloquea funcionalidad"
+RNF-16,Must,Básico,Alto,Propuesto,Alto,Alto,2,4.5,Obligación legal con plazo (depuración ≤30 días)
+RNF-17,Must,Básico,Alto,Propuesto,Alto,Alto,2,4.5,Notificación de vulneraciones con plazos legales estrictos (5/3 días)
+RNF-18,Must,Atractivo,Alto,Propuesto,Alto,Alto,2,4.5,"Explicabilidad de IA, mitiga riesgo ético y regulatorio (Art. 20)"
