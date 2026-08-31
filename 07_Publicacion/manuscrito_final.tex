@@ -1,1 +1,278 @@
+% ============================================================
+% SGCV-IA — Manuscrito para Requirements Engineering (Springer)
+% Plantilla oficial: sn-jnl.cls (Springer Nature LaTeX template)
+% Enfoque 3 — Explicabilidad como Requisito No Funcional
+%
+% INSTRUCCIONES:
+% 1. Descargar el paquete oficial de Springer Nature LaTeX
+%    (Overleaf: buscar "Springer Nature" en la galería de plantillas,
+%    o https://www.springernature.com/gp/authors/campaigns/latex-author-support)
+% 2. Copiar sn-jnl.cls y los archivos .bst a la misma carpeta que este .tex
+% 3. Renombrar/mover este archivo a 07_Publicacion/manuscrito_final.tex
+% ============================================================
 
+\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}
+
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs}
+
+\jyear{2027}
+
+\raggedbottom
+
+\begin{document}
+
+% ============================================================
+% TITULO, AUTORIA, FILIACION
+% (Pendiente: ajustar orden de autoria acordado por el equipo,
+%  ORCID de cada integrante y correos institucionales UTEQ)
+% ============================================================
+
+\title[SGCV-IA: Explicabilidad como RNF]{Explainability as a non-functional requirement in a real-world AI-assisted veterinary clinical system: a case study in Ecuador}
+
+%%=============================================================
+%% Autoria -- PENDIENTE: completar ORCID y correos institucionales
+%%=============================================================
+\author*[1]{\fnm{Alberto Jeanpool} \sur{Marcillo Ponce}}\email{TODO@uteq.edu.ec}
+\author[1]{\fnm{Robyn Willian} \sur{Amagua Sacón}}\email{TODO@uteq.edu.ec}
+\author[1]{\fnm{Anthony Alfredo} \sur{Vera Gómez}}\email{TODO@uteq.edu.ec}
+\author[1]{\fnm{Jhon Alexander} \sur{Mesías Quijije}}\email{TODO@uteq.edu.ec}
+\author[1]{\fnm{Carlos Daniel} \sur{Barrionuevo Fuentes}}\email{TODO@uteq.edu.ec}
+\author[1]{\fnm{TODO} \sur{Docente Supervisor}}\email{TODO@uteq.edu.ec}
+
+\affil*[1]{\orgdiv{Facultad de Ciencias de la Computación}, \orgname{Universidad Técnica Estatal de Quevedo (UTEQ)}, \orgaddress{\city{Quevedo}, \country{Ecuador}}}
+
+% ============================================================
+% RESUMEN ESTRUCTURADO — Contexto/Objetivo/Método/Resultados/Conclusiones
+% PENDIENTE: completar Resultados y Conclusiones cuando existan datos
+% ============================================================
+
+\abstract{
+\textbf{Context.} TODO — situar el problema: sistemas clínicos veterinarios con módulos de diagnóstico asistido por IA carecen frecuentemente de explicabilidad operacionalizada como requisito verificable. \\
+\textbf{Objective.} TODO — determinar qué requisitos de explicabilidad, operacionalizados como RNF verificables, resultan necesarios y suficientes para los distintos perfiles de usuarios (técnicos y no técnicos) de un sistema clínico veterinario con IA. \\
+\textbf{Method.} Estudio de caso único sobre el sistema SGCV-IA, con dos rondas de validación con usuarios reales (técnicos y no técnicos), evaluando cobertura del marco de explicabilidad y satisfacción percibida (escala Likert), con acuerdo inter-evaluador medido mediante $\kappa$ de Fleiss y comparación de percepciones mediante la prueba U de Mann-Whitney. \\
+\textbf{Results.} [PENDIENTE — no completar hasta que existan datos analizados por los scripts de \texttt{06\_Experimento/scripts\_analisis/}]. \\
+\textbf{Conclusions.} [PENDIENTE — depende de Results].
+}
+
+\keywords{Explainability, Non-functional requirements, AI-assisted diagnosis, Veterinary informatics, User studies}
+
+\maketitle
+
+% ============================================================
+% 1. INTRODUCCION (Sección 5.2 de la guía — 4 párrafos)
+% PENDIENTE: redactar. Boceto de estructura dejado como guía interna.
+% ============================================================
+
+\section{Introduction}\label{sec1}
+
+Artificial intelligence (AI)-assisted diagnostic support is increasingly embedded into clinical management systems, including veterinary practice, where automated recommendations directly influence treatment decisions taken by professionals and communicated to non-technical stakeholders such as clinic staff and pet owners. The SGCV-IA system --- a real-world veterinary clinic management system developed for a client organization in the province of Los R\'ios, Ecuador --- incorporates an AI-based diagnostic module whose outputs must be trusted and actionable by users with markedly different technical backgrounds. Studying Requirements Engineering in this context matters because, in AI-assisted clinical settings, the absence of explicit and verifiable explainability requirements can directly undermine user trust and, ultimately, patient (animal) safety.
+
+Despite growing attention to explainability in software engineering, most existing work operationalizes explainability as a general software quality attribute rather than as a set of verifiable, stakeholder-specific non-functional requirements (NFRs) elicited through empirical fieldwork. Chazette et al.~\cite{chazette2021} propose a definition, model, and knowledge catalogue for explainability as a software quality concern, and Chazette et al.~\cite{chazette2022} extend this into an end-to-end framework spanning requirements analysis to system evaluation. However, empirical validation of this framework in real-world, resource-constrained, Latin American clinical domains --- and specifically in veterinary informatics --- remains scarce, leaving a gap in understanding how explainability requirements should be operationalized and validated for heterogeneous user profiles (technical vs.\ non-technical) in such settings.
+
+This work makes the following contributions: (1) an empirical characterization of explainability requirements for a real-world AI-assisted veterinary diagnostic system, differentiated by technical and non-technical user profiles; (2) a set of explainability NFRs operationalized as verifiable requirements and validated across two rounds with real users; and (3) an open, FAIR-compliant replication package supporting further empirical work in explainability requirements engineering in under-studied domains.
+
+Accordingly, this study addresses two research questions: \textbf{RQ1} asks what types of explanations technical and non-technical users of the SGCV-IA system require to trust the automated decisions of the AI diagnostic module; \textbf{RQ2} asks to what extent explainability requirements, operationalized as verifiable NFRs, achieve adequate coverage and perceived satisfaction across the two validation rounds. Preliminary fieldwork suggests that explainability needs diverge meaningfully between user profiles, a finding developed further in Section~\ref{sec4}.
+
+\textit{[PENDIENTE: revisar y ajustar este párrafo de contribuciones una vez que Amagua cierre el ERS/SRS v2.0, para asegurar coherencia exacta entre los RNF de explicabilidad declarados ahí y las contribuciones enunciadas aquí.]}
+
+% ============================================================
+% 2. TRABAJO RELACIONADO (Sección 5.3 — esquema Kitchenham y Charters)
+% PENDIENTE: redactar con cuadro comparativo de 10-15 estudios
+% ============================================================
+
+\section{Related Work}\label{sec2}
+
+Following the abridged review scheme of Kitchenham and Charters~\cite{kitchenham2007}, we searched for primary studies on explainability requirements engineering published within the last three years, using search strings combining ``explainability'', ``non-functional requirements'', and ``requirements engineering'' across Scopus, IEEE Xplore, and ACM Digital Library. Inclusion criteria required an explicit treatment of explainability as an engineered software requirement (not merely a model-interpretability technique); exclusion criteria removed purely algorithmic (model-only) explainability papers with no requirements engineering component. \textit{[PENDIENTE: completar la ejecución real de esta búsqueda --- número de estudios encontrados/revisados --- y ampliar el cuadro comparativo a 10--15 trabajos, según exige la Sección 5.3 de la guía. La tabla a continuación es un esqueleto inicial con las dos referencias centrales ya verificadas.]}
+
+\begin{table}[h]
+\caption{Comparative summary of closely related work (skeleton --- to be extended)}\label{tab1}
+\begin{tabular}{@{}p{2.2cm}p{0.8cm}p{2cm}p{2.3cm}p{3.5cm}p{3cm}@{}}
+\toprule
+Reference & Year & Study type & Population & Main results & Difference with our work \\
+\midrule
+Chazette et al.~\cite{chazette2021} & 2021 & Conceptual + knowledge catalogue & N/A (framework paper) & Defines explainability as a software quality concern; proposes knowledge catalogue & We empirically apply and validate the framework in a real, single-case veterinary AI system \\
+Chazette et al.~\cite{chazette2022} & 2022 & Framework + partial evaluation & Mixed & End-to-end framework from requirements analysis to system evaluation & We differentiate technical vs.\ non-technical stakeholder perceptions empirically \\
+\textit{TODO} & \textit{TODO} & \textit{TODO} & \textit{TODO} & \textit{TODO} & \textit{TODO} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textit{[PENDIENTE: identificar el nicho concreto que ocupa este estudio --- p.ej. explicabilidad de IA diagnóstica en dominios veterinarios de países en desarrollo con perfiles de usuario heterogéneos --- una vez completada la búsqueda sistemática ampliada.]}
+
+% ============================================================
+% 3. METODOLOGIA — SECCIÓN COMPLETA (Tarea 3, responsabilidad directa
+%    del Analista Líder según el documento maestro de tareas 2B)
+% ============================================================
+
+\section{Methodology}\label{sec3}
+
+This study follows the case study guidelines of Runeson and H\"ost~\cite{runeson2009}, as prescribed by the course guide for Approach 3 (explainability) projects, given the single-case, real-world, multi-stakeholder nature of the SGCV-IA system.
+
+\subsection{Research questions (PICOC)}\label{subsec1}
+
+The research questions are formulated using the PICOC framework (Population, Intervention, Comparison, Outcome, Context):
+
+\begin{itemize}
+  \item \textbf{Population (P):} Users of an AI-assisted veterinary clinical management system, stratified into two profiles: technical users (veterinary professionals interacting directly with the AI diagnostic module) and non-technical users (administrative staff and pet owners interacting with system outputs indirectly).
+  \item \textbf{Intervention (I):} A set of explainability mechanisms operationalized as verifiable non-functional requirements (NFRs), integrated into the SGCV-IA AI diagnostic module.
+  \item \textbf{Comparison (C):} Perceived satisfaction and coverage of explainability dimensions between technical and non-technical user profiles, and between two validation rounds.
+  \item \textbf{Outcome (O):} Coverage of the explainability framework's dimensions by verifiable NFRs; Likert-scale satisfaction per dimension; inter-round agreement.
+  \item \textbf{Context (C):} A real-world, single-organization veterinary clinic deployment in Ecuador, evaluated within an undergraduate Requirements Engineering course project (ISR-401, UTEQ).
+\end{itemize}
+
+\noindent Research questions:
+
+\begin{itemize}
+  \item \textbf{RQ1.} What types of explanations do technical and non-technical users of the SGCV-IA system require to trust the automated decisions of the AI diagnostic module?
+  \item \textbf{RQ2.} To what extent do explainability requirements, operationalized as verifiable NFRs, achieve adequate coverage and perceived satisfaction across the two validation rounds?
+\end{itemize}
+
+\subsection{Study design}\label{subsec2}
+
+We adopt a \textbf{single embedded case study} design~\cite{runeson2009}, with the SGCV-IA system as the single case and the two user profiles (technical / non-technical) as embedded units of analysis. The case study unfolds in two validation rounds: (1) an initial round eliciting explainability needs and mapping them to candidate NFRs, and (2) a confirmatory round validating the operationalized NFRs against the explainability framework of Chazette et al.~\cite{chazette2021,chazette2022}. Deviations from the protocol pre-registered in OSF (Entrega 3, 2A) will be reported explicitly in Section~\ref{subsec6}.
+
+\subsection{Participants and recruitment}\label{subsec3}
+
+Participants are recruited from the real client organization associated with the SGCV-IA project (a veterinary clinic in the province of Los Ríos, Ecuador), stratified into two profiles:
+
+\begin{itemize}
+  \item \textbf{Technical users:} veterinary professionals who interact directly with the AI diagnostic module's outputs and rationale.
+  \item \textbf{Non-technical users:} administrative/clinic staff and pet owners who interact with system outputs indirectly (e.g., through reports or client-facing summaries).
+\end{itemize}
+
+\noindent \textbf{Inclusion criteria:} active involvement with the target organization's clinical or administrative workflow during the study period; informed consent signed in accordance with Ecuador's Ley Orgánica de Protección de Datos Personales~\cite{lopdp2021}. \textbf{Exclusion criteria:} participants under 18 years of age; participants unable to provide informed consent. Minimum sample size targets follow the course guide's terminal empirical minimums (Section 3 of the Entrega 4 guide): $\geq$16 accumulated interview participants across profiles, with at least three well-represented profiles.
+
+\subsection{Instruments}\label{subsec4}
+
+\begin{itemize}
+  \item \textbf{Semi-structured interview guide}, eliciting explainability needs per user profile (full guide in supplementary material).
+  \item \textbf{Structured validation questionnaire}, using 5-point Likert-scale items per explainability dimension of the framework in~\cite{chazette2021}, applied in both validation rounds.
+  \item \textbf{Member-checking protocol}, confirming interpretation of round-two results with at least three previously interviewed participants~\cite{birt2016}.
+\end{itemize}
+
+\subsection{Data analysis plan}\label{subsec5}
+
+The analysis plan, pre-registered in the OSF protocol (Entrega 3, 2A), is as follows:
+
+\begin{itemize}
+  \item \textbf{Coverage.} The proportion of explainability dimensions of~\cite{chazette2021} covered by at least one verifiable NFR will be computed and reported descriptively.
+  \item \textbf{Perceived satisfaction.} Mean Likert score per dimension will be reported with 95\% confidence intervals.
+  \item \textbf{Inter-round agreement.} Agreement between the two validation rounds will be quantified with Fleiss' $\kappa$~\cite{fleiss1971}.
+  \item \textbf{Technical vs. non-technical comparison.} Differences in perceived satisfaction between technical and non-technical users will be examined with the Mann-Whitney $U$ test, with effect size $r$ derived from the test statistic, following the operationalization of~\cite{chazette2022}.
+  \item \textbf{Assumption checks.} Shapiro-Wilk for normality and Levene's test for homogeneity of variances will be reported for all quantitative comparisons, consistent with the common elements required across all three approaches (Section 4.4 of the course guide).
+  \item All descriptive statistics (median, mean, standard deviation, min, max, IQR), exact test names and statistics, $p$-values to at least three decimals, effect sizes, and 95\% confidence intervals will be reported per the course guide's reporting requirements.
+\end{itemize}
+
+All figures and tables in the Results section will be generated exclusively by versioned analysis scripts in \texttt{06\_Experimento/scripts\_analisis/} (R or Python), reproducing exactly the reported values; no manually produced tables or pasted figures will be included, per the course guide's integrity requirements.
+
+\subsection{Deviations from the pre-registered protocol}\label{subsec6}
+[PENDIENTE — completar únicamente si el análisis efectivamente ejecutado se desvía de lo registrado en OSF. Si no hay desviaciones, declarar explícitamente "No deviations from the pre-registered protocol were identified."]
+
+% ============================================================
+% 4. RESULTADOS — NO ESCRIBIR TODAVIA
+% Advertencia expresa de la guía: la sección de Resultados NO puede
+% redactarse antes de que existan los datos analizados por los scripts.
+% ============================================================
+
+\section{Results}\label{sec4}
+% NO COMPLETAR. Depende de que 06_Experimento/scripts_analisis/ produzca
+% tablas y figuras reproducibles (tarea de Barrionuevo, criterio C5).
+% Organizar por RQ1 primero, luego RQ2, con cada afirmación numérica
+% acompañada de estadístico, gl, valor p (3+ decimales) e IC 95%.
+
+% ============================================================
+% 5. DISCUSION — NO ESCRIBIR TODAVIA (depende de Resultados)
+% ============================================================
+
+\section{Discussion}\label{sec5}
+% NO COMPLETAR. Tres subapartados: implicaciones para la investigación,
+% implicaciones para la práctica, hallazgos sorprendentes/contraintuitivos.
+
+% ============================================================
+% 6. AMENAZAS A LA VALIDEZ (C10 — apoyo de Barrionuevo)
+% ============================================================
+
+\section{Threats to Validity}\label{sec6}
+% TODO (coordinar con Barrionuevo): 4 categorías de Wohlin et al. [5]:
+% validez interna, externa, de constructo y de conclusión.
+% Mínimo 2 amenazas por categoría, con mitigación y limitación remanente.
+
+\subsection{Internal validity}\label{subsec7}
+TODO
+
+\subsection{External validity}\label{subsec8}
+TODO
+
+\subsection{Construct validity}\label{subsec9}
+TODO
+
+\subsection{Conclusion validity}\label{subsec10}
+TODO
+
+% ============================================================
+% 7. CONCLUSIONES Y TRABAJO FUTURO — depende de Resultados
+% ============================================================
+
+\section{Conclusions and Future Work}\label{sec7}
+% TODO. Un párrafo por RQ; un párrafo de contribuciones consolidadas;
+% al menos 3 líneas concretas de trabajo futuro.
+
+% ============================================================
+% 8. DISPONIBILIDAD DE DATOS, USO DE IA Y AGRADECIMIENTOS
+% ============================================================
+
+\backmatter
+
+\section*{Data and materials availability}
+The replication package, including anonymized interview transcripts, questionnaire responses, analysis scripts, and the pre-registered OSF protocol, will be deposited in Zenodo under a CC~BY~4.0 license upon completion of the terminal empirical phase. DOI: TODO. OSF registration: TODO.
+
+\section*{Use of AI-assisted technologies}
+TODO — declarar modelo, versión, temperatura y uso concreto de cualquier LLM utilizado exclusivamente para pulir la redacción de párrafos cuyo contenido fue escrito por el equipo con base en datos empíricos, conforme a las políticas editoriales de Elsevier~\cite{elsevier2023} y Springer Nature~\cite{springer2023}. Ningún LLM fue utilizado para producir resultados, cifras, tablas o conclusiones.
+
+\section*{Acknowledgements}
+TODO — agradecer a las personas entrevistadas por nombre solo si su consentimiento lo permite; en caso contrario, agradecimiento genérico indicando el rol (por ejemplo, "profesionales veterinarios y personal administrativo del cantón Quevedo, Provincia de Los Ríos").
+
+% ============================================================
+% REFERENCIAS
+% PENDIENTE: minimo 40 entradas verificadas en referencias.bib,
+% sin referencias inventadas (verificar cada DOI antes del envio)
+% ============================================================
+
+\bibliography{referencias}
+
+% ============================================================
+% NOTA DE ESTADO DEL DOCUMENTO — no forma parte del manuscrito final,
+% eliminar antes del envío a la revista.
+% ============================================================
+%
+% ESTADO ACTUAL (avance del Analista Líder):
+%   - Introducción: redactada (4 párrafos), pendiente de ajuste fino
+%     una vez cerrado el ERS/SRS v2.0 (coherencia de RNF de explicabilidad).
+%   - Trabajo Relacionado: esqueleto con 2 referencias verificadas;
+%     falta ejecutar la búsqueda sistemática completa y ampliar a 10-15 estudios.
+%   - Metodología: completa (PICOC, diseño, participantes, instrumentos,
+%     plan de análisis).
+%   - Resultados / Discusión: BLOQUEADOS intencionalmente — no se
+%     redactan hasta que existan datos analizados por los scripts de
+%     06_Experimento/scripts_analisis/ (tarea de Barrionuevo, C5).
+%   - Amenazas a la Validez: pendiente, coordinar con Barrionuevo (C10).
+%   - Conclusiones: pendiente, depende de Resultados.
+%
+% PENDIENTE POR COMPLETAR HASTA TERMINAR EL ERS (Amagua):
+%   Este manuscrito no puede darse por cerrado hasta que el ERS/SRS v2.0
+%   incluya la versión definitiva de los Requisitos Legales (RL-01 a RL-14)
+%   y los RNF de Explicabilidad. Una vez cerrado el ERS, revisar:
+%     1. Que las contribuciones del párrafo 3 de la Introducción coincidan
+%        exactamente con los RNF de explicabilidad declarados en el ERS.
+%     2. Que el marco de dimensiones de explicabilidad usado en Metodología
+%        (Sección 3) sea el mismo que el ERS usa para operacionalizar los RNF.
+%     3. Que no haya requisitos legales mencionados en el ERS que deban
+%        reflejarse también en el manuscrito (p. ej. como amenaza a la
+%        validez de constructo).
+%
+% ============================================================
+
+\end{document}
