@@ -2,13 +2,6 @@
 % SGCV-IA — Manuscrito para Requirements Engineering (Springer)
 % Plantilla oficial: sn-jnl.cls (Springer Nature LaTeX template)
 % Enfoque 3 — Explicabilidad como Requisito No Funcional
-%
-% INSTRUCCIONES:
-% 1. Descargar el paquete oficial de Springer Nature LaTeX
-%    (Overleaf: buscar "Springer Nature" en la galería de plantillas,
-%    o https://www.springernature.com/gp/authors/campaigns/latex-author-support)
-% 2. Copiar sn-jnl.cls y los archivos .bst a la misma carpeta que este .tex
-% 3. Renombrar/mover este archivo a 07_Publicacion/manuscrito_final.tex
 % ============================================================
 
 \documentclass[pdflatex,sn-mathphys-num,Numbered]{sn-jnl}
@@ -27,21 +20,19 @@
 
 % ============================================================
 % TITULO, AUTORIA, FILIACION
-% (Pendiente: ajustar orden de autoria acordado por el equipo,
-%  ORCID de cada integrante y correos institucionales UTEQ)
 % ============================================================
 
 \title[SGCV-IA: Explainability as a non-functional requirement]{Explainability as a non-functional requirement in an AI-assisted veterinary clinical system: a case study}
 
 %%=============================================================
-%% Autoria -- PENDIENTE: completar ORCID y correos institucionales
+%% Autoria
 %%=============================================================
 \author*[1]{\fnm{Alberto Jeanpool} \sur{Marcillo Ponce}}\email{amarcillop@uteq.edu.ec}
 \author[1]{\fnm{Robyn Willian} \sur{Amagua Sacón}}\email{ramaguas@uteq.edu.ec}
 \author[1]{\fnm{Anthony Alfredo} \sur{Vera Gómez}}\email{averag10@uteq.edu.ec}
 \author[1]{\fnm{Jhon Alexander} \sur{Mesías Quijije}}\email{jmesiasq@uteq.edu.ec}
 \author[1]{\fnm{Carlos Daniel} \sur{Barrionuevo Fuentes}}\email{cbarrionuevof@uteq.edu.ec}
-\author[1]{\fnm{TODO} \sur{Docente Supervisor}}\email{gguerrero@uteq.edu.ec}
+\author[1]{\fnm{Gleiston Ciceron} \sur{Guerrero Ulloa}}\email{gguerrero@uteq.edu.ec}
 
 \affil*[1]{\orgdiv{Facultad de Ciencias de la Computación}, \orgname{Universidad Técnica Estatal de Quevedo (UTEQ)}, \orgaddress{\city{Quevedo}, \country{Ecuador}}}
 
@@ -63,8 +54,7 @@
 \maketitle
 
 % ============================================================
-% 1. INTRODUCCION (Sección 5.2 de la guía — 4 párrafos)
-% PENDIENTE: redactar. Boceto de estructura dejado como guía interna.
+% 1. INTRODUCCION
 % ============================================================
 
 \section{Introduction}\label{sec1}
@@ -79,7 +69,6 @@ Accordingly, this study addresses two research questions: \textbf{RQ1} asks what
 
 % ============================================================
 % 2. TRABAJO RELACIONADO (Sección 5.3 — esquema Kitchenham y Charters)
-% PENDIENTE: redactar con cuadro comparativo de 10-15 estudios
 % ============================================================
 
 \section{Related Work}\label{sec2}
@@ -96,13 +85,14 @@ The literature also provides methodological support for making requirements expl
 
 Veterinary informatics provides a comparatively less developed application domain for this line of research. Lustgarten et al.~\cite{lustgarten2020} describe veterinary informatics as a field connecting veterinary practice with computational and biomedical methods. Although veterinary AI research has expanded, the literature identified here does not provide a comparable body of empirical Requirements Engineering studies focused specifically on explainability requirements in veterinary clinical-management systems.
 
-\begin{table}[h]
+\begin{table}[tp]
 \caption{Comparison of closely related studies}
 \label{tab1}
 \centering
-\scriptsize
-\setlength{\tabcolsep}{2pt}
-\begin{tabular}{@{}p{2.45cm}p{0.75cm}p{2.1cm}p{2.1cm}p{3.3cm}@{}}
+\tiny
+\setlength{\tabcolsep}{1.5pt}
+\renewcommand{\arraystretch}{0.85}
+\begin{tabular}{@{}p{2.4cm}p{0.7cm}p{2.0cm}p{2.0cm}p{3.2cm}@{}}
 \toprule
 Reference & Year & Focus & Study type & Relation to the present study \\
 \midrule
@@ -287,8 +277,6 @@ The authors thank the veterinary professionals and other participants who contri
 
 % ============================================================
 % REFERENCIAS
-% PENDIENTE: minimo 40 entradas verificadas en referencias.bib,
-% sin referencias inventadas (verificar cada DOI antes del envio)
 % ============================================================
 
 \bibliography{referencias}
