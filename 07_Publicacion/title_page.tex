@@ -1,83 +1,229 @@
+```latex
 % ============================================================
 % TITLE PAGE — SGCV-IA — Requirements Engineering (Springer)
-% Este archivo se sube POR SEPARADO del manuscrito en el sistema de
-% envíos; NO forma parte del PDF que ven los revisores (revisión doble
-% ciego). Compilar de forma independiente o pegar su contenido en el
-% campo correspondiente de la interfaz de envío.
+%
+% Archivo independiente con información de autoría y declaraciones.
+% Mantener separado del manuscrito anonimizado cuando el proceso de
+% revisión de la revista así lo requiera.
 % ============================================================
 
 \documentclass[12pt]{article}
+
 \usepackage[margin=2.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage{hyperref}
 
 \begin{document}
 
+% ============================================================
+% TITLE
+% ============================================================
+
 \begin{center}
-{\Large\bfseries Explainability as a non-functional requirement in a real-world AI-assisted veterinary clinical system: a case study in Ecuador}
+{\Large\bfseries
+Explainability as a non-functional requirement in an AI-assisted
+veterinary clinical system: a case study
+}
 \end{center}
 
 \vspace{1em}
+
+% ============================================================
+% AUTHORS
+% ============================================================
+
 \section*{Authors}
 
-% PENDIENTE: confirmar orden de autoría acordado por el equipo,
-% ORCID de cada integrante y correos institucionales UTEQ.
-
 \begin{enumerate}
-  \item Alberto Jeanpool Marcillo Ponce$^{1,\ast}$ (ORCID: TODO) --- \texttt{TODO@uteq.edu.ec}
-  \item Robyn Willian Amagua Sacón$^{1}$ (ORCID: TODO) --- \texttt{TODO@uteq.edu.ec}
-  \item Anthony Alfredo Vera Gómez$^{1}$ (ORCID: TODO) --- \texttt{TODO@uteq.edu.ec}
-  \item Jhon Alexander Mesías Quijije$^{1}$ (ORCID: TODO) --- \texttt{TODO@uteq.edu.ec}
-  \item Carlos Daniel Barrionuevo Fuentes$^{1}$ (ORCID: TODO) --- \texttt{TODO@uteq.edu.ec}
-  \item TODO Docente Supervisor$^{1}$ (ORCID: TODO) --- \texttt{TODO@uteq.edu.ec}
+
+  \item Alberto Jeanpool Marcillo Ponce$^{1,\ast}$\\
+  ORCID: \href{https://orcid.org/0009-0003-7886-3957}
+  {0009-0003-7886-3957}\\
+  \texttt{amarcillop@ute.edu.ec}
+
+  \item Robyn Willian Amagua Sacón$^{1}$\\
+  \texttt{ramaguas@uteq.edu.ec}
+
+  \item Anthony Alfredo Vera Gómez$^{1}$\\
+  \texttt{averag10@uteq.edu.ec}
+
+  \item Jhon Alexander Mesías Quijije$^{1}$\\
+  \texttt{jmesiasq@uteq.edu.ec}
+
+  \item Carlos Daniel Barrionuevo Fuentes$^{1}$\\
+  \texttt{cbarrionuevof@uteq.edu.ec}
+
+  \item Gleiston Ciceron Guerrero Ulloa$^{1}$\\
+  \texttt{gguerrero@uteq.edu.ec}
+
 \end{enumerate}
 
-\noindent $^{1}$Facultad de Ciencias de la Computación, Universidad Técnica Estatal de Quevedo (UTEQ), Quevedo, Ecuador.
+\noindent
+$^{1}$Facultad de Ciencias de la Computación,
+Universidad Técnica Estatal de Quevedo (UTEQ),
+Quevedo, Ecuador.
 
-\noindent $^{\ast}$Autor corresponsal: Alberto Jeanpool Marcillo Ponce, \texttt{TODO@uteq.edu.ec}
+\vspace{0.5em}
+
+\noindent
+$^{\ast}$Corresponding author:
+Alberto Jeanpool Marcillo Ponce,
+\texttt{amarcillop@ute.edu.ec}
+
+\vspace{0.5em}
+
+\noindent
+\textit{Note: ORCID identifiers for authors other than Alberto Jeanpool
+Marcillo Ponce have not yet been provided.}
 
 \vspace{1em}
+
+% ============================================================
+% ABSTRACT
+% ============================================================
+
 \section*{Abstract}
-[Idéntico al del manuscrito anonimizado — pegar aquí una vez cerrado, 150--250 palabras, sin abreviaturas ni referencias sin definir.]
 
-\vspace{1em}
+The final abstract must be identical to the abstract included in the
+final manuscript. It will be inserted after completion and verification
+of the terminal empirical analysis, since the Results and Conclusions
+components depend on the experimental evidence.
+
+% ============================================================
+% KEYWORDS
+% ============================================================
+
 \section*{Keywords}
-Explainability; Non-functional requirements; AI-assisted diagnosis; Veterinary informatics; User studies
+
+Explainability; Non-functional requirements; AI-assisted diagnosis;
+Veterinary informatics; User studies
 
 \vspace{1.5em}
+
+% ============================================================
+% DECLARATIONS
+% ============================================================
+
 \section*{Declarations}
 
+% ------------------------------------------------------------
+% FUNDING
+% ------------------------------------------------------------
+
 \subsection*{Funding}
-% Ejemplos de redacción según la guía de la revista — elegir/adaptar:
-% "The authors did not receive support from any organization for the submitted work."
-% "This study was funded by [...]"
-TODO --- declarar si hubo financiamiento (p. ej. de UTEQ o de Veterinaria Macay) o indicar que no lo hubo.
+
+\textit{Pending confirmation before submission.}
+The authors must state whether the study received financial or material
+support from UTEQ, Veterinaria Macay, or any other organization.
+If no funding was received, the final statement should indicate that
+the authors received no specific funding for this work.
+
+% ------------------------------------------------------------
+% COMPETING INTERESTS
+% ------------------------------------------------------------
 
 \subsection*{Competing Interests}
-% Ejemplo: "The authors have no relevant financial or non-financial interests to disclose."
-% Nota: dado que Veterinaria Macay es el cliente/organización real del caso de estudio,
-% declarar explícitamente la relación (académica, sin remuneración, etc.) si corresponde.
-TODO --- declarar intereses financieros y no financieros (incluida la relación con Veterinaria Macay).
+
+\textit{Pending confirmation before submission.}
+The authors must declare any relevant financial or non-financial
+interests, including any relevant relationship between the project
+team and the organization associated with the case study.
+
+% ------------------------------------------------------------
+% ETHICS
+% ------------------------------------------------------------
 
 \subsection*{Ethics approval and consent to participate}
-Todos los participantes (usuarios técnicos y no técnicos de SGCV-IA) proporcionaron consentimiento informado por escrito, conforme a la Ley Orgánica de Protección de Datos Personales de Ecuador (Registro Oficial Suplemento 459, 26 de mayo de 2021). TODO --- indicar si hubo aprobación de un comité de ética institucional y, de ser el caso, el número de aprobación.
+
+Participation in the requirements-elicitation activities was voluntary
+and based on written informed consent. Participant information is
+handled using anonymized identifiers, and identifying materials are
+maintained separately in the restricted evidence area in accordance
+with the project's data-protection procedures and Ecuador's
+\textit{Ley Orgánica de Protección de Datos Personales}
+(LOPDP).
+
+\par
+\textit{Pending confirmation before submission:}
+the final manuscript must state whether formal approval was granted by
+an institutional ethics committee or equivalent body and, if
+applicable, provide the official approval identifier. No approval
+number is reported here because none has been provided.
+
+% ------------------------------------------------------------
+% CONSENT FOR PUBLICATION
+% ------------------------------------------------------------
 
 \subsection*{Consent for publication}
-TODO --- confirmar que los participantes consintieron el uso y la publicación de datos anonimizados derivados de las entrevistas y cuestionarios.
+
+\textit{Pending verification before submission.}
+The final statement must reflect the exact scope of the signed consent
+documents regarding the use and publication of anonymized participant
+information.
+
+% ------------------------------------------------------------
+% DATA / MATERIALS / CODE
+% ------------------------------------------------------------
 
 \subsection*{Data, Materials and/or Code availability}
-El paquete de replicación, incluidas las transcripciones anonimizadas de entrevistas, las respuestas de los cuestionarios, los scripts de análisis y el protocolo pre-registrado en OSF, se depositará en Zenodo bajo licencia CC~BY~4.0 al finalizar la fase empírica terminal. DOI: TODO. Registro OSF: TODO.
+
+The research materials supporting the requirements-engineering phase
+include anonymized interview transcripts, thematic-coding materials,
+requirements artefacts, traceability information, and related project
+documentation. Potentially identifying materials, including original
+consent documents and multimedia evidence, are maintained separately
+in the restricted evidence area and are not intended for public
+dissemination.
+
+\par
+The terminal replication package is intended to include the
+anonymized research materials and reproducible analysis artefacts
+required by the project. The persistent Zenodo DOI and the
+corresponding OSF registration identifier will be added once those
+resources have been finalized. No DOI or OSF identifier is reported
+until it has been verified.
+
+% ------------------------------------------------------------
+% AUTHOR CONTRIBUTIONS
+% ------------------------------------------------------------
 
 \subsection*{Author contributions}
-% Usar la taxonomía CRediT o texto libre, ej.:
-% "Conceptualization: [...]; Methodology: [...]; Formal analysis and investigation: [...];
-%  Writing - original draft preparation: [...]; Writing - review and editing: [...];
-%  Supervision: [...]."
-TODO --- completar la contribución de cada autor.
+
+\textit{Pending confirmation by the authors before submission.}
+The final contribution statement will describe the actual contribution
+of each author, preferably following the CRediT taxonomy.
+
+% ------------------------------------------------------------
+% AI-ASSISTED TECHNOLOGIES
+% ------------------------------------------------------------
 
 \subsection*{Use of AI-assisted technologies}
-TODO --- declarar modelo, versión y uso concreto de cualquier LLM utilizado exclusivamente para pulir la redacción de párrafos cuyo contenido fue escrito por el equipo con base en datos empíricos, conforme a las políticas editoriales de Springer Nature~\cite{springer2023}. Ningún LLM fue utilizado para producir resultados, cifras, tablas o conclusiones.
+
+During preparation of the manuscript, ChatGPT (OpenAI, GPT-5.6 Luna)
+was used to assist with drafting, restructuring, language refinement,
+and consistency checking of manuscript text based on information and
+research artefacts supplied by the authors.
+
+The AI-assisted tool was not used to fabricate empirical observations,
+participant responses, statistical results, tables, figures, effect
+sizes, confidence intervals, or scientific conclusions. Quantitative
+and qualitative findings included in the final manuscript must be
+derived from the project's actual evidence and reproducible analysis
+procedures.
+
+% ------------------------------------------------------------
+% ACKNOWLEDGEMENTS
+% ------------------------------------------------------------
 
 \subsection*{Acknowledgements}
-TODO --- agradecer a las personas entrevistadas por nombre solo si su consentimiento lo permite; en caso contrario, agradecimiento genérico indicando el rol (por ejemplo, ``profesionales veterinarios y personal administrativo del cantón Quevedo, Provincia de Los Ríos'').
+
+The authors thank the veterinary professionals, administrative
+personnel, and other participants who contributed to the
+requirements-elicitation and validation activities of the SGCV-IA
+project. Participant identities are not disclosed in this manuscript
+in accordance with the project's anonymization and data-protection
+procedures.
 
 \end{document}
+```
