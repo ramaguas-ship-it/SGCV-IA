@@ -1,276 +1,80 @@
-# MVP — Sistema de Recomendación
+# MVP — SGCV-IA (Sistema de Gestión Clínica Veterinaria con IA)
 
 ## Descripción
 
-Este repositorio contiene el **Producto Mínimo Viable (MVP)** del proyecto, desarrollado como un prototipo funcional orientado a demostrar la interacción principal del sistema y su capacidad para generar recomendaciones a partir de los datos previamente establecidos.
-
-El MVP permite visualizar una interfaz web interactiva desde la cual el usuario puede ingresar o seleccionar información disponible en el sistema y obtener recomendaciones generadas de acuerdo con los datos y criterios definidos para el proyecto.
-
-El propósito de esta versión es validar el funcionamiento de las principales características planteadas antes de una implementación completa del sistema.
+Prototipo funcional del MVP de **SGCV-IA**, orientado a demostrar los módulos Must have del ERS/SRS: autenticación por rol, gestión de pacientes, historial clínico, agenda de citas, inventario, facturación, sugerencias diagnósticas por IA (con flujo Aceptar/Modificar/Rechazar), reportes y configuración.
 
 ---
 
-## Objetivo del MVP
+## Tecnologías
 
-El objetivo principal del MVP es demostrar de manera funcional la propuesta del sistema, permitiendo:
-
-* Presentar una interfaz sencilla e intuitiva.
-* Permitir la interacción del usuario con el sistema.
-* Procesar los datos previamente definidos.
-* Generar recomendaciones a partir de la información proporcionada.
-* Visualizar los resultados directamente en la interfaz.
-* Validar la funcionalidad principal antes del desarrollo de una versión completa.
+* HTML5 + CSS3 + JavaScript, empaquetado en un único archivo (`SGCV-IA_Prototipo_Funcional.html`).
+* Sin backend ni base de datos real: los datos son de demostración y no persisten entre sesiones (limitación esperada en esta etapa de MVP).
 
 ---
 
-## Funcionalidades principales
-
-El prototipo cuenta con las siguientes funcionalidades:
-
-### 1. Interfaz de usuario
-
-El sistema dispone de una interfaz web que permite al usuario interactuar con las diferentes opciones disponibles del MVP.
-
-### 2. Ingreso y selección de datos
-
-El usuario puede proporcionar o seleccionar los datos necesarios para realizar el proceso de recomendación.
-
-### 3. Procesamiento de información
-
-El sistema utiliza los datos asignados previamente para realizar el procesamiento correspondiente.
-
-### 4. Generación de recomendaciones
-
-A partir de los datos proporcionados, el MVP genera recomendaciones de acuerdo con los criterios establecidos en la lógica del prototipo.
-
-### 5. Visualización de resultados
-
-Las recomendaciones obtenidas son mostradas directamente en la interfaz para que el usuario pueda interpretarlas y utilizarlas como referencia para la toma de decisiones.
-
----
-
-## Tecnologías utilizadas
-
-El MVP fue desarrollado utilizando principalmente:
-
-* **HTML5** — Estructura de la interfaz.
-* **CSS3** — Diseño y estilos visuales.
-* **JavaScript** — Lógica de interacción, procesamiento de datos y generación de recomendaciones.
-
-La implementación actual se encuentra integrada dentro del archivo HTML del prototipo, por lo que no requiere una instalación compleja de dependencias externas para su ejecución básica.
-
----
-
-## Estructura del proyecto
-
-La estructura principal del repositorio se organiza de la siguiente manera:
+## Estructura
 
 ```text
-MVP/
-│
-├── Untitled-1.html
-├── README.md
-└── RF(1).docx
+05_MVP/
+├── SGCV-IA_Prototipo_Funcional.html   # Prototipo funcional (single-file)
+├── Dockerfile                          # Imagen nginx que sirve el prototipo
+├── docker-compose.yml                  # Despliegue con un solo comando
+├── Videos_Demostracion/                # Videos por módulo (evidencia de C3/C13)
+└── README.md
 ```
-
-> La estructura puede variar dependiendo de los archivos adicionales que sean incorporados posteriormente al repositorio.
-
-### Descripción de archivos
-
-| Archivo           | Descripción                                                                                             |
-| ----------------- | ------------------------------------------------------------------------------------------------------- |
-| `Untitled-1.html` | Archivo principal que contiene el prototipo web funcional del MVP.                                      |
-| `README.md`       | Documento con la descripción, funcionamiento y características del proyecto.                            |
-| `RF(1).docx`      | Documento relacionado con los requerimientos funcionales utilizados como referencia para el desarrollo. |
 
 ---
 
-## Requisitos
+## Ejecución
 
-Para ejecutar el MVP únicamente se necesita:
-
-* Un computador.
-* Un navegador web actualizado.
-* Acceso a los archivos del proyecto.
-
-Se recomienda utilizar navegadores como:
-
-* Google Chrome
-* Microsoft Edge
-* Mozilla Firefox
-
-No es necesario instalar un servidor web ni configurar una base de datos para ejecutar esta versión del prototipo.
-
----
-
-## Instalación y ejecución
-
-### Opción 1 — Ejecución directa
-
-1. Descargar o clonar este repositorio.
-2. Ubicar el archivo:
-
-```text
-Untitled-1.html
-```
-
-3. Hacer doble clic sobre el archivo.
-4. El navegador abrirá el prototipo.
-5. Interactuar con las opciones disponibles.
-6. Ingresar o seleccionar los datos solicitados.
-7. Revisar las recomendaciones generadas por el sistema.
-
-### Opción 2 — Desde GitHub
-
-También es posible descargar el repositorio desde GitHub y ejecutar el archivo HTML localmente.
+### Opción 1 — Despliegue con Docker (recomendado para la evaluación C3)
 
 ```bash
-git clone URL_DEL_REPOSITORIO
+cd 05_MVP
+docker compose up
 ```
 
-Después de descargar el proyecto, abrir el archivo `Untitled-1.html` utilizando un navegador web.
+Luego abrir **http://localhost:8080** en el navegador.
+
+### Opción 2 — Ejecución directa (sin Docker)
+
+Abrir `SGCV-IA_Prototipo_Funcional.html` directamente en el navegador (doble clic).
 
 ---
 
-## Funcionamiento del MVP
+## Cobertura de RF (Must have) demostrada
 
-El funcionamiento general del prototipo sigue el siguiente flujo:
+| RF | Módulo | Estado |
+|---|---|---|
+| RF-24 | Login / autenticación por rol | ✅ |
+| RF-22 | Navegación diferenciada por rol (Veterinario / Administrativo) | ✅ |
+| RF-02, RF-03 | Búsqueda y ficha centralizada de paciente | ✅ |
+| RF-04 | Registro de consulta | ✅ |
+| RF-05, RF-06 | Alertas e inventario | ✅ |
+| RF-07, RF-08 | Cobro y facturación | ✅ |
+| RF-11 | Agenda de citas | ✅ |
+| RF-17, RF-18, RF-19 | Sugerencias diagnósticas por IA (Aceptar/Modificar/Rechazar) | ✅ |
+| RF-25 | Reportes | ✅ (Could have, ya cubierto) |
+| RF-23 | Log de auditoría | ⚠️ Pendiente de verificar en el código |
+| RF-21 | Modo offline | ⚠️ No aplica a este prototipo web (alcance definido para escritorio) |
 
-```text
-┌──────────────────────┐
-│      Usuario         │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Ingreso / selección  │
-│       de datos       │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Procesamiento de     │
-│      información     │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Aplicación de reglas │
-│ de recomendación     │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Recomendación        │
-│      generada        │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Visualización del    │
-│      resultado       │
-└──────────────────────┘
-```
+> Credenciales de demostración: documentar aquí las credenciales de prueba usadas en el video/defensa (nunca credenciales reales de la clínica cliente), conforme a la Sección 8.4 de la Guía de la Entrega 4.
 
 ---
 
-## Alcance del MVP
+## Limitaciones (alcance MVP)
 
-Esta versión corresponde a un **prototipo funcional**, por lo que su objetivo principal es demostrar la funcionalidad central del sistema.
-
-El MVP permite comprobar:
-
-* La interacción básica con el usuario.
-* El flujo principal del sistema.
-* El procesamiento de información.
-* La generación de recomendaciones.
-* La presentación de resultados.
-
-Sin embargo, esta versión no representa necesariamente la implementación definitiva del sistema.
-
----
-
-## Limitaciones
-
-Entre las principales limitaciones de esta versión se encuentran:
-
-* Los datos utilizados se encuentran previamente definidos dentro del prototipo.
-* No se cuenta con una base de datos externa.
-* No existe autenticación de usuarios.
-* La información no se almacena de manera permanente.
-* La lógica de recomendación corresponde a una implementación inicial.
-* El prototipo se encuentra orientado principalmente a demostrar la funcionalidad principal del proyecto.
-
-Estas limitaciones corresponden al alcance establecido para un Producto Mínimo Viable.
-
----
-
-## Requerimientos funcionales relacionados
-
-El desarrollo del MVP toma como referencia los requerimientos funcionales definidos para el proyecto.
-
-Entre las características principales consideradas se encuentran:
-
-* Permitir la interacción del usuario con el sistema.
-* Recibir información necesaria para el proceso.
-* Procesar los datos proporcionados.
-* Generar recomendaciones.
-* Mostrar los resultados de manera comprensible.
-
-Los requerimientos detallados pueden consultarse en el documento correspondiente incluido en el repositorio.
-
----
-
-## Evidencia del funcionamiento
-
-Para comprobar el funcionamiento del MVP se pueden incluir capturas de pantalla que evidencien:
-
-1. Pantalla inicial del prototipo.
-2. Ingreso o selección de datos.
-3. Procesamiento o interacción principal.
-4. Resultado de la recomendación.
-5. Funcionamiento general del sistema.
-
-Las evidencias permiten verificar que el prototipo cumple con el flujo funcional planteado.
-
----
-
-## Estado del proyecto
-
-**Estado:** MVP funcional
-
-El prototipo se encuentra desarrollado y permite ejecutar el flujo principal de interacción y generación de recomendaciones.
-
-Las futuras versiones pueden incorporar mejoras relacionadas con:
-
-* Persistencia de información.
-* Base de datos.
-* Autenticación.
-* Mayor cantidad de datos.
-* Algoritmos de recomendación más avanzados.
-* Mejoras de interfaz y experiencia de usuario.
-* Integración con servicios externos.
-* Implementación completa del sistema.
+* No hay persistencia real de datos (sin base de datos conectada).
+* No hay autenticación contra un backend real (el login valida en el propio frontend).
+* Los videos en `Videos_Demostracion/` son material de apoyo por módulo; para la defensa (Sección 8.4 de la guía) se debe preparar un video corto adicional que cubra específicamente los 2 escenarios de la matriz de trazabilidad, y depositarlo en `09_Defensa/video_defensa.mp4`.
 
 ---
 
 ## Equipo de desarrollo
 
-El proyecto fue desarrollado por:
-
-* **Barrionuevo Fuentes Carlos Daniel**
-* **Vera Gómez Anthony Alfredo**
-* **Mesias Quijije Jhon Alexander**
-* **Amagua Sacon Robyn William**
-* **Marcillo Ponce Jeanpool Alberto**
----
-
-## Repositorio
-
-El código fuente y los archivos correspondientes al MVP se encuentran disponibles en el repositorio de GitHub del proyecto.
-
----
-
-## Conclusión
-
-Este MVP representa una primera versión funcional del sistema, enfocada en demostrar la propuesta principal y validar el flujo de interacción con el usuario. Mediante una interfaz web integrada en HTML, el prototipo permite trabajar con datos previamente establecidos y generar recomendaciones de acuerdo con la lógica definida. Esta implementación constituye una base para futuras etapas de desarrollo, en las cuales podrán incorporarse nuevas funcionalidades, almacenamiento persistente, una arquitectura más completa y mejoras en la experiencia del usuario.
+* Barrionuevo Fuentes Carlos Daniel
+* Vera Gómez Anthony Alfredo
+* Mesias Quijije Jhon Alexander
+* Amagua Sacon Robyn William
+* Marcillo Ponce Jeanpool Alberto
