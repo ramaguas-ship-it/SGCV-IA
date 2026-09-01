@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "Si utiliza este software o conjunto de datos, cítelo de la siguiente manera."
 title: "SGCV-IA: Sistema de Gestión para Clínicas Veterinarias con Inteligencia Artificial"
-version: "2A"
+version: "2B"
 date-released: 2026-07-29
 type: software
 authors:
