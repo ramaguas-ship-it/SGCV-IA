@@ -7,7 +7,6 @@
 > pero cambiaron de identificador. **Si ya tenia este repositorio clonado,
 > por favor bórrelo y clónelo de nuevo** — un `git pull` normal dará error.
 
-
 ## Integrantes y roles
 
 | Nombre | Rol |
@@ -31,13 +30,14 @@ veterinario.
 - ERS/SRS completo (PDF): [`01_ERS/ERS_SRS_2B_v2.0.pdf`](01_ERS/ERS_SRS_2B_v2.0.pdf)
 - Manuscrito final: [pendiente — 07_Publicacion/ solo contiene el esqueleto documentado]
 - MVP funcional: [`05_MVP/README.md`](05_MVP/README.md)
-- Registro previo del protocolo experimental (OSF): [`06_Experimento/OSF_Registration.pdf`](06_Experimento/OSF_Registration.pdf)
-- Conjunto de datos (Zenodo, DOI): [pendiente — no depositado todavía]
-- Archivo de Software Heritage (SWHID): [pendiente]
+- Registro previo del protocolo experimental (OSF): [`06_Experimento/OSF_Registration.pdf`](06_Experimento/OSF_Registration.pdf) ([ver registro en OSF](https://osf.io/r5p8d))
+- Espejo del repositorio de software (OSF): [osf.io/wkg32](https://osf.io/wkg32)
+- Conjunto de datos / código fuente (Zenodo, DOI): [10.5281/zenodo.22238486](https://doi.org/10.5281/zenodo.22238486)
+- Archivo de Software Heritage (SWHID): `swh:1:dir:61ecd6edd0a82807ae244055a854fa84afbd0810` ([ver en el archivo](https://archive.softwareheritage.org/swh:1:dir:61ecd6edd0a82807ae244055a854fa84afbd0810;origin=https://github.com/ramaguas-ship-it/SGCV-IA))
 
 ## Cita recomendada
 
-[Pendiente hasta tener DOI de Zenodo y SWHID asignados]
+Ver [`CITATION.cff`](./CITATION.cff) — DOI: [10.5281/zenodo.22238486](https://doi.org/10.5281/zenodo.22238486)
 
 ## Cómo reproducir el análisis experimental
 
@@ -54,5 +54,3 @@ entrevistas) está cifrada con AES-256 en
 La contraseña se entrega únicamente al docente evaluador, fuera de este repositorio. El detalle
 técnico de cada archivo (duración, códec, hash SHA-256) está en
 [`02_Evidencias/fichas_tecnicas.csv`](02_Evidencias/fichas_tecnicas.csv).
-
-
