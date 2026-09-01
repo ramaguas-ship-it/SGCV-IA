@@ -1,6 +1,6 @@
 # 07_Publicacion/
 
-## Estado: FINALIZADO (borrador) — actualizado 01/09/2026
+## Estado: FINALIZADO — actualizado 01/09/2026
 
 Contenido sustantivo del manuscrito completo (Abstract, Introduction,
 Related Work, Methodology, Results, Discussion, Threats to Validity,
