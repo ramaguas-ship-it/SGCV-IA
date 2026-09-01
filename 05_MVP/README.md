@@ -43,6 +43,14 @@ Abrir `SGCV-IA_Prototipo_Funcional.html` directamente en el navegador (doble cli
 
 ---
 
+## Video Demostrativo
+
+A continuación se presenta el video demostrativo correspondiente a la versión MVP del sistema SGCV-IA, en el cual se exponen sus principales funcionalidades y su modo de operación.
+
+[Ver Demo SGCV-IA](https://github.com/ramaguas-ship-it/SGCV-IA/releases/download/v1.0-mvp-demo/Demo.SGCV-IA.mp4)
+
+---
+
 ## Cobertura de RF (Must have) demostrada
 
 | RF | Módulo | Estado |
