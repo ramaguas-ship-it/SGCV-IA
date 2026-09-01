@@ -43,7 +43,7 @@ Abrir `SGCV-IA_Prototipo_Funcional.html` directamente en el navegador (doble cli
 
 ---
 
-## Video demostrativo
+## Prototipo SGCV-IA 
 
 https://github.com/ramaguas-ship-it/SGCV-IA/releases/download/v1.0-mvp-demo/SGCV-IA.mp4
 
