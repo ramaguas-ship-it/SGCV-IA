@@ -1,6 +1,6 @@
 # Video Demostrativo - SGCV-IA
 
-## Demo v1.0 (MVP)
+## Demo (MVP)
 
 A continuación se presenta el video demostrativo correspondiente a la versión MVP del sistema SGCV-IA, en el cual se exponen sus principales funcionalidades y su modo de operación.
 
