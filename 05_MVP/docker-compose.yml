@@ -1,0 +1,7 @@
+services:
+  sgcv-ia-mvp:
+    build: .
+    container_name: sgcv-ia-mvp
+    ports:
+      - "8080:80"
+    restart: unless-stopped
