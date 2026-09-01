@@ -20,12 +20,14 @@
 
 % ============================================================
 % TITULO, AUTORIA, FILIACION
+% (Pendiente: ajustar orden de autoria acordado por el equipo,
+%  ORCID de cada integrante y correos institucionales UTEQ)
 % ============================================================
 
 \title[SGCV-IA: Explainability as a non-functional requirement]{Explainability as a non-functional requirement in an AI-assisted veterinary clinical system: a case study}
 
 %%=============================================================
-%% Autoria
+%% Autoria -- PENDIENTE: completar ORCID y correos institucionales
 %%=============================================================
 \author*[1]{\fnm{Alberto Jeanpool} \sur{Marcillo Ponce}}\email{amarcillop@uteq.edu.ec}
 \author[1]{\fnm{Robyn Willian} \sur{Amagua Sacón}}\email{ramaguas@uteq.edu.ec}
@@ -38,15 +40,14 @@
 
 % ============================================================
 % RESUMEN ESTRUCTURADO — Contexto/Objetivo/Método/Resultados/Conclusiones
-% PENDIENTE: completar Resultados y Conclusiones cuando existan datos
 % ============================================================
 
 \abstract{
-\textbf{Context.} TODO — situar el problema: sistemas clínicos veterinarios con módulos de diagnóstico asistido por IA carecen frecuentemente de explicabilidad operacionalizada como requisito verificable. \\
-\textbf{Objective.} TODO — determinar qué requisitos de explicabilidad, operacionalizados como RNF verificables, resultan necesarios y suficientes para los distintos perfiles de usuarios (técnicos y no técnicos) de un sistema clínico veterinario con IA. \\
+\textbf{Context.} AI-assisted diagnostic modules in veterinary clinical-management systems frequently lack explainability operationalized as a verifiable requirement. \\
+\textbf{Objective.} To determine which explainability requirements, operationalized as verifiable non-functional requirements (NFRs), are necessary and sufficient for the different user profiles (technical and non-technical) of an AI-assisted veterinary clinical system. \\
 \textbf{Method.} Applied single-case study grounded in Requirements Engineering. Requirements were elicited through semi-structured interviews and direct observation, analyzed qualitatively, operationalized as functional and non-functional requirements, and linked through requirements traceability. Explainability was treated as a non-functional requirement of the AI-assisted diagnostic functionality. \\
-\textbf{Results.} [PENDIENTE — no completar hasta que existan datos analizados por los scripts de \texttt{06\_Experimento/scripts\_analisis/}]. \\
-\textbf{Conclusions.} [PENDIENTE — depende de Results].
+\textbf{Results.} Open coding of 16 semi-structured interviews (thematic saturation reached at P14--P16) yielded 37 codes across 7 categories. Explainability- and trust-related codes show that acceptance of AI-assisted diagnostic suggestions was consistently conditional on the veterinary professional's ability to review and correct suggestions (11/16), grounding in validated scientific literature (8/16), and patient-data protection (8/16), with AI accepted as decision support rather than as a substitute for professional judgement. These conditions were operationalized as the non-functional requirement RNF-18, traced to the AI-assisted diagnostic use case CU-06. \\
+\textbf{Conclusions.} Explainability for AI-assisted veterinary diagnostic support is best operationalized around contestability and provenance of suggestions rather than technical model interpretability alone, and can be linked, through requirements traceability, to concrete verifiable requirements. Broader validation across additional cases and a second independent coding round remain as future work.
 }
 
 \keywords{Explainability, Non-functional requirements, AI-assisted diagnosis, Veterinary informatics, User studies}
@@ -196,7 +197,7 @@ No personally identifying participant information is reproduced in this manuscri
 
 The qualitative analysis is supported by interview transcripts, observation evidence, documentary material, and thematic coding. The project repository contains anonymized transcripts, coding materials, requirements artefacts, and traceability information. The final ERS documents the organization of these materials and distinguishes restricted evidence from materials intended for dissemination.
 
-The terminal empirical validation and its statistical analysis are not reported in this manuscript version. Results, statistical tests, effect sizes, confidence intervals, and conclusions dependent on the experimental dataset will be incorporated only after the corresponding experimental evidence and analysis scripts have been completed and verified.
+The qualitative thematic-coding results derived from the 16 interviews are reported in Section~\ref{sec4}. Any additional terminal quantitative or statistical validation (e.g., statistical tests, effect sizes, confidence intervals) is not reported in this manuscript version and will be incorporated only after the corresponding experimental evidence and analysis scripts have been completed and verified.
 
 \subsection{Methodological limitations}\label{subsec9}
 
@@ -209,16 +210,77 @@ The single-case design provides detailed contextual evidence but does not by its
 % ============================================================
 
 \section{Results}\label{sec4}
-% PENDING: to be completed only after the terminal experimental dataset
-% and corresponding analysis scripts have been completed and verified.
+
+\subsection{Thematic saturation}\label{res:saturation}
+
+Open coding was applied line-by-line to the 16 anonymized interview transcripts (P01--P16), yielding 37 unique codes subsequently grouped into 7 axial categories (A--G): clinical-record management, billing and inventory, appointments and communication, clinical and nutritional follow-up, perception of artificial intelligence, adoption and accessibility, and emergent findings. Coding followed the collection order (P01$\rightarrow$P16) to track the rate at which additional interviews contributed new codes. Figure~\ref{fig:saturacion} shows that the rate of new-code emergence dropped sharply after the first two interviews (17 and 8 new codes, respectively) and stabilized at zero from P14 onward, with no new codes introduced across the last three consecutive interviews (P14--P16). This satisfies the operational saturation criterion adopted for this study (absence of new codes in $\geq$3 consecutive interviews) and supports that the 16-interview sample was sufficient to cover the thematic space relevant to the explainability focus of this study.
+
+\begin{figure}[tp]
+\centering
+\includegraphics[width=0.85\textwidth]{figuras/curva_saturacion_tematica.pdf}
+\caption{Thematic saturation curve for the SGCV-IA interview corpus (n=16). Bars show new codes contributed per interview (left axis); the line shows cumulative unique codes (right axis).}
+\label{fig:saturacion}
+\end{figure}
+
+\subsection{Explanation needs and conditions for trust (RQ1)}\label{res:rq1}
+
+Category E (``Perception of artificial intelligence'') concentrates the codes most directly relevant to RQ1. Table~\ref{tab2} summarizes these codes together with their frequency across the 16 participants. Two findings stand out. First, acceptance of AI-generated diagnostic suggestions was consistently conditional rather than unconditional: participants required that the veterinary professional retain the ability to review and correct every suggestion (E5, 11/16), that recommendations be grounded in validated scientific literature (E6, 8/16), and that patient data be protected and not shared with third parties (E7, 8/16). A minority of participants (E1, 6/16) expressed high agreement with AI-assisted diagnosis in principle, while outright skepticism was comparatively rare (E2, 2/16). Second, participants consistently framed AI support as complementary rather than substitutive: no participant described a scenario in which the AI-generated suggestion should be acted upon without professional validation (E3, 6/16; E4, 9/16).
+
+\begin{table}[tp]
+\caption{Codes associated with explainability, trust, and adoption conditions for the AI-assisted diagnostic functionality (category E, and related codes D5, D6, G2, G3)}
+\label{tab2}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.95}
+\begin{tabular}{@{}p{0.7cm}p{6.2cm}p{1.4cm}@{}}
+\toprule
+Code & Description & Freq. (n=16) \\
+\midrule
+E5 & Requires that the veterinarian review/correct every suggestion & 11/16 \\
+E4 & Moderate trust, conditional on own professional validation & 9/16 \\
+E6 & Requires grounding in validated scientific literature & 8/16 \\
+E7 & Requires protection of patient data as a condition of use & 8/16 \\
+E3 & AI accepted as support only, never as a substitute & 6/16 \\
+E1 & High agreement with AI-suggested diagnoses & 6/16 \\
+E9 & Requires technical support and periodic updates & 4/16 \\
+E2 & Skepticism toward AI-suggested diagnoses & 2/16 \\
+E8 & Requires ease of use without prolonged training & 2/16 \\
+D5 & Preference for in-person clinical evaluation before adjusting treatment & 5/16 \\
+D6 & Accepts remote photo/video evidence, with clinical reservations & 6/16 \\
+G2 & Requests role-based permissions and change traceability & 3/16 \\
+G3 & Explicit limitation of auxiliary-staff authority over clinical decisions & 3/16 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+These conditions (E5--E9) map onto the explainability-as-quality-concern perspective established by Chazette et al.~\cite{chazette2020,chazette2021,chazette2022}: the requirement to review and correct suggestions (E5) corresponds to the need for actionable, contestable explanations; grounding in validated literature (E6) and data protection (E7) correspond to trustworthiness and privacy-related explanation content; and ease of use without prolonged training (E8) corresponds to the audience-appropriateness dimension of explainability. Codes D5, D6, and G3 reinforce this pattern from a different angle: participants consistently preserved in-person clinical judgement as the final authority and explicitly restricted non-clinical staff from overriding AI-informed or clinical decisions (G3), indicating that explanations are expected to support, and not replace, professional discretion.
+
+\subsection{Operationalization as a verifiable requirement (RQ2)}\label{res:rq2}
+
+The explainability concerns identified in Section~\ref{res:rq1} were operationalized in the final requirements specification as RNF-18 (Section~\ref{subsec5}), traced to the AI-assisted diagnostic use case CU-06. The information content required by RNF-18 -- namely, that the AI-generated suggestion must be accompanied by information enabling the veterinary professional to review, contextualize, and correct it -- was derived directly from codes E5, E6, and E7. This traceability link connects a specific, auditable non-functional requirement to the empirical stakeholder evidence from which it originated, illustrating one instance of the elicitation-to-specification operationalization sought by RQ2. The role-based permission and traceability request captured in G2 further informed non-functional requirements concerning accountability of system-recorded changes, although a complete requirement-by-requirement coverage matrix against the full codebook remains part of ongoing work (Section~\ref{sec7}).
+
+\subsection{Low-frequency and emergent codes}\label{res:emergent}
+
+Several low-frequency codes are reported as negative or atypical cases rather than omitted, following standard qualitative-analysis practice. Skepticism toward AI-suggested diagnoses (E2, 2/16) and the concern that ease of use may be incompatible with limited available training time (E8, 2/16) indicate that, while conditional acceptance was the dominant pattern, it was not universal. Among emergent codes (category G), the request for photographic evidence of clinical evolution (G1, 2/16) was the last new code to appear in the corpus (interview P13) and is noted here as a candidate requirement for future iterations rather than as a validated finding.
 
 % ============================================================
-% 5. DISCUSION — NO ESCRIBIR TODAVIA (depende de Resultados)
+% 5. DISCUSION
 % ============================================================
 
 \section{Discussion}\label{sec5}
-% NO COMPLETAR. Tres subapartados: implicaciones para la investigación,
-% implicaciones para la práctica, hallazgos sorprendentes/contraintuitivos.
+
+\subsection{Implications for research}\label{disc:research}
+
+The findings extend prior explainability frameworks~\cite{chazette2020,chazette2021,chazette2022} to a domain, veterinary informatics, in which comparable empirical Requirements Engineering evidence was previously scarce~\cite{lustgarten2020}. The conditional-acceptance pattern observed here (E1, E3, E4, E5) is consistent with the context-dependent trust effects reported by Rosenbacke et al.~\cite{rosenbacke2024} in human healthcare settings, suggesting that the relationship between explanation content and clinician trust may generalize across at least some high-stakes, professionally mediated AI-assisted domains. The explicit mapping between empirical codes and the explainability dimensions proposed by Chazette et al. (Section~\ref{res:rq1}) also provides a concrete, replicable procedure for connecting qualitative stakeholder evidence to an existing explainability framework, addressing part of the empirical-integration gap identified in Section~\ref{sec2}.
+
+\subsection{Implications for practice}\label{disc:practice}
+
+For practitioners designing AI-assisted clinical-support functionality, the results suggest that explainability requirements should prioritize contestability (the ability to review and correct a suggestion, E5) and provenance (grounding in validated literature, E6) over purely technical measures of model interpretability. The consistent restriction of AI-informed decisions to licensed veterinary professionals (E3, G3) further suggests that role-based access and accountability controls (G2) should be treated as a companion requirement to explainability rather than as a separate concern, since participants did not distinguish clearly between ``being able to understand a suggestion'' and ``having the authority to act on it.''
+
+\subsection{Surprising or counterintuitive findings}\label{disc:surprising}
+
+Two observations were not anticipated at the outset of the study. First, outright rejection of AI-assisted diagnosis (E2) was markedly less frequent (2/16) than conditional acceptance (E4, E5), suggesting that resistance to AI-assisted diagnostic tools in this context is better characterized as a demand for adequate safeguards than as opposition to the technology itself. Second, the request for photographic documentation of clinical evolution (G1) emerged only in interview P13, near the point of saturation, illustrating that even a well-saturated corpus can surface a low-frequency but potentially actionable requirement late in the elicitation process; this reinforces the value of continuing systematic coding through to an explicit saturation criterion rather than stopping at a fixed number of interviews.
 
 % ============================================================
 % 6. AMENAZAS A LA VALIDEZ (C10 — apoyo de Barrionuevo)
@@ -257,8 +319,12 @@ A second threat concerns the incompleteness of the terminal empirical validation
 % ============================================================
 
 \section{Conclusions and Future Work}\label{sec7}
-% TODO. Un párrafo por RQ; un párrafo de contribuciones consolidadas;
-% al menos 3 líneas concretas de trabajo futuro.
+
+With respect to \textbf{RQ1} (what types of explanations users require), the thematic analysis of 16 interviews shows that veterinary professionals and staff require AI-generated diagnostic suggestions to be reviewable and correctable, grounded in validated scientific literature, and accompanied by guarantees of patient-data protection, while non-clinical staff are explicitly excluded from acting on such suggestions without professional oversight. With respect to \textbf{RQ2} (the extent to which these concerns can be operationalized as verifiable non-functional requirements), the study shows that at least one central explainability concern can be translated into an explicit, traceable requirement: RNF-18, linked to use case CU-06 and to the empirical codes that motivated it (E5, E6, E7).
+
+Taken together, these findings contribute (i) an empirical account of explainability and trust conditions for AI-assisted diagnostic support in a veterinary clinical-management context, a domain in which comparable empirical Requirements Engineering evidence was previously scarce; (ii) a concrete mapping between qualitative stakeholder evidence and an established explainability framework~\cite{chazette2020,chazette2021,chazette2022}; and (iii) a traceable example of operationalizing an explainability concern as a verifiable non-functional requirement within a real requirements specification.
+
+Future work includes: (1) completing a second independent coding round to compute inter-coder reliability (Fleiss' $\kappa$), as noted in the project's thematic-coding documentation; (2) extending the requirement-to-code coverage matrix beyond RNF-18 to systematically trace all remaining explainability-relevant codes (Table~\ref{tab2}) to corresponding functional and non-functional requirements; and (3) validating the resulting explainability requirements with additional veterinary organizations to assess transferability beyond the single-case design used in this study.
 
 % ============================================================
 % 8. DISPONIBILIDAD DE DATOS, USO DE IA Y AGRADECIMIENTOS
@@ -267,7 +333,7 @@ A second threat concerns the incompleteness of the terminal empirical validation
 \backmatter
 
 \section*{Data and materials availability}
-The materials supporting the requirements-elicitation and analysis reported in this manuscript are maintained in the SGCV-IA project repository. The available research artefacts include anonymized interview transcripts, thematic-coding materials, requirements artefacts, and traceability information. Original consent forms and multimedia materials containing potentially identifying information are retained in a restricted repository area and are not publicly released. Anonymized or masked copies are used for dissemination where appropriate. No public DOI or persistent identifier is currently assigned to the project repository; therefore, no repository identifier is reported here. Access to restricted materials is subject to the applicable ethical and data-protection conditions.
+The materials supporting the requirements-elicitation and analysis reported in this manuscript are maintained in the SGCV-IA project repository and in the accompanying anonymized replication package. The available research artefacts include anonymized interview transcripts, thematic-coding materials, requirements artefacts, and traceability information. Original consent forms and multimedia materials containing potentially identifying information are retained in a restricted repository area and are not publicly released. Anonymized or masked copies are used for dissemination where appropriate. The anonymized replication package is deposited on Zenodo at \url{https://doi.org/10.5281/zenodo.22238486}. Access to restricted materials is subject to the applicable ethical and data-protection conditions.
 
 \section*{Use of AI-assisted technologies}
 During preparation of this manuscript, an AI-assisted language model (ChatGPT, GPT-5.6 Luna) was used to assist with drafting, restructuring, and language refinement of manuscript text. The tool was not used to generate, alter, or interpret empirical data, statistical results, tables, or conclusions. The authors remain responsible for verifying the accuracy, provenance, and scientific integrity of all content and for the final version of the manuscript. No personal, confidential, or identifying participant information was intentionally included in prompts.
