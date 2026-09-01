@@ -1,20 +1,30 @@
 # 09_Defensa/
 
-Esta carpeta contiene los materiales de la presentacion oral de la Entrega 4 (2B).
+Esta carpeta contiene los materiales de la presentación oral de la Entrega 4 (2B).
 
-## Estado: ESQUELETO VACIO (creado 27/08/2026)
+## Estado: PENDIENTE
 
-Los archivos aqui presentes son marcadores de posicion (0 bytes) que definen
-la estructura esperada. NINGUNO contiene contenido real todavia.
+Los materiales de la defensa se encuentran **pendientes de elaboración y asignación**. Actualmente, los archivos definidos para esta carpeta aún no cuentan con contenido final.
 
-| Archivo | Contenido esperado | Responsable |
-|---|---|---|
-| presentacion.pdf | Diapositivas en PDF (obligatorio) | Por asignar |
-| presentacion.pptx | Version editable de las diapositivas | Por asignar |
-| guion.pdf | Guion con tiempos por diapositiva | Por asignar |
-| video_defensa.mp4 | Grabacion local de la defensa | Por asignar |
-| folleto_una_hoja.pdf | Resumen estructurado para el tribunal | Por asignar |
+| **Archivo**            | **Contenido esperado**                | **Responsable** | **Estado** |
+| ---------------------- | ------------------------------------- | --------------- | ---------- |
+| `presentacion.pdf`     | Diapositivas en PDF (obligatorio)     | Pendiente       | Pendiente  |
+| `presentacion.pptx`    | Versión editable de las diapositivas  | Pendiente       | Pendiente  |
+| `guion.pdf`            | Guion con tiempos por diapositiva     | Pendiente       | Pendiente  |
+| `video_defensa.mp4`    | Grabación local de la defensa         | Pendiente       | Pendiente  |
+| `folleto_una_hoja.pdf` | Resumen estructurado para el tribunal | Pendiente       | Pendiente  |
 
-Estructura obligatoria segun la Guia de Entrega 4 (2B), Seccion 8:
-25 min presentacion + 10 min preguntas, con cronometro visible y
-participacion equitativa de todo el equipo (minimo 4 min hablados c/u).
+### Requisitos de la defensa
+
+Pendiente de preparación según la Guía de Entrega 4 (2B), Sección 8:
+
+* **25 minutos** para la presentación.
+* **10 minutos** para preguntas del tribunal.
+* **Cronómetro visible** durante la presentación.
+* **Participación equitativa de todo el equipo**.
+* **Mínimo 4 minutos hablados por integrante**.
+* Distribución de las diapositivas y responsabilidades: **Pendiente**.
+* Guion de exposición y tiempos por integrante: **Pendiente**.
+* Preparación de preguntas y respuestas para el tribunal: **Pendiente**.
+* Material visual definitivo: **Pendiente**.
+* Grabación de la defensa: **Pendiente**.
