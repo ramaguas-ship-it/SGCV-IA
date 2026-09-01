@@ -2,9 +2,9 @@
 
 > **Nota sobre el historial de Git (27/08/2026):** el historial de este
 > repositorio fue reescrito para cifrar evidencia audiovisual identificable
-> (cumplimiento etico, ver LICENSE y `02_Evidencias/00_Restringido/README.md`).
+> (cumplimiento ético, ver LICENSE y `02_Evidencias/00_Restringido/README.md`).
 > Los commits anteriores al 27/08/2026 mantienen su fecha y autor originales,
-> pero cambiaron de identificador. **Si ya tenia este repositorio clonado,
+> pero cambiaron de identificador. **Si ya tenía este repositorio clonado,
 > por favor bórrelo y clónelo de nuevo** — un `git pull` normal dará error.
 
 ## Integrantes y roles
@@ -28,7 +28,7 @@ veterinario.
 ## Enlaces
 
 - ERS/SRS completo (PDF): [`01_ERS/ERS_SRS_2B_v2.0.pdf`](01_ERS/ERS_SRS_2B_v2.0.pdf)
-- Manuscrito final: [pendiente — 07_Publicacion/ solo contiene el esqueleto documentado]
+- Manuscrito final: pendiente (`07_Publicacion/` solo contiene el esqueleto documentado)
 - MVP funcional: [`05_MVP/README.md`](05_MVP/README.md)
 - Registro previo del protocolo experimental (OSF): [`06_Experimento/OSF_Registration.pdf`](06_Experimento/OSF_Registration.pdf) ([ver registro en OSF](https://osf.io/r5p8d))
 - Espejo del repositorio de software (OSF): [osf.io/wkg32](https://osf.io/wkg32)
