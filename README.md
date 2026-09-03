@@ -27,7 +27,7 @@ PFC-ISR401-PE5-SGCVIA/
 ├── 04_Trazabilidad/
 ├── 05_MVP/
 ├── 06_Experimento/
-├── 07_Publicacion/
+├── 09_Publicacion/
 ├── 08_Etica/
 └── ...
 ```
@@ -84,7 +84,7 @@ Las funcionalidades de IA tienen carácter asistencial. Las recomendaciones gene
 | MVP funcional          | `05_MVP/README.md`                    |
 | Registro experimental  | `06_Experimento/OSF_Registration.pdf` |
 | Scripts de análisis    | `06_Experimento/scripts_analisis/`    |
-| Manuscrito             | `07_Publicacion/`                     |
+| Manuscrito             | `09_Publicacion/`                     |
 | Evidencia de campo     | `02_Evidencias/`                      |
 | Fichas técnicas        | `02_Evidencias/fichas_tecnicas.csv`   |
 | Licencia               | `LICENSE`                             |
@@ -367,7 +367,7 @@ El registro conserva la documentación correspondiente al protocolo experimental
 El material destinado a la publicación se encuentra en:
 
 ```text
-07_Publicacion/
+09_Publicacion/
 ```
 
 Actualmente esta carpeta contiene el esqueleto documentado destinado al manuscrito.
@@ -436,7 +436,7 @@ Los principales artefactos que pueden utilizarse durante la defensa son:
 | Trazabilidad       | `04_Trazabilidad/` |
 | MVP                | `05_MVP/`          |
 | Experimento        | `06_Experimento/`  |
-| Publicación        | `07_Publicacion/`  |
+| Publicación        | `09_Publicacion/`  |
 
 La evidencia restringida no se expone públicamente durante la defensa. En caso de requerirse su comprobación, se utilizará el mecanismo de acceso establecido con el docente evaluador.
 
