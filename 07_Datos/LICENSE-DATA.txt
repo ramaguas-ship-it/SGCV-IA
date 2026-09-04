@@ -1,0 +1,20 @@
+﻿# README de datos — SGCV-IA
+
+## Qué contiene
+Datos crudos y procesados del componente empírico del proyecto (transcripciones de entrevistas, respuestas de encuesta, codificación temática).
+
+## Cómo se generó
+Ver 07_Datos/scripts/ para el pipeline completo desde datos_crudos/.
+
+## Cómo se reproduce
+\\\
+cd 07_Datos/scripts
+Rscript run_all.R
+\\\
+"@ | Out-File -FilePath "07_Datos\README_datos.md" -Encoding utf8
+
+@"
+Los datos contenidos en esta carpeta se publican bajo licencia Creative Commons Attribution 4.0 International (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+
+Esta licencia es independiente de la licencia del código fuente del proyecto (ver LICENSE en la raíz).
