@@ -50,7 +50,7 @@ Abrir `SGCV-IA_Prototipo_Funcional.html` directamente en el navegador (doble cli
 
 A continuación se presenta el video demostrativo correspondiente a la versión MVP del sistema SGCV-IA, en el cual se exponen sus principales funcionalidades y su modo de operación. 
 
-[Ver Demo SGCV-IA](https://github.com/ramaguas-ship-it/SGCV-IA/releases/download/v1.0-mvp-demo/Demo.SGCV-IA.mp4)
+https://github.com/ramaguas-ship-it/SGCV-IA/releases/download/untagged-540381af922d29d52516/Demo.SGCV-IA.mp4
 
 ---
 
