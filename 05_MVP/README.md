@@ -24,7 +24,6 @@ Prototipo funcional del MVP de **SGCV-IA**, orientado a demostrar los módulos M
 │   └── data/                            # Base de datos SQLite (montada como volumen)
 ├── Dockerfile                          # Imagen Node que corre el backend y sirve el frontend
 ├── docker-compose.yml                  # Despliegue con un solo comando + volumen persistente
-├── Videos_Demostracion/                # Videos por módulo (evidencia de C3/C13)
 └── README.md
 ```
 
