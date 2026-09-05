@@ -8,8 +8,8 @@ Prototipo funcional del MVP de **SGCV-IA**, orientado a demostrar los módulos M
 
 ## Tecnologías
 
-* HTML5 + CSS3 + JavaScript, empaquetado en un único archivo (`SGCV-IA_Prototipo_Funcional.html`).
-* Sin backend ni base de datos real: los datos son de demostración y no persisten entre sesiones (limitación esperada en esta etapa de MVP).
+* **Frontend**: HTML5 + CSS3 + JavaScript (React), empaquetado en un único archivo (`SGCV-IA_Prototipo_Funcional.html`).
+* **Backend real**: Node.js + Express + SQLite (`backend/`). Sustituye la persistencia únicamente-en-navegador de la versión anterior: el login se valida en el servidor (RF-24/RNF-05, con bloqueo de cuenta también server-side) y el estado de la aplicación se guarda en una base de datos SQLite que sobrevive a reinicios del contenedor (`docker compose down && up`), no solo a recargas de página.
 
 ---
 
@@ -17,9 +17,13 @@ Prototipo funcional del MVP de **SGCV-IA**, orientado a demostrar los módulos M
 
 ```text
 05_MVP/
-├── SGCV-IA_Prototipo_Funcional.html   # Prototipo funcional (single-file)
-├── Dockerfile                          # Imagen nginx que sirve el prototipo
-├── docker-compose.yml                  # Despliegue con un solo comando
+├── SGCV-IA_Prototipo_Funcional.html   # Frontend (single-file)
+├── backend/
+│   ├── server.js                       # API REST: login, estado persistente
+│   ├── package.json
+│   └── data/                            # Base de datos SQLite (montada como volumen)
+├── Dockerfile                          # Imagen Node que corre el backend y sirve el frontend
+├── docker-compose.yml                  # Despliegue con un solo comando + volumen persistente
 ├── Videos_Demostracion/                # Videos por módulo (evidencia de C3/C13)
 └── README.md
 ```
@@ -64,7 +68,7 @@ A continuación se presenta el video demostrativo correspondiente a la versión 
 | RF-11 | Agenda de citas | ✅ |
 | RF-17, RF-18, RF-19 | Sugerencias diagnósticas por IA (Aceptar/Modificar/Rechazar) | ✅ |
 | RF-25 | Reportes | ✅ (Could have, ya cubierto) |
-| RF-23 | Log de auditoría | ⚠️ Pendiente de verificar en el código |
+| RF-23 | Log de auditoría | ✅ Verificado en el código — pantalla "Log de Auditoría", registro automático de cada acción (usuario, módulo, fecha, detalle), de solo lectura |
 | RF-21 | Modo offline | ⚠️ No aplica a este prototipo web (alcance definido para escritorio) |
 
 > Credenciales de demostración: documentar aquí las credenciales de prueba usadas en el video/defensa (nunca credenciales reales de la clínica cliente), conforme a la Sección 8.4 de la Guía de la Entrega 4.
@@ -73,8 +77,7 @@ A continuación se presenta el video demostrativo correspondiente a la versión 
 
 ## Limitaciones (alcance MVP)
 
-* No hay persistencia real de datos (sin base de datos conectada).
-* No hay autenticación contra un backend real (el login valida en el propio frontend).
+* La persistencia usa un único documento JSON en SQLite (no un esquema relacional normalizado por entidad); suficiente para demostrar cobertura funcional en esta etapa, pero no representa el modelo de datos final de producción.
 * Los videos en `Videos_Demostracion/` son material de apoyo por módulo; para la defensa (Sección 8.4 de la guía) se debe preparar un video corto adicional que cubra específicamente los 2 escenarios de la matriz de trazabilidad, y depositarlo en `09_Defensa/video_defensa.mp4`.
 
 ---
