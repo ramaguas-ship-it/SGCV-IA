@@ -1,112 +1,39 @@
-# SGCV-IA — Paquete de Replicación
+# README del conjunto de datos — SGCV-IA
 
-**Dataset que acompaña a:** *Explainability as a non-functional requirement in an
-AI-assisted veterinary clinical system: a case study*
+Paquete de replicación para: *Explainability as a non-functional requirement in an AI-assisted veterinary clinical system: a case study* (Marcillo Ponce, Amagua Sacón, Vera Gómez, Mesías Quijije, Barrionuevo Fuentes, Guerrero Ulloa).
 
-**Autores:** Alberto Jeanpool Marcillo Ponce, Robyn Willian Amagua Sacón,
-Anthony Alfredo Vera Gómez, Jhon Alexander Mesías Quijije, Carlos Daniel
-Barrionuevo Fuentes, Gleiston Cicerón Guerrero Ulloa
+Este documento describe el contenido del depósito Zenodo, siguiendo los principios FAIR (Findable, Accessible, Interoperable, Reusable) y las instrucciones de citación de software de Force11.
 
-**Filiación:** Facultad de Ciencias de la Computación, Universidad Técnica
-Estatal de Quevedo (UTEQ), Quevedo, Ecuador
+## 1. Alcance del paquete
 
-**Proyecto:** SGCV-IA — Sistema de Gestión de Clínica Veterinaria con
-Inteligencia Artificial
-**Organización objeto de estudio:** Veterinaria Macay
-**Categoría de riesgo ético:** B — Datos personales
-**Asignatura:** ISR-401 Ingeniería de Requisitos, UTEQ, 2026–2027 PPA
+Este depósito contiene la evidencia empírica **anonimizada** y los artefactos de análisis del componente de Ingeniería de Requerimientos del proyecto SGCV-IA (Sistema de Gestión para Clínicas Veterinarias con Inteligencia Artificial), correspondiente al Enfoque 3 (explicabilidad). No incluye material identificable (audio, video, consentimientos originales, nombres reales) — ese material permanece en la zona restringida del repositorio del equipo, fuera de este depósito público.
 
-**DOI del repositorio:** https://doi.org/10.5281/zenodo.22238486
+## 2. Diccionario de datos
 
----
-
-## 1. Descripción
-
-Este depósito contiene los materiales de replicación del caso de estudio
-SGCV-IA (sistema de gestión de clínica veterinaria con IA), correspondientes
-a las fases de elicitación y análisis de requisitos. Esta carpeta
-`dataset_zenodo/` contiene el procedimiento de anonimización aplicado, el
-resumen del proceso de consentimiento informado y este diccionario de datos.
-Las transcripciones anonimizadas, la codificación temática, el ERS y la
-matriz de trazabilidad referenciados aquí se mantienen en las carpetas
-correspondientes del proyecto (ver Sección 2).
-
-Los formularios de consentimiento originales y cualquier material multimedia
-que contenga información potencialmente identificable **no** se incluyen en
-este paquete público; permanecen en una zona restringida y cifrada
-(`02_Evidencias/00_Restringido/`), conforme al procedimiento de protección de
-datos del proyecto y a la Ley Orgánica de Protección de Datos Personales del
-Ecuador (LOPDP, Registro Oficial Suplemento 459, 26 de mayo de 2021) y su
-Reglamento (Decreto Ejecutivo 904, 13 de noviembre de 2023). Ver `ETHICS.md`
-y `ANONYMIZATION.md` en esta misma carpeta para el proceso de consentimiento
-y el procedimiento de anonimización aplicado.
-
-## 2. Contenido de esta carpeta
-
-```
-dataset_zenodo/
-├── README_dataset.md    # este archivo — diccionario de datos e instrucciones de citación
-├── ANONYMIZATION.md      # procedimiento de anonimización aplicado
-└── ETHICS.md             # resumen del proceso de consentimiento informado
-```
-
-<!-- TODO: indicar aquí la ruta real (dentro o fuera del repositorio) donde
-     quedan las transcripciones anonimizadas, la codificación temática, el
-     ERS y la matriz de trazabilidad, para que quien reciba el DOI sepa
-     dónde ubicar esos materiales -->
+| Archivo / carpeta | Formato | Descripción | Filas / unidades |
+|---|---|---|---|
+| `transcripciones/P01.md` … `P16.md` | Markdown | Transcripción anonimizada de cada entrevista semiestructurada, con seudónimo de participante (P01–P16) en lugar de nombre propio | 16 archivos |
+| `codificacion_tematica_SGCV-IA.csv` | CSV | Codificación abierta: un fragmento textual por fila, con su código, categoría, requisito derivado, ID de evidencia (participante) y analista codificador | 167 filas |
+| `codificacion_axial_SGCV-IA_P01-P16.md` | Markdown | Consolidación de los 167 códigos abiertos en 47 códigos axiales agrupados en 7 categorías, con la evidencia (participantes) que sostiene cada código axial | 47 códigos axiales |
+| `curva_saturacion_axial.pdf` / `.png` | PDF / PNG | Curva de saturación temática a nivel de codificación cerrada (axial): códigos nuevos por entrevista y acumulado, con el umbral de saturación (≤5% del acumulado en las últimas 3 entrevistas) | — |
+| `03_curva_saturacion_codigos_abiertos.R` | Script R | Script reproducible que calcula la curva de saturación a nivel de código abierto directamente desde `codificacion_tematica_SGCV-IA.csv`; ningún número de la tabla/figura resultante se escribe a mano | — |
+| `tabla_saturacion_codigos_abiertos.csv` | CSV | Salida del script anterior: códigos nuevos y acumulados por entrevista, a nivel de código abierto | 16 filas |
+| `curva_saturacion_codigos_abiertos.png` | PNG | Curva de saturación a nivel de codificación abierta (evidencia de proceso/transparencia metodológica; no cumple el criterio de saturación por sí sola — ver manuscrito, Sección 4.1) | — |
+| `matriz_trazabilidad.csv` | CSV | Matriz de trazabilidad extendida: relación entre requisitos (RF/RNF/RST), su origen (entrevista, ley, documento, arquitectura o elaboración propia), casos de uso, historias de usuario, criterios de aceptación, componente y mockup asociado | 63 filas |
+| `referencias.bib` | BibTeX | Referencias bibliográficas citadas en el manuscrito | 45 entradas |
 
 ## 3. Esquema de seudonimización
 
-Todo dato personal se codifica desde el momento de la transcripción con un
-seudónimo basado en el rol funcional del participante dentro de la
-organización, seguido de un número secuencial (p. ej. `Veterinario1`,
-`Administrativo1`, `PropietarioMascota1`). Cuando la entrevista se referencia
-como unidad de análisis (p. ej. en la curva de saturación temática), se usa
-además el identificador secuencial transversal `Entrevistado1`...`Entrevistado16`.
-Cada persona recibe un único seudónimo consistente en todos los documentos
-donde aparece. La tabla de correspondencia entre seudónimo y nombre real se
-almacena por separado en zona restringida y **no** se incluye en este
-depósito. Ver `ANONYMIZATION.md` para el detalle completo del esquema.
+Los identificadores de participante (P01 a P16) sustituyen cualquier nombre propio, cédula, o dato directamente identificable en todos los archivos de este paquete. El procedimiento completo de anonimización se documenta en `ANONYMIZATION.md`.
 
-## 4. Cómo citar
+## 4. Cómo citar este conjunto de datos
 
-Si utilizas este dataset, por favor cita tanto el dataset como el manuscrito
-asociado:
-
-```
-Marcillo Ponce, A.J., Amagua Sacón, R.W., Vera Gómez, A.A., Mesías Quijije,
-J.A., Barrionuevo Fuentes, C.D., Guerrero Ulloa, G.C. (2026). SGCV-IA —
-Paquete de Replicación [Data set]. Zenodo.
-https://doi.org/10.5281/zenodo.22238486
-```
-
-<!-- TODO: completar la cita del manuscrito una vez publicado (revista, volumen, DOI) -->
+Citar usando los metadatos de `CITATION.cff` en la raíz del repositorio, o mediante el DOI persistente asignado por Zenodo al momento del depósito (ver `README.md` del repositorio principal para el DOI vigente).
 
 ## 5. Licencia
 
-<!-- TODO: falta definir la licencia del dataset.
-     Recomendación habitual para datos de investigación abiertos: CC-BY 4.0.
-     Sustituir esta nota por la licencia elegida antes de subir a Zenodo. -->
+Los datos de este paquete se distribuyen bajo licencia Creative Commons Attribution 4.0 International (CC BY 4.0). El código y los scripts de análisis se distribuyen bajo licencia MIT, según corresponda a cada archivo.
 
-## 6. Ética y protección de datos
+## 6. Contacto
 
-La participación en las actividades de elicitación de requisitos fue
-voluntaria y basada en consentimiento informado por escrito (Anexo A.3/C).
-El proyecto cuenta con aval institucional de Veterinaria Macay. No se
-publica el nombre, cargo específico ni ningún dato identificable de los
-participantes. Los datos crudos identificables se destruyen al finalizar el
-período académico o en un máximo de 24 meses, lo que ocurra primero, salvo
-que se requiera un período mayor para publicación científica. Ver
-`ETHICS.md` para el resumen completo del proceso de consentimiento y
-`ANONYMIZATION.md` para el procedimiento de anonimización aplicado.
-
-## 7. Contacto
-
-Autor de correspondencia: Alberto Jeanpool Marcillo Ponce —
-amarcillop@uteq.edu.ec
-
-## 8. Agradecimientos
-
-Los autores agradecen a los profesionales veterinarios y demás participantes
-que contribuyeron a las actividades de elicitación de requisitos del
-proyecto SGCV-IA.
+Para preguntas sobre este conjunto de datos, contactar al autor de correspondencia (ver `CITATION.cff`) a través del correo institucional de la Universidad Técnica Estatal de Quevedo.
