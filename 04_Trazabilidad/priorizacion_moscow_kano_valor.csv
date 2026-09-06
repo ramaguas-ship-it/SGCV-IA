@@ -7,7 +7,7 @@ RF-05,Must,Desempeño,Alto,Confirmado,Medio,Medio,1,7.0,"Alerta simple, dolor me
 RF-06,Must,Desempeño,Medio,Confirmado,Medio,Medio,1,6.0,"Alerta simple, mismo módulo que RF-05"
 RF-07,Must,Básico,Alto,Confirmado,Alto,Alto,2,4.5,"Cuello de botella operativo mencionado como ""la parte más demorada"""
 RF-08,Must,Atractivo,Alto,Confirmado,Alto,Alto,2,4.5,"Mismo dolor que RF-07, prioridad de negocio explícita"
-RF-09,Must,Básico,Medio,Confirmado,Bajo,Bajo,1,4.0,"Registro de comunicación, no bloquea operación"
+RF-09,Should,Básico,Medio,Confirmado,Bajo,Bajo,1,4.0,"Registro de comunicación, no bloquea operación"
 RF-10,Must,Atractivo,Medio,Confirmado,Bajo,Bajo,1,4.0,"Envío WhatsApp, complementario a RF-09"
 RF-11,Must,Básico,Alto,Confirmado,Medio,Medio,2,3.5,Resuelve pérdida de seguimiento de pacientes
 RF-12,Should,Atractivo,Medio,Confirmado,Bajo,Bajo,1,4.0,"Recordatorio automático, mejora incremental sobre RF-11"
@@ -16,7 +16,7 @@ RF-14,Should,Atractivo,Medio,Confirmado,Bajo,Bajo,1,4.0,"Recomendación derivada
 RF-15,Should,Atractivo,Medio,Confirmado,Bajo,Bajo,1,4.0,"Recordatorio de indicaciones, complementario"
 RF-16,Must,Desempeño,Medio,Confirmado,Bajo,Medio,1,5.0,"Exportación PDF, requerido por LOPDP Art. 17 (portabilidad)"
 RF-17,Must,Atractivo,Alto,Confirmado,Alto,Alto,3,3.0,Núcleo diferenciador del proyecto (módulo IA); alto riesgo ético/legal
-RF-18,Should,Básico,Alto,Confirmado,Medio,Alto,2,4.0,"Respaldo bibliográfico, mitiga riesgo de confianza en la IA"
+RF-18,Must,Básico,Alto,Confirmado,Medio,Alto,2,4.0,"Respaldo bibliográfico, mitiga riesgo de confianza en la IA"
 RF-19,Must,Básico,Alto,Confirmado,Alto,Alto,2,4.5,"Control humano obligatorio sobre la IA (RST-05, Art. 20 LOPDP)"
 RF-20,Must,Básico,Alto,Propuesto,Bajo,Medio,1,6.0,"Requisito de usabilidad transversal, bajo esfuerzo técnico"
 RF-21,Should,Atractivo,Medio,Propuesto,Bajo,Bajo,2,2.0,Offline es de baja frecuencia según entrevistas (cortes 2-3/5)
