@@ -1,0 +1,51 @@
+Categoria,Codigo_axial,Evidencia_participantes,N_participantes
+Historia clínica y gestión de pacientes,"Registro clínico no digitalizado o disperso (físico, Word, ofimática, plataformas básicas)","P01,P02,P03,P04,P07,P09,P10,P11,P12,P13,P14,P15,P16",13
+Historia clínica y gestión de pacientes,Búsqueda lenta o poco confiable del historial,"P01,P02,P03,P04,P09,P10,P11,P12,P13,P14,P15",11
+Historia clínica y gestión de pacientes,Seguimiento clínico configurable según edad/patología,"P01,P03,P07,P08",4
+Historia clínica y gestión de pacientes,Registro histórico de peso y estado nutricional,"P02,P06,P09,P12",4
+Historia clínica y gestión de pacientes,Ficha clínica estructurada con campos estándar y registro detallado de tratamientos,"P01,P07",2
+Historia clínica y gestión de pacientes,Priorización de un sistema centralizado de historial y seguimiento de citas,"P03,P11",2
+Historia clínica y gestión de pacientes,Control y recordatorio de vacunación,"P06,P16",2
+Historia clínica y gestión de pacientes,Registro fotográfico de evolución clínica vinculado a la ficha,P13,1
+Historia clínica y gestión de pacientes,Duplicación manual de datos ya existentes en fichas anteriores,P16,1
+Historia clínica y gestión de pacientes,Captura de datos del propietario/paciente incompleta o progresiva,"P05,P06,P07",3
+Gestión administrativa y financiera,Sobrecarga administrativa/operativa sin personal de apoyo,P01,1
+Gestión administrativa y financiera,Validación de datos y automatización de la facturación (incl. integración SRI),"P02,P06",2
+Gestión administrativa y financiera,Necesidad de módulo contable y costo como barrera de adopción,"P05,P06",2
+Gestión administrativa y financiera,Errores y demoras de facturación por procesos manuales,"P09,P10,P11,P12,P13,P14,P15,P16",8
+Gestión administrativa y financiera,Gestión de tareas operativas del personal auxiliar,P15,1
+Inventario,Ausencia de control de inventario formal (manual/inexistente),"P01,P03,P05,P09,P13",5
+Inventario,Registro de inventario en herramientas no integradas (plataforma externa/Excel),"P02,P06,P12",3
+Inventario,Falta de alertas automáticas de vencimiento/revisión oportuna,"P04,P08,P10,P11,P14,P15,P16",7
+Inventario,Faltantes de stock por logística de pedidos,P06,1
+Citas y comunicación con propietarios,Modalidad mixta de atención (con y sin cita previa),P01,1
+Citas y comunicación con propietarios,Impacto de inasistencias y pérdida de seguimiento,"P02,P04,P09,P10,P11,P12,P14,P15,P16",9
+Citas y comunicación con propietarios,Automatización de recordatorios de citas,"P02,P08,P09",3
+Citas y comunicación con propietarios,Recordatorios de tareas médicas y vacunación,"P06,P07",2
+Citas y comunicación con propietarios,Ausencia de agenda formal de citas,P13,1
+Citas y comunicación con propietarios,Canales informales de comunicación con propietarios (WhatsApp/teléfono),"P01,P04,P05,P09,P10,P12,P16",7
+Citas y comunicación con propietarios,Bajo cumplimiento de indicaciones médicas y seguimiento post-alta,"P01,P03,P06",3
+Citas y comunicación con propietarios,Verificación del cumplimiento mediante evidencia,P08,1
+Citas y comunicación con propietarios,Necesidad de un proceso organizado/historial de comunicaciones,"P11,P12",2
+Citas y comunicación con propietarios,Falta de estandarización y roles indefinidos en la comunicación (auxiliar vs. veterinario),"P13,P14,P15",3
+Inteligencia Artificial,Aceptación variable de IA diagnóstica (de moderada a alta),"P01,P03,P05,P09,P10,P11,P12,P13,P14,P15,P16",11
+Inteligencia Artificial,Rechazo al diagnóstico automatizado sin evaluación física,"P01,P02,P07,P09,P11",5
+Inteligencia Artificial,Validación/revisión obligatoria del veterinario sobre sugerencias de IA,"P01,P03,P04,P12",4
+Inteligencia Artificial,"Condiciones de confianza en IA (literatura validada, revisión, actualizaciones, protección de datos)","P06,P08,P13,P14,P15,P16",6
+Inteligencia Artificial,Cálculo asistido de dosis por peso,P01,1
+Inteligencia Artificial,Automatización de mensajería/chatbot para gestión de citas,P08,1
+Inteligencia Artificial,Interés en IA como apoyo para reducir carga de trabajo,P10,1
+Inteligencia Artificial,Desconfianza en fuentes de internet no validadas usadas por propietarios,P16,1
+Usabilidad y desempeño,"Preferencia de acceso multiplataforma/móvil (celular, laptop, tablet)","P01,P02,P03,P04,P07,P08,P09,P10,P13,P15,P16",11
+Usabilidad y desempeño,Adopción por todo el personal de la clínica (no solo veterinarios),P01,1
+Usabilidad y desempeño,Facilidad de uso sin experiencia digital y bajo costo,P05,1
+Usabilidad y desempeño,Experiencia previa positiva con software veterinario,P09,1
+Usabilidad y desempeño,Riesgo de abandono de la herramienta si requiere demasiados pasos,P11,1
+Usabilidad y desempeño,Necesidad de permisos diferenciados por usuario y respaldo de información,"P12,P14",2
+Usabilidad y desempeño,Frecuencia variable de cortes de conectividad en la clínica,P13,1
+Usabilidad y desempeño,Carga de monitoreo en pacientes hospitalizados,P03,1
+Usabilidad y desempeño,Lentitud del sistema de facturación actual,P04,1
+Usabilidad y desempeño,Necesidad de sincronización de datos en modo offline,P14,1
+Seguridad,Protección de datos del paciente/propietario,"P02,P10",2
+Seguridad,Estabilidad y confiabilidad operativa del sistema,P07,1
+Seguridad,Trazabilidad de cambios (registro de quién modificó la información),P10,1

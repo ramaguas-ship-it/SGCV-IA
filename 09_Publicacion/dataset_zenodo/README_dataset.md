@@ -14,7 +14,7 @@ Este depósito contiene la evidencia empírica **anonimizada** y los artefactos 
 |---|---|---|---|
 | `transcripciones/P01.md` … `P16.md` | Markdown | Transcripción anonimizada de cada entrevista semiestructurada, con seudónimo de participante (P01–P16) en lugar de nombre propio | 16 archivos |
 | `codificacion_tematica_SGCV-IA.csv` | CSV | Codificación abierta: un fragmento textual por fila, con su código, categoría, requisito derivado, ID de evidencia (participante) y analista codificador | 167 filas |
-| `codificacion_axial_SGCV-IA_P01-P16.md` | Markdown | Consolidación de los 167 códigos abiertos en 47 códigos axiales agrupados en 7 categorías, con la evidencia (participantes) que sostiene cada código axial | 47 códigos axiales |
+| `codificacion_axial_SGCV-IA.csv` | CSV | Consolidación de los 167 códigos abiertos en 50 códigos axiales agrupados en 7 categorías, con la evidencia (participantes) que sostiene cada código axial | 50 códigos axiales |
 | `curva_saturacion_axial.pdf` / `.png` | PDF / PNG | Curva de saturación temática a nivel de codificación cerrada (axial): códigos nuevos por entrevista y acumulado, con el umbral de saturación (≤5% del acumulado en las últimas 3 entrevistas) | — |
 | `03_curva_saturacion_codigos_abiertos.R` | Script R | Script reproducible que calcula la curva de saturación a nivel de código abierto directamente desde `codificacion_tematica_SGCV-IA.csv`; ningún número de la tabla/figura resultante se escribe a mano | — |
 | `tabla_saturacion_codigos_abiertos.csv` | CSV | Salida del script anterior: códigos nuevos y acumulados por entrevista, a nivel de código abierto | 16 filas |
