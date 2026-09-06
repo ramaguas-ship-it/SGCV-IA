@@ -1,3 +1,5 @@
+
+
 # MVP — SGCV-IA (Sistema de Gestión Clínica Veterinaria con IA)
 
 ## Descripción
