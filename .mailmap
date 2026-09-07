@@ -1,16 +1,3 @@
-# ----------------------------------------------------------------------
-# .mailmap for ramaguas-ship-it/SGCV-IA
-#
-# Generated from a full scan of all 849 commits on the default branch.
-# Format:  Canonical Name <canonical@email>  <alias@email>
-#          Canonical Name <canonical@email>  Alias Name <alias@email>
-#
-# Canonical names follow the contributors' legal ID order
-# (Apellido1 Apellido2 Nombres) for the 4 contributors with public
-# names. Jhon A. Mesias keeps the GitHub handle on purpose, per the
-# project owner.
-# ----------------------------------------------------------------------
-
 # --- Marcillo Ponce Alberto Jeanpool  (GitHub: amarcilloPoolgen) ---
 Marcillo Ponce Alberto Jeanpool <amarcillop@uteq.edu.ec> amarcilloPoolgen <amarcillop@uteq.edu.ec>
 
