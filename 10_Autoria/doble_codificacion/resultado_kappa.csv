@@ -1,4 +1,4 @@
-Participante,Categoria,Codificador1_Marcillo,Codificador2_independiente
+Participante,Categoria,Codificador1_Marcillo,Codificador2_Mesias
 P02,Historia clínica y gestión de pacientes,1,1
 P02,Gestión administrativa y financiera,1,1
 P02,Inventario,1,1
@@ -27,7 +27,6 @@ P16,Citas y comunicación con propietarios,1,1
 P16,Inteligencia Artificial,1,1
 P16,Usabilidad y desempeño,1,1
 P16,Seguridad,0,1
-
 N_observaciones,28
 Acuerdo_observado_po,0.8929
 Acuerdo_esperado_azar_pe,0.8316
