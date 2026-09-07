@@ -1,15 +1,21 @@
 LICENCIA DEL REPOSITORIO — SGCV-IA
 
-Este repositorio contiene dos tipos de contenido con licencias distintas:
+Este repositorio contiene tres tipos de contenido con licencias distintas:
 
 1) CÓDIGO FUENTE DEL MVP (carpeta 05_MVP/ y su repositorio Git separado si aplica)
    Licenciado bajo la Licencia MIT (texto completo abajo).
 
-2) DOCUMENTO ERS/SRS, EVIDENCIAS, DATOS Y DEMÁS CONTENIDO
+2) DOCUMENTO ERS/SRS, EVIDENCIAS, MODELADO, TRAZABILIDAD, EXPERIMENTO,
+   PUBLICACIÓN, EVIDENCIA DE AUTORÍA Y MATERIALES DE DEFENSA
    (carpetas 01_ERS/, 02_Evidencias/, 03_Modelado/, 04_Trazabilidad/,
-   06_Experimento/, 07_Publicacion/)
+   06_Experimento/, 09_Publicacion/, 10_Autoria/, 11_Defensa/)
    Licenciados bajo Creative Commons Attribution 4.0 International (CC BY 4.0).
    Texto completo disponible en: https://creativecommons.org/licenses/by/4.0/deed.es
+
+3) PAQUETE DE DATOS (carpeta 07_Datos/)
+   Licenciado bajo Creative Commons Attribution 4.0 International (CC BY 4.0),
+   con su propio archivo de licencia y exclusiones específicas de datos
+   identificables. Ver 07_Datos/LICENSE-DATA.txt para el texto completo.
 
 ===============================================================
 1) LICENCIA MIT — Código fuente del MVP
@@ -39,7 +45,8 @@ DERIVADA DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O SU USO U OTRO TIPO DE
 ACCIONES EN EL SOFTWARE.
 
 ===============================================================
-2) LICENCIA CC BY 4.0 — Documento ERS/SRS, evidencias y datos
+2) LICENCIA CC BY 4.0 — Documento ERS/SRS, evidencias, publicación,
+   evidencia de autoría y materiales de defensa
 ===============================================================
 
 Este contenido se distribuye bajo la licencia Creative Commons Attribution 4.0
@@ -60,15 +67,23 @@ Bajo los siguientes términos:
 Texto legal completo: https://creativecommons.org/licenses/by/4.0/legalcode.es
 
 ===============================================================
-3) EXCLUSION - Evidencia identificable restringida
+3) PAQUETE DE DATOS — 07_Datos/
+===============================================================
+
+El contenido de 07_Datos/ se licencia de forma independiente bajo CC BY 4.0,
+con exclusiones específicas para datos identificables. Ver el texto completo
+en 07_Datos/LICENSE-DATA.txt.
+
+===============================================================
+4) EXCLUSIÓN — Evidencia identificable restringida
 ===============================================================
 
 El contenido de 02_Evidencias/00_Restringido/ (audio, video y consentimientos
-originales con datos identificables de los participantes) esta explicitamente
+originales con datos identificables de los participantes) está explícitamente
 EXCLUIDO de las licencias MIT y CC BY 4.0 anteriores. Este material:
 
-  - No se licencia para uso, copia, modificacion o redistribucion.
-  - No forma parte del deposito FAIR en Zenodo.
+  - No se licencia para uso, copia, modificación o redistribución.
+  - No forma parte del depósito FAIR en Zenodo.
   - Permanece cifrado (AES-256) dentro del repositorio.
   - Su acceso se limita al equipo docente evaluador, bajo el proceso de
     consentimiento informado descrito en 08_Etica/.
