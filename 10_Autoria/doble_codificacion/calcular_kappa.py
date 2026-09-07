@@ -1,9 +1,3 @@
-
-Preview
-calcular_kappa.py
-
-Download
-
 """
 Calcula el coeficiente kappa de Cohen entre dos codificadores independientes
 (Marcillo Ponce Alberto Jeanpool y Mesias Quijije Jhon Alexander) sobre el
