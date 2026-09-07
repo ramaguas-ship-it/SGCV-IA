@@ -2,7 +2,7 @@
 
 Proyecto Fin de Curso · Ingeniería de Requerimientos [ISR-401] · 4to Nivel
 Universidad Técnica Estatal de Quevedo (UTEQ) — Facultad de Ciencias de la Computación
-**Entrega 2B — Especificación de requisitos + componente empírico**
+**Entrega 4 (2B / Defensa Final) — Componente empírico**
 
 ## Descripción del sistema
 
@@ -10,28 +10,35 @@ SGCV-IA es un sistema real de gestión para clínicas veterinarias que centraliz
 
 ## Equipo
 
-| Integrante                       | Rol en el proyecto                                                        |
-| -------------------------------- | ------------------------------------------------------------------------- |
-| Anthony Alfredo Vera Gomez       | Responsable de C8 (Prototipo funcional MVP) y C9 (Protocolo experimental) |
-| Robyn Willian Amagua Sacon       | Responsable de C7 (Recolección de datos de campo)                         |
-| Barrionuevo Fuentes Carlos Daniel| Responsable de criterios y actividades de la Entrega 2B                   |
-| Marcillo Ponce Alberto Jeanpool  |  Responsable de criterios y actividades de la Entrega 2B                  |
+| Integrante                        | Rol en el proyecto                                                        |
+| ---------------------------------- | -------------------------------------------------------------------------- |
+| Anthony Alfredo Vera Gómez        | Responsable de C8 (Prototipo funcional MVP) y C9 (Protocolo experimental) |
+| Robyn Willian Amagua Sacón        | Responsable de C7 (Recolección de datos de campo)                        |
+| Barrionuevo Fuentes Carlos Daniel | Responsable de criterios y actividades de la Entrega 4 (2B)              |
+| Marcillo Ponce Alberto Jeanpool   | Responsable de criterios y actividades de la Entrega 4 (2B)              |
+| Mesías Quijije Jhon Alexander     | Verificador                                                               |
+
+## ⚠️ Discrepancia de identificador OSF pendiente de resolver
+
+En distintos documentos del repositorio aparecen **dos identificadores de OSF distintos** para lo que debería ser el mismo registro de protocolo:
+
+* `osf.io/r5p8d` — usado en el manuscrito (`09_Publicacion/title_page.tex`) y en `07_Datos/desviaciones.md`.
+* `osf.io/wkg32` — usado en el `README.md` raíz, en `11_Defensa/guion.md` y en `06_Experimento/prompts_llm/README.md`.
+
+Este README usa `r5p8d` porque coincide con el manuscrito y con el registro de desviaciones, pero **el equipo debe confirmar cuál es el identificador real** y corregir el otro en todos los documentos donde aparezca, incluido el `README.md` de la raíz del repositorio.
 
 ## Enlaces clave
 
 | Recurso                             | Enlace                                                        |
-| ----------------------------------- | ------------------------------------------------------------- |
+| ------------------------------------ | --------------------------------------------------------------- |
 | Documento ERS/SRS 2B                | [`01_ERS/ERS_SRS_2B_v2.0.pdf`](../01_ERS/ERS_SRS_2B_v2.0.pdf) |
 | Documento ERS/SRS 2B en LaTeX       | [`01_ERS/ERS_SRS_2B_v2.0.tex`](../01_ERS/ERS_SRS_2B_v2.0.tex) |
-| Repositorio del MVP                 | ⟨enlace al repositorio Git del MVP⟩                           |
-| Registro previo del protocolo (OSF) | https://osf.io/r5p8d                                          |
-| Proyecto OSF asociado               | https://osf.io/7hfxp                                          |
+| Repositorio del MVP                 | [`05_MVP/`](../05_MVP/)                                       |
+| Registro previo del protocolo (OSF) | https://osf.io/r5p8d *(ver discrepancia arriba)*              |
 | Registro previo en el repositorio   | [`OSF_Registration.pdf`](./OSF_Registration.pdf)              |
-| Datos crudos                        | [`datos_crudos/`](./datos_crudos/)                            |
-| Datos procesados                    | [`datos_procesados/`](./datos_procesados/)                    |
 | Resultados                          | [`resultados/`](./resultados/)                                |
 | Scripts de análisis                 | [`scripts_analisis/`](./scripts_analisis/)                    |
-| Conjunto de datos (Zenodo)          | Pendiente de depósito para la Entrega 4                       |
+| Conjunto de datos (Zenodo)          | DOI `10.5281/zenodo.22238486`                                 |
 
 ## Componente empírico — Enfoque 3
 
@@ -39,20 +46,24 @@ Este proyecto trabaja el **Enfoque 3** (elicitación y validación de requisitos
 
 El protocolo de investigación y su registro previo constituyen la base del componente empírico. El registro previo fue realizado antes de la ejecución de las rondas de validación y se encuentra disponible en OSF y en el repositorio.
 
-El documento del protocolo utilizado en el proyecto se encuentra en [`Protocolo_SGCV-IA_2A.pdf`](./Protocolo_SGCV-IA_2A.pdf). Aunque el archivo conserva la denominación **2A** por corresponder a la versión en la que fue elaborado, el presente README y la documentación principal corresponden a la **Entrega 2B**.
+El documento del protocolo utilizado en el proyecto se encuentra en [`Protocolo_SGCV-IA_2A.pdf`](./Protocolo_SGCV-IA_2A.pdf). Aunque el archivo conserva la denominación **2A** por corresponder a la versión en la que fue elaborado, el presente README y la documentación principal corresponden a la **Entrega 4 (2B)**.
 
 ## Cómo reproducir el análisis
 
-1. Los instrumentos aplicados (guion de validación, checklist de cobertura del marco, escala Likert y consentimiento) se encuentran en [`instrumentos/`](./instrumentos/).
-2. Los datos crudos recolectados durante las rondas de validación se encuentran en [`datos_crudos/`](./datos_crudos/).
-3. Los datos procesados se encuentran en [`datos_procesados/`](./datos_procesados/).
-4. Los resultados generados a partir del análisis se encuentran en [`resultados/`](./resultados/).
-5. Los scripts que generan las tablas y figuras se encuentran en [`scripts_analisis/`](./scripts_analisis/). Ejecutarlos en el orden indicado en el `README.md` de esa subcarpeta.
-6. [`prompts_llm/`](./prompts_llm/) no aplica a este proyecto, debido a que esta carpeta corresponde a los Enfoques 1 y 2 de la guía, que involucran comparación directa con salidas de un LLM.
+1. Los instrumentos aplicados (guion de entrevista, encuesta y consentimiento) se encuentran en [` instrumentos/`](./ instrumentos/).
+2. Los resultados generados hasta ahora se encuentran en [`resultados/`](./resultados/) (curva de saturación temática).
+3. Los scripts que generan las tablas y figuras se encuentran en [`scripts_analisis/`](./scripts_analisis/). Su estado y la secuencia prevista están documentadas en el `README.md` de esa subcarpeta (actualmente 1 de 10 scripts implementado).
+4. [`prompts_llm/`](./prompts_llm/) no aplica a este proyecto: corresponde a los Enfoques 1 y 2 de la guía, que involucran comparación directa con salidas de un LLM. El detalle está en el `README.md` de esa carpeta.
 
-## Estado de la Entrega 2B
+> El paquete de datos crudos y procesados (transcripciones, respuestas de cuestionario) vive en `07_Datos/`, fuera de esta carpeta.
 
-La documentación de esta carpeta se encuentra actualizada para la **Entrega 2B**. Se mantiene el material experimental previamente registrado y se organiza la evidencia disponible para facilitar la trazabilidad, reproducción y revisión del componente empírico.
+## Estado de la Entrega 4 (2B)
+
+* Trabajo de campo cerrado: 16 entrevistas y 60 respuestas de cuestionario (repartidas en 4 perfiles; ninguno alcanza aún el mínimo n≥60 por perfil dominante).
+* Codificación temática cerrada y verificada: 50 códigos axiales en 7 categorías.
+* Scripts de análisis en construcción (1 de 10 implementados).
+* Manuscrito con contenido sustantivo en `09_Publicacion/`, con pendientes puntuales antes del envío.
+* Identificador OSF por confirmar (ver discrepancia arriba).
 
 ## Estructura del repositorio
 
@@ -61,10 +72,7 @@ La documentación de esta carpeta se encuentra actualizada para la **Entrega 2B*
 ├── README.md
 ├── OSF_Registration.pdf
 ├── Protocolo_SGCV-IA_2A.pdf
-├── osf_deviations.pdf
 ├── instrumentos/
-├── datos_crudos/
-├── datos_procesados/
 ├── resultados/
 ├── scripts_analisis/
 └── prompts_llm/
