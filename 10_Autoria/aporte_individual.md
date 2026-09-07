@@ -41,21 +41,29 @@ Alberto Jeanpool Marcillo Ponce — Fecha: ______________
 
 ---
 
-## Robyn Willian Amagua Sacón
+## Robyn Willian Amagua Sacón (Documentador)
 
 ### Responsabilidad asignada en el reparto de trabajo
 
-**[PENDIENTE — completar por Amagua Sacón.]**
+Documentador — mantenimiento de la documentación transversal del repositorio (README raíz y de subcarpetas, licencias, metadatos de citación), corrección de identidades de autoría en Git, generación y actualización del documento ERS/SRS maestro, y gestión de evidencia de campo (fichas técnicas, consentimientos, transcripciones, fotografías).
 
-### Artefactos de los que es responsable (constatado en esta revisión)
 
-| Artefacto | Ruta | Descripción del aporte |
+### Artefactos de los que es responsable (verificado contra `git log --author`)
+
+| Artefacto | Ruta | Commits que lo acreditan |
 |---|---|---|
-| Corrección de la matriz de trazabilidad | `04_Trazabilidad/matriz_trazabilidad.csv` | Completó las 7 filas de RF sin HU/CA; explicó por escrito y con referencia a las Secciones 8.1 y 9.2 del ERS el criterio real de la columna EV para los RNF/RST de origen documental, legal o derivado de otros requisitos. |
-| Corrección de codificación de caracteres | `02_Evidencias/Codificacion_Tematica/codificacion_tematica_SGCV-IA.csv` | Detectó y corrigió un problema de doble codificación UTF-8 en el CSV de codificación temática. |
-| Script de curva de saturación (nivel abierto) | `06_Experimento/scripts_analisis/03_curva_saturacion_codigos_abiertos.R` | Script reproducible que calcula la curva de saturación a nivel de código abierto directamente desde el CSV crudo. |
+| ERS/SRS 2B v2.0 (documento maestro, fuente LaTeX y PDF generado desde Overleaf) | `01_ERS/ERS_SRS_2B_v2.0.tex`, `01_ERS/ERS_SRS_2B_v2.0.pdf` | `a994a9e`, `b5539a9`, `ebd8546`, `34c612c`, `1c1a137` |
+| Imágenes y diagramas del ERS | `01_ERS/media/` | `7915b9f`, `bb65ae5` |
+| README raíz del repositorio | `README.md` | `593160b`, `1b9e73e`, `ff2f9cb`, `a232e1c`, `563b0fa`, `b8e8827` |
+| README de `06_Experimento/` | `06_Experimento/README.md` | `905a9aa`, `3238ab6`, `fabd443`, `fc28229` |
+| Licencia del repositorio y del paquete de datos | `LICENSE`, `07_Datos/LICENSE-DATA.txt` | `5fc3df2`, `a994a9e`, `563b0fa`, `d1b4780`, `0410148`, `29d48d5` |
+| Unificación de identidades de autoría en Git (criterio de piso P4) | `.mailmap` | `5be985c`, `3bfff36`, `3ffd8d4` |
+| Documentación de por qué `prompts_llm/` no aplica al Enfoque 3 | `06_Experimento/prompts_llm/README.md` | `5cd6787` (creación del archivo vacío), `9ad1f56` (contenido completo) |
+| Fichas técnicas de evidencia audiovisual, incluida corrección de privacidad | `02_Evidencias/fichas_tecnicas.csv` | `9042892`, `076708c`, `156f4b4`, `a34e338` (eliminación de filas con nombres reales de participantes) |
+| Estructura del paquete de datos | `07_Datos/` | `563b0fa`, `d1b4780` |
+| Metadatos de citación y registro de cambios | `CITATION.cff`, `CHANGELOG.md` | `78a87d3`, `7b58392`, `edbb98d`, `759fbee`, `aa64266` |
 
-**[PENDIENTE — Amagua Sacón: completar cualquier otro artefacto de su responsabilidad no listado aquí, con sus identificadores de commit.]**
+**[PENDIENTE — Amagua Sacón: confirmar si falta agregar aquí el commit del CSV de encuesta anonimizado (`07_Datos/datos_crudos/encuesta_respuestas_crudas.csv`, 240 filas) una vez que lo subas; en este momento ese archivo todavía no tiene un commit propio identificado.]**
 
 ### Firma
 
@@ -119,9 +127,3 @@ Jhon Alexander Mesías Quijije — Fecha: ______________
 ### Firma
 
 Carlos Daniel Barrionuevo Fuentes — Fecha: ______________
-
----
-
-## Nota sobre completitud de este documento
-
-Las secciones marcadas `[PENDIENTE]` no deben eliminarse ni completarse con información no verificada. Cada integrante es responsable de completar y firmar su propia sección antes del corte de la Entrega 4. Un documento con firmas pero sin contenido verificable no satisface el criterio P7/A10 de la Guía de Desarrollo.
