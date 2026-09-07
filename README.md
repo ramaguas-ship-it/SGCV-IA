@@ -13,13 +13,16 @@ Especificación de Requisitos de Software (ERS/SRS) conforme a **ISO/IEC/IEEE 29
 Todo el contenido del proyecto se encuentra organizado en las carpetas correspondientes del repositorio.
 
 ```text
-PFC-ISR401-PE5-SGCVIA/
+SGCV-IA/
 ├── README.md
 ├── LICENSE
 ├── CITATION.cff
 ├── CHANGELOG.md
 ├── .gitignore
+├── .mailmap
 ├── checksums.sha256
+├── fair_assessment.pdf
+├── title_page.pdf
 │
 ├── 01_ERS/
 ├── 02_Evidencias/
@@ -27,12 +30,14 @@ PFC-ISR401-PE5-SGCVIA/
 ├── 04_Trazabilidad/
 ├── 05_MVP/
 ├── 06_Experimento/
-├── 09_Publicacion/
+├── 07_Datos/
 ├── 08_Etica/
-└── ...
+├── 09_Publicacion/
+├── 10_Autoria/
+└── 11_Defensa/
 ```
 
-Las carpetas contienen los artefactos correspondientes a la especificación de requisitos, evidencia de campo, modelado, trazabilidad, MVP, experimentación y publicación.
+Las carpetas contienen los artefactos correspondientes a la especificación de requisitos, evidencia de campo, modelado, trazabilidad, MVP, experimentación, paquete de datos, publicación, evidencia de autoría y defensa oral.
 
 ---
 
@@ -58,12 +63,14 @@ Además, incorpora componentes de **Inteligencia Artificial** destinados a propo
 
 Las funcionalidades de IA tienen carácter asistencial. Las recomendaciones generadas por el sistema deben ser revisadas y validadas por el profesional veterinario antes de ser utilizadas en la atención de un paciente.
 
+El componente empírico del proyecto trabaja el **Enfoque 3 de la guía de evaluación** (explicabilidad como requisito no funcional), con la pregunta de investigación: *¿qué requisitos de explicabilidad, operacionalizados como RNF verificables, resultan necesarios y suficientes para los distintos perfiles de usuarios de un sistema clínico veterinario con IA?*
+
 ---
 
 ## Equipo SGCV-IA
 
 | Integrante                        | Rol               |
-| --------------------------------- | ----------------- |
+| ---------------------------------- | ----------------- |
 | Amagua Sacón Robyn Willian        | Documentador      |
 | Barrionuevo Fuentes Carlos Daniel | Apoyo - Modelador |
 | Marcillo Ponce Alberto Jeanpool   | Analista líder    |
@@ -76,19 +83,22 @@ Las funcionalidades de IA tienen carácter asistencial. Las recomendaciones gene
 
 ## 🔗 Enlaces principales
 
-| Recurso                | Ubicación                             |
-| ---------------------- | ------------------------------------- |
-| ERS/SRS completo       | `01_ERS/ERS_SRS_2B_v2.0.pdf`          |
-| Modelado               | `03_Modelado/`                        |
-| Matriz de trazabilidad | `04_Trazabilidad/`                    |
-| MVP funcional          | `05_MVP/README.md`                    |
-| Registro experimental  | `06_Experimento/OSF_Registration.pdf` |
-| Scripts de análisis    | `06_Experimento/scripts_analisis/`    |
-| Manuscrito             | `09_Publicacion/`                     |
-| Evidencia de campo     | `02_Evidencias/`                      |
-| Fichas técnicas        | `02_Evidencias/fichas_tecnicas.csv`   |
-| Licencia               | `LICENSE`                             |
-| Citación               | `CITATION.cff`                        |
+| Recurso                       | Ubicación                             |
+| ------------------------------ | -------------------------------------- |
+| ERS/SRS completo               | `01_ERS/ERS_SRS_2B_v2.0.pdf`          |
+| Modelado                       | `03_Modelado/`                        |
+| Matriz de trazabilidad         | `04_Trazabilidad/`                    |
+| MVP funcional                  | `05_MVP/README.md`                    |
+| Registro experimental          | `06_Experimento/OSF_Registration.pdf` |
+| Scripts de análisis            | `06_Experimento/scripts_analisis/`    |
+| Paquete de datos (Sección 7 de la guía de desarrollo) | `07_Datos/` |
+| Manuscrito                     | `09_Publicacion/`                     |
+| Evidencia de autoría           | `10_Autoria/`                         |
+| Materiales de la defensa oral  | `11_Defensa/`                         |
+| Evidencia de campo             | `02_Evidencias/`                      |
+| Fichas técnicas                | `02_Evidencias/fichas_tecnicas.csv`   |
+| Licencia                       | `LICENSE`                             |
+| Citación                       | `CITATION.cff`                        |
 
 ### Identificadores externos
 
@@ -111,8 +121,8 @@ Debido a la reescritura del historial realizada el **27/08/2026**, se recomienda
 ### Clonar
 
 ```bash
-git clone https://github.com/amarcilloPoolgen/PFC-ISR401-PE5-SGCVIA.git
-cd PFC-ISR401-PE5-SGCVIA
+git clone https://github.com/ramaguas-ship-it/SGCV-IA.git
+cd SGCV-IA
 ```
 
 ### Comprobar el estado
@@ -132,10 +142,18 @@ Los commits anteriores al **27/08/2026** conservan sus fechas y autores original
 Si ya se tenía una copia local anterior a esa fecha, se recomienda eliminarla y clonar nuevamente:
 
 ```bash
-git clone https://github.com/amarcilloPoolgen/PFC-ISR401-PE5-SGCVIA.git
+git clone https://github.com/ramaguas-ship-it/SGCV-IA.git
 ```
 
 Un `git pull` sobre una copia antigua puede producir errores debido al cambio de historial.
+
+### Identidades de autoría
+
+El archivo `.mailmap` en la raíz unifica las identidades históricas de Git (incluyendo cuentas de correo personal usadas antes de configurar el correo institucional) con el nombre y correo `@uteq.edu.ec` de cada integrante. Para ver el historial con las identidades ya unificadas:
+
+```bash
+git log --use-mailmap
+```
 
 ---
 
@@ -270,18 +288,12 @@ Esta zona contiene la documentación y los registros técnicos que pueden ser co
 02_Evidencias/
 └── 00_Restringido/
     ├── README.md
-    └── evidencias_restringidas.7z
+    └── evidencias_restringidas.7z (fragmentado en volúmenes .001, .002, ...)
 ```
 
 La zona restringida contiene la evidencia audiovisual identificable obtenida durante las entrevistas, incluyendo videos, audios y consentimientos originales.
 
-El archivo:
-
-```text
-evidencias_restringidas.7z
-```
-
-se encuentra protegido mediante **AES-256**.
+Los archivos `.7z` se encuentran protegidos mediante **AES-256**.
 
 > **La contraseña del contenedor cifrado se entrega únicamente al docente evaluador mediante un canal externo. No se encuentra almacenada en este repositorio.**
 
@@ -320,7 +332,15 @@ Después de disponer de los archivos correspondientes, puede verificarse su inte
 
 ### Estado actual
 
-**No reproducible todavía.**
+**Datos de entrada completos; scripts en construcción.**
+
+Los datos crudos ya están depositados en:
+
+```text
+07_Datos/datos_crudos/
+```
+
+e incluyen las 16 transcripciones de entrevista (completas) y el archivo `encuesta_respuestas_crudas.csv` con 60 respuestas de cuestionario repartidas en 4 perfiles (dueño de mascota: 26, veterinario: 18, auxiliar: 11, administrador: 5). Ningún perfil individual alcanza todavía el mínimo de **n ≥ 60 por perfil dominante** exigido por la guía.
 
 El directorio:
 
@@ -328,19 +348,11 @@ El directorio:
 06_Experimento/scripts_analisis/
 ```
 
-contiene actualmente un esqueleto documentado con la secuencia prevista de **8 scripts de análisis**.
+contiene por ahora **1 de los 10 scripts** previstos (`03_curva_saturacion_codigos_abiertos.R`, que genera la curva de saturación temática). Los 9 restantes, incluido el orquestador `run_all.R`, están pendientes de implementación.
 
-Todavía no existe una implementación completa que permita ejecutar el análisis experimental de principio a fin.
+Por este motivo, el proyecto no declara todavía que el análisis experimental completo sea reproducible de principio a fin con una sola orden.
 
-Asimismo, los datos crudos necesarios para ejecutar el análisis todavía no se encuentran depositados en:
-
-```text
-06_Experimento/datos_crudos/
-```
-
-Por este motivo, el proyecto no declara actualmente que el análisis experimental sea reproducible.
-
-Esta sección será actualizada cuando los scripts y datos necesarios se encuentren disponibles.
+Esta sección será actualizada cuando el resto de los scripts se encuentren disponibles.
 
 ---
 
@@ -360,6 +372,10 @@ osf.io/wkg32
 
 El registro conserva la documentación correspondiente al protocolo experimental definido para el proyecto.
 
+### `prompts_llm/`
+
+La carpeta `06_Experimento/prompts_llm/` se mantiene presente por consistencia con el árbol de carpetas obligatorio, pero **no aplica** a este proyecto: corresponde a los Enfoques 1 y 2 de la guía (donde un LLM genera Requisitos Funcionales o etiqueta ambigüedad como parte del análisis), mientras que SGCV-IA trabaja el Enfoque 3, donde el LLM es el sistema evaluado y no el instrumento de investigación. El detalle está documentado en el `README.md` de esa carpeta.
+
 ---
 
 ## Publicación
@@ -370,11 +386,38 @@ El material destinado a la publicación se encuentra en:
 09_Publicacion/
 ```
 
-Actualmente esta carpeta contiene el esqueleto documentado destinado al manuscrito.
+El manuscrito cuenta con contenido sustantivo (Abstract, Introduction, Related Work, Methodology, Results, Discussion, Threats to Validity, Conclusions), redactado con la plantilla oficial de Springer Nature (`sn-jnl.cls`) y compila sin errores.
 
-El manuscrito final se encuentra pendiente de completar.
+Pendiente antes del envío:
 
-Por este motivo, el repositorio no declara actualmente que exista una publicación finalizada.
+* Confirmación de ORCID de los 5 coautores.
+* Elección formal de la revista o conferencia objetivo, notificada al docente (Sección 2 de la guía).
+* Licencia definitiva del conjunto de datos y cita del manuscrito publicado.
+* Verificación cruzada de las cifras de codificación temática citadas en el manuscrito contra `02_Evidencias/Codificacion_Tematica/` antes del envío final.
+
+Detalle completo del estado por archivo en `09_Publicacion/README.md`.
+
+---
+
+## Evidencia de autoría
+
+La carpeta `10_Autoria/` documenta que los artefactos entregados fueron producidos por el propio equipo, según la Guía de Desarrollo y Consolidación del PFC.
+
+Elementos presentes: `bitacora_sesiones.csv`, `declaracion_uso_ia.md`, `aporte_individual.md`, `exif_inventario.csv`.
+
+Pendientes: `capturas/`, fuentes editables de diagramas, `grabaciones/`, `notas_campo/`, `fotos_equipo/`, `doble_codificacion/`, `correspondencia/` y `verificacion_previa.pdf`.
+
+---
+
+## Defensa oral
+
+Los materiales de la presentación final se encuentran en:
+
+```text
+11_Defensa/
+```
+
+Incluye `presentacion.pptx`, `presentacion.pdf` y `guion.md` con el reparto de tiempos por integrante. Pendientes: `video_defensa.mp4` y `folleto_una_hoja.pdf`.
 
 ---
 
@@ -429,14 +472,17 @@ Verificación
 Los principales artefactos que pueden utilizarse durante la defensa son:
 
 | Evidencia          | Ubicación          |
-| ------------------ | ------------------ |
-| ERS/SRS            | `01_ERS/`          |
-| Evidencia de campo | `02_Evidencias/`   |
-| Modelado           | `03_Modelado/`     |
-| Trazabilidad       | `04_Trazabilidad/` |
-| MVP                | `05_MVP/`          |
-| Experimento        | `06_Experimento/`  |
-| Publicación        | `09_Publicacion/`  |
+| ------------------- | -------------------- |
+| ERS/SRS             | `01_ERS/`           |
+| Evidencia de campo  | `02_Evidencias/`    |
+| Modelado            | `03_Modelado/`      |
+| Trazabilidad        | `04_Trazabilidad/`  |
+| MVP                 | `05_MVP/`           |
+| Experimento         | `06_Experimento/`   |
+| Paquete de datos    | `07_Datos/`         |
+| Publicación         | `09_Publicacion/`   |
+| Evidencia de autoría| `10_Autoria/`       |
+| Materiales de defensa| `11_Defensa/`      |
 
 La evidencia restringida no se expone públicamente durante la defensa. En caso de requerirse su comprobación, se utilizará el mecanismo de acceso establecido con el docente evaluador.
 
@@ -447,32 +493,38 @@ El proyecto diferencia entre artefactos disponibles y elementos todavía pendien
 Actualmente:
 
 * El ERS/SRS está disponible.
-* La evidencia de campo está protegida.
+* La evidencia de campo está protegida y completa (16 entrevistas, 16 consentimientos).
 * El modelado y la trazabilidad se encuentran documentados.
-* El MVP se encuentra documentado.
+* El MVP se encuentra documentado y funcional.
 * El protocolo experimental está registrado.
-* Los scripts de análisis todavía corresponden a un esqueleto documentado.
-* Los datos crudos para la reproducción experimental están pendientes.
-* El manuscrito final está pendiente.
+* Los datos crudos del componente empírico están depositados en `07_Datos/`.
+* Los scripts de análisis están en construcción (1 de 10 implementados).
+* El manuscrito tiene contenido sustantivo, con pendientes puntuales antes del envío.
+* La evidencia de autoría (`10_Autoria/`) está parcialmente completa.
+* Los materiales de defensa (`11_Defensa/`) están parcialmente completos.
 
 ---
 
 ## Estado de los artefactos
 
 | Artefacto             | Estado                     |
-| --------------------- | -------------------------- |
+| ---------------------- | --------------------------- |
 | ERS/SRS               | ✅ Disponible               |
-| Evidencia de campo    | ✅ Protegida                |
+| Evidencia de campo    | ✅ Protegida y completa     |
 | Fichas técnicas       | ✅ Disponible               |
 | Modelado              | ✅ Documentado              |
 | Trazabilidad          | ✅ Documentada              |
-| MVP                   | ✅ Documentado              |
+| MVP                   | ✅ Documentado y funcional  |
 | Registro experimental | ✅ Disponible               |
-| Scripts de análisis   |     Esqueleto documentado   |
-| Datos crudos          |     Pendientes              |
-| Manuscrito final      |     Pendiente               |
+| Datos crudos          | ✅ Depositados (`07_Datos/`)|
+| Scripts de análisis   | 🟡 En construcción (1 de 10) |
+| Manuscrito final      | 🟡 Contenido sustantivo, pendientes puntuales |
+| Evidencia de autoría  | 🟡 Parcial (4 de 12 elementos) |
+| Materiales de defensa | 🟡 Parcial (3 de 5 archivos) |
 | Zenodo                | ✅ DOI disponible           |
 | Software Heritage     | ✅ Identificador disponible |
+| Etiquetas de línea base | ✅ `v1.0-mvp-demo` y `v2B` anotadas |
+| Identidades de autoría | ✅ Unificadas con `.mailmap` |
 
 ---
 
