@@ -1,78 +1,78 @@
-﻿Fragmento,Codigo,Categoria,Participante
-"Uso de una plataforma veterinaria integral (PECACMICS) para citas, inventario y fichas médicas",Software veterinario completo en uso (PECACMICS),Historia clínica y gestión de pacientes,P02
-Errores de tipeo en el sistema dificultan encontrar el historial de un paciente,Búsqueda de historial afectada por errores de digitación,Historia clínica y gestión de pacientes,P02
-"Facturación integrada en la plataforma, depende de completar los datos correctamente",Facturación ligada a completar datos en el sistema,Gestión administrativa y financiera,P02
-Las inasistencias perjudican el ingreso económico y obligan a reprogramar citas,Inasistencias generan pérdida económica y reprogramación,Citas y comunicación con propietarios,P02
-El seguimiento post-consulta se hace por mensajería (canal impreciso en la transcripción),Seguimiento realizado por mensajería tras la consulta,Citas y comunicación con propietarios,P02
-La plataforma no alerta vencimientos; el control depende de revisión manual en el módulo de inventario,Sin alerta automática de vencimiento de medicamentos,Inventario,P02
-El peso se registra en cartillas físicas entregadas al paciente en cada consulta,Seguimiento de peso en cartillas físicas,Historia clínica y gestión de pacientes,P02
-"Las recomendaciones de alimentación se dan verbalmente en consulta, sin guía formal",Recomendaciones nutricionales sin proceso estandarizado,Historia clínica y gestión de pacientes,P02
-Estima que solo ~60% de los dueños cumple las indicaciones al pie de la letra,Cumplimiento parcial (~60%) de indicaciones médicas,Citas y comunicación con propietarios,P02
-Ajusta la medicación por teléfono cuando no puede ver al paciente por falta de tiempo o disponibilidad,Ajuste de tratamiento a distancia por limitaciones de tiempo,Historia clínica y gestión de pacientes,P02
-"Desacuerdo con que un sistema de IA sugiera diagnósticos, porque los parámetros varían caso a caso",Desacuerdo con diagnóstico automatizado por IA,Inteligencia Artificial,P02
-Mayor carga de trabajo en programar citas y avisos/recordatorios de laboratorio,Necesidad de apoyo para agendar y notificar citas,Citas y comunicación con propietarios,P02
-"Aceptaría sugerencias de IA como apoyo (confianza moderada), pero la decisión final es del médico","Confianza moderada en IA como apoyo, no como reemplazo",Inteligencia Artificial,P02
-Prioriza que los datos de los pacientes estén protegidos y que exista soporte técnico disponible,Prioriza protección de datos y soporte técnico,Seguridad,P02
-Necesita recordatorios automáticos de citas porque los dueños se olvidan por trabajo o estudios,Recordatorios automáticos de citas como requisito de adopción,Citas y comunicación con propietarios,P02
-No anticipa resistencia a adoptar una nueva herramienta si mejora el servicio,Apertura a adoptar tecnología sin resistencia,Usabilidad y desempeño,P02
-Prefiere acceder a la herramienta principalmente desde el celular,Preferencia de acceso desde dispositivo móvil,Usabilidad y desempeño,P02
-Nunca ha tenido problemas de conectividad en la clínica,Sin problemas de conectividad reportados,Usabilidad y desempeño,P02
-"El historial clínico se lleva en fichas físicas impresas, sin respaldo en la nube","Historial clínico solo en papel, sin respaldo digital",Historia clínica y gestión de pacientes,P07
-"En urgencias, los dueños alterados no dan información clara sobre síntomas u origen del problema",Dificultad para obtener información clara de dueños en urgencias,Historia clínica y gestión de pacientes,P07
-La facturación se gestiona sin complicaciones a través del sistema del SRI,Facturación resuelta vía sistema del SRI sin mayores problemas,Gestión administrativa y financiera,P07
-Pocos faltantes de inventario; revisión periódica de fechas de caducidad de productos,Control de caducidad con baja incidencia de faltantes,Inventario,P07
-Baja tasa de inasistencia porque los pacientes llegan sin pedir cita previa,Bajo impacto de inasistencias por atención sin cita previa,Citas y comunicación con propietarios,P07
-La comunicación de resultados y seguimiento se coordina por WhatsApp,Uso de WhatsApp para comunicación post-consulta,Citas y comunicación con propietarios,P07
-"La ficha registra nombre, peso, edad, esterilización, vacunación, motivo de consulta y datos del propietario",Ficha física con datos clínicos y del propietario,Historia clínica y gestión de pacientes,P07
-"Los dueños consultan sobre alimentación solo cuando la mascota ya está enferma, desconociendo alimentos dañinos (ej. cebolla)",Desconocimiento de dueños sobre alimentos dañinos hasta que hay un problema,Historia clínica y gestión de pacientes,P07
-"Bajo cumplimiento de indicaciones, en parte por no poder costear la hospitalización",Incumplimiento de indicaciones vinculado a restricciones económicas del dueño,Citas y comunicación con propietarios,P07
-Dificultad para diagnosticar a distancia solo con fotos enviadas por el dueño,"Diagnóstico a distancia limitado a fotos, poco confiable",Historia clínica y gestión de pacientes,P07
-No utiliza ningún software veterinario especializado,Ausencia total de software veterinario especializado,Usabilidad y desempeño,P07
-Postura neutral (3/5) sobre que la IA sugiera diagnósticos,Postura neutral ante el uso de IA para sugerir diagnósticos,Inteligencia Artificial,P07
-Mayor carga de trabajo en el seguimiento de pacientes que ya se fueron a casa,Necesidad de apoyo para el seguimiento post-alta,Citas y comunicación con propietarios,P07
-Confianza moderada: usaría la IA como apoyo pero siempre con validación propia,Confianza moderada en recomendaciones de IA,Inteligencia Artificial,P07
-Prioriza poder revisar y corregir las sugerencias de la IA antes de aplicarlas,Necesidad de control/revisión sobre las sugerencias de IA,Inteligencia Artificial,P07
-Necesita un sistema de notificaciones que recuerde a los dueños las fechas de vacunación,Sistema de recordatorios de vacunación como requisito clave,Citas y comunicación con propietarios,P07
-"Requiere que la herramienta sea segura y con pocos errores, para no generar problemas con los dueños",Exige seguridad y fiabilidad de la herramienta,Seguridad,P07
-"Prefiere acceder desde laptop o celular, principalmente el celular",Preferencia de acceso móvil (laptop/celular),Usabilidad y desempeño,P07
-Todo se anota en un cuaderno único sin fichas individuales; cada consulta toma unos 8 minutos,"Registro centralizado en cuaderno único, sin fichas por paciente",Historia clínica y gestión de pacientes,P13
-"El cuaderno es cronológico, no por paciente, y hay que revisarlo página por página en urgencias",Búsqueda cronológica retrasa la atención en urgencias,Historia clínica y gestión de pacientes,P13
-El cobro es manual y se anota en un cuaderno de caja aparte; los montos no siempre coinciden al final del día,Descuadre de caja por doble registro manual de cobros,Gestión administrativa y financiera,P13
-"No hay control formal de inventario; se revisa ""a ojo"" y a veces vencen medicamentos sin que nadie lo note","Sin control formal de inventario, vencimientos pasan desapercibidos",Inventario,P13
-"No hay agenda formal; se atiende por orden de llegada, pero sí se pierden citas de vacunas o cirugías",Ausencia de agenda formal provoca pérdida de citas de control,Citas y comunicación con propietarios,P13
-"La comunicación con dueños se da por redes sociales o llamada telefónica, sin proceso estandarizado",Comunicación con dueños sin canal ni proceso estandarizado,Citas y comunicación con propietarios,P13
-"El peso se anota en el cuaderno, sin forma de graficar o comparar la evolución; no hay seguimiento nutricional formal",Sin herramienta para graficar o comparar la evolución del peso,Historia clínica y gestión de pacientes,P13
-"Los dueños preguntan casi a diario sobre alimentación; las recomendaciones se dan según la experiencia del doctor, sin guía estandarizada","Recomendaciones nutricionales informales, sin guía estandarizada",Historia clínica y gestión de pacientes,P13
-"El cumplimiento de indicaciones es muy bajo; los dueños suspenden la medicación al ver mejoría, sin seguimiento activo",Bajo cumplimiento de tratamiento sin seguimiento activo desde la clínica,Citas y comunicación con propietarios,P13
-Prefiere que el dueño traiga al paciente para revisión antes que ajustar el tratamiento a ciegas por teléfono,Prioriza evaluación presencial sobre ajuste remoto de tratamiento,Historia clínica y gestión de pacientes,P13
-No utiliza ningún software especializado; el manejo es completamente manual con cuaderno,"Manejo totalmente manual, sin software especializado",Usabilidad y desempeño,P13
-Totalmente de acuerdo (5/5) con que la IA sugiera diagnósticos; ve potencial para compensar la falta de experiencia,Alto respaldo a IA diagnóstica como apoyo a estudiantes en formación,Inteligencia Artificial,P13
-Mayor carga de trabajo en organizar y localizar fichas de pacientes ya atendidos,Pérdida de tiempo en localizar y organizar fichas existentes,Historia clínica y gestión de pacientes,P13
-"Alta confianza en la IA como referencia directa, por estar aún en formación",Alta confianza en IA como apoyo a la formación profesional,Inteligencia Artificial,P13
-Prioriza respaldo científico validado y facilidad de uso sin capacitación prolongada,Condiciones de confianza: literatura validada y facilidad de uso,Inteligencia Artificial,P13
-Necesita organizar la información de pacientes por fecha y nombre en vez de un cuaderno cronológico único,"Necesidad de organización de fichas por paciente, no cronológica",Historia clínica y gestión de pacientes,P13
-Requiere una herramienta sencilla de aprender porque el doctor no tiene tiempo ni paciencia para algo complicado,Facilidad de aprendizaje como requisito indispensable de adopción,Usabilidad y desempeño,P13
-Prefiere acceder preferentemente desde el teléfono móvil,Preferencia de acceso móvil,Usabilidad y desempeño,P13
-Reporta problemas de conectividad frecuentes (4 de 5),Conectividad deficiente y frecuente en la clínica,Usabilidad y desempeño,P13
-Sugiere que la herramienta permita registrar fotos de heridas o lesiones vinculadas a la ficha del paciente,Solicita registro fotográfico de evolución clínica en la ficha,Historia clínica y gestión de pacientes,P13
-Las historias se llevan en cuadernos físicos y hojas de Excel de la doctora principal; se pierde información al llenarse el cuaderno,Registro mixto (papel/Excel) con pérdida de información al llenarse el cuaderno,Historia clínica y gestión de pacientes,P16
-"En urgencias, historiales incompletos o la ausencia de quien registró la última consulta generan demoras riesgosas",Demoras riesgosas en urgencias por historiales incompletos,Historia clínica y gestión de pacientes,P16
-El cobro se lleva separado de las fichas clínicas; a veces se olvida cobrar o se cobra un servicio incorrecto,Errores de cobro por gestión separada de la facturación,Gestión administrativa y financiera,P16
-La revisión de inventario es semanal y manual; ha habido medicamentos vencidos sin alerta que avise,Sin sistema de alertas de vencimiento de inventario,Inventario,P16
-"Cancelan de 2 a 3 citas por semana sin aviso; no usan recordatorio automático, solo mensajes",Cancelaciones frecuentes sin sistema de recordatorio automático,Citas y comunicación con propietarios,P16
-La comunicación es por WhatsApp personal de cada doctor y consume tiempo fuera del horario laboral,Comunicación vía WhatsApp personal invade tiempo fuera de horario,Citas y comunicación con propietarios,P16
-El peso se registra en fichas físicas; no encuentran una forma fácil de digitalizar o comparar los datos,Dificultad para digitalizar y comparar el seguimiento de peso,Historia clínica y gestión de pacientes,P16
-"Los dueños citan información de Google o ChatGPT sobre alimentación, que considera poco confiable",Preocupación por el uso de fuentes de IA/internet no confiables por los dueños,Inteligencia Artificial,P16
-"El cumplimiento de indicaciones depende del dueño; solo se enteran si empeora, regresa o llama","Seguimiento del cumplimiento es reactivo, no proactivo",Citas y comunicación con propietarios,P16
-"Pide al dueño ser descriptivo y enviar fotos para ajustar el tratamiento a distancia, aunque prefiere la consulta presencial",Uso de fotos y descripción para ajuste remoto de tratamiento,Historia clínica y gestión de pacientes,P16
-"Solo usa herramientas básicas: hoja de cálculo, WhatsApp o agenda digital",Uso limitado a herramientas digitales básicas,Usabilidad y desempeño,P16
-"Confianza alta (4/5) en que la IA detecte patrones, pero la decisión final debe ser del veterinario",Alta confianza en IA para detección de patrones con decisión humana final,Inteligencia Artificial,P16
-Mayor carga de trabajo en la búsqueda y doble anotación de historiales clínicos,Doble anotación y búsqueda de historiales como principal carga diaria,Historia clínica y gestión de pacientes,P16
-"Confianza moderada en la IA como apoyo con validación propia, por no conocer a fondo su funcionamiento",Confianza moderada en IA por desconocimiento de su funcionamiento interno,Inteligencia Artificial,P16
-Requiere poder revisar y corregir las sugerencias de la IA antes de aplicarlas,Necesidad de control humano sobre las sugerencias de IA,Inteligencia Artificial,P16
-"Prioriza que los datos de los pacientes estén protegidos y no se compartan con terceros, para no perder el control profesional",Prioriza protección de datos y confidencialidad de la información,Seguridad,P16
-"Necesita resolver la búsqueda de fichas por paciente, sin depender de papeles sueltos ni de la memoria de quien atendió",Búsqueda de fichas por paciente como requisito clave de adopción,Historia clínica y gestión de pacientes,P16
-"Requiere rapidez, acceso desde el celular y baja curva de aprendizaje porque el personal cambia con frecuencia",Facilidad de uso y rapidez necesarias por alta rotación de personal,Usabilidad y desempeño,P16
-Necesita acceso desde cualquier dispositivo,Preferencia de acceso indistinto entre dispositivos,Usabilidad y desempeño,P16
-Reporta conectividad moderadamente afectada (3/5) por cortes de luz,Conectividad afectada por cortes de energía eléctrica,Usabilidad y desempeño,P16
-"Solicita alertas automáticas de refuerzo de vacunas, ya que actualmente depende de la memoria del dueño",Solicita alertas automáticas para refuerzos de vacunación,Citas y comunicación con propietarios,P16
+Fragmento,Codigo,Categoria,Participante
+"Uso de una plataforma veterinaria integral (PECACMICS) para citas, inventario y fichas médicas",Uso de sistema veterinario integral,Usabilidad y desempeño,P02
+Errores de tipeo en el sistema dificultan encontrar el historial de un paciente,Dificultad de búsqueda por errores de digitación,Historia clínica y gestión de pacientes,P02
+"Facturación integrada en la plataforma, depende de completar los datos correctamente",Facturación condicionada al registro correcto de datos,Gestión administrativa y financiera,P02
+Las inasistencias perjudican el ingreso económico y obligan a reprogramar citas,Inasistencias afectan ingresos y reprogramación,Citas y comunicación con propietarios,P02
+El seguimiento post-consulta se hace por mensajería (canal impreciso en la transcripción),Seguimiento posterior mediante mensajería,Citas y comunicación con propietarios,P02
+La plataforma no alerta vencimientos; el control depende de revisión manual en el módulo de inventario,Control manual de vencimientos sin alertas,Inventario,P02
+El peso se registra en cartillas físicas entregadas al paciente en cada consulta,Registro físico del peso del paciente,Historia clínica y gestión de pacientes,P02
+"Las recomendaciones de alimentación se dan verbalmente en consulta, sin guía formal",Orientación nutricional verbal no estandarizada,Historia clínica y gestión de pacientes,P02
+Estima que solo ~60% de los dueños cumple las indicaciones al pie de la letra,Adherencia parcial de propietarios a indicaciones,Citas y comunicación con propietarios,P02
+Ajusta la medicación por teléfono cuando no puede ver al paciente por falta de tiempo o disponibilidad,Ajuste remoto de medicación por limitación de disponibilidad,Historia clínica y gestión de pacientes,P02
+"Desacuerdo con que un sistema de IA sugiera diagnósticos, porque los parámetros varían caso a caso",Rechazo a diagnósticos sugeridos automáticamente por IA,Inteligencia Artificial,P02
+Mayor carga de trabajo en programar citas y avisos/recordatorios de laboratorio,Alta carga en agendamiento y recordatorios,Citas y comunicación con propietarios,P02
+"Aceptaría sugerencias de IA como apoyo (confianza moderada), pero la decisión final es del médico",IA aceptada como apoyo bajo decisión profesional,Inteligencia Artificial,P02
+Prioriza que los datos de los pacientes estén protegidos y que exista soporte técnico disponible,Protección de datos y soporte como prioridad,Seguridad,P02
+Necesita recordatorios automáticos de citas porque los dueños se olvidan por trabajo o estudios,Necesidad de recordatorios automáticos de citas,Citas y comunicación con propietarios,P02
+No anticipa resistencia a adoptar una nueva herramienta si mejora el servicio,Disposición favorable a adoptar una herramienta útil,Usabilidad y desempeño,P02
+Prefiere acceder a la herramienta principalmente desde el celular,Preferencia de uso desde teléfono móvil,Usabilidad y desempeño,P02
+Nunca ha tenido problemas de conectividad en la clínica,Conectividad clínica estable,Usabilidad y desempeño,P02
+"El historial clínico se lleva en fichas físicas impresas, sin respaldo en la nube",Historia clínica en papel sin respaldo digital,Historia clínica y gestión de pacientes,P07
+"En urgencias, los dueños alterados no dan información clara sobre síntomas u origen del problema",Información incompleta del propietario en emergencias,Historia clínica y gestión de pacientes,P07
+La facturación se gestiona sin complicaciones a través del sistema del SRI,Facturación funcional mediante sistema del SRI,Gestión administrativa y financiera,P07
+Pocos faltantes de inventario; revisión periódica de fechas de caducidad de productos,Revisión periódica de inventario y caducidad,Inventario,P07
+Baja tasa de inasistencia porque los pacientes llegan sin pedir cita previa,Baja inasistencia por atención sin cita previa,Citas y comunicación con propietarios,P07
+La comunicación de resultados y seguimiento se coordina por WhatsApp,Seguimiento y entrega de resultados por WhatsApp,Citas y comunicación con propietarios,P07
+"La ficha registra nombre, peso, edad, esterilización, vacunación, motivo de consulta y datos del propietario",Registro clínico con datos básicos del paciente y propietario,Historia clínica y gestión de pacientes,P07
+"Los dueños consultan sobre alimentación solo cuando la mascota ya está enferma, desconociendo alimentos dañinos (ej. cebolla)",Consulta nutricional tardía y desconocimiento de alimentos dañinos,Historia clínica y gestión de pacientes,P07
+"Bajo cumplimiento de indicaciones, en parte por no poder costear la hospitalización",Baja adherencia por limitaciones económicas del propietario,Citas y comunicación con propietarios,P07
+Dificultad para diagnosticar a distancia solo con fotos enviadas por el dueño,Limitación del diagnóstico remoto basado solo en fotografías,Historia clínica y gestión de pacientes,P07
+No utiliza ningún software veterinario especializado,Ausencia de software veterinario especializado,Usabilidad y desempeño,P07
+Postura neutral (3/5) sobre que la IA sugiera diagnósticos,Posición neutral ante diagnóstico asistido por IA,Inteligencia Artificial,P07
+Mayor carga de trabajo en el seguimiento de pacientes que ya se fueron a casa,Carga de trabajo en seguimiento posterior al alta,Citas y comunicación con propietarios,P07
+Confianza moderada: usaría la IA como apoyo pero siempre con validación propia,IA como apoyo con validación del veterinario,Inteligencia Artificial,P07
+Prioriza poder revisar y corregir las sugerencias de la IA antes de aplicarlas,Necesidad de revisar y corregir sugerencias de IA,Inteligencia Artificial,P07
+Necesita un sistema de notificaciones que recuerde a los dueños las fechas de vacunación,Recordatorios de vacunación como necesidad,Citas y comunicación con propietarios,P07
+"Requiere que la herramienta sea segura y con pocos errores, para no generar problemas con los dueños",Seguridad y baja tasa de errores como requisito,Seguridad,P07
+"Prefiere acceder desde laptop o celular, principalmente el celular",Preferencia de acceso móvil y desde laptop,Usabilidad y desempeño,P07
+Todo se anota en un cuaderno único sin fichas individuales; cada consulta toma unos 8 minutos,Registro clínico general en cuaderno sin fichas individuales,Historia clínica y gestión de pacientes,P13
+"El cuaderno es cronológico, no por paciente, y hay que revisarlo página por página en urgencias",Búsqueda lenta por registro cronológico no individualizado,Historia clínica y gestión de pacientes,P13
+El cobro es manual y se anota en un cuaderno de caja aparte; los montos no siempre coinciden al final del día,Cobro manual con diferencias al cierre diario,Gestión administrativa y financiera,P13
+"No hay control formal de inventario; se revisa ""a ojo"" y a veces vencen medicamentos sin que nadie lo note",Inventario visual sin control formal ni alertas de caducidad,Inventario,P13
+"No hay agenda formal; se atiende por orden de llegada, pero sí se pierden citas de vacunas o cirugías",Ausencia de agenda formal y pérdida de citas importantes,Citas y comunicación con propietarios,P13
+"La comunicación con dueños se da por redes sociales o llamada telefónica, sin proceso estandarizado",Comunicación por redes o llamadas sin estandarización,Citas y comunicación con propietarios,P13
+"El peso se anota en el cuaderno, sin forma de graficar o comparar la evolución; no hay seguimiento nutricional formal",Registro de peso sin análisis de evolución nutricional,Historia clínica y gestión de pacientes,P13
+"Los dueños preguntan casi a diario sobre alimentación; las recomendaciones se dan según la experiencia del doctor, sin guía estandarizada",Recomendaciones alimentarias basadas en experiencia sin guía,Historia clínica y gestión de pacientes,P13
+"El cumplimiento de indicaciones es muy bajo; los dueños suspenden la medicación al ver mejoría, sin seguimiento activo",Incumplimiento de tratamiento y ausencia de seguimiento activo,Citas y comunicación con propietarios,P13
+Prefiere que el dueño traiga al paciente para revisión antes que ajustar el tratamiento a ciegas por teléfono,Preferencia por revisión presencial antes de ajustar tratamiento,Historia clínica y gestión de pacientes,P13
+No utiliza ningún software especializado; el manejo es completamente manual con cuaderno,Gestión completamente manual sin software especializado,Usabilidad y desempeño,P13
+Totalmente de acuerdo (5/5) con que la IA sugiera diagnósticos; ve potencial para compensar la falta de experiencia,Aceptación alta de IA para apoyar el diagnóstico,Inteligencia Artificial,P13
+Mayor carga de trabajo en organizar y localizar fichas de pacientes ya atendidos,Dificultad para organizar y localizar historiales,Historia clínica y gestión de pacientes,P13
+"Alta confianza en la IA como referencia directa, por estar aún en formación",Alta confianza en IA como referencia durante formación,Inteligencia Artificial,P13
+Prioriza respaldo científico validado y facilidad de uso sin capacitación prolongada,Necesidad de respaldo científico y facilidad de uso,Usabilidad y desempeño,P13
+Necesita organizar la información de pacientes por fecha y nombre en vez de un cuaderno cronológico único,Necesidad de organizar información por paciente y fecha,Historia clínica y gestión de pacientes,P13
+Requiere una herramienta sencilla de aprender porque el doctor no tiene tiempo ni paciencia para algo complicado,Requisito de aprendizaje sencillo de la herramienta,Usabilidad y desempeño,P13
+Prefiere acceder preferentemente desde el teléfono móvil,Preferencia de acceso por teléfono móvil,Usabilidad y desempeño,P13
+Reporta problemas de conectividad frecuentes (4 de 5),Problemas frecuentes de conectividad,Usabilidad y desempeño,P13
+Sugiere que la herramienta permita registrar fotos de heridas o lesiones vinculadas a la ficha del paciente,Registro de fotografías clínicas vinculado a la ficha,Historia clínica y gestión de pacientes,P13
+Las historias se llevan en cuadernos físicos y hojas de Excel de la doctora principal; se pierde información al llenarse el cuaderno,Historia clínica dispersa entre cuadernos y Excel,Historia clínica y gestión de pacientes,P16
+"En urgencias, historiales incompletos o la ausencia de quien registró la última consulta generan demoras riesgosas",Demoras por historiales incompletos en urgencias,Historia clínica y gestión de pacientes,P16
+El cobro se lleva separado de las fichas clínicas; a veces se olvida cobrar o se cobra un servicio incorrecto,Errores y omisiones de cobro por separación de registros,Gestión administrativa y financiera,P16
+La revisión de inventario es semanal y manual; ha habido medicamentos vencidos sin alerta que avise,Inventario semanal manual con vencimientos sin alerta,Inventario,P16
+"Cancelan de 2 a 3 citas por semana sin aviso; no usan recordatorio automático, solo mensajes",Cancelaciones frecuentes sin sistema automático de recordatorio,Citas y comunicación con propietarios,P16
+La comunicación es por WhatsApp personal de cada doctor y consume tiempo fuera del horario laboral,WhatsApp personal genera carga fuera del horario laboral,Citas y comunicación con propietarios,P16
+El peso se registra en fichas físicas; no encuentran una forma fácil de digitalizar o comparar los datos,Peso registrado en papel sin comparación digital,Historia clínica y gestión de pacientes,P16
+"Los dueños citan información de Google o ChatGPT sobre alimentación, que considera poco confiable",Información nutricional de IA/internet percibida como poco confiable,Inteligencia Artificial,P16
+"El cumplimiento de indicaciones depende del dueño; solo se enteran si empeora, regresa o llama",Seguimiento limitado del cumplimiento del propietario,Citas y comunicación con propietarios,P16
+"Pide al dueño ser descriptivo y enviar fotos para ajustar el tratamiento a distancia, aunque prefiere la consulta presencial",Ajuste remoto apoyado en descripción y fotografías,Historia clínica y gestión de pacientes,P16
+"Solo usa herramientas básicas: hoja de cálculo, WhatsApp o agenda digital",Uso de herramientas digitales básicas no especializadas,Usabilidad y desempeño,P16
+"Confianza alta (4/5) en que la IA detecte patrones, pero la decisión final debe ser del veterinario",IA útil para detectar patrones con decisión final veterinaria,Inteligencia Artificial,P16
+Mayor carga de trabajo en la búsqueda y doble anotación de historiales clínicos,Carga por búsqueda y duplicación de historiales,Historia clínica y gestión de pacientes,P16
+"Confianza moderada en la IA como apoyo con validación propia, por no conocer a fondo su funcionamiento",IA como apoyo con validación por desconocimiento de su funcionamiento,Inteligencia Artificial,P16
+Requiere poder revisar y corregir las sugerencias de la IA antes de aplicarlas,Control humano sobre sugerencias de IA antes de aplicarlas,Inteligencia Artificial,P16
+"Prioriza que los datos de los pacientes estén protegidos y no se compartan con terceros, para no perder el control profesional",Protección y confidencialidad de datos del paciente,Seguridad,P16
+"Necesita resolver la búsqueda de fichas por paciente, sin depender de papeles sueltos ni de la memoria de quien atendió",Necesidad de búsqueda directa de fichas por paciente,Historia clínica y gestión de pacientes,P16
+"Requiere rapidez, acceso desde el celular y baja curva de aprendizaje porque el personal cambia con frecuencia","Rapidez, acceso móvil y baja curva de aprendizaje",Usabilidad y desempeño,P16
+Necesita acceso desde cualquier dispositivo,Acceso multiplataforma como requisito,Usabilidad y desempeño,P16
+Reporta conectividad moderadamente afectada (3/5) por cortes de luz,Conectividad afectada por cortes de energía,Usabilidad y desempeño,P16
+"Solicita alertas automáticas de refuerzo de vacunas, ya que actualmente depende de la memoria del dueño",Alertas automáticas para refuerzos de vacunas,Citas y comunicación con propietarios,P16
