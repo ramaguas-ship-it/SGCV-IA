@@ -25,7 +25,7 @@ Calculado por `calcular_kappa.py` a partir de las dos hojas de codificación (`h
 
 El acuerdo bruto entre los dos codificadores es alto (89,3%: coincidieron en 25 de 28 juicios de presencia/ausencia de categoría). Sin embargo, el coeficiente kappa resultante (0,36) corresponde a un nivel "aceptable/moderado" según las escalas estándar (Landis y Koch, 1977), no "alto" — una diferencia que puede parecer contraintuitiva frente al acuerdo bruto.
 
-Esto se debe a un efecto estadístico conocido como la **paradoja del kappa** (Feinstein y Cicchetti, 1990): cuando la distribución de las categorías está muy desbalanceada —en este caso, 22 de las 28 observaciones son "ambos codificadores marcan la categoría como presente"—, el acuerdo esperado únicamente por azar (pe) ya es muy alto (83,2%), y el kappa "descuenta" ese acuerdo esperado, produciendo un valor más bajo del que el acuerdo bruto sugeriría. No es un error de cálculo ni indica necesariamente baja fiabilidad real; es una limitación conocida del propio coeficiente cuando la prevalencia de las categorías es muy asimétrica.
+Esto se debe a un efecto estadístico conocido como la **paradoja del kappa** (Feinstein y Cicchetti, 1990): cuando la distribución de las categorías está muy desbalanceada —en este caso, 24 de las 28 observaciones son "ambos codificadores marcan la categoría como presente"—, el acuerdo esperado únicamente por azar (pe) ya es muy alto (83,2%), y el kappa "descuenta" ese acuerdo esperado, produciendo un valor más bajo del que el acuerdo bruto sugeriría. No es un error de cálculo ni indica necesariamente baja fiabilidad real; es una limitación conocida del propio coeficiente cuando la prevalencia de las categorías es muy asimétrica.
 
 **Los 3 desacuerdos concretos**, para trazabilidad:
 
@@ -35,7 +35,12 @@ Esto se debe a un efecto estadístico conocido como la **paradoja del kappa** (F
 | P07 | Inventario | Ausente | Presente |
 | P16 | Seguridad | Ausente | Presente |
 
-En los tres casos, Mesías identificó una mención breve dentro de un fragmento más amplio que Marcillo había clasificado bajo otra categoría (por ejemplo, la mención de facturación de P07 aparece dentro de un fragmento que Marcillo codificó primariamente bajo "Historia clínica"). Son diferencias de granularidad en la clasificación, no contradicciones sobre el contenido de lo que dijo el participante.
+Revisando los fragmentos fuente, el mecanismo detrás de estos desacuerdos no es idéntico en los tres casos:
+
+- **P16 / Seguridad:** sí corresponde a una diferencia de granularidad en la clasificación. Marcillo registró un fragmento de P16 sobre protección de datos ("que los datos no se compartan con terceros") pero lo codificó dentro de "Inteligencia Artificial" en lugar de "Seguridad", mientras que Mesías capturó una mención equivalente como fragmento independiente bajo "Seguridad". Es decir, el contenido sí fue registrado por ambos codificadores, solo que Marcillo lo subsumió bajo otra categoría.
+- **P07 / Gestión administrativa y financiera y P07 / Inventario:** en estos dos casos no se encontró, dentro de los fragmentos de Marcillo para P07, ninguna mención a facturación o inventario clasificada bajo otra categoría. Todo indica que Marcillo simplemente no seleccionó ningún fragmento de esa transcripción sobre esos temas, mientras que Mesías sí lo hizo. Esto es una diferencia de cobertura/selección de fragmentos entre codificadores, no una reclasificación del mismo contenido, y debe leerse como tal.
+
+En ningún caso hay contradicción sobre el contenido de lo que dijo el participante; los tres desacuerdos reflejan variabilidad normal entre codificadores independientes al decidir qué fragmentos extraer y bajo qué categoría agruparlos.
 
 ## 4. Limitación reconocida
 
