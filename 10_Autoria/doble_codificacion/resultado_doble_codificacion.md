@@ -47,3 +47,5 @@ El intervalo de confianza al 95% ([-0,32, 1,04]) es muy amplio y cruza el cero, 
 - `hoja_codificador2_Mesias.csv` — codificación independiente de Jhon Alexander Mesías Quijije.
 - `calcular_kappa.py` — script reproducible que genera `resultado_kappa.csv` a partir de las dos hojas anteriores.
 - `resultado_kappa.csv` — salida del script (tabla de comparación + estadísticos).
+- `calcular_kappa.py` — script reproducible que genera `resultado_kappa.csv` a partir de las dos hojas anteriores.
+- `resultado_kappa.csv` — salida del script (tabla de comparación + estadísticos).
