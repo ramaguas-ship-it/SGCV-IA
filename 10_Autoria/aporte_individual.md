@@ -1,4 +1,4 @@
-# A10 — Aporte individual por integrante
+[# A10 — Aporte individual por integrante
 
 Proyecto SGCV-IA — Entrega 4 (2B). Documento de cumplimiento obligatorio conforme a la Guía de Desarrollo (Sección 6, ítem A10). Debe estar firmado por los cinco integrantes; cada quien completa y valida su propia sección.
 
@@ -126,4 +126,4 @@ Jhon Alexander Mesías Quijije — Fecha: ______________
 
 ### Firma
 
-Carlos Daniel Barrionuevo Fuentes — Fecha: ______________
+Carlos Daniel Barrionuevo Fuentes — Fecha: ______________]
