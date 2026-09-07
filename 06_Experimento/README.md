@@ -18,14 +18,11 @@ SGCV-IA es un sistema real de gestión para clínicas veterinarias que centraliz
 | Marcillo Ponce Alberto Jeanpool   | Responsable de criterios y actividades de la Entrega 4 (2B)              |
 | Mesías Quijije Jhon Alexander     | Verificador                                                               |
 
-## ⚠️ Discrepancia de identificador OSF pendiente de resolver
+## Identificador OSF
 
-En distintos documentos del repositorio aparecen **dos identificadores de OSF distintos** para lo que debería ser el mismo registro de protocolo:
+El registro previo del protocolo está en `osf.io/r5p8d`, consistente ahora con el manuscrito (`09_Publicacion/title_page.tex`), `07_Datos/desviaciones.md`, el `README.md` raíz, `11_Defensa/guion.md` y `06_Experimento/prompts_llm/README.md`.
 
-* `osf.io/r5p8d` — usado en el manuscrito (`09_Publicacion/title_page.tex`) y en `07_Datos/desviaciones.md`.
-* `osf.io/wkg32` — usado en el `README.md` raíz, en `11_Defensa/guion.md` y en `06_Experimento/prompts_llm/README.md`.
-
-Este README usa `r5p8d` porque coincide con el manuscrito y con el registro de desviaciones, pero **el equipo debe confirmar cuál es el identificador real** y corregir el otro en todos los documentos donde aparezca, incluido el `README.md` de la raíz del repositorio.
+> Nota: esta unificación se hizo por consistencia interna entre los documentos del repositorio (todos apuntaban a `r5p8d` salvo tres archivos que decían `wkg32`). No se verificó de forma independiente contra el sitio de OSF, ya que su contenido se renderiza por JavaScript y no es accesible por una petición simple. Si alguno de los integrantes tiene acceso directo a la cuenta de OSF, vale la pena confirmarlo una vez más antes del envío final.
 
 ## Enlaces clave
 
@@ -34,7 +31,7 @@ Este README usa `r5p8d` porque coincide con el manuscrito y con el registro de d
 | Documento ERS/SRS 2B                | [`01_ERS/ERS_SRS_2B_v2.0.pdf`](../01_ERS/ERS_SRS_2B_v2.0.pdf) |
 | Documento ERS/SRS 2B en LaTeX       | [`01_ERS/ERS_SRS_2B_v2.0.tex`](../01_ERS/ERS_SRS_2B_v2.0.tex) |
 | Repositorio del MVP                 | [`05_MVP/`](../05_MVP/)                                       |
-| Registro previo del protocolo (OSF) | https://osf.io/r5p8d *(ver discrepancia arriba)*              |
+| Registro previo del protocolo (OSF) | https://osf.io/r5p8d                                          |
 | Registro previo en el repositorio   | [`OSF_Registration.pdf`](./OSF_Registration.pdf)              |
 | Resultados                          | [`resultados/`](./resultados/)                                |
 | Scripts de análisis                 | [`scripts_analisis/`](./scripts_analisis/)                    |
@@ -63,7 +60,6 @@ El documento del protocolo utilizado en el proyecto se encuentra en [`Protocolo_
 * Codificación temática cerrada y verificada: 50 códigos axiales en 7 categorías.
 * Scripts de análisis en construcción (1 de 10 implementados).
 * Manuscrito con contenido sustantivo en `09_Publicacion/`, con pendientes puntuales antes del envío.
-* Identificador OSF por confirmar (ver discrepancia arriba).
 
 ## Estructura del repositorio
 
