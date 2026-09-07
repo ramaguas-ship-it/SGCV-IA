@@ -29,6 +29,7 @@ Analista Líder — codificación temática y saturación (C5/C6), verificación
 | Declaración de uso de IA | `10_Autoria/declaracion_uso_ia.md` | Redacción de la declaración A9 de uso de IA, sección por sección del manuscrito y de los artefactos de codificación, dejando constancia de que la IA se utilizó únicamente como apoyo de verificación y mejora de lenguaje: (i) revisión de consistencia, claridad y redacción de texto ya elaborado por los autores; (ii) verificación de datos bibliográficos y otros datos factuales contra las fuentes usadas por los autores; y (iii) sugerencias de mejora de gramática, ortografía, estilo y claridad. La IA no se utilizó para generar contenido sustantivo (datos de investigación, códigos temáticos, categorías, análisis, resultados, metodología, interpretaciones, conclusiones, tablas, figuras o decisiones de investigación). |
 | `desviaciones.md` | `07_Datos/desviaciones.md` | Registro formal de la desviación real del protocolo OSF (componente de validación cuantitativa del Enfoque 3, Rondas 1 y 2, diseñado pero no ejecutado), con fecha, motivo y confirmación escrita de Vera Gómez. |
 | Criterios de piso propios | Raíz del repositorio, `.git` | Eliminación de archivo de evidencia vacío (P3); verificación de etiqueta anotada `v2B` (P5); confirmación de `git config` con correo institucional propio en todos los commits (P4). |
+| Doble codificación independiente (A7) | `10_Autoria/doble_codificacion/` | Cálculo del coeficiente kappa de Cohen entre la codificación propia y la de Mesías Quijije sobre P02, P07, P13, P16 (25% del corpus), por script reproducible; redacción de la interpretación, incluida la explicación de la paradoja del kappa (acuerdo bruto 89,3% vs. kappa 0,36) y el reconocimiento de la limitación del intervalo de confianza amplio por tamaño de muestra. |
 
 ### Identificadores de commit
 
@@ -93,7 +94,11 @@ Anthony Alfredo Vera Gómez — Fecha: ______________
 
 ### Artefactos de los que es responsable
 
-**[PENDIENTE — Mesías Quijije: completar con sus artefactos e identificadores de commit. Referencia conocida: catálogo de RF/RNF del ERS (RF-01 a RF-25, RNF-01 a RNF-15).]**
+| Artefacto | Ruta | Descripción del aporte |
+|---|---|---|
+| Doble codificación independiente (A7) | `10_Autoria/doble_codificacion/hoja_codificador2_Mesias.csv` | Codificación independiente de 4 entrevistas (P02, P07, P13, P16 — 25% del corpus), sin acceso previo a la codificación original, para el cálculo del coeficiente de acuerdo entre codificadores (kappa de Cohen = 0,36, IC 95% [-0,32, 1,04]). |
+
+**[PENDIENTE — Mesías Quijije: completar con el resto de sus artefactos e identificadores de commit. Referencia conocida: catálogo de RF/RNF del ERS (RF-01 a RF-25, RNF-01 a RNF-15).]**
 
 ### Firma
 
