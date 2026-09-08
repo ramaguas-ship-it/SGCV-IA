@@ -71,25 +71,56 @@ Alberto Jeanpool Marcillo Ponce — Fecha: 07-09-2026
 
 ## Robyn Willian Amagua Sacón
 
+
 ### Responsabilidad asignada en el reparto de trabajo
 
-**[PENDIENTE — completar por Amagua Sacón.]**
+Responsable de C7 (Recolección de datos de campo), según `06_Experimento/README.md`. En la práctica, el historial de commits muestra que además actuó como integrador/mantenedor del repositorio: estructura de carpetas, unificación de identidades de commit, evidencia restringida, corrección de inconsistencias transversales (trazabilidad, priorización, DOI, README) y cierre de la Entrega 4.
+
+> Esta responsabilidad está tomada del README del proyecto, no de una declaración propia de Amagua Sacón. Debe confirmarla o corregirla él mismo antes de firmar.
 
 ### Artefactos de los que es responsable (constatado en esta revisión)
 
 | Artefacto | Ruta | Descripción del aporte |
 |---|---|---|
-| Corrección de la matriz de trazabilidad | `04_Trazabilidad/matriz_trazabilidad.csv` | Completó las 7 filas de RF sin HU/CA; explicó por escrito y con referencia a las Secciones 8.1 y 9.2 del ERS el criterio real de la columna EV para los RNF/RST de origen documental, legal o derivado de otros requisitos. |
-| Corrección de codificación de caracteres | `02_Evidencias/Codificacion_Tematica/codificacion_tematica_SGCV-IA.csv` | Detectó y corrigió un problema de doble codificación UTF-8 en el CSV de codificación temática. |
-| Script de curva de saturación (nivel abierto) | `06_Experimento/scripts_analisis/03_curva_saturacion_codigos_abiertos.R` | Script reproducible que calcula la curva de saturación a nivel de código abierto directamente desde el CSV crudo. |
+| Estructura del repositorio (`07_Datos`, `10_Autoria`) | Raíz del repositorio | Creación de las carpetas `07_Datos/` y `10_Autoria/`, renumeración de `Publicacion/`→`09_Publicacion/` y `Defensa/`→`11_Defensa/`, y reorganización de las 16 transcripciones y la encuesta cruda hacia su ubicación final en `07_Datos/datos_crudos/` (subidas originalmente por Barrionuevo Fuentes en `06_Experimento/datos_crudos/`; ver sección de Barrionuevo). Población de plantillas iniciales de `07_Datos` y `10_Autoria` (`LICENSE-DATA.txt`, `desviaciones.md`, `registro_deposito.md`, `bitacora_sesiones.csv`, `declaracion_uso_ia.md`, `exif_inventario.csv`, este mismo documento). |
+| `.mailmap` (unificación de identidades) | `.mailmap` | Creación y ampliación del archivo que unifica los distintos usuarios/correos de GitHub de cada integrante (p. ej. Vera Gómez y Mesías Quijije aparecían con más de una identidad) bajo un nombre canónico, para que `git log --use-mailmap` sea confiable como evidencia de A10. |
+| Evidencia restringida cifrada (consentimientos y audios P01–P16) | `02_Evidencias/00_Restringido/` | Empaquetado y subida de los consentimientos (`evidencias_consentimientos_P01aP16.7z`) y los audios (`evidencias_audio_P01aP16.7z.00x`) de las 16 entrevistas, cifrados, con sus checksums SHA-256. (La evidencia cifrada de las grabaciones de walkthrough fue subida aparte por Mesías Quijije; ver su sección). |
+| Anonimización de evidencia | `02_Evidencias/fichas_tecnicas.csv`, `02_Evidencias/checksums_originales.txt` | Eliminación de filas duplicadas con nombres reales de participantes en `fichas_tecnicas.csv`; sustitución de nombres reales por códigos de participante (P01–P16) en `checksums_originales.txt`. |
+| Corrección de priorización MoSCoW/Kano | `04_Trazabilidad/priorizacion_moscow_kano_valor.csv` | Corrigió el intercambio de valores entre RF-09 y RF-18, que estaban invertidos. |
+| Presentación final de defensa | `11_Defensa/presentacion.pdf`, `presentacion.pptx`, `guion.md` | Subida de las diapositivas (PDF y PPTX) y el guion de la defensa final. |
+| Actualización del ERS | `01_ERS/ERS_SRS_2B_v2.0.tex`/`.pdf` | Actualización del documento ERS/SRS para la Entrega 4 (2B); regeneración del PDF final desde Overleaf; nueva imagen de portada (`01_ERS/media/imagen_repositorio.png`). |
+| Aclaración de roles y del identificador OSF | `06_Experimento/README.md` | Revisó y dejó explícita la tabla de roles del equipo; detectó y resolvió una inconsistencia entre dos identificadores de OSF distintos (`r5p8d` y `wkg32`) que convivían en varios documentos del repositorio, unificando todos a `r5p8d` y dejando una nota de que esa unificación fue por consistencia interna, no por verificación directa contra el sitio de OSF (su contenido se renderiza por JavaScript y no es accesible por una petición simple). |
+| Licenciamiento | `LICENSE`, `07_Datos/LICENSE-DATA.txt` | Revisión y ampliación de los términos de licenciamiento y de la sección del paquete de datos. |
+| Checksums reproducibles de la raíz del repositorio | `checksums.sha256`, `scripts/generar_checksums_raiz.sh` | Regeneración de `checksums.sha256` con cobertura completa y script para reproducir el cálculo. |
+| Limpieza de archivos de evidencia obsoletos/duplicados | Varias rutas (`02_Evidencias/`, `09_Defensa/` antiguo) | Eliminación de un archivo de evidencia vacío (`Provisionar`) y de un `checksums_originales.txt` obsoleto; eliminación de la carpeta `09_Defensa/` antigua (presentación, guion y video duplicados) tras la renumeración a `11_Defensa/`. |
 
-**[PENDIENTE — Amagua Sacón: completar cualquier otro artefacto de su responsabilidad no listado aquí, con sus identificadores de commit.]**
+**[PENDIENTE — Amagua Sacón: confirmar o corregir los tres puntos señalados en la Nota de verificación cruzada al final del documento, completar su responsabilidad asignada, y agregar cualquier otro artefacto de su autoría no listado aquí.]**
+
+### Identificadores de commit
+
+Extraídos de `git log --author="ramaguas@uteq.edu.ec"` sobre el repositorio real (`https://github.com/ramaguas-ship-it/SGCV-IA`).
+
+| Artefacto | Commit(s) |
+|---|---|
+| Estructura del repositorio y reorganización de datos | `563b0fa` (crear carpetas y mover datos), `d1b4780` (poblar plantillas) |
+| `.mailmap` | `5be985c` (creación), `3bfff36` (ampliación), `3ffd8d4` (corrección correo institucional de Mesías) |
+| Evidencia restringida (consentimientos, audios) | `156f4b4` (consentimientos), `076708c` (audios) |
+| Anonimización de evidencia | `d878fd7` (checksums_originales), `a34e338` (fichas_tecnicas) |
+| Corrección RF-09/RF-18 en priorización | `009009c` |
+| Presentación final | `94a9ea8` (PDF), `67c43c0` (PPTX), `065c139` (guion.md) |
+| ERS actualizado | `34c612c`, `f9a6dcf` (referencias.bib — entrada agregada), `bb65ae5` (imagen), `1c1a137` (PDF de Overleaf) |
+| README — roles e identificador OSF | `fabd443`, `fc28229` |
+| Licenciamiento | `0410148`, `29d48d5` |
+| Checksums de la raíz | `d5118ad` |
+| Corrección de nombre de carpeta + checksums | `d9694c6` |
+| Limpieza de evidencia obsoleta/duplicada | `05f45b3`, `20be7a8`, `ab852f8`, `188f0d9`, `4c7420d`, `0bd4800` |
 
 ### Firma
 
 Robyn Willian Amagua Sacón — Fecha: ______________
 
 ---
+
 
 ## Anthony Alfredo Vera Gómez
 
