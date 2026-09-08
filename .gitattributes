@@ -1,0 +1,18 @@
+# Fuerza LF para archivos de texto en todos los sistemas operativos.
+# Sin esto, Windows convierte LF -> CRLF al hacer checkout, lo que cambia
+# el hash SHA-256 de cualquier archivo de texto según el sistema operativo
+# de quien lo clone, rompiendo la verificación de checksums.sha256.
+* text=auto eol=lf
+
+# Binarios: nunca tocar saltos de línea (no aplica, pero se deja explícito
+# para que quede claro que estos formatos no se normalizan).
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.7z binary
+*.7z.* binary
+*.xlsx binary
+*.docx binary
+*.pptx binary
+*.rds binary
