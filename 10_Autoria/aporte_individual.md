@@ -1,4 +1,4 @@
-[# A10 — Aporte individual por integrante
+# A10 — Aporte individual por integrante
 
 Proyecto SGCV-IA — Entrega 4 (2B). Documento de cumplimiento obligatorio conforme a la Guía de Desarrollo (Sección 6, ítem A10). Debe estar firmado por los cinco integrantes; cada quien completa y valida su propia sección.
 
@@ -26,43 +26,64 @@ Analista Líder — codificación temática y saturación (C5/C6), verificación
 | Documentación del paquete de datos | `09_Publicacion/dataset_zenodo/README_dataset.md`, `ANONYMIZATION.md`, `ETHICS.md` | Redacción completa a partir de los procedimientos reales ya aplicados por el equipo (esquema de seudonimización P01–P16, proceso de consentimiento del `Guion_Entrevista_v2_0`). |
 | Depósito Zenodo curado | Registro Zenodo `10.5281/zenodo.22558095` | Definición de metadatos del depósito curado en CC BY 4.0 (título, tipo de recurso, los 6 autores con ORCID, licencia, versión 2.0, palabras clave, identificadores relacionados con el registro OSF, enlace al repositorio), reemplazando el depósito automático previo en MIT. |
 | Evaluación FAIR | `fair_assessment.pdf` (raíz del repositorio) | Ejecución de la autoevaluación F-UJI contra el DOI del depósito curado; puntaje agregado 96.15% (25/26), muy por encima del mínimo del 60% exigido. |
-| Declaración de uso de IA | `10_Autoria/declaracion_uso_ia.md` | Redacción de la declaración A9 de uso de IA, sección por sección del manuscrito y de los artefactos de codificación, dejando constancia de que la IA se utilizó únicamente como apoyo de verificación y mejora de lenguaje: (i) revisión de consistencia, claridad y redacción de texto ya elaborado por los autores; (ii) verificación de datos bibliográficos y otros datos factuales contra las fuentes usadas por los autores; y (iii) sugerencias de mejora de gramática, ortografía, estilo y claridad. La IA no se utilizó para generar contenido sustantivo (datos de investigación, códigos temáticos, categorías, análisis, resultados, metodología, interpretaciones, conclusiones, tablas, figuras o decisiones de investigación). |
+| Declaración de uso de IA | `10_Autoria/declaracion_uso_ia.md` | Redacción de la declaración A9, sección por sección del manuscrito y de los artefactos de codificación; corrección de una versión de `manuscrito_final.tex`/`title_page.tex` que minimizaba incorrectamente el alcance real del uso de IA (atribuido erróneamente a otra herramienta), restaurando la declaración honesta y consistente con este documento. |
 | `desviaciones.md` | `07_Datos/desviaciones.md` | Registro formal de la desviación real del protocolo OSF (componente de validación cuantitativa del Enfoque 3, Rondas 1 y 2, diseñado pero no ejecutado), con fecha, motivo y confirmación escrita de Vera Gómez. |
 | Criterios de piso propios | Raíz del repositorio, `.git` | Eliminación de archivo de evidencia vacío (P3); verificación de etiqueta anotada `v2B` (P5); confirmación de `git config` con correo institucional propio en todos los commits (P4). |
+| Doble codificación independiente (A7) | `10_Autoria/doble_codificacion/` | Cálculo del coeficiente kappa de Cohen entre la codificación propia y la de Mesías Quijije sobre P02, P07, P13, P16 (25% del corpus), por script reproducible; redacción de la interpretación, incluida la explicación de la paradoja del kappa (acuerdo bruto 89,3% vs. kappa 0,36) y el reconocimiento de la limitación del intervalo de confianza amplio por tamaño de muestra. |
 
 ### Identificadores de commit
 
-**[PENDIENTE — completar con los hashes de commit reales una vez subidos los artefactos anteriores al repositorio; no se completa con hashes de ejemplo.]**
+Extraídos de `git log --author="amarcillop@uteq.edu.ec" --oneline` sobre el repositorio real.
+
+| Artefacto | Commit(s) |
+|---|---|
+| Codificación temática abierta (P09–P16) | `47431e7` (subida), `977505c` (corrección de codificación de caracteres) |
+| Codificación axial (167 → 50 códigos), `.csv` | `1e9db9b` (codificación temática cerrada en CSV) |
+| Codificación axial, `.md` | `6d0caf8` |
+| Corrección del recuento axial (47→50) | `0b281f8` (manuscrito y artefactos principales), `b436a40` (corrección espejo en `dataset_zenodo/`) |
+| Limpieza de archivo duplicado obsoleto | `af1fe6f` (elimina `codificacion_tematica_SGCV-IA.md` duplicado en `02_Evidencias/Codificacion_Tematica/`, superado por el `.csv`) |
+| Curva de saturación axial | `b2c6fde`, `6e64422` (versiones), `4b43b5e` (versión final corregida), `5153210`/`421e15b` (limpieza de versiones obsoletas) |
+| Curva de saturación abierta (script, salida, figura) | `e7b93f6` (script R), `b06db6d` (tabla), `00d9197` (figura) |
+| Matriz de trazabilidad (auditoría y cierre) | `3f13b96` (versión intermedia), `6f50448` (versión final cerrada) |
+| Manuscrito final (versión inicial y correcciones) | `bfa16fd` (creación), `edf641d`/`dbcef9a`/`dceb210` (revisiones), `40d9f19` (DOI de Zenodo) |
+| `title_page.tex` | `e446b5a`/`c1468cd` (revisiones), `72e894d` (DOI de Zenodo), `2a04550` (PDF) |
+| Tabla 1 (Trabajo Relacionado) | `a4fa2d7` |
+| Tabla 2 (frecuencias IA) | `774c64b` (versión inicial), `adfebb1` (corrección IA-3) |
+| `referencias.bib` | `d03a5de` |
+| `CITATION.cff` | `0e5708e` (actualización general), `157e06a` (DOI de Zenodo) |
+| `README_dataset.md` | `38efb8a` (creación), `d229d22`/`60cfc94`/`6ea7a75` (revisiones) |
+| `ANONYMIZATION.md` | `b7faf0a` (creación), `d442af6` (revisión) |
+| `ETHICS.md` | `66efc60` (creación), `aea2801` (revisión) |
+| Evaluación F-UJI (`fair_assessment.pdf`) | `6773258` |
+| Declaración de uso de IA (A9) | `3e88348` |
+| `desviaciones.md` | `90ad44d` |
+| Doble codificación independiente (A7) | `61764b7`/`cb07b6d` (hoja propia), `374a5b2` (hoja de Mesías), `bbe0054` (script), `c918dab` (resultado), `b5ffe1c` (interpretación) |
+| Eliminación de archivo de evidencia vacío (criterio de piso P3) | `805af02` (Delete 07_Publicacion/Provisionar) |
+| `aporte_individual.md` (este documento) | `20801de`, `9409e12`, `a05a7c7` |
+
+**Nota:** varios artefactos muestran más de un commit porque se subieron, corrigieron y volvieron a subir a lo largo del proceso (por ejemplo, la corrección del recuento axial de 47 a 50 obligó a resubir varios archivos). Se listan todos para trazabilidad completa, no solo el último.
 
 ### Firma
 
-Alberto Jeanpool Marcillo Ponce — Fecha: ______________
+Alberto Jeanpool Marcillo Ponce — Fecha: 07-09-2026
 
 ---
 
-## Robyn Willian Amagua Sacón (Documentador)
+## Robyn Willian Amagua Sacón
 
 ### Responsabilidad asignada en el reparto de trabajo
 
-Documentador — mantenimiento de la documentación transversal del repositorio (README raíz y de subcarpetas, licencias, metadatos de citación), corrección de identidades de autoría en Git, generación y actualización del documento ERS/SRS maestro, y gestión de evidencia de campo (fichas técnicas, consentimientos, transcripciones, fotografías).
+**[PENDIENTE — completar por Amagua Sacón.]**
 
+### Artefactos de los que es responsable (constatado en esta revisión)
 
-### Artefactos de los que es responsable (verificado contra `git log --author`)
-
-| Artefacto | Ruta | Commits que lo acreditan |
+| Artefacto | Ruta | Descripción del aporte |
 |---|---|---|
-| ERS/SRS 2B v2.0 (documento maestro, fuente LaTeX y PDF generado desde Overleaf) | `01_ERS/ERS_SRS_2B_v2.0.tex`, `01_ERS/ERS_SRS_2B_v2.0.pdf` | `a994a9e`, `b5539a9`, `ebd8546`, `34c612c`, `1c1a137` |
-| Imágenes y diagramas del ERS | `01_ERS/media/` | `7915b9f`, `bb65ae5` |
-| README raíz del repositorio | `README.md` | `593160b`, `1b9e73e`, `ff2f9cb`, `a232e1c`, `563b0fa`, `b8e8827` |
-| README de `06_Experimento/` | `06_Experimento/README.md` | `905a9aa`, `3238ab6`, `fabd443`, `fc28229` |
-| Licencia del repositorio y del paquete de datos | `LICENSE`, `07_Datos/LICENSE-DATA.txt` | `5fc3df2`, `a994a9e`, `563b0fa`, `d1b4780`, `0410148`, `29d48d5` |
-| Unificación de identidades de autoría en Git (criterio de piso P4) | `.mailmap` | `5be985c`, `3bfff36`, `3ffd8d4` |
-| Documentación de por qué `prompts_llm/` no aplica al Enfoque 3 | `06_Experimento/prompts_llm/README.md` | `5cd6787` (creación del archivo vacío), `9ad1f56` (contenido completo) |
-| Fichas técnicas de evidencia audiovisual, incluida corrección de privacidad | `02_Evidencias/fichas_tecnicas.csv` | `9042892`, `076708c`, `156f4b4`, `a34e338` (eliminación de filas con nombres reales de participantes) |
-| Estructura del paquete de datos | `07_Datos/` | `563b0fa`, `d1b4780` |
-| Metadatos de citación y registro de cambios | `CITATION.cff`, `CHANGELOG.md` | `78a87d3`, `7b58392`, `edbb98d`, `759fbee`, `aa64266` |
+| Corrección de la matriz de trazabilidad | `04_Trazabilidad/matriz_trazabilidad.csv` | Completó las 7 filas de RF sin HU/CA; explicó por escrito y con referencia a las Secciones 8.1 y 9.2 del ERS el criterio real de la columna EV para los RNF/RST de origen documental, legal o derivado de otros requisitos. |
+| Corrección de codificación de caracteres | `02_Evidencias/Codificacion_Tematica/codificacion_tematica_SGCV-IA.csv` | Detectó y corrigió un problema de doble codificación UTF-8 en el CSV de codificación temática. |
+| Script de curva de saturación (nivel abierto) | `06_Experimento/scripts_analisis/03_curva_saturacion_codigos_abiertos.R` | Script reproducible que calcula la curva de saturación a nivel de código abierto directamente desde el CSV crudo. |
 
-**[PENDIENTE — Amagua Sacón: confirmar si falta agregar aquí el commit del CSV de encuesta anonimizado (`07_Datos/datos_crudos/encuesta_respuestas_crudas.csv`, 240 filas) una vez que lo subas; en este momento ese archivo todavía no tiene un commit propio identificado.]**
+**[PENDIENTE — Amagua Sacón: completar cualquier otro artefacto de su responsabilidad no listado aquí, con sus identificadores de commit.]**
 
 ### Firma
 
@@ -125,4 +146,10 @@ Jhon Alexander Mesías Quijije — Fecha: ______________
 
 ### Firma
 
-Carlos Daniel Barrionuevo Fuentes — Fecha: ______________]
+Carlos Daniel Barrionuevo Fuentes — Fecha: ______________
+
+---
+
+## Nota sobre completitud de este documento
+
+Las secciones marcadas `[PENDIENTE]` no deben eliminarse ni completarse con información no verificada. Cada integrante es responsable de completar y firmar su propia sección antes del corte de la Entrega 4. Un documento con firmas pero sin contenido verificable no satisface el criterio P7/A10 de la Guía de Desarrollo.
