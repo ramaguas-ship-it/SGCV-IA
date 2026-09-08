@@ -76,8 +76,6 @@ Alberto Jeanpool Marcillo Ponce — Fecha: 07-09-2026
 
 Documentador — Responsable de C7 (Recolección de datos de campo), según `06_Experimento/README.md`. En la práctica, el historial de commits muestra que además actuó como integrador/mantenedor del repositorio: estructura de carpetas, unificación de identidades de commit, evidencia restringida, corrección de inconsistencias transversales (trazabilidad, priorización, DOI, README) y cierre de la Entrega 4.
 
-> Esta responsabilidad está tomada del README del proyecto, no de una declaración propia de Amagua Sacón. Debe confirmarla o corregirla él mismo antes de firmar.
-
 ### Artefactos de los que es responsable (constatado en esta revisión)
 
 | Artefacto | Ruta | Descripción del aporte |
