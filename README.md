@@ -102,9 +102,9 @@ El componente empírico del proyecto trabaja el **Enfoque 3 de la guía de evalu
 
 ### Identificadores externos
 
-**Zenodo — DOI:** `10.5281/zenodo.22238486`
+**Zenodo — DOI:** `10.5281/zenodo.22558095`
 
-**OSF:** `osf.io/wkg32`
+**OSF:** `osf.io/r5p8d`
 
 **Software Heritage:**
 
@@ -332,7 +332,7 @@ Después de disponer de los archivos correspondientes, puede verificarse su inte
 
 ### Estado actual
 
-**Datos de entrada completos; scripts en construcción.**
+**Pipeline de datos reproducible disponible; scripts del componente de explicabilidad en construcción.**
 
 Los datos crudos ya están depositados en:
 
@@ -342,17 +342,23 @@ Los datos crudos ya están depositados en:
 
 e incluyen las 16 transcripciones de entrevista (completas) y el archivo `encuesta_respuestas_crudas.csv` con 60 respuestas de cuestionario repartidas en 4 perfiles (dueño de mascota: 26, veterinario: 18, auxiliar: 11, administrador: 5). Ningún perfil individual alcanza todavía el mínimo de **n ≥ 60 por perfil dominante** exigido por la guía.
 
+El pipeline reproducible del paquete de datos vive en:
+
+```text
+07_Datos/scripts/
+```
+
+con 6 scripts en R, incluido el orquestador `run_all.R`, que corre todo el pipeline con una sola orden (`Rscript 07_Datos/scripts/run_all.R`) y genera sin intervención manual la curva de saturación, el conteo de códigos por categoría, los checksums de datos y la justificación estadística del tamaño de muestra (n=60).
+
 El directorio:
 
 ```text
 06_Experimento/scripts_analisis/
 ```
 
-contiene por ahora **1 de los 10 scripts** previstos (`03_curva_saturacion_codigos_abiertos.R`, que genera la curva de saturación temática). Los 9 restantes, incluido el orquestador `run_all.R`, están pendientes de implementación.
+contiene por ahora **1 solo script** (`03_curva_saturacion_codigos_abiertos.R`, curva de saturación a nivel de código abierto — distinto del script de saturación axial del pipeline anterior). Este directorio quedó pendiente de consolidarse con `07_Datos/scripts/`; por ahora conviven ambos.
 
-Por este motivo, el proyecto no declara todavía que el análisis experimental completo sea reproducible de principio a fin con una sola orden.
-
-Esta sección será actualizada cuando el resto de los scripts se encuentren disponibles.
+Esta sección será actualizada cuando ambos directorios de scripts se unifiquen.
 
 ---
 
@@ -367,7 +373,7 @@ El protocolo experimental previo se encuentra documentado en:
 También se dispone del identificador de OSF:
 
 ```text
-osf.io/wkg32
+osf.io/r5p8d
 ```
 
 El registro conserva la documentación correspondiente al protocolo experimental definido para el proyecto.
@@ -390,10 +396,10 @@ El manuscrito cuenta con contenido sustantivo (Abstract, Introduction, Related W
 
 Pendiente antes del envío:
 
-* Confirmación de ORCID de los 5 coautores.
 * Elección formal de la revista o conferencia objetivo, notificada al docente (Sección 2 de la guía).
 * Licencia definitiva del conjunto de datos y cita del manuscrito publicado.
-* Verificación cruzada de las cifras de codificación temática citadas en el manuscrito contra `02_Evidencias/Codificacion_Tematica/` antes del envío final.
+
+Ya resuelto: ORCID de los 6 coautores confirmado (`title_page.tex`); verificación cruzada de las cifras de codificación temática contra `02_Evidencias/Codificacion_Tematica/` completada (corrección de 47 a 50 códigos axiales, propagada a los archivos que citaban el número anterior).
 
 Detalle completo del estado por archivo en `09_Publicacion/README.md`.
 
@@ -403,9 +409,9 @@ Detalle completo del estado por archivo en `09_Publicacion/README.md`.
 
 La carpeta `10_Autoria/` documenta que los artefactos entregados fueron producidos por el propio equipo, según la Guía de Desarrollo y Consolidación del PFC.
 
-Elementos presentes: `bitacora_sesiones.csv`, `declaracion_uso_ia.md`, `aporte_individual.md`, `exif_inventario.csv`.
+Elementos presentes: `bitacora_sesiones.csv`, `declaracion_uso_ia.md`, `aporte_individual.md`, `exif_inventario.csv`, `capturas/`, `doble_codificacion/`.
 
-Pendientes: `capturas/`, fuentes editables de diagramas, `grabaciones/`, `notas_campo/`, `fotos_equipo/`, `doble_codificacion/`, `correspondencia/` y `verificacion_previa.pdf`.
+Pendientes: fuentes editables de diagramas, `grabaciones/`, `notas_campo/`, `fotos_equipo/`, `correspondencia/` y `verificacion_previa.pdf`.
 
 ---
 
@@ -498,9 +504,9 @@ Actualmente:
 * El MVP se encuentra documentado y funcional.
 * El protocolo experimental está registrado.
 * Los datos crudos del componente empírico están depositados en `07_Datos/`.
-* Los scripts de análisis están en construcción (1 de 10 implementados).
-* El manuscrito tiene contenido sustantivo, con pendientes puntuales antes del envío.
-* La evidencia de autoría (`10_Autoria/`) está parcialmente completa.
+* El pipeline de datos de `07_Datos/scripts/` es reproducible con una sola orden (`run_all.R`); los scripts de `06_Experimento/scripts_analisis/` (saturación a nivel de código abierto) siguen pendientes de consolidarse con ese pipeline.
+* El manuscrito tiene contenido sustantivo, con pendientes puntuales antes del envío (ORCID y verificación cruzada de codificación ya resueltos).
+* La evidencia de autoría (`10_Autoria/`) está parcialmente completa (capturas y doble codificación ya incorporadas).
 * Los materiales de defensa (`11_Defensa/`) están parcialmente completos.
 
 ---
@@ -517,9 +523,9 @@ Actualmente:
 | MVP                   | ✅ Documentado y funcional  |
 | Registro experimental | ✅ Disponible               |
 | Datos crudos          | ✅ Depositados (`07_Datos/`)|
-| Scripts de análisis   | 🟡 En construcción (1 de 10) |
-| Manuscrito final      | 🟡 Contenido sustantivo, pendientes puntuales |
-| Evidencia de autoría  | 🟡 Parcial (4 de 12 elementos) |
+| Scripts de análisis   | ✅ Pipeline de `07_Datos/` reproducible |
+| Manuscrito final      |  ✅ Contenido sustantivo, pendientes puntuales |
+| Evidencia de autoría  | 🟡 Parcial (6 de 12 elementos) |
 | Materiales de defensa | 🟡 Parcial (3 de 5 archivos) |
 | Zenodo                | ✅ DOI disponible           |
 | Software Heritage     | ✅ Identificador disponible |
@@ -549,7 +555,7 @@ CHANGELOG.md
 El proyecto cuenta con el siguiente DOI:
 
 ```text
-10.5281/zenodo.22238486
+10.5281/zenodo.22558095
 ```
 
 Este identificador permite referenciar de forma persistente el conjunto de datos y/o código asociado al proyecto.
@@ -557,7 +563,7 @@ Este identificador permite referenciar de forma persistente el conjunto de datos
 ### OSF
 
 ```text
-osf.io/wkg32
+osf.io/r5p8d
 ```
 
 Se utiliza como referencia externa para el registro y los artefactos experimentales asociados.
@@ -597,7 +603,7 @@ CITATION.cff
 **DOI:**
 
 ```text
-10.5281/zenodo.22238486
+10.5281/zenodo.22558095
 ```
 
 Se recomienda utilizar la información definida en `CITATION.cff` para realizar la citación correspondiente del proyecto.
