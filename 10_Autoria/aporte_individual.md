@@ -165,15 +165,41 @@ Jhon Alexander Mesías Quijije — Fecha: ______________
 
 ---
 
-## Carlos Daniel Barrionuevo Fuentes
+## Carlos Daniel Barrionuevo Fuentes (Responsable de criterios y actividades de la Entrega 4 — 2B)
 
 ### Responsabilidad asignada en el reparto de trabajo
 
-**[PENDIENTE — completar por Barrionuevo Fuentes.]**
+Según `06_Experimento/README.md`: responsable de criterios y actividades generales de la Entrega 4 (2B) (misma descripción genérica que la de Marcillo Ponce en ese README). El historial de commits muestra dos aportes concretos y verificables: la recolección original de los datos de campo y el pipeline reproducible de análisis de `07_Datos/`.
+
+> Esta responsabilidad es la que consta en el README del proyecto; es genérica y no refleja el detalle real de su trabajo. Debe completarla o corregirla él mismo antes de firmar.
 
 ### Artefactos de los que es responsable
 
-**[PENDIENTE — Barrionuevo Fuentes: completar con sus artefactos e identificadores de commit.]**
+| Artefacto | Ruta | Descripción del aporte |
+|---|---|---|
+| Subida original de los datos de campo | (ruta original `06_Experimento/datos_crudos/`, hoy `07_Datos/datos_crudos/` tras la reorganización de Amagua Sacón) | Subida inicial de las 16 transcripciones de entrevistas (P01–P16) y de la encuesta cruda (`encuesta_respuestas_crudas.csv`), antes de que el repositorio se reestructurara. |
+| Pipeline reproducible de `07_Datos/` | `07_Datos/scripts/run_all.R`, `importar_datos.R`, `curva_saturacion.R`, `conteo_codigos.R`, `generar_checksums.R`, `justificacion_muestra.R` | Construcción de un pipeline de 6 scripts en R que corre con un solo comando (`run_all.R` como orquestador) y genera, sin intervención manual, todos los resultados de `07_Datos/resultados/`: curva de saturación temática (recalculada desde la columna `Evidencia_participantes` del CSV de codificación axial, no copiada de ningún reporte), conteo de códigos por categoría, checksums de datos y la justificación estadística del tamaño de muestra de la encuesta (n=60, comparando el margen de error alcanzado contra el necesario para distintos niveles de precisión), además de una tabla agregada (nunca por persona) del perfil de los participantes. |
+| Mapa de stakeholders (versión actual) | `04_Trazabilidad/Mapa_de_stakeholders.csv` | Última versión subida del mapa de stakeholders (la primera versión, de Marcillo Ponce, fue reemplazada por esta el 30 de agosto). |
+| Trabajo temprano de ERS/Trazabilidad (2A, superado) | `01_ERS/ERS_SGCVIA_v3_0_4toA.pdf`, `04_Trazabilidad/Requisitos_Funcionales.*`, `Requisitos_No_Funcionales.*`, `Trazabilidad.*`, `C6_Priorizacion_Trazabilidad_Extendida.docx` | Documentos de una entrega anterior (2A/4toA); el propio Barrionuevo los eliminó el 2 de agosto al consolidarse la matriz única `matriz_trazabilidad.csv` de la Entrega 4. Se listan por trazabilidad histórica, no como artefactos vigentes. |
+| Video de demostración del MVP (superado) | `05_MVP/Video_demo.mp4` | Video de demostración temprano del prototipo; ya no está en el repositorio (Vera Gómez quitó la referencia al reestructurar `05_MVP/` el 5 de septiembre). Se lista por trazabilidad histórica. |
+
+**[PENDIENTE — Barrionuevo Fuentes: confirmar su responsabilidad asignada real (la del README es genérica) y agregar cualquier otro artefacto de su autoría no listado aquí.]**
+
+### Identificadores de commit
+
+Extraídos de `git log --author="cbarrionuevof@uteq.edu.ec"` sobre el repositorio real.
+
+| Artefacto | Commit(s) |
+|---|---|
+| Datos de campo — subida original | (subida por lotes el 2 de agosto; ruta ya reorganizada por Amagua Sacón el 3 de septiembre, ver `563b0fa` en su sección) |
+| `run_all.R` | `5ec0f60` (subida), `cde7997` (actualización) |
+| `importar_datos.R` | `a916f5a` |
+| `curva_saturacion.R` | `1ce8891` |
+| `conteo_codigos.R` | `f640a02` |
+| `generar_checksums.R` | `520d50e` |
+| `justificacion_muestra.R` | `a3ff9ed` |
+| `Mapa_de_stakeholders.csv` (versión actual) | `4e30bc0` |
+| Documentos ERS/Trazabilidad 2A (eliminados) | `41b20d7`, `757a91e`, `016cf52`, `f05ac19`, `153bef6`, `048f693` |
 
 ### Firma
 
