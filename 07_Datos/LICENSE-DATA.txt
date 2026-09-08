@@ -1,27 +1,49 @@
-﻿LICENCIA DE LOS DATOS — SGCV-IA (07_Datos/)
+LICENSE-DATA.txt
+=================
 
-Los datos contenidos en esta carpeta (07_Datos/) se publican bajo la licencia
-Creative Commons Attribution 4.0 International (CC BY 4.0).
+Alcance
+-------
+Esta licencia aplica a los datos contenidos en el directorio 07_Datos/ del
+proyecto SGCV-IA. No aplica al código fuente del sistema, que se rige por su
+propia licencia de software.
 
-Texto completo: https://creativecommons.org/licenses/by/4.0/deed.es
-Texto legal:    https://creativecommons.org/licenses/by/4.0/legalcode.es
+Datos privados (acceso restringido, sin excepción)
+-----------------------------------------------------
+Los siguientes archivos contienen información personal identificable y/o
+fueron recolectados bajo consentimiento informado que restringe
+expresamente su difusión a terceros:
 
-Bajo esta licencia usted es libre de:
-  - Compartir: copiar y redistribuir el material en cualquier medio o formato.
-  - Adaptar: remezclar, transformar y construir a partir del material para
-    cualquier propósito, incluso comercialmente.
+  - datos_crudos/encuesta_respuestas_crudas.csv
+  - datos_crudos/Entrevistas/*.md
 
-Bajo los siguientes términos:
-  - Atribución: debe otorgar el crédito adecuado a los autores (Amagua Sacón
-    Robyn Willian, Barrionuevo Fuentes Carlos Daniel, Marcillo Ponce Alberto
-    Jeanpool, Mesías Quijije Jhon Alexander, Vera Gómez Anthony Alfredo —
-    Universidad Técnica Estatal de Quevedo, 2026), proporcionar un enlace a
-    la licencia e indicar si se realizaron cambios.
+Conforme al consentimiento informado firmado por cada participante
+(ver ejemplo: 2026-05-26_Consentimiento_P01_Entrevista.pdf), estos datos son
+de carácter confidencial, de uso exclusivo para fines académicos e
+investigativos del proyecto SGCV-IA, y no serán compartidos con terceros
+bajo ninguna circunstancia sin autorización expresa adicional de cada
+participante. Estos archivos NO se publican ni se depositan en ningún
+repositorio público. Su acceso queda restringido permanentemente al equipo
+de investigación del proyecto.
 
-Esta licencia es independiente de la licencia del código fuente del proyecto
-(ver LICENSE en la raíz del repositorio, que cubre 05_MVP/ bajo MIT).
+Datos procesados y agregados (publicables)
+---------------------------------------------
+Los archivos en resultados/, una vez verificado que no contienen
+identificadores personales ni contenido que permita reidentificar a un
+participante, se depositarán en Zenodo bajo licencia:
 
-EXCLUSIÓN: los datos crudos que contengan identificadores directos de
-participantes no se publican bajo esta licencia ni en ninguna otra forma
-abierta. Solo se publican las capas anonimizadas o seudonimizadas descritas
-en 07_Datos/README_datos.md y en 02_Evidencias/00_Restringido/README.md.
+  Creative Commons Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0)
+  https://creativecommons.org/licenses/by-nc/4.0/
+
+Bajo esta licencia, cualquier persona puede compartir y adaptar estos datos
+con fines no comerciales, siempre que otorgue el crédito correspondiente.
+
+Cómo citar
+----------
+[Autores según 10_Autoria]. (2026). Datos de investigación — Proyecto
+SGCV-IA [conjunto de datos]. Zenodo. [DOI pendiente — ver
+registro_deposito.md una vez publicado]
+
+Contacto
+--------
+Amagua Sacon Robin Willian
+ramaguas@uteq.edu.ec
