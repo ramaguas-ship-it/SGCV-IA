@@ -32,6 +32,10 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
   Software Heritage `fair_assessment.pdf`.
 - Completado el contenido real de `08_Etica/`: Anexo B, Aval
   Institucional.
+- Sesión de member checking realizada con participantes de las
+  entrevistas.
+- Completadas 5 de las 6 sesiones mínimas de walkthrough
+  (`02_Evidencias/Validacion_Walkthrough/`).
 
 ### Corregido
 - 2 videos de entrevista de Edison Moncada y 8 de Jaime Ortega, más 2
@@ -42,8 +46,7 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
   Moncada y Jaime Ortega; excluidos del conteo final de entrevistas.
 
 ### Pendiente
-- Sesión de member checking (ausente).
-- 5 sesiones adicionales de walkthrough (actualmente 1 de 6 mínimas).
+- 1 sesión adicional de walkthrough para cerrar el mínimo de 6.
 
 ## [2A] - 2026-07-29
 
