@@ -1,3 +1,4 @@
+
 # ==============================================================================
 # 07_Datos/scripts/run_all.R
 # ------------------------------------------------------------------------------
@@ -50,14 +51,14 @@ cat(" Pipeline de datos SGCV-IA — 07_Datos\n")
 cat("==============================================\n\n")
 
 tiempo_inicio <- Sys.time()
-resumen <- data.frame(script = character(), estado = character(), stringsAsFactors = FALSE)
+registro_pipeline <- data.frame(script = character(), estado = character(), stringsAsFactors = FALSE)
 
 for (script in pipeline) {
   ruta_script <- file.path(ruta_scripts, script)
 
   if (!file.exists(ruta_script)) {
     cat(sprintf("[OMITIDO] %s todavía no existe — se salta.\n\n", script))
-    resumen <- rbind(resumen, data.frame(script = script, estado = "omitido (no existe todavía)"))
+    registro_pipeline <- rbind(registro_pipeline, data.frame(script = script, estado = "omitido (no existe todavía)"))
     next
   }
 
@@ -79,7 +80,7 @@ for (script in pipeline) {
     "ERROR"
   })
 
-  resumen <- rbind(resumen, data.frame(script = script, estado = estado))
+  registro_pipeline <- rbind(registro_pipeline, data.frame(script = script, estado = estado))
   cat("\n")
 
   if (estado == "ERROR") {
@@ -97,13 +98,13 @@ tiempo_fin <- Sys.time()
 cat("==============================================\n")
 cat(" Resumen del pipeline\n")
 cat("==============================================\n")
-print(resumen, row.names = FALSE)
+print(registro_pipeline, row.names = FALSE)
 cat(sprintf(
   "\nTiempo total: %.1f segundos\n",
   as.numeric(difftime(tiempo_fin, tiempo_inicio, units = "secs"))
 ))
 
-if (any(resumen$estado == "ERROR")) {
+if (any(registro_pipeline$estado == "ERROR")) {
   cat("\nEl pipeline terminó con al menos un error. Revisa los mensajes de arriba.\n")
   quit(status = 1, save = "no")
 }
