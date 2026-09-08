@@ -1,0 +1,49 @@
+LICENSE-DATA.txt
+=================
+
+Alcance
+-------
+Esta licencia aplica a los datos contenidos en el directorio 07_Datos/ del
+proyecto SGCV-IA. No aplica al código fuente del sistema, que se rige por su
+propia licencia de software.
+
+Datos privados (acceso restringido, sin excepción)
+-----------------------------------------------------
+Los siguientes archivos contienen información personal identificable y/o
+fueron recolectados bajo consentimiento informado que restringe
+expresamente su difusión a terceros:
+
+  - datos_crudos/encuesta_respuestas_crudas.csv
+  - datos_crudos/Entrevistas/*.md
+
+Conforme al consentimiento informado firmado por cada participante
+(ver ejemplo: 2026-05-26_Consentimiento_P01_Entrevista.pdf), estos datos son
+de carácter confidencial, de uso exclusivo para fines académicos e
+investigativos del proyecto SGCV-IA, y no serán compartidos con terceros
+bajo ninguna circunstancia sin autorización expresa adicional de cada
+participante. Estos archivos NO se publican ni se depositan en ningún
+repositorio público. Su acceso queda restringido permanentemente al equipo
+de investigación del proyecto.
+
+Datos procesados y agregados (publicables)
+---------------------------------------------
+Los archivos en resultados/, una vez verificado que no contienen
+identificadores personales ni contenido que permita reidentificar a un
+participante, se depositarán en Zenodo bajo licencia:
+
+  Creative Commons Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0)
+  https://creativecommons.org/licenses/by-nc/4.0/
+
+Bajo esta licencia, cualquier persona puede compartir y adaptar estos datos
+con fines no comerciales, siempre que otorgue el crédito correspondiente.
+
+Cómo citar
+----------
+[Autores según 10_Autoria]. (2026). Datos de investigación — Proyecto
+SGCV-IA [conjunto de datos]. Zenodo. [DOI pendiente — ver
+registro_deposito.md una vez publicado]
+
+Contacto
+--------
+Amagua Sacon Robin Willian
+ramaguas@uteq.edu.ec

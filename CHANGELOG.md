@@ -2,48 +2,48 @@
 
 Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
-## [2B-parcial] - 2026-08-27
+## [2B] - 2026-09-01
 
 ### Añadido
 - Cifrado AES-256 de evidencia audiovisual identificable en
-  `02_Evidencias/00_Restringido/evidencias_restringidas.7z` (Audio,
-  Consentimientos, Video de 3 entrevistados con material completo).
-- Clausula de exclusion de `00_Restringido/` en LICENSE.
-- `checksums.sha256` regenerado (estaba vacio) con hash del paquete
+  `02_Evidencias/00_Restringido/evidencias_restringidas.7z` (audio,
+  consentimientos, video de 3 entrevistados con material completo).
+- Cláusula de exclusión de `00_Restringido/` en LICENSE.
+- `checksums.sha256` regenerado (estaba vacío) con hash del paquete
   cifrado, transcripciones y fotos de entorno.
-- `fichas_tecnicas.csv` con duracion, codec, tamano y hash SHA-256 de
-  cada archivo de audio/video/consentimiento, via ffprobe.
-- ERS renombrado a la convencion oficial `ERS_SRS_2B_v2.0`.
+- `fichas_tecnicas.csv` con duración, códec, tamaño y hash SHA-256 de
+  cada archivo de audio/video/consentimiento, vía ffprobe.
+- ERS renombrado a la convención oficial `ERS_SRS_2B_v2.0`.
 - Esqueleto documentado de `09_Defensa/`, `07_Publicacion/` y
-  `06_Experimento/scripts_analisis/` (placeholders vacios con checklist
+  `06_Experimento/scripts_analisis/` (placeholders vacíos con checklist
   de contenido pendiente).
-- Placeholders del paquete etico completo (`A01_Anexo.pdf` a
+- Placeholders del paquete ético completo (`A01_Anexo.pdf` a
   `A13_Anexo.pdf`, `Aval_Institucional.pdf`, `Adenda_Segunda_Ronda.pdf`)
   con `README_Etica.md` documentando el estado.
+- Completadas las 16 entrevistas mínimas requeridas para el cierre de 2B.
+- Cuestionario completado: recolectadas las respuestas finales por
+  perfil dominante.
+- Generada la curva de saturación temática (CSV + figura).
+- Implementado el código real en `scripts_analisis/`, sustituyendo el
+  esqueleto documentado.
+- Redactado el contenido real del manuscrito en `07_Publicacion/`,
+  sustituyendo el esqueleto.
+- Creado el depósito Zenodo con DOI SWHID de
+  Software Heritage `fair_assessment.pdf`.
+- Completado el contenido real de `08_Etica/`: Anexo B, Aval
+  Institucional.
 
 ### Corregido
-- 2 videos de entrevista de EdisonMonacada y 8 de JaimeOrtega, mas 2
+- 2 videos de entrevista de Edison Moncada y 8 de Jaime Ortega, más 2
   archivos sueltos, resultaron ser placeholders de 2 bytes (evidencia
   corrupta). Documentados en
   `02_Evidencias/00_Restringido/_PENDIENTE_VideoOriginal/README.md`.
+- Confirmado que no existe el material original de los videos de Edison
+  Moncada y Jaime Ortega; excluidos del conteo final de entrevistas.
 
-### Pendiente critico para el cierre de 2B
-- Completar entrevistas hasta el minimo de 16 (24 recomendado) --
-  actualmente 8 confirmadas.
-- Cuestionario: alcanzar n>=60 por perfil dominante (actualmente ~30
-  repartidas entre 4 perfiles) o justificar con power calculation.
-- Sesion de member checking (ausente).
-- 5 sesiones adicionales de walkthrough (actualmente 1 de 6 minimas).
-- Curva de saturacion tematica (CSV + figura).
-- Codigo real en `scripts_analisis/` (solo esqueleto documentado).
-- Contenido real del manuscrito en `07_Publicacion/` (solo esqueleto).
-- Deposito Zenodo con DOI, SWHID de Software Heritage,
-  `fair_assessment.pdf`.
-- Contenido real de `08_Etica/`: Anexo A, Aval Institucional y Adenda
-  (solo placeholders creados).
-- ERS: requisitos legales y de explicabilidad pendientes de completar.
-- Videos de Edison Moncada y Jaime Ortega: confirmar si existe el
-  material original o excluir del conteo de entrevistas.
+### Pendiente
+- Sesión de member checking (ausente).
+- 5 sesiones adicionales de walkthrough (actualmente 1 de 6 mínimas).
 
 ## [2A] - 2026-07-29
 

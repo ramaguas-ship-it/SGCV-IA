@@ -1,0 +1,12 @@
+services:
+  sgcv-ia-mvp:
+    build: .
+    container_name: sgcv-ia-mvp
+    ports:
+      - "8080:8080"
+    volumes:
+      - sgcv_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  sgcv_data:
