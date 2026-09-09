@@ -201,7 +201,7 @@ Extraídos de `git log --author="cbarrionuevof@uteq.edu.ec"` sobre el repositori
 
 ### Firma
 
-Carlos Daniel Barrionuevo Fuentes — Fecha: ______________
+Carlos Daniel Barrionuevo Fuentes — Fecha: 08/09/2026
 
 ---
 
