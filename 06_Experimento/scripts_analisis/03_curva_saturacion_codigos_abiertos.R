@@ -1,25 +1,37 @@
 # ==============================================================================
 # 03_curva_saturacion_codigos_abiertos.R
-# SGCV-IA - Ingeniería de Requisitos (ISR-401)
+# SGCV-IA - Ingenieria de Requisitos (ISR-401)
 #
-# Calcula la curva de saturación temática a nivel de código abierto a partir
+# Calcula la curva de saturacion tematica a nivel de codigo abierto a partir
 # de 02_Evidencias/Codificacion_Tematica/codificacion_tematica_SGCV-IA.csv
 #
 # Produce:
-#   - 06_Experimento/resultados/tabla_saturacion_codigos_abiertos.csv
-#   - 06_Experimento/resultados/curva_saturacion_codigos_abiertos.png
+#   - 06_Experimento/resultados/tablas/tabla_saturacion_codigos_abiertos.csv
+#   - 06_Experimento/resultados/figuras/curva_saturacion_codigos_abiertos.png
 #
-# Ningún número de esta tabla/figura debe escribirse a mano en ningún
+# Ningun numero de esta tabla/figura debe escribirse a mano en ningun
 # documento: siempre debe reproducirse ejecutando este script sobre
-# datos_crudos / la evidencia de codificación tal como está en el repositorio.
+# datos_crudos / la evidencia de codificacion tal como esta en el repositorio.
+#
+# NOTA DE MANTENIMIENTO (revisado): las rutas de este script se ajustaron
+# para ser relativas a la RAIZ DEL REPOSITORIO (no a scripts_analisis/),
+# igual que el resto de scripts de este pipeline (01, 02, 04-07) y que el
+# de 07_Datos/. Antes usaba rutas "../../" pensadas para ejecutarse parado
+# dentro de scripts_analisis/, lo cual rompia run_all.R al correr todos los
+# scripts en una sola sesion de R. La logica de calculo NO cambio, solo las
+# rutas de entrada/salida.
+#
+# Uso: Rscript 06_Experimento/scripts_analisis/03_curva_saturacion_codigos_abiertos.R
+#      (ejecutar desde la raiz del repositorio)
 # ==============================================================================
 
-# --- 0. Rutas (relativas a 06_Experimento/scripts_analisis/) ------------------
-ruta_entrada  <- "../../02_Evidencias/Codificacion_Tematica/codificacion_tematica_SGCV-IA.csv"
-ruta_tabla    <- "../resultados/tabla_saturacion_codigos_abiertos.csv"
-ruta_figura   <- "../resultados/curva_saturacion_codigos_abiertos.png"
+# --- 0. Rutas (relativas a la raiz del repositorio) ----------------------------
+ruta_entrada  <- "02_Evidencias/Codificacion_Tematica/codificacion_tematica_SGCV-IA.csv"
+ruta_tabla    <- "06_Experimento/resultados/tablas/tabla_saturacion_codigos_abiertos.csv"
+ruta_figura   <- "06_Experimento/resultados/figuras/curva_saturacion_codigos_abiertos.png"
 
 dir.create(dirname(ruta_tabla), recursive = TRUE, showWarnings = FALSE)
+dir.create(dirname(ruta_figura), recursive = TRUE, showWarnings = FALSE)
 
 # --- 1. Cargar datos -----------------------------------------------------------
 datos <- read.csv(ruta_entrada, stringsAsFactors = FALSE, encoding = "UTF-8")
@@ -72,8 +84,7 @@ cat("Tabla guardada en:", normalizePath(ruta_tabla), "\n")
 print(tabla_saturacion)
 
 # --- 5. Generar figura (barras = códigos nuevos, línea = acumulado) -----------
-Sys.setlocale("LC_ALL", "C.UTF-8")
-png(ruta_figura, width = 1400, height = 900, res = 150, type = "cairo")
+png(ruta_figura, width = 1400, height = 900, res = 150)
 
 par(mar = c(5, 5, 4, 5))
 bp <- barplot(
@@ -118,3 +129,4 @@ cat("NOTA: A nivel de código ABIERTO no se espera saturación completa (cada\n"
 cat("fragmento conserva la redacción propia del participante); el criterio de\n")
 cat("saturación formal debe aplicarse sobre los códigos AXIALES consolidados,\n")
 cat("una vez completada esa etapa de análisis.\n")
+
