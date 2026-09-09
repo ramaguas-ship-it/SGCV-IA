@@ -6,7 +6,7 @@
 # Ningun numero ni forma de estas figuras se dibuja a mano: todo sale de
 # encuesta_limpia.csv (02) y tamano_efecto.csv (07).
 #
-# Figuras generadas (en 06_Experimento/resultados/figuras/):
+# Figuras generadas (en 09_Publicacion/figuras/):
 #   - fig_distribucion_perfiles.png   : cuantos participantes hay por perfil
 #   - fig_boxplot_pregunta_1.png .. _6.png : distribucion de respuestas Likert
 #     por perfil, una figura por pregunta (4 preguntas)
@@ -21,7 +21,7 @@
 ruta_datos_procesados     <- "06_Experimento/datos_procesados"
 ruta_resultados           <- "06_Experimento/resultados"
 ruta_salidas_estadisticas <- file.path(ruta_resultados, "salidas_estadisticas")
-ruta_figuras              <- file.path(ruta_resultados, "figuras")
+ruta_figuras              <- "09_Publicacion/figuras"
 
 ruta_encuesta      <- file.path(ruta_datos_procesados, "encuesta_limpia.csv")
 ruta_tamano_efecto <- file.path(ruta_salidas_estadisticas, "tamano_efecto.csv")
