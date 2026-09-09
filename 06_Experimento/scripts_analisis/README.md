@@ -1,6 +1,6 @@
 # scripts_analisis
 
-## Estado: EN CONSTRUCCIÓN — 1 de 10 scripts implementado (creado 27/08/2026, actualizado con datos reales)
+## Estado: EN CONSTRUCCIÓN — 1 de 9 scripts implementado (creado 27/08/2026, actualizado con datos reales)
 
 Según la Sección 4 de la guía, todo análisis debe ejecutarse con scripts
 versionados que reproduzcan exactamente cada tabla y figura del manuscrito.
