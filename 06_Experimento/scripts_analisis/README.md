@@ -1,4 +1,4 @@
-# scripts_analisis/
+# scripts_analisis
 
 ## Estado: EN CONSTRUCCIÓN — 1 de 10 scripts implementado (creado 27/08/2026, actualizado con datos reales)
 
