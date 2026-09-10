@@ -163,25 +163,22 @@ Jhon Alexander Mesías Quijije — Fecha: ______________
 
 ---
 
-## Carlos Daniel Barrionuevo Fuentes (Responsable de criterios y actividades de la Entrega 4 — 2B)
+## Carlos Daniel Barrionuevo Fuentes (Apoyo — Modelador; responsable de criterios y actividades de la Entrega 4 — 2B)
 
 ### Responsabilidad asignada en el reparto de trabajo
 
-Según `06_Experimento/README.md`: responsable de criterios y actividades generales de la Entrega 4 (2B) (misma descripción genérica que la de Marcillo Ponce en ese README). El historial de commits muestra dos aportes concretos y verificables: la recolección original de los datos de campo y el pipeline reproducible de análisis de `07_Datos/`.
-
-> Esta responsabilidad es la que consta en el README del proyecto; es genérica y no refleja el detalle real de su trabajo. Debe completarla o corregirla él mismo antes de firmar.
+El `06_Experimento/README.md` lo describe con la misma frase genérica que a Marcillo Ponce ("responsable de criterios y actividades de la Entrega 4 — 2B"), que no refleja el detalle real de su trabajo. La responsabilidad específica y verificable es la del documento **"Reparto de trabajo — Entrega 4"**, donde consta como **Apoyo — Modelador**, con las tareas asignadas cubriendo tanto `07_Datos/scripts/` como el pipeline de análisis cuantitativo/cualitativo de `06_Experimento/scripts_analisis/` (9 scripts + orquestador), incluida la corrección de dos scripts preexistentes que tenían inconsistencias de rutas.
 
 ### Artefactos de los que es responsable
 
 | Artefacto | Ruta | Descripción del aporte |
 |---|---|---|
+| Pipeline de análisis de `06_Experimento/scripts_analisis/` (9 scripts + orquestador) | `01_importar_datos.R`, `02_limpieza.R`, `03_curva_saturacion_codigos_abiertos.R` *(corregido)*, `04_descriptivos.R`, `05_supuestos.R`, `06_pruebas_hipotesis.R`, `07_tamano_efecto.R`, `08_figuras.R` *(corregido)*, `09_tablas.R`, `run_all.R` | Construcción completa del pipeline de análisis del componente empírico (Enfoque 3), reutilizando los resultados ya limpios de `07_Datos/` en vez de duplicar el parseo de datos crudos. Incluye: limpieza y detección de duplicados/valores faltantes; estadísticos descriptivos (media, mediana, DE, IQR) de las 4 preguntas Likert de la encuesta por perfil de participante; verificación de supuestos (Shapiro-Wilk, Levene) que decide automáticamente el tipo de prueba a usar; comparación entre los 4 perfiles con Wilcoxon/Mann-Whitney U y corrección Holm-Bonferroni por comparaciones múltiples; tamaño del efecto (delta de Cliff y d de Cohen, con intervalos de confianza al 95% por bootstrap de 10.000 réplicas); **cálculo de potencia estadística** que documenta formalmente que el perfil dominante de la encuesta (26/60, dueños de mascota) no alcanza el n≥60 exigido por la guía, con una potencia real de ~42% para detectar un efecto mediano (d=0.5), declarando el hallazgo como evidencia exploratoria y no confirmatoria; 6 figuras y 6 tablas consolidadas hacia `09_Publicacion/`. También corrigió dos inconsistencias en el script preexistente `03_curva_saturacion_codigos_abiertos.R` (rutas relativas incompatibles con la ejecución desde la raíz del repositorio, y una configuración de gráfico específica de Linux/Mac que fallaba en Windows), sin alterar su lógica de cálculo. |
+| Pipeline reproducible de `07_Datos/` | `07_Datos/scripts/run_all.R`, `importar_datos.R`, `curva_saturacion.R`, `conteo_codigos.R`, `generar_checksums.R`, `justificacion_muestra.R`; `07_Datos/diccionario_datos.csv` | Construcción de un pipeline de 6 scripts en R que corre con un solo comando (`run_all.R` como orquestador) y genera, sin intervención manual, todos los resultados de `07_Datos/resultados/`: curva de saturación temática (recalculada desde la columna `Evidencia_participantes` del CSV de codificación axial, no copiada de ningún reporte), conteo de códigos por categoría, checksums de datos y registro de depósito (`checksums_datos.sha256`, `registro_deposito.md`, generados por script a partir de hashes SHA-256 reales), y la justificación estadística del tamaño de muestra de la encuesta (n=60, margen de error alcanzado ~12.7% con 95% de confianza), además de una tabla agregada (nunca por persona) del perfil de los participantes. Incluye también la finalización de `diccionario_datos.csv` (columna por columna: tipo de dato, valores posibles, codificación de valores perdidos y procedencia, para las 21 columnas de la encuesta y los 6 campos de las transcripciones). |
 | Subida original de los datos de campo | (ruta original `06_Experimento/datos_crudos/`, hoy `07_Datos/datos_crudos/` tras la reorganización de Amagua Sacón) | Subida inicial de las 16 transcripciones de entrevistas (P01–P16) y de la encuesta cruda (`encuesta_respuestas_crudas.csv`), antes de que el repositorio se reestructurara. |
-| Pipeline reproducible de `07_Datos/` | `07_Datos/scripts/run_all.R`, `importar_datos.R`, `curva_saturacion.R`, `conteo_codigos.R`, `generar_checksums.R`, `justificacion_muestra.R` | Construcción de un pipeline de 6 scripts en R que corre con un solo comando (`run_all.R` como orquestador) y genera, sin intervención manual, todos los resultados de `07_Datos/resultados/`: curva de saturación temática (recalculada desde la columna `Evidencia_participantes` del CSV de codificación axial, no copiada de ningún reporte), conteo de códigos por categoría, checksums de datos y la justificación estadística del tamaño de muestra de la encuesta (n=60, comparando el margen de error alcanzado contra el necesario para distintos niveles de precisión), además de una tabla agregada (nunca por persona) del perfil de los participantes. |
 | Mapa de stakeholders (versión actual) | `04_Trazabilidad/Mapa_de_stakeholders.csv` | Última versión subida del mapa de stakeholders (la primera versión, de Marcillo Ponce, fue reemplazada por esta el 30 de agosto). |
 | Trabajo temprano de ERS/Trazabilidad (2A, superado) | `01_ERS/ERS_SGCVIA_v3_0_4toA.pdf`, `04_Trazabilidad/Requisitos_Funcionales.*`, `Requisitos_No_Funcionales.*`, `Trazabilidad.*`, `C6_Priorizacion_Trazabilidad_Extendida.docx` | Documentos de una entrega anterior (2A/4toA); el propio Barrionuevo los eliminó el 2 de agosto al consolidarse la matriz única `matriz_trazabilidad.csv` de la Entrega 4. Se listan por trazabilidad histórica, no como artefactos vigentes. |
 | Video de demostración del MVP (superado) | `05_MVP/Video_demo.mp4` | Video de demostración temprano del prototipo; ya no está en el repositorio (Vera Gómez quitó la referencia al reestructurar `05_MVP/` el 5 de septiembre). Se lista por trazabilidad histórica. |
-
-**[PENDIENTE — Barrionuevo Fuentes: confirmar su responsabilidad asignada real (la del README es genérica) y agregar cualquier otro artefacto de su autoría no listado aquí.]**
 
 ### Identificadores de commit
 
@@ -189,15 +186,31 @@ Extraídos de `git log --author="cbarrionuevof@uteq.edu.ec"` sobre el repositori
 
 | Artefacto | Commit(s) |
 |---|---|
+| `01_importar_datos.R` (06_Experimento) | `f369096` |
+| `02_limpieza.R` (06_Experimento) | `ee05040` |
+| `03_curva_saturacion_codigos_abiertos.R` (06_Experimento, subida original) | `d03038c` |
+| `03_curva_saturacion_codigos_abiertos.R` (06_Experimento, corrección) | `87eb965` |
+| `04_descriptivos.R` (06_Experimento) | `72a0fd1` |
+| `05_supuestos.R` (06_Experimento) | `02fba14` |
+| `06_pruebas_hipotesis.R` (06_Experimento) | `91128c4` |
+| `07_tamano_efecto.R` (06_Experimento) | `968d7ce` |
+| `08_figuras.R` (06_Experimento, subida original) | `4227efc` |
+| `08_figuras.R` (06_Experimento, corrección) | `5114d89` |
+| `09_tablas.R` (06_Experimento) | `8286c09` |
+| `run_all.R` (06_Experimento) | `0cc645b` (subida como `run_all (3).R`), `75909f9` (renombrado a `run_all.R`), `5145ece` (actualización final) |
+| `run_all.R` (07_Datos) | `5ec0f60` (subida), `cde7997` (actualización) |
+| `importar_datos.R` (07_Datos) | `a916f5a` |
+| `curva_saturacion.R` (07_Datos) | `1ce8891` |
+| `conteo_codigos.R` (07_Datos) | `f640a02` |
+| `generar_checksums.R` (07_Datos) | `520d50e` |
+| `justificacion_muestra.R` (07_Datos) | `a3ff9ed` |
+| `diccionario_datos.csv` (07_Datos) | `20e84bf` ("Update diccionario_datos.csv") |
+| `checksums_datos.sha256` (07_Datos, contenido final, generado por `generar_checksums.R`) | `e6c0897` ("Update checksums_datos.sha256") |
+| `registro_deposito.md` (07_Datos, contenido final, generado por `justificacion_muestra.R`) | `6ba192d` ("Update registro_deposito.md") |
 | Datos de campo — subida original | (subida por lotes el 2 de agosto; ruta ya reorganizada por Amagua Sacón el 3 de septiembre, ver `563b0fa` en su sección) |
-| `run_all.R` | `5ec0f60` (subida), `cde7997` (actualización) |
-| `importar_datos.R` | `a916f5a` |
-| `curva_saturacion.R` | `1ce8891` |
-| `conteo_codigos.R` | `f640a02` |
-| `generar_checksums.R` | `520d50e` |
-| `justificacion_muestra.R` | `a3ff9ed` |
 | `Mapa_de_stakeholders.csv` (versión actual) | `4e30bc0` |
 | Documentos ERS/Trazabilidad 2A (eliminados) | `41b20d7`, `757a91e`, `016cf52`, `f05ac19`, `153bef6`, `048f693` |
+
 
 ### Firma
 
