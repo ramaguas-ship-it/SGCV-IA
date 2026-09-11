@@ -109,4 +109,4 @@ if (any(registro_pipeline$estado == "ERROR")) {
   quit(status = 1, save = "no")
 }
 
-cat("\nListo. Resultados en 06_Experimento/datos_procesados/, resultados/ y 09_Publicacion/{tablas,figuras}/\n")
+cat("\nListo. Resultados en 07_Datos/resultados/, 06_Experimento/resultados/ y 09_Publicacion/{tablas,figuras}/\n")
