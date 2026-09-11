@@ -194,7 +194,7 @@ Extraídos de `git log --use-mailmap --author="jmesiasq@uteq.edu.ec"` sobre el r
 
 ### Firma
 
-Jhon Alexander Mesías Quijije — Fecha: ______________
+Jhon Alexander Mesías Quijije — Fecha: 11/09/20206
 
 ---
 
