@@ -1,7 +1,7 @@
 # ==============================================================================
 # 06_Experimento/scripts_analisis/01_importar_datos.R
 # ------------------------------------------------------------------------------
-# Valida que los datos procesados de 07_Datos/resultados/ existan y esten
+# Valida que los datos procesados de 07_Datos/datos_procesados/ existan y esten
 # listos para el resto del pipeline de este componente empirico.
 #
 # Este script NO copia ni duplica ningun archivo. Siguiendo la decision ya
@@ -9,7 +9,7 @@
 # procesados... vive en 07_Datos/, fuera de esta carpeta"), TODOS los datos
 # procesados del proyecto -- tanto los de 07_Datos como los que produce el
 # pipeline de este componente (encuesta_limpia.csv, etc.) -- se guardan
-# UNICAMENTE en 07_Datos/resultados/. 06_Experimento no tiene su propia
+# UNICAMENTE en 07_Datos/datos_procesados/. 06_Experimento no tiene su propia
 # carpeta datos_procesados/.
 #
 # NOTA SOBRE "corpus RF/RNF": la plantilla generica de scripts_analisis/README.md
@@ -24,14 +24,14 @@
 #      07_Datos/scripts/importar_datos.R)
 # ==============================================================================
 
-ruta_datos_07 <- "07_Datos/resultados"
+ruta_datos_07 <- "07_Datos/datos_procesados"
 
 ruta_encuesta_origen        <- file.path(ruta_datos_07, "encuesta_procesada.csv")
 ruta_transcripciones_origen <- file.path(ruta_datos_07, "transcripciones_completas.rds")
 
 if (!file.exists(ruta_encuesta_origen) || !file.exists(ruta_transcripciones_origen)) {
   stop(
-    "No se encontraron los datos procesados de 07_Datos/resultados/.\n",
+    "No se encontraron los datos procesados de 07_Datos/datos_procesados/.\n",
     "Corre primero: Rscript 07_Datos/scripts/importar_datos.R"
   )
 }
