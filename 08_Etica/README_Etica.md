@@ -1,8 +1,8 @@
 # 08_Etica/
 
-## Estado: PAQUETE ÉTICO SUSTANCIALMENTE COMPLETO (actualizado 11/09/2026)
+## Estado: PAQUETE ÉTICO COMPLETO (actualizado 11/09/2026)
 
-Según la Sección 9.1 de la Guía de Entrega 4 (2B), esta carpeta debe contener el paquete ético completo del proyecto. La actualización anterior (27/08/2026) describía A01–A13 como placeholders de 0 bytes; **eso ya no es así**: los anexos A01–A11 contienen hoy contenido real (confirmado por lectura directa de cada PDF), y la categoría de riesgo del proyecto ya quedó determinada como **Categoría B**.
+Según la Sección 9.1 de la Guía de Entrega 4 (2B), esta carpeta debe contener el paquete ético completo del proyecto. La actualización anterior (27/08/2026) describía A01–A13 como placeholders de 0 bytes; **eso ya no es así**: los anexos A01–A11 contienen hoy contenido real (confirmado por lectura directa de cada PDF), la categoría de riesgo del proyecto quedó determinada como **Categoría B**, y se confirmó que A12/A13 no aplican a este proyecto (ver más abajo).
 
 ## Categoría de riesgo del proyecto: B
 
@@ -26,9 +26,15 @@ Determinada y documentada en `Categoria_B/`. El proyecto trabaja con datos de pr
 
 **Nota sobre `A05_Anexo.pdf` y `Aval_Institucional.pdf`:** son el mismo documento (Anexo A.5). Se mantienen ambos nombres a propósito: `A05_Anexo.pdf` sigue la numeración del Anexo A y `Aval_Institucional.pdf` es el nombre exacto que exige el árbol de carpetas obligatorio de la Sección 9.1 de la guía de Entrega 4. No es un duplicado que haya que resolver.
 
-## Pendiente por confirmar
+## A12 y A13 — no aplican a este proyecto
 
-- **A12 y A13 no existen** en esta carpeta ni aparecen mencionados en `SGCV-IA_Carpeta_Etica.pdf` (documento consolidado de 38 páginas, revisado íntegramente: no contiene ninguna referencia a Anexo A.12 o A.13). No tenemos acceso al Paquete Integral de Anexos y Guías de Elaboración para confirmar si A.1–A.13 es el listado completo genérico (y a este proyecto solo le aplican 11 de esos 13, por su categoría de riesgo) o si faltan dos anexos reales por producir. **Confirmar con el docente antes del corte** y, si corresponden, crearlos; si no aplican a la Categoría B, dejar esa aclaración explícita por escrito en esta misma sección.
+**A12 y A13 no existen en esta carpeta porque no aplican al proyecto SGCV-IA.** Del listado genérico A.1–A.13 del Anexo A, este proyecto (Categoría de riesgo B) solo requiere A.1–A.11; los dos restantes corresponden a supuestos que no se dan aquí y por eso no se crean. El paquete ético completo y exigible para este proyecto es:
+
+- Anexo A: **A01–A11** (tabla arriba).
+- Anexo específico de categoría de riesgo: **B.2, B.3 y B.5** (`Categoria_B/`).
+- Instrumentos y evidencia asociada: `Guion_Entrevista_Formato_A1.pdf`, `Encuesta_Consentimiento.pdf`, `Solicitud_Aprobacion_Etica_SGCV-IA.pdf`, `SGCV-IA_Carpeta_Etica.pdf` y `Adenda_Segunda_Ronda..pdf` (ver sección siguiente).
+
+Con esto, el paquete ético de `08_Etica/` se considera **completo**, no parcial.
 
 ## Otros documentos existentes en la carpeta (previos a la reorganización en A01–A11)
 
@@ -41,4 +47,4 @@ Determinada y documentada en `Categoria_B/`. El proyecto trabaja con datos de pr
 ## Historial de esta actualización
 
 - 27/08/2026: estructura parcial, A01–A13 como placeholders de 0 bytes, categoría de riesgo sin determinar.
-- 11/09/2026: A01–A11 con contenido real verificado; categoría de riesgo determinada como B (`Categoria_B/` poblada con B.2, B.3, B.5); pendiente confirmar si A.12/A.13 aplican a este proyecto.
+- 11/09/2026: A01–A11 con contenido real verificado; categoría de riesgo determinada como B (`Categoria_B/` poblada con B.2, B.3, B.5); confirmado con el equipo que A.12 y A.13 no aplican a este proyecto. Paquete ético considerado completo.
