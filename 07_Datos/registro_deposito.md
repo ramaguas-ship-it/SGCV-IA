@@ -1,7 +1,8 @@
-[registro_deposito.md](https://github.com/user-attachments/files/32117382/registro_deposito.md)
+[registro_deposito.md](https://github.com/user-attachments/files/32128340/registro_deposito.md)
+
 # Registro de depósito de datos — SGCV-IA
 
-Generado automáticamente por `07_Datos/scripts/generar_checksums.R` el 2026-09-11 11:06:29 -05.
+Generado automáticamente por `07_Datos/scripts/generar_checksums.R` el 2026-09-11 14:14:27 -05.
 
 Este registro documenta el estado final de los datos crudos y los resultados
 del pipeline de análisis en el momento del depósito. Si cualquiera de estos
@@ -9,8 +10,8 @@ archivos cambia después, hay que volver a correr este script para actualizar
 tanto este registro como `checksums_datos.sha256`.
 
 - Archivos de datos crudos (`07_Datos/datos_crudos/`): 17
-- Archivos de resultados (`07_Datos/resultados/`): 11
-- Total de archivos verificados: 28
+- Archivos de resultados (`07_Datos/resultados/`): 12
+- Total de archivos verificados: 29
 
 ## Verificación de integridad
 
@@ -49,6 +50,7 @@ sha256sum -c 07_Datos/checksums_datos.sha256
 | `07_Datos/resultados/encuesta_limpia.csv` | `5a9ce90a7a8a3982693f92478ac6aa3972805e5930f340090c87e6bcd2d2bece` |
 | `07_Datos/resultados/encuesta_procesada.csv` | `5d502bd7672d15fad114117d39afb6c52dd58ed959c83cfc0af0aafee44ff868` |
 | `07_Datos/resultados/justificacion_n210.md` | `2430e3fe6d89d1f4a5ac370f168dedebab5bc1c594c4cb75d966e1294c5c213e` |
+| `07_Datos/resultados/justificacion_n60.md` | `c70808bdee01a039dda00a33c25abc7548481e24de7213f96a0ff6efcd84ed70` |
 | `07_Datos/resultados/perfil_participantes_agregado.csv` | `a021cef37bb9b9013a1d2ca3dec21c9ddbb61061ee7addc29efb34725f174ffa` |
 | `07_Datos/resultados/reporte_limpieza.md` | `6a5e8738ff7f0b810a9865c92c7d743392fe3ae6527df8b133e164aaf6c227d4` |
 | `07_Datos/resultados/saturacion_reporte.md` | `d84bc3ff4e8a30630cd32c2cd1b06a1dbcc6b3dd6235eda7371392ba34e71e08` |
