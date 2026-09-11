@@ -1,4 +1,3 @@
-
 # ==============================================================================
 # 07_Datos/scripts/importar_datos.R
 # ------------------------------------------------------------------------------
@@ -6,36 +5,30 @@
 #   1) La encuesta cerrada (07_Datos/datos_crudos/encuesta_respuestas_crudas.csv)
 #   2) Las transcripciones de entrevistas (07_Datos/datos_crudos/Entrevistas/*.md)
 #
-# Y las deja limpias y estructuradas en 07_Datos/resultados/, listas para que
-# los siguientes scripts del pipeline (conteo de códigos, curva de saturación,
-# justificación del tamaño de muestra) las usen sin tener que volver a
-# parsear texto crudo. El tamaño de muestra (n) se calcula dinámicamente en
-# justificacion_muestra.R a partir de los datos -- nunca se hardcodea aquí.
+# Y las deja limpias y estructuradas en 07_Datos/datos_procesados/ (siguiendo
+# la Guia de desarrollo, Seccion 7: datos_procesados/ es la version ya
+# limpia/parseada de los datos; resultados/ es para las salidas del ANALISIS,
+# no para esto).
 #
 # IMPORTANTE: este script NUNCA escribe ni modifica nada dentro de
-# 07_Datos/datos_crudos/ — solo lee de ahí. Toda su salida va a
-# 07_Datos/resultados/.
+# 07_Datos/datos_crudos/ — solo lee de ahi.
 #
-# Requisitos: R base únicamente (no usa librerías externas), para que
-# cualquiera del equipo pueda correrlo sin instalar paquetes adicionales.
+# Requisitos: R base unicamente.
 #
 # Uso:
 #   Rscript 07_Datos/scripts/importar_datos.R
-#   (ejecutar desde la raíz del repositorio, o ajustar `ruta_base` abajo)
+#   (ejecutar desde la raiz del repositorio)
 # ==============================================================================
 
-# ------------------------------------------------------------------------------
-# 0. Configuración de rutas
-# ------------------------------------------------------------------------------
-ruta_base        <- "07_Datos"
-ruta_crudos      <- file.path(ruta_base, "datos_crudos")
-ruta_encuesta    <- file.path(ruta_crudos, "encuesta_respuestas_crudas.csv")
-ruta_entrevistas <- file.path(ruta_crudos, "Entrevistas")
-ruta_resultados  <- file.path(ruta_base, "resultados")
+ruta_base             <- "07_Datos"
+ruta_crudos           <- file.path(ruta_base, "datos_crudos")
+ruta_encuesta         <- file.path(ruta_crudos, "encuesta_respuestas_crudas.csv")
+ruta_entrevistas      <- file.path(ruta_crudos, "Entrevistas")
+ruta_datos_procesados <- file.path(ruta_base, "datos_procesados")
 
-if (!dir.exists(ruta_resultados)) {
-  dir.create(ruta_resultados, recursive = TRUE)
-  cat("Carpeta creada:", ruta_resultados, "\n")
+if (!dir.exists(ruta_datos_procesados)) {
+  dir.create(ruta_datos_procesados, recursive = TRUE)
+  cat("Carpeta creada:", ruta_datos_procesados, "\n")
 }
 
 # ------------------------------------------------------------------------------
@@ -45,29 +38,19 @@ importar_encuesta <- function(ruta_csv) {
   if (!file.exists(ruta_csv)) {
     stop("No se encontró el archivo de encuesta en: ", ruta_csv)
   }
-
   datos <- read.csv(
     ruta_csv,
     encoding = "UTF-8",
     stringsAsFactors = FALSE,
-    check.names = FALSE  # conservamos los nombres de columna originales (con tildes y signos)
+    check.names = FALSE
   )
-
-  # Guardamos los nombres originales como atributo, por si luego se necesitan
-  # para trazabilidad hacia el diccionario de datos.
   attr(datos, "nombres_originales") <- names(datos)
-
   datos
 }
 
 # ------------------------------------------------------------------------------
 # 2. Importar las transcripciones de entrevistas
 # ------------------------------------------------------------------------------
-
-# Extrae un metadato tipo "Rol: Veterinario" o "**Rol:** Veterinario/a (...)",
-# sin importar si tiene asteriscos de Markdown alrededor. Ancla la búsqueda al
-# inicio de línea para no confundirse con palabras que contengan la etiqueta
-# como substring (p. ej. "control" contiene "rol").
 extraer_metadato <- function(texto, etiqueta) {
   patron <- paste0("(?im)^\\**", etiqueta, "\\**:?\\**\\s*(.+)$")
   m <- regexec(patron, texto, perl = TRUE)
@@ -76,8 +59,6 @@ extraer_metadato <- function(texto, etiqueta) {
   trimws(res[2])
 }
 
-# Extrae el cuerpo real de la entrevista: todo lo que viene después de la
-# línea "Transcripción" o "## Transcripción".
 extraer_cuerpo <- function(texto) {
   patron <- "(?im)^\\s*#{0,2}\\s*Transcripci[oó]n\\s*$"
   m <- regexpr(patron, texto, perl = TRUE)
@@ -90,16 +71,14 @@ importar_transcripciones <- function(ruta_dir) {
   if (!dir.exists(ruta_dir)) {
     stop("No se encontró la carpeta de entrevistas en: ", ruta_dir)
   }
-
   archivos <- list.files(ruta_dir, pattern = "Transcripcion.*\\.md$", full.names = TRUE)
   if (length(archivos) == 0) {
     stop("No se encontraron archivos .md de transcripción en: ", ruta_dir)
   }
-
   filas <- lapply(archivos, function(archivo) {
     texto <- paste(readLines(archivo, encoding = "UTF-8", warn = FALSE), collapse = "\n")
 
-    id_match  <- regexpr("P[0-9]+", basename(archivo))
+    id_match <- regexpr("P[0-9]+", basename(archivo))
     id_participante <- if (id_match[1] == -1) NA_character_ else regmatches(basename(archivo), id_match)
 
     fecha_match <- regexpr("[0-9]{4}-[0-9]{2}-[0-9]{2}", basename(archivo))
@@ -119,7 +98,6 @@ importar_transcripciones <- function(ruta_dir) {
       stringsAsFactors = FALSE
     )
   })
-
   resultado <- do.call(rbind, filas)
   resultado[order(resultado$id_participante), ]
 }
@@ -145,32 +123,23 @@ if (length(faltantes_rol) > 0) {
 }
 
 # ------------------------------------------------------------------------------
-# 4. Guardar resultados
+# 4. Guardar en 07_Datos/datos_procesados/  (NO en resultados/)
 # ------------------------------------------------------------------------------
-# Encuesta procesada completa (incluye la columna con nombres de participantes;
-# el script de perfil agregado (justificacion_muestra.R) es responsable de
-# quitarla antes de publicar cualquier tabla, para no permitir reidentificación).
 write.csv(
   encuesta,
-  file.path(ruta_resultados, "encuesta_procesada.csv"),
+  file.path(ruta_datos_procesados, "encuesta_procesada.csv"),
   row.names = FALSE,
   fileEncoding = "UTF-8"
 )
-
-# Metadata de transcripciones sin el texto completo (para revisión rápida)
 write.csv(
   transcripciones[, setdiff(names(transcripciones), "texto_transcripcion")],
-  file.path(ruta_resultados, "transcripciones_metadata.csv"),
+  file.path(ruta_datos_procesados, "transcripciones_metadata.csv"),
   row.names = FALSE,
   fileEncoding = "UTF-8"
 )
+saveRDS(transcripciones, file.path(ruta_datos_procesados, "transcripciones_completas.rds"))
 
-# Transcripciones completas (con texto) en RDS, para que los scripts de
-# conteo de códigos y curva de saturación las lean directamente sin volver
-# a parsear los .md
-saveRDS(transcripciones, file.path(ruta_resultados, "transcripciones_completas.rds"))
-
-cat("\nListo. Archivos generados en", ruta_resultados, ":\n")
+cat("\nListo. Archivos generados en", ruta_datos_procesados, ":\n")
 cat(" - encuesta_procesada.csv\n")
 cat(" - transcripciones_metadata.csv\n")
 cat(" - transcripciones_completas.rds\n")
