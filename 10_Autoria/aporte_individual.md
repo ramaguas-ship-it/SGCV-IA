@@ -137,7 +137,7 @@ Responsable del componente empírico del Enfoque 3 (explicabilidad): protocolo e
 
 ### Firma
 
-Anthony Alfredo Vera Gómez — Fecha: ______________
+Anthony Alfredo Vera Gómez — Fecha: 11/09/2026
 
 ---
 ## Jhon Alexander Mesías Quijije
