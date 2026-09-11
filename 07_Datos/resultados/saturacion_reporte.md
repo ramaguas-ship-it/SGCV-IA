@@ -1,3 +1,4 @@
+[saturacion_reporte.md](https://github.com/user-attachments/files/32117299/saturacion_reporte.md)
 # Verificación de saturación temática
 
 - Total de códigos axiales: 50
