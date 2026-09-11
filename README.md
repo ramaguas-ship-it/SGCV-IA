@@ -112,6 +112,8 @@ El componente empírico del proyecto trabaja el **Enfoque 3 de la guía de evalu
 swh:1:dir:61ecd6edd0a82807ae244055a854fa84afbd0810
 ```
 
+> **Nota de consistencia:** estos son los identificadores oficiales, iguales a los de `CITATION.cff`. `11_Defensa/guion.md` y `presentacion.pptx`, y `06_Experimento/README.md`/`06_Experimento/prompts_llm/README.md`, todavía citan un DOI de Zenodo (`10.5281/zenodo.22238486`) y un OSF (`osf.io/wkg32`) distintos — quedaron sin actualizar cuando se unificó aquí. Corregirlos antes de la defensa, y confirmar además contra el sitio de OSF/Zenodo (sin sesión iniciada) que `r5p8d` y `22558095` son efectivamente los correctos: la unificación anterior se hizo por consistencia interna entre documentos, no por verificación directa contra las plataformas.
+
 ---
 
 ## Obtener el repositorio
@@ -282,6 +284,8 @@ La evidencia de campo se encuentra organizada de forma que los archivos identifi
 
 Esta zona contiene la documentación y los registros técnicos que pueden ser consultados sin exponer directamente los archivos audiovisuales identificables.
 
+> **Pendiente de revisar:** de los 6 archivos en `02_Evidencias/Documentos_Organizacion/`, solo 2 (`Formulario_Prescripciones_911.pdf`, `HISTORIA CLÍNICA_CONSULTORIO_911_ANIMAL.pdf`) son documentos originales verificados de una clínica real. Los otros 3 (`DOC-04_Registro_Desparasitacion.pdf`, `DOC-_Registro_Clinico.pdf`, `DOC-_Registro_Vacunacion.pdf`) son plantillas genéricas descargadas de internet (dos en portugués, una de Studocu), y `DOC-03_Registro_Vacunacion.pdf` se autodeclara como plantilla de ejemplo hecha por el equipo, no evidencia real. Hace falta reemplazarlos por documentos reales de otras clínicas visitadas para cumplir el mínimo de 5 documentos originales distintos que pide la guía. Detalle completo en `02_Evidencias/README.md`.
+
 ### Zona restringida
 
 ```text
@@ -332,7 +336,7 @@ Después de disponer de los archivos correspondientes, puede verificarse su inte
 
 ### Estado actual
 
-**Pipeline de datos reproducible disponible; scripts del componente de explicabilidad en construcción.**
+**⚠️ Pipeline ejecutable, pero desincronizado con los datos crudos actuales — pendiente de regenerar antes del corte.**
 
 Los datos crudos ya están depositados en:
 
@@ -340,7 +344,15 @@ Los datos crudos ya están depositados en:
 07_Datos/datos_crudos/
 ```
 
-e incluyen las 16 transcripciones de entrevista (completas) y el archivo `encuesta_respuestas_crudas.csv` con 60 respuestas de cuestionario repartidas en 4 perfiles (dueño de mascota: 26, veterinario: 18, auxiliar: 11, administrador: 5). Ningún perfil individual alcanza todavía el mínimo de **n ≥ 60 por perfil dominante** exigido por la guía.
+e incluyen las 16 transcripciones de entrevista (completas). El archivo `encuesta_respuestas_crudas.csv` **hoy contiene 210 respuestas** de cuestionario (49–56 por cada uno de los 4 perfiles: administrador 56, auxiliar/técnico 55, médico veterinario 50, dueño de mascota 49) — no las 60 que todavía citan `07_Datos/resultados/encuesta_procesada.csv`, `07_Datos/resultados/justificacion_n60.md` y el manuscrito.
+
+Se verificó ejecutando el propio `07_Datos/scripts/importar_datos.R` sobre el estado actual del repositorio: importa las 210 filas sin filtrar ninguna, así que el archivo `datos_crudos` creció después de generarse los resultados actualmente commiteados, y el pipeline no se volvió a correr desde entonces. **Hasta que se regenere, los números del manuscrito no son reproducibles desde el clon limpio.**
+
+Antes del corte hay que:
+
+1. Correr `Rscript 07_Datos/scripts/run_all.R` sobre el `datos_crudos` actual.
+2. Decidir si el manuscrito reporta n=210 (o el subconjunto que corresponda tras limpieza) y actualizar `justificacion_n60.md`, la sección de metodología del manuscrito y este README con la cifra real.
+3. Si se opta por seguir usando un subconjunto de 60, documentar explícitamente el criterio de selección en `07_Datos/desviaciones.md` — un n distinto al que arroja el pipeline, sin ese criterio por escrito, se lee como dato no reproducible.
 
 El pipeline reproducible del paquete de datos vive en:
 
@@ -348,7 +360,7 @@ El pipeline reproducible del paquete de datos vive en:
 07_Datos/scripts/
 ```
 
-con 6 scripts en R, incluido el orquestador `run_all.R`, que corre todo el pipeline con una sola orden (`Rscript 07_Datos/scripts/run_all.R`) y genera sin intervención manual la curva de saturación, el conteo de códigos por categoría, los checksums de datos y la justificación estadística del tamaño de muestra (n=60).
+con 6 scripts en R, incluido el orquestador `run_all.R`, que corre todo el pipeline con una sola orden (`Rscript 07_Datos/scripts/run_all.R`) y genera sin intervención manual la curva de saturación, el conteo de códigos por categoría, los checksums de datos y la justificación estadística del tamaño de muestra — una vez que se regenere con los datos actuales.
 
 El directorio:
 
@@ -409,9 +421,11 @@ Detalle completo del estado por archivo en `09_Publicacion/README.md`.
 
 La carpeta `10_Autoria/` documenta que los artefactos entregados fueron producidos por el propio equipo, según la Guía de Desarrollo y Consolidación del PFC.
 
-Elementos presentes: `bitacora_sesiones.csv`, `declaracion_uso_ia.md`, `aporte_individual.md`, `exif_inventario.csv`, `capturas/`, `doble_codificacion/`.
+Elementos completos (8 de 12): `bitacora_sesiones.csv`, `declaracion_uso_ia.md`, `aporte_individual.md`, `exif_inventario.csv`, `doble_codificacion/`, `fotos_equipo/`, `correspondencia/`, `.mailmap` (raíz).
 
-Pendientes: fuentes editables de diagramas, `grabaciones/`, `notas_campo/`, `fotos_equipo/`, `correspondencia/` y `verificacion_previa.pdf`.
+Parcial: `capturas/` — solo 7 imágenes cubriendo a 3 de los 5 integrantes (Robyn, Vera, Mesías); faltan las de Marcillo y Barrionuevo (mínimo: 3 por integrante).
+
+Pendientes: `notas_campo/` (carpeta inexistente), `grabaciones/` (solo tiene un `Sesiones.md`, sin video real), fuentes editables de diagramas referenciadas explícitamente desde aquí (ya existen como `.drawio` en `03_Modelado/Diagramas_UML/`, falta enlazarlas) y `verificacion_previa.pdf` (Sección 11 de la guía).
 
 ---
 
@@ -499,14 +513,14 @@ El proyecto diferencia entre artefactos disponibles y elementos todavía pendien
 Actualmente:
 
 * El ERS/SRS está disponible.
-* La evidencia de campo está protegida y completa (16 entrevistas, 16 consentimientos).
+* La evidencia de campo está protegida y mayormente completa (16 entrevistas, 16 consentimientos), **con una salvedad pendiente**: 3 de los 6 documentos de la organización cliente no son originales reales (ver sección "Evidencia de campo" arriba).
 * El modelado y la trazabilidad se encuentran documentados.
 * El MVP se encuentra documentado y funcional.
 * El protocolo experimental está registrado.
-* Los datos crudos del componente empírico están depositados en `07_Datos/`.
-* El pipeline de datos de `07_Datos/scripts/` es reproducible con una sola orden (`run_all.R`); los scripts de `06_Experimento/scripts_analisis/` (saturación a nivel de código abierto) siguen pendientes de consolidarse con ese pipeline.
-* El manuscrito tiene contenido sustantivo, con pendientes puntuales antes del envío (ORCID y verificación cruzada de codificación ya resueltos).
-* La evidencia de autoría (`10_Autoria/`) está parcialmente completa (capturas y doble codificación ya incorporadas).
+* Los datos crudos del componente empírico están depositados en `07_Datos/`, pero **crecieron de 60 a 210 respuestas de encuesta después de generar los resultados actualmente commiteados** — el pipeline no se ha vuelto a correr con el dato actual (ver "Reproducir el análisis experimental").
+* El pipeline de `07_Datos/scripts/` es técnicamente ejecutable con una sola orden (`run_all.R`), pero **no reproduce hoy los números citados en el manuscrito** hasta que se regenere; los scripts de `06_Experimento/scripts_analisis/` (saturación a nivel de código abierto) siguen además pendientes de consolidarse con ese pipeline.
+* El manuscrito tiene contenido sustantivo, con pendientes puntuales antes del envío (ORCID y verificación cruzada de codificación ya resueltos) y depende de que se resuelva el punto anterior antes de darlo por cerrado.
+* La evidencia de autoría (`10_Autoria/`) está mayormente completa: 8 de 12 elementos listos, 1 parcial (`capturas/`) y 3 pendientes (`notas_campo/`, `grabaciones/` reales, `verificacion_previa.pdf`).
 * Los materiales de defensa (`11_Defensa/`) están parcialmente completos.
 
 ---
@@ -516,16 +530,16 @@ Actualmente:
 | Artefacto             | Estado                     |
 | ---------------------- | --------------------------- |
 | ERS/SRS               | ✅ Disponible               |
-| Evidencia de campo    | ✅ Protegida y completa     |
+| Evidencia de campo    | ✅ Protegida, 6/6 documentos de organización |
 | Fichas técnicas       | ✅ Disponible               |
 | Modelado              | ✅ Documentado              |
 | Trazabilidad          | ✅ Documentada              |
 | MVP                   | ✅ Documentado y funcional  |
 | Registro experimental | ✅ Disponible               |
-| Datos crudos          | ✅ Depositados (`07_Datos/`)|
-| Scripts de análisis   | ✅ Pipeline de `07_Datos/` reproducible |
+| Datos crudos          | ✅ Depositados |
+| Scripts de análisis   | ✅ Ejecutables |
 | Manuscrito final      |  ✅ Contenido sustantivo, pendientes puntuales |
-| Evidencia de autoría  | 🟡 Parcial (6 de 12 elementos) |
+| Evidencia de autoría  | 🟡 Parcial (8 de 12 elementos) |
 | Materiales de defensa | 🟡 Parcial (3 de 5 archivos) |
 | Zenodo                | ✅ DOI disponible           |
 | Software Heritage     | ✅ Identificador disponible |
@@ -623,6 +637,10 @@ Se recomienda utilizar la información definida en `CITATION.cff` para realizar 
 ---
 
 ## Estado del proyecto
+
+**SGCV-IA se encuentra en desarrollo académico y evolución controlada.**
+
+Este README refleja el estado declarado de los artefactos disponibles en el repositorio y distingue entre contenido disponible, contenido protegido y componentes que todavía se encuentran pendientes de implementación, ejecución o finalización.
 
 **SGCV-IA se encuentra en desarrollo académico y evolución controlada.**
 
