@@ -1,3 +1,4 @@
+
 # ==============================================================================
 # 07_Datos/scripts/justificacion_muestra.R
 # ------------------------------------------------------------------------------
@@ -82,7 +83,7 @@ cat(sprintf("el margen de error alcanzado es de aproximadamente %.1f%%.\n\n", e_
 
 cat("Tamaño de muestra mínimo necesario para distintos márgenes de error objetivo\n")
 cat("(mismo nivel de confianza del 95%, misma p = 0.5, población no finita):\n")
-margenes_objetivo <- c(0.05, 0.10, 0.126, 0.15)
+margenes_objetivo <- c(0.05, 0.10, 0.15)
 tabla_requerida <- data.frame(
   margen_error_objetivo = paste0(margenes_objetivo * 100, "%"),
   n_minimo_requerido     = sapply(margenes_objetivo, tamano_requerido, Z = Z, p = p)
@@ -93,9 +94,14 @@ cat(sprintf(
   "\nConclusión: n = %d se ajusta a un margen de error de ~%.1f%% con 95%% de confianza.\n",
   n_muestra, e_alcanzado_n60 * 100
 ))
-cat("No alcanza el margen de 10% típico de estudios cuantitativos estrictos, pero es un\n")
-cat("tamaño razonable para un estudio exploratorio/mixto con recursos y tiempo limitados,\n")
-cat("como corresponde a un MVP de la materia ISR-401.\n\n")
+if (e_alcanzado_n60 <= 0.10) {
+  cat("Supera el margen de 10% típico de estudios cuantitativos estrictos, lo cual es un\n")
+  cat("buen respaldo para las comparaciones cuantitativas de este componente empírico.\n\n")
+} else {
+  cat("No alcanza el margen de 10% típico de estudios cuantitativos estrictos, pero es un\n")
+  cat("tamaño razonable para un estudio exploratorio/mixto con recursos y tiempo limitados,\n")
+  cat("como corresponde a un MVP de la materia ISR-401.\n\n")
+}
 
 # ------------------------------------------------------------------------------
 # 2. Tabla agregada de perfil de participantes (rol, años de experiencia,
