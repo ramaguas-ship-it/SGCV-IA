@@ -1,3 +1,4 @@
+
 # ==============================================================================
 # 07_Datos/scripts/importar_datos.R
 # ------------------------------------------------------------------------------
@@ -7,7 +8,9 @@
 #
 # Y las deja limpias y estructuradas en 07_Datos/resultados/, listas para que
 # los siguientes scripts del pipeline (conteo de códigos, curva de saturación,
-# justificación de n=60) las usen sin tener que volver a parsear texto crudo.
+# justificación del tamaño de muestra) las usen sin tener que volver a
+# parsear texto crudo. El tamaño de muestra (n) se calcula dinámicamente en
+# justificacion_muestra.R a partir de los datos -- nunca se hardcodea aquí.
 #
 # IMPORTANTE: este script NUNCA escribe ni modifica nada dentro de
 # 07_Datos/datos_crudos/ — solo lee de ahí. Toda su salida va a
@@ -145,8 +148,8 @@ if (length(faltantes_rol) > 0) {
 # 4. Guardar resultados
 # ------------------------------------------------------------------------------
 # Encuesta procesada completa (incluye la columna con nombres de participantes;
-# el script de perfil agregado / n=60 es responsable de quitarla antes de
-# publicar cualquier tabla, para no permitir reidentificación).
+# el script de perfil agregado (justificacion_muestra.R) es responsable de
+# quitarla antes de publicar cualquier tabla, para no permitir reidentificación).
 write.csv(
   encuesta,
   file.path(ruta_resultados, "encuesta_procesada.csv"),
