@@ -1,3 +1,4 @@
+
 # ==============================================================================
 # 06_Experimento/scripts_analisis/02_limpieza.R
 # ------------------------------------------------------------------------------
@@ -16,7 +17,7 @@
 #      (ejecutar desde la raiz del repositorio, DESPUES de 01_importar_datos.R)
 # ==============================================================================
 
-ruta_datos_procesados <- "07_Datos/resultados"
+ruta_datos_procesados <- "07_Datos/datos_procesados"
 
 ruta_encuesta        <- file.path(ruta_datos_procesados, "encuesta_procesada.csv")
 ruta_transcripciones <- file.path(ruta_datos_procesados, "transcripciones_completas.rds")
