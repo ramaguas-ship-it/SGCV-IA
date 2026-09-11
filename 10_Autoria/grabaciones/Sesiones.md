@@ -10,7 +10,7 @@ Las grabaciones fueron agregadas mediante **enlaces externos**, debido a que los
 
 ### Sesión 1
 
-[Ver grabación de la Sesión 1]([(https://github.com/ramaguas-ship-it/SGCV-IA/releases/download/Secion_1/Secion_1.2026-09-06.124311.mp4)])
+[Ver grabación de la Sesión 1]((https://github.com/ramaguas-ship-it/SGCV-IA/releases/download/Secion_1/Secion_1.2026-09-06.124311.mp4))
 
 ### Sesión 2
 
