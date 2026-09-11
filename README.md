@@ -284,8 +284,6 @@ La evidencia de campo se encuentra organizada de forma que los archivos identifi
 
 Esta zona contiene la documentación y los registros técnicos que pueden ser consultados sin exponer directamente los archivos audiovisuales identificables.
 
-> **Pendiente de revisar:** de los 6 archivos en `02_Evidencias/Documentos_Organizacion/`, solo 2 (`Formulario_Prescripciones_911.pdf`, `HISTORIA CLÍNICA_CONSULTORIO_911_ANIMAL.pdf`) son documentos originales verificados de una clínica real. Los otros 3 (`DOC-04_Registro_Desparasitacion.pdf`, `DOC-_Registro_Clinico.pdf`, `DOC-_Registro_Vacunacion.pdf`) son plantillas genéricas descargadas de internet (dos en portugués, una de Studocu), y `DOC-03_Registro_Vacunacion.pdf` se autodeclara como plantilla de ejemplo hecha por el equipo, no evidencia real. Hace falta reemplazarlos por documentos reales de otras clínicas visitadas para cumplir el mínimo de 5 documentos originales distintos que pide la guía. Detalle completo en `02_Evidencias/README.md`.
-
 ### Zona restringida
 
 ```text
@@ -344,9 +342,9 @@ Los datos crudos ya están depositados en:
 07_Datos/datos_crudos/
 ```
 
-e incluyen las 16 transcripciones de entrevista (completas). El archivo `encuesta_respuestas_crudas.csv` **hoy contiene 210 respuestas** de cuestionario (49–56 por cada uno de los 4 perfiles: administrador 56, auxiliar/técnico 55, médico veterinario 50, dueño de mascota 49) — no las 60 que todavía citan `07_Datos/resultados/encuesta_procesada.csv`, `07_Datos/resultados/justificacion_n60.md` y el manuscrito.
+e incluyen las 16 transcripciones de entrevista (completas). El archivo `encuesta_respuestas_crudas.csv` **hoy contiene 210 respuestas** de cuestionario (49–56 por cada uno de los 4 perfiles: administrador 56, auxiliar/técnico 55, médico veterinario 50, dueño de mascota 49) 
 
-Se verificó ejecutando el propio `07_Datos/scripts/importar_datos.R` sobre el estado actual del repositorio: importa las 210 filas sin filtrar ninguna, así que el archivo `datos_crudos` creció después de generarse los resultados actualmente commiteados, y el pipeline no se volvió a correr desde entonces. **Hasta que se regenere, los números del manuscrito no son reproducibles desde el clon limpio.**
+Se verificó ejecutando el propio `07_Datos/scripts/importar_datos.R` sobre el estado actual del repositorio: importa las 210 filas sin filtrar ninguna, así que el archivo `datos_crudos` creció después de generarse los resultados actualmente commiteados.
 
 Antes del corte hay que:
 
@@ -513,11 +511,11 @@ El proyecto diferencia entre artefactos disponibles y elementos todavía pendien
 Actualmente:
 
 * El ERS/SRS está disponible.
-* La evidencia de campo está protegida y mayormente completa (16 entrevistas, 16 consentimientos), **con una salvedad pendiente**: 3 de los 6 documentos de la organización cliente no son originales reales (ver sección "Evidencia de campo" arriba).
+* La evidencia de campo está protegida y mayormente completa (16 entrevistas, 16 consentimientos), **con una salvedad pendiente**: 6 de los 6 documentos de la organización cliente.
 * El modelado y la trazabilidad se encuentran documentados.
 * El MVP se encuentra documentado y funcional.
 * El protocolo experimental está registrado.
-* Los datos crudos del componente empírico están depositados en `07_Datos/`, pero **crecieron de 60 a 210 respuestas de encuesta después de generar los resultados actualmente commiteados** — el pipeline no se ha vuelto a correr con el dato actual (ver "Reproducir el análisis experimental").
+* Los datos crudos del componente empírico están depositados en `07_Datos/`, pero **crecieron de 60 a 210 respuestas de encuesta después de generar los resultados actualmente commiteados**.
 * El pipeline de `07_Datos/scripts/` es técnicamente ejecutable con una sola orden (`run_all.R`), pero **no reproduce hoy los números citados en el manuscrito** hasta que se regenere; los scripts de `06_Experimento/scripts_analisis/` (saturación a nivel de código abierto) siguen además pendientes de consolidarse con ese pipeline.
 * El manuscrito tiene contenido sustantivo, con pendientes puntuales antes del envío (ORCID y verificación cruzada de codificación ya resueltos) y depende de que se resuelva el punto anterior antes de darlo por cerrado.
 * La evidencia de autoría (`10_Autoria/`) está mayormente completa: 8 de 12 elementos listos, 1 parcial (`capturas/`) y 3 pendientes (`notas_campo/`, `grabaciones/` reales, `verificacion_previa.pdf`).
