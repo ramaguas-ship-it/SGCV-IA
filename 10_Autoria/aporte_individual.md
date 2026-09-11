@@ -190,7 +190,7 @@ Extraídos de `git log --use-mailmap --author="jmesiasq@uteq.edu.ec"` sobre el r
 | `.mailmap` (corrección de identidad propia) | `c2e7cea`, `3f586bf`, `3dcca76` |
 | Eliminación de `title_page.pdf` duplicado en la raíz | `ca89901` |
 
-**Nota:** el listado anterior cubre lo verificable directamente en el historial de Git. Si recuerdas artefactos propios que no dejaron rastro de commit (por ejemplo, coordinación de las sesiones de walkthrough o del member checking, que no siempre generan un archivo), añádelos tú mismo antes de firmar — no se han incluido aquí para no completar la sección con información no verificada.
+
 
 ### Firma
 
