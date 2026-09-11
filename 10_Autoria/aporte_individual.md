@@ -140,20 +140,57 @@ Responsable del componente empírico del Enfoque 3 (explicabilidad): protocolo e
 Anthony Alfredo Vera Gómez — Fecha: ______________
 
 ---
-
 ## Jhon Alexander Mesías Quijije
 
 ### Responsabilidad asignada en el reparto de trabajo
 
-**[PENDIENTE — completar por Mesías Quijije.]**
+Verificador (según la tabla de roles de `06_Experimento/README.md`). En la práctica, el historial de commits real (`git log --use-mailmap --author="jmesiasq@uteq.edu.ec"`, 153 commits) muestra un rol de verificación distribuido en cuatro frentes: verificación cruzada de la codificación temática mediante doble codificación independiente (A7), gestión y cierre de todo el paquete de documentación ética (Anexos, Categoría B, Aval Institucional, Adenda), verificación de los participantes mediante member checking y evidencia de las sesiones de walkthrough, y verificación/corrección de metadatos de citación e identidades de commit.
 
 ### Artefactos de los que es responsable
 
 | Artefacto | Ruta | Descripción del aporte |
 |---|---|---|
-| Doble codificación independiente (A7) | `10_Autoria/doble_codificacion/hoja_codificador2_Mesias.csv` | Codificación independiente de 4 entrevistas (P02, P07, P13, P16 — 25% del corpus), sin acceso previo a la codificación original, para el cálculo del coeficiente de acuerdo entre codificadores (kappa de Cohen = 0,36, IC 95% [-0,32, 1,04]). |
+| Doble codificación independiente (A7) — hoja propia | `10_Autoria/doble_codificacion/hoja_codificador2_Mesias.csv` | Codificación independiente de 4 entrevistas (P02, P07, P13, P16 — 25% del corpus, 77 fragmentos), sin acceso previo a `codificacion_tematica_SGCV-IA.csv`, usando solo las transcripciones y el `Guion_Entrevista_v2_0` como referencia. Tras una carga inicial de la hoja hecha por Marcillo Ponce, revisó y reescribió la redacción de sus propios códigos y, en al menos un caso, corrigió la categoría asignada a un fragmento propio. |
+| Doble codificación independiente (A7) — script y resultado | `10_Autoria/doble_codificacion/calcular_kappa.py`, `resultado_doble_codificacion.md`, `resultado_kappa.csv` | Refinamiento del script de cálculo del coeficiente kappa de Cohen (acuerdo bruto 89,3%, kappa 0,36, IC 95% [-0,32, 1,04]) y redacción de la interpretación: explicación de la paradoja del kappa (Feinstein y Cicchetti, 1990) para un acuerdo bruto alto con kappa moderado, revisión fragmento por fragmento de los 3 desacuerdos concretos distinguiendo cuáles son diferencia de granularidad de clasificación (P16/Seguridad) y cuáles son diferencia de cobertura/selección de fragmentos (P07/Gestión administrativa, P07/Inventario), y reconocimiento explícito de la limitación del intervalo de confianza amplio por el tamaño de muestra. |
+| Paquete de documentación ética (Anexos, Categoría B, Aval, Adenda) | `08_Etica/A01_Anexo.pdf` … `A11_Anexo.pdf`, `08_Etica/Categoria_B/B2_Proteccion_Datos_Personales.pdf`, `B3_No_Uso_Datos_Reales.pdf`, `B5_Datos_Menores.pdf`, `08_Etica/Aval_Institucional.pdf`, `08_Etica/Adenda_Segunda_Ronda..pdf` | Carga y actualización, en dos rondas (28 y 31 de agosto), de los 11 anexos, los 3 formularios de Categoría B, el Aval Institucional y la Adenda de la Segunda Ronda del comité de ética. Consolidación de la numeración de anexos: detectó y eliminó `A12_Anexo.pdf` y `A13_Anexo.pdf`, que quedaban fuera del índice final de 11 anexos. |
+| Evidencia cifrada de las sesiones de walkthrough | `02_Evidencias/00_Restringido/evidencias_walkthrough.7z.001-004`, `checksums_walkthrough.sha256` (y copia del checksum en `02_Evidencias/`) | Empaquetado y cifrado de las grabaciones de las sesiones de validación por walkthrough, con checksums SHA-256, siguiendo el mismo esquema de evidencia restringida que Amagua Sacón usó para las entrevistas. |
+| Actas de validación por walkthrough (W01–W06) | `02_Evidencias/Validacion_Walkthrough/07-09-2026_Acta_W01_Walkthrough.pdf` … `08-09-2026_Acta_W06_Walkthrough.pdf` | Subida de las 6 actas de las sesiones de walkthrough realizadas el 7 y 8 de septiembre. |
+| Member checking | `02_Evidencias/Member_Checking/Acta_MemberChecking_P03_P09_P15.pdf` y los 3 consentimientos informados correspondientes (P03, P09, P15) | Acta de member checking con 3 participantes del estudio y sus consentimientos informados asociados, como verificación de los hallazgos con los propios entrevistados. |
+| Diagramas organizacionales i* — scripts reproducibles | `03_Modelado/Organizacional_iStar/Diagrama_Contexto.py`, `Matriz_Poder_Interes.py`, `iStar_SD.py`, `iStar_SR.py` | Reconstrucción en Python/matplotlib de los 4 diagramas ya publicados como PNG/SVG por Marcillo Ponce, como scripts que regeneran cada imagen de forma reproducible en lugar de dejarlas solo como archivos estáticos no editables. |
+| Trabajo temprano de Diagramas UML (superado) | Antiguas rutas en `03_Modelado/Diagramas_UML/*.pdf` (subida original del 2 de agosto) | Subida original de 11 diagramas UML en PDF (casos de uso, diagramas de secuencia, actividad, estados, despliegue, componentes y clases refinadas). Estos PDF fueron eliminados y reemplazados por la reorganización posterior de Vera Gómez y Barrionuevo Fuentes al formato actual (`.drawio`/`.svg`/`.png`); solo sobrevive `CU_Detallados_Especificacion.pdf`. Se lista por trazabilidad histórica, no como artefacto vigente. |
+| Metadatos de citación y enlaces de archivo (primera ronda) | `CITATION.cff`, `README.md` | Actualización de versión (2A → 2B) y registro del primer DOI de Zenodo (depósito automático) y del identificador SWHID de Software Heritage en `CITATION.cff`; enlaces a OSF, Zenodo y Software Heritage en el `README.md`. Este primer depósito automático (licencia MIT) fue reemplazado después por el depósito curado en CC BY 4.0 de Marcillo Ponce (ver su sección), quien actualizó estos mismos archivos con el DOI final. |
+| Bibliografía del ERS | `01_ERS/referencias.bib` | Creación del archivo de referencias bibliográficas del ERS. |
+| Corrección de identidades en `.mailmap` | `.mailmap` | Corrección de su propia entrada, unificando sus tres identidades de Git (`jmesiasq-art`, `JmesiasqUtq`, `jmesiasq24`) bajo su nombre canónico `Mesias Quijije Jhon Alexander <jmesiasq@uteq.edu.ec>`, tras una versión intermedia que las dejaba mapeadas solo al alias de GitHub sin el nombre completo. |
+| Limpieza de duplicado en la raíz | `title_page.pdf` (raíz, ya eliminado) | Eliminación de una copia duplicada de `title_page.pdf` que había quedado en la raíz del repositorio tras la reorganización de carpetas, evitando confusión con la versión vigente en `09_Publicacion/`. |
 
-**[PENDIENTE — Mesías Quijije: completar con el resto de sus artefactos e identificadores de commit. Referencia conocida: catálogo de RF/RNF del ERS (RF-01 a RF-25, RNF-01 a RNF-15).]**
+### Identificadores de commit
+
+Extraídos de `git log --use-mailmap --author="jmesiasq@uteq.edu.ec"` sobre el repositorio real.
+
+| Artefacto | Commit(s) |
+|---|---|
+| Hoja de codificación propia — recreación de la carpeta tras eliminación | `1f2466e`, `3b67f8a`, `a1fa368`, `849d586`, `d8bd502` (eliminación), `07669dd` (re-subida) |
+| Hoja de codificación propia — versión final | `e6a8a34`, `bd32c87`, `436aa84`, `42e473c` |
+| `calcular_kappa.py` (refinamiento) | `d9c0023`, `b08d935`, `89b4f14` |
+| `resultado_doble_codificacion.md` (redacción de interpretación) | `cdc2b38`, `79c0ee2`, `5f02e3c`, `4540b6d` |
+| `resultado_kappa.csv` (actualización) | `95bed21` |
+| Anexos 1–11 (creación, 28 de agosto) | `f21b690`, `2950fd3`, `69c1ed2`, `34f4d07`, `5d81cc1`, `6cd9f20`, `0a90933`, `a4caac3`, `14c4f10`, `0bdf258`, `1dd3dcc`, `93e056e` |
+| Anexos 1–11 (actualización final, 31 de agosto) | `c9d30a4`, `17adf19`, `b646174`, `128ed07`, `40555d9`, `7608341`, `70cb492`, `7b29412`, `c818841`, `48769b0`, `464a0ef` |
+| Categoría B — B2/B3/B5 (creación 28-ago, versión final 31-ago) | `b436ac8`, `f25a10e`, `fce6a6d`, `2af95a0`, `53f150c`, `37e0601` |
+| Aval Institucional | `69fcf04` (28-ago), `684491a` (31-ago) |
+| Adenda Segunda Ronda | `c63d055` (28-ago), `f34556b` (31-ago) |
+| Eliminación de anexos fuera de índice (A12, A13) | `b15a680`, `7381bf1` |
+| Evidencia cifrada de walkthrough (grabaciones + checksums) | `ffa3832`, `fad7a0c`, `8c6401f`, `c291851` |
+| Actas de walkthrough W01–W06 | `589c0c2` (W01–W05), `e844850`/`ce43f2e`/`17fa9b5` (W06) |
+| Member checking (acta + consentimientos + renombrados) | `76c070e`, `9eb811c`, `ca71bcf`, `aa0e33a`, `355b9f0` |
+| Scripts de diagramas i* (`Organizacional_iStar/*.py`) | `3c0dc4c` |
+| Diagramas UML — subida original en PDF (superada) | `310c79d`, `f5adbdc`, `3472f41`, `4ca25ba`, `aff63a9`, `98c7b6b`, `84d65ee`, `c64924a`, `c681dd4`, `e17e84b`, `136c809`, `3e3b0e5`, `0153406`, `c444002`, `4818040` |
+| `CITATION.cff` / `README.md` (primer DOI de Zenodo y SWHID) | `ee56436`, `ab8b84b`, `1694290` |
+| `01_ERS/referencias.bib` | `e0336cd`, `39b9f26`, `43b329f` |
+| `.mailmap` (corrección de identidad propia) | `c2e7cea`, `3f586bf`, `3dcca76` |
+| Eliminación de `title_page.pdf` duplicado en la raíz | `ca89901` |
+
+**Nota:** el listado anterior cubre lo verificable directamente en el historial de Git. Si recuerdas artefactos propios que no dejaron rastro de commit (por ejemplo, coordinación de las sesiones de walkthrough o del member checking, que no siempre generan un archivo), añádelos tú mismo antes de firmar — no se han incluido aquí para no completar la sección con información no verificada.
 
 ### Firma
 
