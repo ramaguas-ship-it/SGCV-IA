@@ -138,7 +138,7 @@ write.csv(
 )
 
 reporte <- c(
-  "# Justificación del tamaño de muestra (n = 60)",
+  sprintf("# Justificación del tamaño de muestra (n = %d)", n_muestra),
   "",
   sprintf("- Tamaño de muestra: n = %d", n_muestra),
   sprintf("- Nivel de confianza: 95%% (Z = %.2f)", Z),
@@ -165,8 +165,8 @@ reporte <- c(
   "únicamente conteos agregados. No incluyen nombres ni ninguna otra columna",
   "que permita reidentificar a un participante individual."
 )
-writeLines(reporte, file.path(ruta_resultados, "justificacion_n60.md"), useBytes = TRUE)
+writeLines(reporte, file.path(ruta_resultados, "justificacion_muestra.md"), useBytes = TRUE)
 
 cat("\nListo. Archivos generados en", ruta_resultados, ":\n")
 cat(" - perfil_participantes_agregado.csv\n")
-cat(" - justificacion_n60.md\n")
+cat(" - justificacion_muestra.md\n")
