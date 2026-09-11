@@ -1,3 +1,4 @@
+
 # ==============================================================================
 # 06_Experimento/scripts_analisis/07_tamano_efecto.R
 # ------------------------------------------------------------------------------
@@ -27,7 +28,7 @@
 
 set.seed(2026)  # reproducibilidad del bootstrap
 
-ruta_datos_procesados     <- "07_Datos/resultados"
+ruta_datos_procesados     <- "07_Datos/datos_procesados"
 ruta_resultados           <- "06_Experimento/resultados"
 ruta_salidas_estadisticas <- file.path(ruta_resultados, "salidas_estadisticas")
 
