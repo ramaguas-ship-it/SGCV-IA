@@ -115,7 +115,7 @@ Extraídos de `git log --author="ramaguas@uteq.edu.ec"` sobre el repositorio rea
 
 ### Firma
 
-Robyn Willian Amagua Sacón — Fecha: ______________
+Robyn Willian Amagua Sacón — Fecha:10/09/2026
 
 ---
 
