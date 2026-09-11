@@ -92,8 +92,6 @@ Documentador — Responsable de C7 (Recolección de datos de campo), según `06_
 | Checksums reproducibles de la raíz del repositorio | `checksums.sha256`, `scripts/generar_checksums_raiz.sh` | Regeneración de `checksums.sha256` con cobertura completa y script para reproducir el cálculo. |
 | Limpieza de archivos de evidencia obsoletos/duplicados | Varias rutas (`02_Evidencias/`, `09_Defensa/` antiguo) | Eliminación de un archivo de evidencia vacío (`Provisionar`) y de un `checksums_originales.txt` obsoleto; eliminación de la carpeta `09_Defensa/` antigua (presentación, guion y video duplicados) tras la renumeración a `11_Defensa/`. |
 
-**[PENDIENTE — Amagua Sacón: confirmar o corregir los tres puntos señalados en la Nota de verificación cruzada al final del documento, completar su responsabilidad asignada, y agregar cualquier otro artefacto de su autoría no listado aquí.]**
-
 ### Identificadores de commit
 
 Extraídos de `git log --author="ramaguas@uteq.edu.ec"` sobre el repositorio real (`https://github.com/ramaguas-ship-it/SGCV-IA`).
