@@ -22,7 +22,7 @@
 #      (ejecutar desde la raiz del repositorio, DESPUES de 05_supuestos.R)
 # ==============================================================================
 
-ruta_datos_procesados     <- "06_Experimento/datos_procesados"
+ruta_datos_procesados     <- "07_Datos/resultados"
 ruta_resultados           <- "06_Experimento/resultados"
 ruta_salidas_estadisticas <- file.path(ruta_resultados, "salidas_estadisticas")
 
