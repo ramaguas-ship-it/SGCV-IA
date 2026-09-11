@@ -1,4 +1,4 @@
-[README_07_Datos.md](https://github.com/user-attachments/files/32107001/README_07_Datos.md)
+[README_07_Datos (1).md](https://github.com/user-attachments/files/32115520/README_07_Datos.1.md)
 # 07_Datos — Datos y pipeline de análisis del proyecto SGCV-IA
 
 ## 1. Descripción
@@ -7,7 +7,7 @@ Esta carpeta contiene los datos utilizados y los resultados generados para el an
 
 El conjunto de datos integra dos fuentes principales:
 
-- **Encuesta cerrada:** 60 respuestas obtenidas mediante Google Forms.
+- **Encuesta cerrada:** 210 respuestas obtenidas mediante Google Forms.
 - **Entrevistas semiestructuradas:** 16 transcripciones identificadas como P01–P16.
 
 La carpeta separa los **datos crudos**, los **resultados procesados**, los **scripts reproducibles** y los archivos de **trazabilidad, calidad e integridad**.
@@ -33,7 +33,7 @@ La carpeta separa los **datos crudos**, los **resultados procesados**, los **scr
 │   ├── curva_saturacion.csv
 │   ├── encuesta_limpia.csv
 │   ├── encuesta_procesada.csv
-│   ├── justificacion_n60.md
+│   ├── justificacion_n210.md
 │   ├── perfil_participantes_agregado.csv
 │   ├── reporte_limpieza.md
 │   ├── saturacion_reporte.md
@@ -65,7 +65,7 @@ La carpeta separa los **datos crudos**, los **resultados procesados**, los **scr
 
 `datos_crudos/encuesta_respuestas_crudas.csv`
 
-Contiene las respuestas originales de la encuesta. La encuesta tiene **60 participantes** y conserva los nombres de las variables exportadas por Google Forms.
+Contiene las respuestas originales de la encuesta. La encuesta tiene **210 participantes** y conserva los nombres de las variables exportadas por Google Forms.
 
 Incluye variables demográficas, percepción sobre la gestión de clínicas veterinarias, importancia de sistemas informáticos, utilidad de recordatorios digitales, aceptación del uso de IA y preguntas abiertas.
 
@@ -145,17 +145,17 @@ La curva de saturación se calcula siguiendo el orden P01–P16.
 
 ### Tamaño de muestra
 
-`resultados/justificacion_n60.md`
+`resultados/justificacion_n210.md`
 
 La encuesta cuenta con:
 
-- `n = 60`
+- `n = 210`
 - Confianza: **95 %**
 - `Z = 1,96`
 - `p = 0,5` como escenario conservador
-- Margen de error aproximado: **12,7 %**
+- Margen de error aproximado: **6,8 %**
 
-Con los mismos supuestos, se requerirían aproximadamente 97 respuestas para un margen de error del 10 %.
+Con los mismos supuestos, se habrían requerido aproximadamente 97 respuestas para un margen de error del 10 %; la muestra obtenida (210) supera ese umbral con holgura.
 
 ---
 
@@ -234,7 +234,7 @@ Calcula la aparición acumulada de códigos axiales y evalúa el criterio de sat
 Rscript 07_Datos/scripts/justificacion_muestra.R
 ```
 
-Calcula el margen de error de `n = 60` y genera el perfil agregado de participantes.
+Calcula el margen de error de `n = 210` y genera el perfil agregado de participantes.
 
 ### Checksums
 
@@ -333,7 +333,7 @@ Estos archivos deben considerarse parte del depósito únicamente después de ve
 
 **Fuentes principales:** encuesta cerrada + entrevistas semiestructuradas.
 
-**Encuesta:** `n = 60`.
+**Encuesta:** `n = 210`.
 
 **Entrevistas:** `P01–P16`.
 
