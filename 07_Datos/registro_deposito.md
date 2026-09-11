@@ -1,7 +1,7 @@
-[registro_deposito.md](https://github.com/user-attachments/files/32117055/registro_deposito.md)
+[registro_deposito.md](https://github.com/user-attachments/files/32117382/registro_deposito.md)
 # Registro de depósito de datos — SGCV-IA
 
-Generado automáticamente por `07_Datos/scripts/generar_checksums.R` el 2026-09-11 10:52:55 -05.
+Generado automáticamente por `07_Datos/scripts/generar_checksums.R` el 2026-09-11 11:06:29 -05.
 
 Este registro documenta el estado final de los datos crudos y los resultados
 del pipeline de análisis en el momento del depósito. Si cualquiera de estos
