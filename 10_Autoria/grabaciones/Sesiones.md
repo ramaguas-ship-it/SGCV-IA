@@ -10,11 +10,11 @@ Las grabaciones fueron agregadas mediante **enlaces externos**, debido a que los
 
 ### Sesión 1
 
-[Ver grabación de la Sesión 1]((https://github.com/ramaguas-ship-it/SGCV-IA/releases/download/Secion_1/Secion_1.2026-09-06.124311.mp4))
+[Ver grabación de la Sesión 1](https://github.com/ramaguas-ship-it/SGCV-IA/releases/download/Secion_1/Secion_1.2026-09-06.124311.mp4)
 
 ### Sesión 2
 
-[Ver grabación de la Sesión 2](PEGAR_AQUÍ_EL_ENLACE)
+[Ver grabación de la Sesión 2](https://github.com/ramaguas-ship-it/SGCV-IA/releases/download/Sesion_2/Sesion.2.mp4)
 
 > **Nota:** Los videos no fueron subidos directamente al repositorio debido a que superan el límite de tamaño de archivo permitido. Por este motivo, se utilizaron enlaces externos para acceder a las grabaciones.
 
