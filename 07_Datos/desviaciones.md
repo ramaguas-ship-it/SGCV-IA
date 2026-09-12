@@ -38,10 +38,10 @@ Toda desviación adicional que se identifique antes del corte de la Entrega 4 de
 
 **Motivo de la desviación:** [completar: motivo real — por ejemplo, "el formulario de Google Forms permaneció abierto más tiempo del planeado y se decidió incluir todas las respuestas recibidas en vez de truncar a 60, para no descartar datos válidos ya recolectados" o el motivo verdadero que corresponda].
 
-**Consecuencia:** el tamaño muestral final (n=210) supera con holgura el mínimo exigido por la guía (n≥60) y el margen de error alcanzado (~6.8%) es adecuado para un nivel de confianza del 95%. Los resultados y tablas de `07_Datos/resultados/` fueron regenerados con `run_all.R` sobre el conjunto completo de 210 respuestas el [completar fecha real de la regeneración], por lo que el manuscrito y el README reportan la cifra real (n=210) y no la cifra original de la propuesta (n=60).
+**Consecuencia:** el tamaño muestral final (n=210) supera con holgura el mínimo exigido por la guía (n≥60) y el margen de error alcanzado (~6.8%) es adecuado para un nivel de confianza del 95%. Los resultados y tablas de `07_Datos/resultados/` fueron regenerados con `run_all.R` sobre el conjunto completo de 210 respuestas el 11 de septiembre de 2026, por lo que el manuscrito y el README reportan la cifra real (n=210) y no la cifra original de la propuesta (n=60).
 
 **Fecha de identificación de la desviación:** 11 de septiembre de 2026.
 
-**Confirmado por:** [nombre de quien decidió/confirmó ampliar la muestra], por escrito.
+**Confirmado por:** Carlos Daniel Barrionuevo Fuentes, por escrito.
 
-**Verificado por:** [nombre de quien verificó, contrastando el historial de Git (`git log --follow` sobre `encuesta_respuestas_crudas.csv`) contra la fecha de `justificacion_n210.md`].
+**Verificado por:** Carlos Daniel Barrionuevo Fuentes, contrastando el historial de Git (`git log --follow` sobre `encuesta_respuestas_crudas.csv`) contra la fecha de generación de `justificacion_muestra.md`.
