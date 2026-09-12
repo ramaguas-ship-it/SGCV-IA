@@ -5274,6 +5274,29 @@ Dado que el propietario o administrador accede al panel de reportes, \\
 Cuando selecciona un rango de fechas o indicador, \\
 Entonces el sistema muestra las estadísticas operativas correspondientes.
 \end{quote}
+\subparagraph{HU-28 --- RNF-19}
+\textbf{Como} responsable técnico,
+\textbf{quiero} revisar trimestralmente la tasa de aceptación y exactitud del módulo de IA por subgrupo de especie, raza y rango etario,
+\textbf{para} detectar y corregir diferencias sistemáticas de trato antes de que afecten a un grupo de pacientes.
+
+\begin{quote}
+\textbf{CA-28 (Gherkin).} \\
+Dado el reporte trimestral de desempeño del módulo de IA por subgrupo, \\
+Cuando la diferencia en la tasa de aceptación entre subgrupos supera 10 puntos porcentuales sobre un mínimo de 30 casos por subgrupo, \\
+Entonces el sistema señala la desviación al responsable técnico para su revisión antes del siguiente ciclo de uso clínico.
+\end{quote}
+
+\subparagraph{HU-29 --- RNF-20}
+\textbf{Como} responsable técnico,
+\textbf{quiero} revisar semanalmente los indicadores operativos del módulo de IA (tasa de rechazo, tiempo de respuesta, disponibilidad del proveedor),
+\textbf{para} detectar degradación del servicio o del modelo tras su despliegue en producción.
+
+\begin{quote}
+\textbf{CA-29 (Gherkin).} \\
+Dado el registro semanal de indicadores operativos del módulo de IA, \\
+Cuando la tasa de rechazo de sugerencias supera 40\% en una semana calendario, \\
+Entonces el sistema genera una alerta automática dirigida al responsable técnico.
+\end{quote}
 \subsection{5.4 Matriz de Trazabilidad Extendida (Criterio C6)}\label{matriz-de-trazabilidad-extendida}
 
 \begin{quote}
@@ -5653,9 +5676,9 @@ TR-59 (RST-09) & — & Transversal & — & — & Infraestructura/Backend \\
 \hline
 TR-60 (RST-10) & — & Transversal & — & — & Infraestructura/Backend \\
 \hline
-TR-61 (RNF-19) & — & CU-06 & — & — & Módulo IA Diagnóstico \\
+TR-61 (RNF-19) & — & CU-06 & HU-28 & CA-28 & Módulo IA Diagnóstico \\
 \hline
-TR-62 (RNF-20) & — & CU-06 & — & — & Módulo IA Diagnóstico \\
+TR-62 (RNF-20) & — & CU-06 & HU-29 & CA-29 & Módulo IA Diagnóstico \\
 \hline
 TR-63 (RNF-21) & EV-01,EV-02 & CU-06 & HU-17 & CA-17 & Módulo IA Diagnóstico \\
 \hline
@@ -11151,9 +11174,9 @@ TR-59 & RST-09 & Transversal & — & — & Infraestructura / Backend & — \\
 \hline
 TR-60 & RST-10 & Transversal & — & — & Infraestructura / Backend & — \\
 \hline
-TR-61 & RNF-19 & CU-06 & --- & --- & Módulo IA Diagnóstico & Panel de Diagnóstico IA \\
+TR-61 & RNF-19 & CU-06 & HU-28 & CA-28 & Módulo IA Diagnóstico & Panel de Diagnóstico IA \\
 \hline
-TR-62 & RNF-20 & CU-06 & --- & --- & Módulo IA Diagnóstico & Panel de Diagnóstico IA \\
+TR-62 & RNF-20 & CU-06 & HU-29 & CA-29 & Módulo IA Diagnóstico & Panel de Diagnóstico IA \\
 \hline
 TR-63 & RNF-21 & CU-06 & HU-17 & CA-17 & Módulo IA Diagnóstico & Panel de Diagnóstico IA \\\end{longtable}
 }
