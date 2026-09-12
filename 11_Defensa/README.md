@@ -8,11 +8,11 @@ La estructura de la defensa y la distribución de responsabilidades ya se encuen
 
 | **Archivo**            | **Contenido esperado**                                       | **Responsable** | **Estado**     |
 | ---------------------- | ------------------------------------------------------------ | --------------- | -------------- |
-| `presentacion.pdf`     | Diapositivas finales en formato PDF                          | Equipo          | Pendiente      |
-| `presentacion.pptx`    | Versión editable de las diapositivas                         | Equipo          | Pendiente      |
-| `guion.pdf`            | Guion de exposición con tiempos por diapositiva e integrante | Equipo          | En preparación |
-| `video_defensa.mp4`    | Grabación de la defensa                                      | Equipo          | Pendiente      |
-| `folleto_una_hoja.pdf` | Resumen estructurado para el tribunal                        | Equipo          | Pendiente      |
+| `presentacion.pdf`     | Diapositivas finales en formato PDF                          | Equipo          | Finalizado     |
+| `presentacion.pptx`    | Versión editable de las diapositivas                         | Equipo          | Finalizado     |
+| `guion.pdf`            | Guion de exposición con tiempos por diapositiva e integrante | Equipo          | finalizado     |
+| `video_defensa.mp4`    | Grabación de la defensa                                      | Equipo          | Finalizado     |
+| `folleto_una_hoja.pdf` | Resumen estructurado para el tribunal                        | Equipo          | Finalizado     |
 
 ### Requisitos de la defensa
 
