@@ -22,7 +22,7 @@ Por consistencia con el árbol de carpetas obligatorio de la Sección 9.1, esta 
 ## Dónde sí se documenta el uso de IA en este proyecto
 
 - El uso de un LLM para **pulir la redacción** de párrafos ya escritos por el equipo con base en datos empíricos (permitido según la guía) se declara en la sección *"Use of AI-assisted technologies"* del manuscrito final (Sección 5.9 de la guía), no en esta carpeta.
-- El protocolo registrado en OSF (`06_Experimento/OSF_Registration.pdf`, osf.io/wkg32) documenta el diseño metodológico completo del Enfoque 3.
+- El protocolo registrado en OSF (`06_Experimento/OSF_Registration.pdf`, osf.io/r5p8d) documenta el diseño metodológico completo del Enfoque 3.
 
 ---
 
