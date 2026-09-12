@@ -33,4 +33,4 @@ esquema de seudonimización documentado en `09_Publicacion/dataset_zenodo/ANONYM
 - Consentimiento firmado del mismo participante: `02_Evidencias/Consentimientos/`
 - Transcripción de la entrevista: `02_Evidencias/Codificacion_Tematica/` y
   `07_Datos/datos_crudos/Entrevistas/`
-- Ficha técnica del audio/video de la sesión: `02_Evidencias/fichas_tecnicas.csv`,
+- Ficha técnica del audio/video de la sesión: `02_Evidencias/fichas_tecnicas.csv`
