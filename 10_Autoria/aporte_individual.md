@@ -69,6 +69,8 @@ Alberto Jeanpool Marcillo Ponce — Fecha: 07-09-2026
 
 ---
 
+## Robyn Willian Amagua Sacón (Responsable C7 — Recolección de datos de campo / Integrador del repositorio)
+
 ## Responsabilidad asignada en el reparto de trabajo
 
 Responsable de C7 (Recolección de datos de campo), según `06_Experimento/README.md`. En la práctica, el historial de commits muestra que además actuó como integrador/mantenedor del repositorio: estructura de carpetas, unificación de identidades de commit, evidencia restringida, corrección de inconsistencias transversales y cierre de la Entrega 4.
