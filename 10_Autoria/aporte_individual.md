@@ -186,8 +186,6 @@ Según `06_Experimento/README.md`: **Verificador**. El historial de commits mues
 | **Resincronización del pipeline de `07_Datos`** *(nuevo)* | `aee9c22`, `d488e93` |
 | **Mantenimiento documental** *(nuevo)* | `9d7019e`, `f348fe1`, `c8486a9`, `78e4722`, `c2e7cea`/`3dcca76`/`3f586bf` |
 
-**[PENDIENTE — Mesías Quijije: confirmar su responsabilidad asignada y aportar evidencia sobre el catálogo de RF/RNF si corresponde.]**
-
 ### Firma
 
 Jhon Alexander Mesías Quijije — Fecha: 12-09-2026
