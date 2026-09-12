@@ -19,8 +19,8 @@ toc: false
 | **Tiempo total** | 25 minutos de presentación + 10 minutos de preguntas del tribunal |
 | **Diapositivas** | 15 (archivo `SGCV-IA_Presentacion_Defensa.pptx`) |
 | **Repositorio** | github.com/ramaguas-ship-it/SGCV-IA |
-| **Zenodo (DOI)** | 10.5281/zenodo.22238486 |
-| **OSF** | osf.io/wkg32 |
+| **Zenodo (DOI)** | 10.5281/zenodo.22558095 |
+| **OSF** | osf.io/r5p8d |
 
 **Equipo y roles en la defensa**
 
