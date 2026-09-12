@@ -147,9 +147,13 @@ Según `06_Experimento/README.md`: responsable de C8 (Prototipo funcional MVP) y
 | Backend del prototipo MVP | `05_MVP/backend/server.js`, `package.json`, `Dockerfile`, `docker-compose.yml` | Configuración del backend del prototipo funcional (Node.js) y su contenedorización. |
 | Documentación del MVP | `05_MVP/README.md`, `SGCV-IA_Prototipo_Funcional.html` | Documentación de instalación/uso del prototipo. |
 
-**Corrección a lo ya escrito en la revisión anterior de este documento:**
+**Corrección a lo ya escrito en revisiones anteriores de este documento:**
 
-- **"Guion de validación v2.0"** (`06_Experimento/instrumentos/Guion_Validacion_v2_0.pdf`): este archivo **no existe en el repositorio**. La única búsqueda que arroja resultado es `06_Experimento/ instrumentos/Guion_Entrevista_v2.0.pdf` (nótese el espacio inicial en el nombre de la carpeta), que es el guion de **entrevista** (no de validación) y fue creado por **Amagua Sacón** (`46297ae`, `1b0cb48`), no por Vera Gómez. Se retira esta fila de la tabla. **Se recomienda que Vera Gómez aclare si el instrumento de validación en dos rondas (estímulo simulado, escalas Likert, checklist de Chazette) llegó a subirse al repositorio bajo otro nombre/ruta, o si solo existe fuera de él; en ese último caso, debería subirse como evidencia antes de firmar, dado que las Rondas 1 y 2 se documentan como no ejecutadas (`07_Datos/desviaciones.md`) y este instrumento sería la única evidencia de que se llegó a diseñar.**
+- **"Guion de validación v2.0"** (`06_Experimento/instrumentos/Guion_Validacion_v2_0.pdf`): en una revisión previa se señaló que este archivo no existía en el repositorio (la única coincidencia era `06_Experimento/ instrumentos/Guion_Entrevista_v2.0.pdf`, un guion de **entrevista**, no de validación, creado por Amagua Sacón — `46297ae`, `1b0cb48`). **Actualización — instrumento localizado y subido.** El `Guion de validación v2.0` sí existe: fue diseñado por Vera Gómez y su archivo original (PDF, `CreationDate` del 6 de septiembre de 2026, verificable en la metadata) se sube ahora, sin modificar, a `06_Experimento/instrumentos/Guion_Validacion_v2_0.pdf`. El archivo incluye el instrumento aplicable (Secciones I–VIII), una nota de desviación para el manuscrito (Anexo A) y un borrador de comunicación interna del equipo (Anexo B). **El Anexo B es un borrador de mensaje, no una confirmación independiente de Vera Gómez** — se conserva en el archivo tal cual, pero no reemplaza su declaración propia (ver más abajo). Con esto, la desviación documentada en `07_Datos/desviaciones.md` (Rondas 1 y 2 diseñadas pero no ejecutadas) queda respaldada por evidencia real y verificable, en vez de una afirmación sin respaldo en el repositorio.
+
+**Confirmación de Vera Gómez (relayada por Amagua Sacón el 12/09/2026, pendiente de que él la ratifique directamente por escrito o commit):** Vera Gómez confirma que él diseñó el instrumento y que lo terminó el 5 de septiembre de 2026. Indica que no lo subió antes al repositorio porque no sabía que era necesario hacerlo.
+
+> **Nota de verificación:** la fecha que él reporta (5 de septiembre) no coincide exactamente con el `CreationDate` de la metadata del PDF (6 de septiembre). La diferencia es de un solo día y no cambia la conclusión de que el archivo es anterior a esta revisión — pero se deja anotada la discrepancia en vez de ajustarla, siguiendo el mismo criterio de no forzar los datos para que cuadren perfecto. Puede deberse a que el archivo se guardó/exportó al día siguiente de terminarlo, a diferencia de huso horario, o a un simple desfase de memoria; no se investigó más a fondo.
 
 ### Identificadores de commit
 
@@ -171,8 +175,9 @@ Extraídos y **verificados el 12/09/2026 mediante clonado directo del repositori
 | Backend del MVP (`server.js`, `package.json`) | `dd19137`, `25c936e` (versión final en `05_MVP/backend/`, minúscula). **Nota:** existió una subida previa duplicada en `05_MVP/Backend/` (mayúscula) — `d475c52`, `95d2dee` — luego eliminada en `688b26d` al reestructurar la carpeta. |
 | Dockerfile / docker-compose | `70f1e73`/`7517362` (Dockerfile, dos subidas), `6ae605e`/`5a130bb` (docker-compose, dos subidas) |
 | Documentación del MVP | `75d2e59` (README inicial), `6ec3d4b`, `31f17b7`, `63801a8`, `32b4798`, `84c6fff`, `e24c503` (revisiones sucesivas), `3c722c5`/`bf01284` (HTML del prototipo, dos subidas) |
+| Guion de validación v2.0 (`06_Experimento/instrumentos/Guion_Validacion_v2_0.pdf`) | **[PENDIENTE — completar con el hash del commit una vez subido]**. Archivo con `CreationDate` original del 06/09/2026 (metadata verificada), subido sin modificar. |
 
-**Nota de verificación adicional:** el instrumento "Guion de validación v2.0" mencionado como retirado en la sección anterior no aparece bajo ninguna identidad de Vera Gómez en el historial completo del repositorio.
+**Nota de verificación adicional:** en una revisión previa de este documento, el instrumento "Guion de validación v2.0" no aparecía bajo ninguna identidad de Vera Gómez en el historial del repositorio, porque aún no se había subido. Ver la corrección más arriba, en "Artefactos de los que es responsable".
 
 ### Firma
 
@@ -224,6 +229,7 @@ Extraídos de `git log --author="jmesiasq@uteq.edu.ec"` (y las identidades `mesi
 ### Firma
 
 Jhon Alexander Mesías Quijije — Fecha: ______________
+
 
 ---
 
