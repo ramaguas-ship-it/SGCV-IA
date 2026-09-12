@@ -35,7 +35,7 @@ El registro previo del protocolo está en `osf.io/r5p8d`, consistente ahora con 
 | Registro previo en el repositorio   | [`OSF_Registration.pdf`](./OSF_Registration.pdf)              |
 | Resultados                          | [`resultados/`](./resultados/)                                |
 | Scripts de análisis                 | [`scripts_analisis/`](./scripts_analisis/)                    |
-| Conjunto de datos (Zenodo)          | DOI `10.5281/zenodo.22238486`                                 |
+| Conjunto de datos (Zenodo)          | DOI `10.5281/zenodo.22558095`                                 |
 
 ## Componente empírico — Enfoque 3
 
