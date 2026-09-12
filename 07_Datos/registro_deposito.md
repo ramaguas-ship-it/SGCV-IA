@@ -1,8 +1,6 @@
-[registro_deposito.md](https://github.com/user-attachments/files/32128340/registro_deposito.md)
-
 # Registro de depósito de datos — SGCV-IA
 
-Generado automáticamente por `07_Datos/scripts/generar_checksums.R` el 2026-09-11 14:14:27 -05.
+Generado automáticamente por `07_Datos/scripts/generar_checksums.R` el 2026-09-12 04:33:31 UTC.
 
 Este registro documenta el estado final de los datos crudos y los resultados
 del pipeline de análisis en el momento del depósito. Si cualquiera de estos
@@ -10,8 +8,8 @@ archivos cambia después, hay que volver a correr este script para actualizar
 tanto este registro como `checksums_datos.sha256`.
 
 - Archivos de datos crudos (`07_Datos/datos_crudos/`): 17
-- Archivos de resultados (`07_Datos/resultados/`): 12
-- Total de archivos verificados: 29
+- Archivos de resultados (`07_Datos/resultados/`): 5
+- Total de archivos verificados: 22
 
 ## Verificación de integridad
 
@@ -28,7 +26,6 @@ sha256sum -c 07_Datos/checksums_datos.sha256
 
 | Archivo | SHA-256 |
 |---|---|
-| `07_Datos/datos_crudos/encuesta_respuestas_crudas.csv` | `9f13478ba78f9c9391db410ff0f8838b5e49b8c5ce6666a3bb991e57febb75e7` |
 | `07_Datos/datos_crudos/Entrevistas/2026-05-26_Transcripcion_P01_Entrevista.md` | `723337095fa3a1437626015b7585ba0c85c4a1d3efc16aea1959bf9bd6d49f6d` |
 | `07_Datos/datos_crudos/Entrevistas/2026-05-26_Transcripcion_P02_Entrevista.md` | `3d25472b0434ba45a13983090d732d0a95a90a66ce352b8c2593430be956a3d1` |
 | `07_Datos/datos_crudos/Entrevistas/2026-07-21_Transcripcion_P03_Entrevista.md` | `7bacaccf96c1efda80ced4693714622ca3a8a3f3378426034bc266079172004e` |
@@ -45,15 +42,9 @@ sha256sum -c 07_Datos/checksums_datos.sha256
 | `07_Datos/datos_crudos/Entrevistas/2026-08-31_Transcripcion_P14_Entrevista.md` | `9e5ec6c1d06c7a2f68d25fc203e7b1076b09ce53f50b7cdc00c756bb11729191` |
 | `07_Datos/datos_crudos/Entrevistas/2026-08-31_Transcripcion_P15_Entrevista.md` | `3b6ffbd10f869b3d247c201b5dad2265a76c225d27ec8aa754f3bf536348618d` |
 | `07_Datos/datos_crudos/Entrevistas/2026-08-31_Transcripcion_P16_Entrevista.md` | `a616d82848a1c0a8419064ab91a4c1488175c34a4ea8ef61c7a72ac759fa9658` |
-| `07_Datos/resultados/conteo_codigos_categorias.csv` | `d0cb7d5d572c43ccd79a4f5bea390546fce713a2f5d1f4c6524d85f46dd7d79b` |
-| `07_Datos/resultados/curva_saturacion.csv` | `7fac150d41084bf34ad5b5473a2798cf2d51396c752dda22142893a8178752d2` |
-| `07_Datos/resultados/encuesta_limpia.csv` | `5a9ce90a7a8a3982693f92478ac6aa3972805e5930f340090c87e6bcd2d2bece` |
-| `07_Datos/resultados/encuesta_procesada.csv` | `5d502bd7672d15fad114117d39afb6c52dd58ed959c83cfc0af0aafee44ff868` |
+| `07_Datos/datos_crudos/encuesta_respuestas_crudas.csv` | `9f13478ba78f9c9391db410ff0f8838b5e49b8c5ce6666a3bb991e57febb75e7` |
+| `07_Datos/resultados/conteo_codigos_categorias.csv` | `91683ef1c07d1b0ea3335a156118089e7b5e832ee5111f59c61ed0f79b4c6584` |
+| `07_Datos/resultados/curva_saturacion.csv` | `f5b9522d47f1c3d5407a7e0f9626c636141ebf65939277c9050cedcee7b22aeb` |
 | `07_Datos/resultados/justificacion_n210.md` | `2430e3fe6d89d1f4a5ac370f168dedebab5bc1c594c4cb75d966e1294c5c213e` |
-| `07_Datos/resultados/justificacion_n60.md` | `c70808bdee01a039dda00a33c25abc7548481e24de7213f96a0ff6efcd84ed70` |
 | `07_Datos/resultados/perfil_participantes_agregado.csv` | `a021cef37bb9b9013a1d2ca3dec21c9ddbb61061ee7addc29efb34725f174ffa` |
-| `07_Datos/resultados/reporte_limpieza.md` | `6a5e8738ff7f0b810a9865c92c7d743392fe3ae6527df8b133e164aaf6c227d4` |
-| `07_Datos/resultados/saturacion_reporte.md` | `d84bc3ff4e8a30630cd32c2cd1b06a1dbcc6b3dd6235eda7371392ba34e71e08` |
-| `07_Datos/resultados/transcripciones_completas.rds` | `10513999304ddd7d5c4f5439f32454a1e1fe95beda4fba3a59886f9336b0e403` |
-| `07_Datos/resultados/transcripciones_limpias.rds` | `10513999304ddd7d5c4f5439f32454a1e1fe95beda4fba3a59886f9336b0e403` |
-| `07_Datos/resultados/transcripciones_metadata.csv` | `9db6c729496cf1ce827d188466a787dc9e3f62bd17e4caf7c1abf3c22bbfc5bf` |
+| `07_Datos/resultados/saturacion_reporte.md` | `3570e3b0431741af9766301db0e1cd371971da686c45d5074ab8d812230ed91c` |
