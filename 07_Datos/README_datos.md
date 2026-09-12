@@ -1,4 +1,3 @@
-[README_07_Datos (1).md](https://github.com/user-attachments/files/32115520/README_07_Datos.1.md)
 # 07_Datos — Datos y pipeline de análisis del proyecto SGCV-IA
 
 ## 1. Descripción
