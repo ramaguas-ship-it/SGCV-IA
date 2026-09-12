@@ -69,62 +69,118 @@ Alberto Jeanpool Marcillo Ponce — Fecha: 07-09-2026
 
 ---
 
-## Robyn Willian Amagua Sacón (Responsable C7 — Recolección de datos de campo / Integrador del repositorio)
+## Responsabilidad asignada en el reparto de trabajo
 
-### Responsabilidad asignada en el reparto de trabajo
+Responsable de C7 (Recolección de datos de campo), según `06_Experimento/README.md`. En la práctica, el historial de commits muestra que además actuó como integrador/mantenedor del repositorio: estructura de carpetas, unificación de identidades de commit, evidencia restringida, corrección de inconsistencias transversales y cierre de la Entrega 4.
 
-Responsable de C7 (Recolección de datos de campo), según `06_Experimento/README.md`. En la práctica, el historial de commits muestra que además actuó como integrador/mantenedor del repositorio: estructura de carpetas, unificación de identidades de commit, evidencia restringida, corrección de inconsistencias transversales (trazabilidad, priorización, DOI, README) y cierre de la Entrega 4.
-
-> Esta responsabilidad está tomada del README del proyecto, no de una declaración propia de Amagua Sacón. Debe confirmarla o corregirla él mismo antes de firmar.
-
-### Artefactos de los que es responsable (constatado en esta revisión)
+### Artefactos de los que es responsable
 
 | Artefacto | Ruta | Descripción del aporte |
 |---|---|---|
-| Estructura del repositorio (`07_Datos`, `10_Autoria`) | Raíz del repositorio | Creación de las carpetas `07_Datos/` y `10_Autoria/`, renumeración de `Publicacion/`→`09_Publicacion/` y `Defensa/`→`11_Defensa/`, y reorganización de las 16 transcripciones y la encuesta cruda hacia su ubicación final en `07_Datos/datos_crudos/` (subidas originalmente por Barrionuevo Fuentes en `06_Experimento/datos_crudos/`; ver sección de Barrionuevo). Población de plantillas iniciales de `07_Datos` y `10_Autoria` (`LICENSE-DATA.txt`, `desviaciones.md`, `registro_deposito.md`, `bitacora_sesiones.csv`, `declaracion_uso_ia.md`, `exif_inventario.csv`, este mismo documento). |
-| `.mailmap` (unificación de identidades) | `.mailmap` | Creación y ampliación del archivo que unifica los distintos usuarios/correos de GitHub de cada integrante (p. ej. Vera Gómez y Mesías Quijije aparecían con más de una identidad) bajo un nombre canónico, para que `git log --use-mailmap` sea confiable como evidencia de A10. |
-| Evidencia restringida cifrada (consentimientos y audios P01–P16) | `02_Evidencias/00_Restringido/` | Empaquetado y subida de los consentimientos (`evidencias_consentimientos_P01aP16.7z`) y los audios (`evidencias_audio_P01aP16.7z.00x`) de las 16 entrevistas, cifrados, con sus checksums SHA-256. (La evidencia cifrada de las grabaciones de walkthrough fue subida aparte por Mesías Quijije; ver su sección). |
-| Anonimización de evidencia | `02_Evidencias/fichas_tecnicas.csv`, `02_Evidencias/checksums_originales.txt` | Eliminación de filas duplicadas con nombres reales de participantes en `fichas_tecnicas.csv`; sustitución de nombres reales por códigos de participante (P01–P16) en `checksums_originales.txt`. |
+| Estructura del repositorio (`07_Datos`, `10_Autoria`) | Raíz del repositorio | Creación de las carpetas `07_Datos/` y `10_Autoria/`, renumeración de `Publicacion/`→`09_Publicacion/` y `Defensa/`→`11_Defensa/`, y reorganización de las 16 transcripciones y la encuesta cruda hacia `07_Datos/datos_crudos/`. Población de plantillas iniciales de `07_Datos` y `10_Autoria`. |
+| `.mailmap` (unificación de identidades) | `.mailmap` | Creación y ampliación del archivo que unifica los distintos usuarios/correos de GitHub de cada integrante bajo un nombre canónico. |
+| Evidencia restringida cifrada (consentimientos y audios P01–P16) | `02_Evidencias/00_Restringido/` | Empaquetado y subida de los consentimientos y audios de las 16 entrevistas, cifrados, con sus checksums SHA-256. |
+| Anonimización de evidencia | `02_Evidencias/fichas_tecnicas.csv`, `checksums_originales.txt` | Eliminación de filas duplicadas con nombres reales de participantes; sustitución de nombres reales por códigos de participante (P01–P16). |
 | Corrección de priorización MoSCoW/Kano | `04_Trazabilidad/priorizacion_moscow_kano_valor.csv` | Corrigió el intercambio de valores entre RF-09 y RF-18, que estaban invertidos. |
-| Actualización real del DOI de Zenodo | `09_Publicacion/manuscrito_final.tex`, `09_Publicacion/title_page.tex`, `CITATION.cff` | Reemplazó el DOI del depósito automático (`10.5281/zenodo.22238486`) por el DOI del paquete curado en CC BY 4.0 (`10.5281/zenodo.22558095`) en los tres archivos, y eliminó el comentario `PENDIENTE` que quedaba en `CITATION.cff`. **Nota de verificación:** el manuscrito y el `title_page.tex` de Alberto Marcillo citan los commits `40d9f19` y `72e894d` para esta misma corrección, pero esos dos commits no modifican ningún archivo (ver Nota de verificación cruzada al final del documento); el cambio real está en los commits de esta fila. |
-| Evaluación FAIR (`fair_assessment.pdf`) | `fair_assessment.pdf` (raíz del repositorio) | Subida del reporte de autoevaluación F-UJI (96.15%, 25/26) contra el DOI del depósito curado; corrección posterior de una corrupción de bytes CR introducida por `autocrlf` de Windows y normalización de saltos de línea (LF) vía `.gitattributes` para que los checksums sean reproducibles entre sistemas operativos. **Nota de verificación:** el commit `6773258`, citado por Alberto Marcillo para este mismo artefacto, no modifica ningún archivo; la subida real es la de esta fila. |
+| Actualización real del DOI de Zenodo | `09_Publicacion/manuscrito_final.tex`, `title_page.tex`, `CITATION.cff` | Reemplazó el DOI del depósito automático por el DOI del paquete curado en CC BY 4.0, y eliminó el comentario `PENDIENTE` en `CITATION.cff`. |
+| Evaluación FAIR (`fair_assessment.pdf`) | `fair_assessment.pdf` (raíz) | Subida del reporte F-UJI (96.15%, 25/26); corrección posterior de una corrupción de bytes CR por `autocrlf` de Windows y normalización de saltos de línea (LF) vía `.gitattributes`. |
 | Presentación final de defensa | `11_Defensa/presentacion.pdf`, `presentacion.pptx`, `guion.md` | Subida de las diapositivas (PDF y PPTX) y el guion de la defensa final. |
-| Actualización del ERS | `01_ERS/ERS_SRS_2B_v2.0.tex`/`.pdf` | Actualización del documento ERS/SRS para la Entrega 4 (2B); regeneración del PDF final desde Overleaf; nueva imagen de portada (`01_ERS/media/imagen_repositorio.png`). |
-| Aclaración de roles y del identificador OSF | `06_Experimento/README.md` | Revisó y dejó explícita la tabla de roles del equipo; detectó y resolvió una inconsistencia entre dos identificadores de OSF distintos (`r5p8d` y `wkg32`) que convivían en varios documentos del repositorio, unificando todos a `r5p8d` y dejando una nota de que esa unificación fue por consistencia interna, no por verificación directa contra el sitio de OSF (su contenido se renderiza por JavaScript y no es accesible por una petición simple). |
+| Actualización del ERS | `01_ERS/ERS_SRS_2B_v2.0.tex`/`.pdf` | Actualización del ERS/SRS para la Entrega 4 (2B); regeneración del PDF desde Overleaf; nueva imagen de portada. |
+| Aclaración de roles y del identificador OSF | `06_Experimento/README.md` | Dejó explícita la tabla de roles del equipo; unificó dos identificadores de OSF distintos (`r5p8d`/`wkg32`) que convivían en el repositorio. |
 | Licenciamiento | `LICENSE`, `07_Datos/LICENSE-DATA.txt` | Revisión y ampliación de los términos de licenciamiento y de la sección del paquete de datos. |
-| Checksums reproducibles de la raíz del repositorio | `checksums.sha256`, `scripts/generar_checksums_raiz.sh` | Regeneración de `checksums.sha256` con cobertura completa y script para reproducir el cálculo. |
-| Limpieza de archivos de evidencia obsoletos/duplicados | Varias rutas (`02_Evidencias/`, `09_Defensa/` antiguo) | Eliminación de un archivo de evidencia vacío (`Provisionar`) y de un `checksums_originales.txt` obsoleto; eliminación de la carpeta `09_Defensa/` antigua (presentación, guion y video duplicados) tras la renumeración a `11_Defensa/`. |
-
-**[PENDIENTE — Amagua Sacón: confirmar o corregir los tres puntos señalados en la Nota de verificación cruzada al final del documento, completar su responsabilidad asignada, y agregar cualquier otro artefacto de su autoría no listado aquí.]**
+| Checksums reproducibles de la raíz | `checksums.sha256`, `scripts/generar_checksums_raiz.sh` | Regeneración de `checksums.sha256` con cobertura completa y script para reproducir el cálculo. |
+| Limpieza de archivos obsoletos/duplicados | Varias rutas | Eliminación de un archivo de evidencia vacío (`Provisionar`), de un `checksums_originales.txt` obsoleto y de la carpeta `09_Defensa/` antigua duplicada. |
+| **Fotos de entornos veterinarios (reemplazo)** *(nuevo)* | `02_Evidencias/Fotos_Entorno/` | Reemplazó las fotos de entorno por los originales de cámara (EXIF real conservado, caras cubiertas por privacidad) y actualizó `exif_inventario.csv`. |
+| **Correspondencia de coordinación** *(nuevo)* | `10_Autoria/correspondencia/` | Subida de 6 capturas de WhatsApp que documentan la coordinación con el personal veterinario. |
+| **Fotos del equipo** *(nuevo)* | `10_Autoria/fotos_equipo/` | Subida de fotos del equipo (presenciales y de reunión virtual); eliminó un placeholder vacío dejado en la carpeta. |
+| **Capturas de evidencia de aporte individual** *(nuevo)* | `10_Autoria/capturas/` | Subida de capturas propias de codificación, ERS y flujo de commits como evidencia de su trabajo en `aporte_individual.md`. |
+| **READMEs nuevos** *(nuevo)* | `03_Modelado/README.md`, `04_Trazabilidad/README.md`, `10_Autoria/README.md` | Creó los README de `03_Modelado` y `04_Trazabilidad`; en `10_Autoria` agregó referencia cruzada a las fuentes editables de diagramas (A3). |
+| **Ampliación del ERS (RNF-19/RNF-20)** *(nuevo)* | `01_ERS/ERS_SRS_2B_v2.0.tex` | Recompiló el ERS agregando HU-28/HU-29 y CA-28/CA-29 (equidad y monitoreo) en Sección 5, 5.4 y Apéndice D. |
+| **Actualización de la matriz de trazabilidad** *(nuevo)* | `04_Trazabilidad/matriz_trazabilidad.csv` | Actualización del CSV junto con normalización de saltos de línea. |
+| **Mantenimiento documental de cierre** *(nuevo)* | `10_Autoria/aporte_individual.md`, `README.md` (raíz), `declaracion_uso_ia.md`, `CHANGELOG.md` | 7 ediciones de `aporte_individual.md`, 5 de `README.md` (estructura, DOI, enlaces OSF), 4 de `declaracion_uso_ia.md`, 3 de `CHANGELOG.md` (confirmación de las 6 sesiones de walkthrough). |
 
 ### Identificadores de commit
 
-Extraídos de `git log --author="ramaguas@uteq.edu.ec"` sobre el repositorio real (`https://github.com/ramaguas-ship-it/SGCV-IA`).
-
 | Artefacto | Commit(s) |
 |---|---|
-| Estructura del repositorio y reorganización de datos | `563b0fa` (crear carpetas y mover datos), `d1b4780` (poblar plantillas) |
-| `.mailmap` | `5be985c` (creación), `3bfff36` (ampliación), `3ffd8d4` (corrección correo institucional de Mesías) |
-| Evidencia restringida (consentimientos, audios) | `156f4b4` (consentimientos), `076708c` (audios) |
-| Anonimización de evidencia | `d878fd7` (checksums_originales), `a34e338` (fichas_tecnicas) |
-| Corrección RF-09/RF-18 en priorización | `009009c` |
-| DOI de Zenodo (manuscrito) | `5c7b5da` |
-| DOI de Zenodo (title_page) | `4927b8d` |
-| DOI de Zenodo (CITATION.cff) | `aa64266` |
-| `fair_assessment.pdf` | `d11b997` (subida), `88b1a90` (normalización LF), `d44def8` (restauración de bytes) |
-| Presentación final | `94a9ea8` (PDF), `67c43c0` (PPTX), `065c139` (guion.md) |
-| ERS actualizado | `34c612c`, `f9a6dcf` (referencias.bib — entrada agregada), `bb65ae5` (imagen), `1c1a137` (PDF de Overleaf) |
+| Estructura del repositorio y reorganización de datos | `563b0fa`, `d1b4780` |
+| `.mailmap` | `5be985c`, `3bfff36`, `3ffd8d4` |
+| Evidencia restringida (consentimientos, audios) | `156f4b4`, `076708c` |
+| Anonimización de evidencia | `d878fd7`, `a34e338` |
+| Corrección RF-09/RF-18 | `009009c` |
+| DOI de Zenodo (manuscrito / title_page / CITATION.cff) | `5c7b5da`, `4927b8d`, `aa64266` |
+| `fair_assessment.pdf` | `d11b997`, `88b1a90`, `d44def8` |
+| Presentación final | `94a9ea8`, `67c43c0`, `065c139` |
+| ERS actualizado | `34c612c`, `f9a6dcf`, `bb65ae5`, `1c1a137` |
 | README — roles e identificador OSF | `fabd443`, `fc28229` |
 | Licenciamiento | `0410148`, `29d48d5` |
-| Checksums de la raíz | `d5118ad` |
-| Corrección de nombre de carpeta + checksums | `d9694c6` |
+| Checksums de la raíz | `d5118ad`, `d9694c6` |
 | Limpieza de evidencia obsoleta/duplicada | `05f45b3`, `20be7a8`, `ab852f8`, `188f0d9`, `4c7420d`, `0bd4800` |
+| **Fotos de entornos veterinarios** *(nuevo)* | `3b60a67` |
+| **Correspondencia de coordinación** *(nuevo)* | `29630cb` |
+| **Fotos del equipo** *(nuevo)* | `f94bd5f`, `4fbee7b`/`58910c5` |
+| **Capturas de evidencia** *(nuevo)* | `6a8d285`, `d816b3b`, `6206b90` |
+| **READMEs nuevos** *(nuevo)* | `dcd3ceb`, `0a16a4c`, `b4ae02d` |
+| **Ampliación del ERS** *(nuevo)* | `62a2973` |
+| **Matriz de trazabilidad** *(nuevo)* | `8286772` |
+| **`aporte_individual.md`** *(nuevo)* | `6bcfa33`, `1166dc2`, `44ca388`, `e9979dc`, `dee66ab`, `062e221`, `b2527fd` |
+| **`README.md` raíz** *(nuevo)* | `b8e8827`, `d35f36b`, `3c3541e`, `4161319`, `c8e6089` |
+| **`declaracion_uso_ia.md`** *(nuevo)* | `9978041`, `c76e2a2`, `c081147`, `8d55c14` |
+| **`CHANGELOG.md`** *(nuevo)* | `c3e49ba`, `6f0334f`, `6bba567` |
+
 
 ### Firma
 
-Robyn Willian Amagua Sacón — Fecha: ______________
+Robyn Willian Amagua Sacón — Fecha: 12/09/2026
 
 ---
+
+## Jhon Alexander Mesías Quijije (Verificador)
+
+### Responsabilidad asignada en el reparto de trabajo
+
+Según `06_Experimento/README.md`: **Verificador**. El historial de commits muestra el paquete de ética del proyecto (`08_Etica`), la bibliografía del ERS, su rol como segundo codificador (A7), y — en el periodo más reciente — la gestión de evidencia de walkthrough, member checking y modelado organizacional i*.
+
+### Artefactos de los que es responsable
+
+| Artefacto | Ruta | Descripción del aporte |
+|---|---|---|
+| Doble codificación independiente (A7) | `10_Autoria/doble_codificacion/hoja_codificador2_Mesias.csv` | Codificación independiente de 4 entrevistas (P02, P07, P13, P16 — 25% del corpus), para el cálculo del coeficiente de acuerdo entre codificadores (kappa de Cohen = 0,36). |
+| Paquete de ética del proyecto | `08_Etica/A01_Anexo.pdf` … `A13_Anexo.pdf`, `Aval_Institucional.pdf`, `Categoria_B/*` | Subida y actualización (dos rondas, 28 y 31 de agosto) de los 13 anexos éticos, el aval institucional y los formularios de protección de datos/menores de la Categoría B. |
+| Bibliografía del ERS | `01_ERS/referencias.bib` | Creación completa del archivo (444 líneas, 40 referencias verificadas manualmente contra Crossref/PubMed/arXiv o editorial). |
+| Metadatos de citación — primer DOI real | `CITATION.cff` | Reemplazó el marcador `PENDIENTE` del campo `doi` por el primer DOI real de Zenodo y agregó el identificador Software Heritage (SWHID). |
+| Evidencia cifrada de las grabaciones de walkthrough (inicial) | `02_Evidencias/00_Restringido/evidencias_walkthrough.7z.001`–`.004` | Empaquetado y subida (8 de septiembre) de las grabaciones cifradas de walkthrough (~280 MB en 4 partes) con sus checksums SHA-256. |
+| Diagramas UML — versión inicial (superada) | `03_Modelado/Diagramas_UML/` | Primera versión de varios diagramas UML, posteriormente rehecha por Vera Gómez; ya no está en el repositorio (reemplazada, no eliminada sin registro). |
+| **Actas de validación Walkthrough (W01–W06)** *(nuevo)* | `02_Evidencias/Validacion_Walkthrough/` | Subida de las 6 actas de walkthrough, con corrección posterior del acta W06. |
+| **Evidencia cifrada de walkthrough (videos)** *(nuevo)* | `02_Evidencias/00_Restringido/` | Empaquetado y subida de las grabaciones cifradas en video de las 6 sesiones (W01–W06) y corrección de nombre de un checksum duplicado. |
+| **Member Checking (acta y consentimientos)** *(nuevo)* | `02_Evidencias/Member_Checking/` | Subida del acta de member checking (P03, P09, P15) y sus 3 consentimientos informados; corrigió nombres de archivo duplicados. |
+| **Diagramas organizacionales i\*** *(nuevo)* | `03_Modelado/Organizacional_iStar/` | Subida de 4 scripts: `Diagrama_Contexto.py`, `Matriz_Poder_Interes.py`, `iStar_SD.py`, `iStar_SR.py`. |
+| **Revisión de la doble codificación (A7)** *(nuevo)* | `10_Autoria/doble_codificacion/` | Recreó la carpeta y revisó `calcular_kappa.py`, `resultado_kappa.csv` y `resultado_doble_codificacion.md` (eliminó entradas duplicadas) sobre la versión inicial de Marcillo Ponce. |
+| **Notas de campo (reorganización)** *(nuevo)* | `10_Autoria/notas_campo/` | Reorganizó y renombró las 16 notas de campo (P01–P16) en varias rondas hasta una estructura consistente; actualizó el README de la carpeta. |
+| **Verificación previa** *(nuevo)* | `10_Autoria/verificacion_previa.pdf` | Subida del documento de verificación previa. |
+| **Resincronización del pipeline de `07_Datos`** *(nuevo)* | `07_Datos/registro_deposito.md`, `checksums_datos.sha256`, `README_datos.md` | Regeneró checksums y registro de depósito con los datos actuales; resincronizó el pipeline con los datos definitivos (n=210) y eliminó un resultado duplicado. |
+| **Mantenimiento documental** *(nuevo)* | `10_Autoria/aporte_individual.md`, `.mailmap` | 4 revisiones de `aporte_individual.md`; actualizaciones al `.mailmap` en paralelo al trabajo de Amagua Sacón. |
+
+### Identificadores de commit
+
+| Artefacto | Commit(s) |
+|---|---|
+| Doble codificación — hoja propia (A7) | `374a5b2` |
+| Paquete de ética (1ª ronda, 28 ago) | `f21b690`…`14c4f10`, `0bdf258`/`93e056e`, `69fcf04`, `b436ac8`/`f25a10e`/`fce6a6d`, `c63d055` |
+| Paquete de ética (2ª ronda, 31 ago) | `c9d30a4`…`c818841`, `48769b0`/`464a0ef`, `684491a`, `2af95a0`/`53f150c`/`37e0601`, `e0be44e`/`f34556b` |
+| `referencias.bib` (ERS) | `e0336cd` |
+| `CITATION.cff` — primer DOI real | `ab8b84b`, `ee56436` |
+| Evidencia cifrada de walkthrough (inicial) | `ffa3832` |
+| Diagramas UML — versión inicial (superada) | `310c79d`, `0153406`, `64627a7`, `4ca25ba`, `c64924a`, `84d65ee`, `3e3b0e5`, `f5adbdc`, `3472f41`, `aff63a9`, `136c809`, `e17e84b`, `c681dd4` |
+| **Actas de validación Walkthrough** *(nuevo)* | `589c0c2`, `e844850`, `e1bc900`, `ce43f2e`, `17fa9b5`, `85557dc`, `03955f4`, `3a55573`, `c1bbd40` |
+| **Evidencia cifrada de walkthrough (videos)** *(nuevo)* | `8c6401f`/`c291851`, `ce17627` |
+| **Member Checking** *(nuevo)* | `76c070e`, `9eb811c`, `ca71bcf`, `aa0e33a` |
+| **Diagramas organizacionales i\*** *(nuevo)* | `3c0dc4c` |
+| **Revisión de la doble codificación** *(nuevo)* | `07669dd`, `b08d935`/`89b4f14`/`d9c0023`, `95bed21`/`bd32c87`, `4540b6d`/`79c0ee2`/`cdc2b38`/`5f02e3c` |
+| **Notas de campo (reorganización)** *(nuevo)* | `b2d5945`, `aee7cae`, `dc700ea`, `5b6a494`, `db39292`, `96a49a5`, `63e16e8`, `6d52633`, `808a192`, `70336af`, `616ad20`/`28c9d9e` |
+| **Verificación previa** *(nuevo)* | `7387f01` |
+| **Resincronización del pipeline de `07_Datos`** *(nuevo)* | `aee9c22`, `d488e93` |
+| **Mantenimiento documental** *(nuevo)* | `9d7019e`, `f348fe1`, `c8486a9`, `78e4722`, `c2e7cea`/`3dcca76`/`3f586bf` |
 
 ## Anthony Alfredo Vera Gómez (Responsable C8/C9 — Prototipo funcional MVP y Protocolo experimental)
 
