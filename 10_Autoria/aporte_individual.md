@@ -234,49 +234,57 @@ Jhon Alexander Mesías Quijije — Fecha: ______________
 ---
 
 ## Carlos Daniel Barrionuevo Fuentes (Responsable de criterios y actividades de la Entrega 4 — 2B)
-
+ 
 ### Responsabilidad asignada en el reparto de trabajo
-
-Según `06_Experimento/README.md`: responsable de criterios y actividades generales de la Entrega 4 (2B) (misma descripción genérica que la de Marcillo Ponce en ese README). El historial de commits muestra dos aportes concretos y verificables: la recolección original de los datos de campo y el pipeline reproducible de análisis de `07_Datos/`.
-
-> Esta responsabilidad es la que consta en el README del proyecto; es genérica y no refleja el detalle real de su trabajo. Debe completarla o corregirla él mismo antes de firmar.
-
+ 
+Según `06_Experimento/README.md`: responsable de criterios y actividades generales de la Entrega 4 (2B) (misma descripción genérica que la de Marcillo Ponce en ese README). El historial de commits real, verificado con `git log --author` sobre las dos identidades usadas por Barrionuevo (`cbarrionuevof@uteq.edu.ec` y, por el incidente descrito más abajo, `jmesiasq@uteq.edu.ec`), muestra un aporte mucho más extenso que el de un par de scripts: la subida original de los datos crudos de campo, la construcción y mantenimiento casi completo del pipeline de análisis estadístico de `06_Experimento/`, y la construcción y mantenimiento del pipeline de datos reproducibles de `07_Datos/` hasta su resincronización final (n=210).
+ 
+> Esta responsabilidad es la que consta en el README del proyecto; es genérica y no refleja el detalle real de su trabajo, que sí queda documentado en la tabla siguiente.
+ 
 ### Artefactos de los que es responsable
-
+ 
 | Artefacto | Ruta | Descripción del aporte |
 |---|---|---|
-| Subida original de los datos de campo | (ruta original `06_Experimento/datos_crudos/`, hoy `07_Datos/datos_crudos/` tras la reorganización de Amagua Sacón) | Subida inicial de las 16 transcripciones de entrevistas (P01–P16) y de la encuesta cruda (`encuesta_respuestas_crudas.csv`), antes de que el repositorio se reestructurara. |
-| Pipeline reproducible de `07_Datos/` | `07_Datos/scripts/run_all.R`, `importar_datos.R`, `curva_saturacion.R`, `conteo_codigos.R`, `generar_checksums.R`, `justificacion_muestra.R` | Construcción de un pipeline de 6 scripts en R que corre con un solo comando (`run_all.R` como orquestador) y genera, sin intervención manual, todos los resultados de `07_Datos/resultados/`: curva de saturación temática (recalculada desde la columna `Evidencia_participantes` del CSV de codificación axial, no copiada de ningún reporte), conteo de códigos por categoría, checksums de datos y la justificación estadística del tamaño de muestra de la encuesta (n=60, comparando el margen de error alcanzado contra el necesario para distintos niveles de precisión), además de una tabla agregada (nunca por persona) del perfil de los participantes. |
+| Datos crudos de campo — subida original | `06_Experimento/datos_crudos/` (hoy `07_Datos/datos_crudos/` tras la reorganización de Amagua Sacón) | Subida inicial (1 de septiembre) de las 16 transcripciones de entrevistas (P01–P16), la encuesta cruda (`encuesta_respuestas_crudas.csv`) y el paquete `datos_crudos_paquete.zip`, antes de que el repositorio se reestructurara. |
+| Pipeline de análisis estadístico de `06_Experimento/` | `06_Experimento/scripts_analisis/01_importar_datos.R` … `09_tablas.R`, `run_all.R`, `README.md` | Construcción del pipeline completo de 10 archivos (9-11 sep): importación, limpieza, descriptivos, verificación de supuestos, pruebas de hipótesis, tamaño de efecto, figuras y tablas, orquestado por `run_all.R`. La única excepción es `03_curva_saturacion_codigos_abiertos.R`, cuya subida inicial (5 sep) es de Marcillo Ponce; Barrionuevo la actualizó después (9 sep) junto con el resto del pipeline. |
+| Resultados generados por ese pipeline | `06_Experimento/resultados/figuras/`, `resultados/tablas/`, `resultados/salidas_estadisticas/` | Subida de las figuras (boxplots por pregunta, distribución de perfiles, tamaño de efecto delta de Cliff, curva de saturación), tablas (descriptivos Likert, saturación) y salidas estadísticas (supuestos de Levene/Shapiro, pruebas de hipótesis por perfil, tamaño de efecto, justificación de potencia), como salida directa y no editada a mano del pipeline anterior (9 sep). |
+| Datos procesados de `06_Experimento/` (migrados, ya no vigentes en esa ruta) | `06_Experimento/datos_procesados/` | Subida de los datos procesados (encuesta limpia/procesada, transcripciones limpias/completas) generados por el pipeline; carpeta eliminada de `06_Experimento/` el 10 de septiembre al consolidarse en `07_Datos/datos_procesados/`. Se lista por trazabilidad histórica. |
+| Pipeline reproducible de `07_Datos/` | `07_Datos/scripts/run_all.R`, `importar_datos.R`, `curva_saturacion.R`, `conteo_codigos.R`, `generar_checksums.R`, `justificacion_muestra.R` | Construcción de un pipeline de 6 scripts en R que corre con un solo comando (`run_all.R` como orquestador) y genera, sin intervención manual, todos los resultados de `07_Datos/resultados/`: curva de saturación temática (recalculada desde la columna `Evidencia_participantes` del CSV de codificación axial, no copiada de ningún reporte), conteo de códigos por categoría, checksums de datos y la justificación estadística del tamaño de muestra de la encuesta, además de una tabla agregada (nunca por persona) del perfil de los participantes. Actualizado varias veces (7-11 sep) hasta su forma final. |
+| Mantenimiento y resincronización final de `07_Datos/` | `07_Datos/datos_procesados/`, `resultados/`, `README_datos.md`, `diccionario_datos.csv`, `checksums_datos.sha256`, `registro_deposito.md`, `LICENSE-DATA.txt` | Mantenimiento extenso del paquete de datos entre el 7 y el 12 de septiembre: subida y reorganización iterativa de datos procesados y resultados, actualizaciones repetidas de checksums y del registro de depósito, y la resincronización final del pipeline completo con los datos definitivos (n=210), incluida la limpieza de un resultado duplicado (`justificacion_n210.md`). |
+| `desviaciones.md` (contribución parcial) | `07_Datos/desviaciones.md` | El registro original de la Desviación 2 es de Marcillo Ponce (`90ad44d`); Barrionuevo completó después el motivo, la fecha y el campo "confirmado/verificado por" de esa desviación, y eliminó un placeholder vacío en `notas_campo` (11-12 sep). |
 | Mapa de stakeholders (versión actual) | `04_Trazabilidad/Mapa_de_stakeholders.csv` | Última versión subida del mapa de stakeholders (la primera versión, de Marcillo Ponce, fue reemplazada por esta el 30 de agosto). |
 | Trabajo temprano de ERS/Trazabilidad (2A, superado) | `01_ERS/ERS_SGCVIA_v3_0_4toA.pdf`, `04_Trazabilidad/Requisitos_Funcionales.*`, `Requisitos_No_Funcionales.*`, `Trazabilidad.*`, `C6_Priorizacion_Trazabilidad_Extendida.docx` | Documentos de una entrega anterior (2A/4toA); el propio Barrionuevo los eliminó el 2 de agosto al consolidarse la matriz única `matriz_trazabilidad.csv` de la Entrega 4. Se listan por trazabilidad histórica, no como artefactos vigentes. |
 | Video de demostración del MVP (superado) | `05_MVP/Video_demo.mp4` | Video de demostración temprano del prototipo; ya no está en el repositorio (Vera Gómez quitó la referencia al reestructurar `05_MVP/` el 5 de septiembre). Se lista por trazabilidad histórica. |
-
-**[PENDIENTE — Barrionuevo Fuentes: confirmar su responsabilidad asignada real (la del README es genérica) y agregar cualquier otro artefacto de su autoría no listado aquí.]**
-
+ 
 ### Identificadores de commit
-
-Extraídos de `git log --author="cbarrionuevof@uteq.edu.ec"` sobre el repositorio real.
-
+ 
+Extraídos de `git log --author="cbarrionuevof@uteq.edu.ec"` y, para los commits del incidente de identidad (ver nota más abajo), `git log --author="jmesiasq@uteq.edu.ec"`, filtrando por ruta sobre el repositorio real. Las secuencias "Add files via upload" / "Update" / "Rename" / "Delete" repetidas sobre un mismo archivo corresponden a reorganización iterativa, no a artefactos distintos; se listan los commits más representativos de cada uno.
+ 
 | Artefacto | Commit(s) |
 |---|---|
-| Datos de campo — subida original | (subida por lotes el 2 de agosto; ruta ya reorganizada por Amagua Sacón el 3 de septiembre, ver `563b0fa` en su sección) |
-| `run_all.R` | `5ec0f60` (subida), `cde7997` (actualización) |
-| `importar_datos.R` | `a916f5a` |
-| `curva_saturacion.R` | `1ce8891` |
-| `conteo_codigos.R` | `f640a02` |
-| `generar_checksums.R` | `520d50e` |
-| `justificacion_muestra.R` | `a3ff9ed` |
+| Datos crudos de campo — subida original | `c426180` (encuesta cruda), `eb5c729` (16 transcripciones), `712707d`/`663f0f2` (paquete zip, subida y limpieza) |
+| Pipeline `06_Experimento/scripts_analisis/` | `f369096`/`2b35968`/`59d514c` (01_importar_datos), `ee05040`/`7e7206b`/`82e9cd0` (02_limpieza), `87eb965` (03_curva_saturacion, actualización sobre el archivo inicial de Marcillo `d03038c`), `72a0fd1`/`aa122a3`/`e6f5d6b` (04_descriptivos), `02fba14`/`989653d`/`cc99c7f` (05_supuestos), `91128c4`/`73546c3`/`595d941` (06_pruebas_hipotesis), `968d7ce`/`66e5232`/`8f61246` (07_tamano_efecto), `4227efc`/`5114d89`/`a0fb4a7`/`8bd7492` (08_figuras), `8286c09` (09_tablas), `0cc645b`/`75909f9`/`5145ece`/`ece11a4` (run_all.R), `f7cb20a`/`f278bfe` (README.md) |
+| Resultados de `06_Experimento/resultados/` | `1658e11`…`1ae4bf9` (figuras), `7e828b2`/`35f2786` (tabla y figura de saturación abierta), `6d767eb` (descriptivos Likert), `2e26e32`/`c241c87`/`7c182f8`/`70a500f` (salidas estadísticas) |
+| Datos procesados de `06_Experimento/` (migrados) | `e54ba2b`, `d12bf6b`, `93af51b`/`eddc414`/`2628693` (limpieza de duplicados), `2352775` (eliminación final de la carpeta) |
+| `run_all.R` (07_Datos) | `5ec0f60` (subida), `cde7997` (actualización) |
+| `importar_datos.R` (07_Datos) | `a916f5a`, `bd27ee3`, `1ca56f8` |
+| `curva_saturacion.R` (07_Datos) | `1ce8891` |
+| `conteo_codigos.R` (07_Datos) | `f640a02` |
+| `generar_checksums.R` (07_Datos) | `520d50e` |
+| `justificacion_muestra.R` (07_Datos) | `a3ff9ed`, `8f8c249`, `a025392`, `9a7a927`, `4ef2732` |
+| Mantenimiento de `07_Datos/` (datos procesados, resultados, README, diccionario, checksums, registro de depósito) | `20e44bf`, `8735c71`, `6ba192d`, `e6c0897`, `5c99de3`, `42f300f`, `4d9bd84`, `4c06239`/`594787b`/`3a7d691`/`fe74bbc`/`6d51499`/`c47c3a1`/`39927da`/`96e975b` (limpieza de duplicados), `229ad57`/`540f784`/`02e77b4` (registro_deposito.md), `bf5f885`/`a2e076d`/`5fa15ef`/`cdcfd59` (checksums_datos.sha256), `676ebaf`/`35dc730` (README_datos.md), `ba4ff00`/`978dad6` (diccionario_datos.csv), `b0db7b3`/`a795119`/`eff4bac`/`4431c10`/`aa7073c`/`b3a092c` (resultados) |
+| `desviaciones.md` (contribución parcial) | `22af379`, `fc9af05`, `3d07d7c` |
 | `Mapa_de_stakeholders.csv` (versión actual) | `4e30bc0` |
 | Documentos ERS/Trazabilidad 2A (eliminados) | `41b20d7`, `757a91e`, `016cf52`, `f05ac19`, `153bef6`, `048f693` |
-
+ 
 ### Nota de aclaración — commits del 11 y 12 de septiembre bajo identidad incorrecta
-
+ 
 Los siguientes commits, todos correspondientes a trabajo real de Carlos Daniel Barrionuevo Fuentes
 (resincronización del pipeline de `07_Datos/`, regeneración de checksums y correcciones de
 documentación de cierre), aparecen firmados como `jmesiasq-art <jmesiasq@uteq.edu.ec>` porque se
 realizaron desde una terminal Git Bash configurada localmente con la identidad de Jhon Alexander
 Mesías Quijije, en lugar de la propia:
-
+ 
 | Commit | Fecha/hora | Descripción |
 |---|---|---|
 | `878777c` | 2026-09-11 23:18 | Regenera checksums.sha256 y checksums_datos.sha256 (primer intento) |
@@ -287,27 +295,27 @@ Mesías Quijije, en lugar de la propia:
 | `2ed3499` | 2026-09-11 23:43 | Corrige typo scritps -> scripts en 10_Autoria |
 | `d488e93` | 2026-09-12 00:06 | Resincroniza el pipeline de 07_Datos con los datos actuales (n=210) |
 | `432ea81` | 2026-09-12 00:07 | Merge |
-
+ 
 El commit `22af379` ("Update desviaciones.md", mismo período) sí aparece correctamente firmado
 como Carlos Daniel Barrionuevo Fuentes porque se realizó editando directamente en la interfaz web
 de GitHub, que usa la cuenta autenticada del navegador en vez del `git config` local de la
 terminal.
-
+ 
 **Motivo del error:** ambos integrantes compartieron temporalmente el mismo equipo/terminal
 durante el cierre de la Entrega 4, y no se verificó la identidad de Git configurada antes de
 empezar a commitear.
-
+ 
 **Corrección aplicada:** el 12 de septiembre de 2026 se corrigió el `git config` local de esa
 máquina (`user.name` y `user.email`) a la identidad de Carlos Daniel Barrionuevo Fuentes, para que
 los commits posteriores queden correctamente atribuidos. Los commits ya listados arriba no se
 reescribieron (`rebase`/`amend`) para evitar romper las referencias por hash que ya existen en
 este documento y en `10_Autoria/bitacora_sesiones.csv`; en su lugar, quedan aclarados aquí por
 escrito.
-
+ 
 **Confirmado por:** Carlos Daniel Barrionuevo Fuentes.
-
+ 
 ### Firma
-
+ 
 Carlos Daniel Barrionuevo Fuentes — Fecha: 12/09/2026
 
 ---
