@@ -179,15 +179,3 @@ Con esto concluye la presentación de nuestro proyecto SGCV-IA. Todos los artefa
 Agradecemos al tribunal por su tiempo y atención, y quedamos atentos a sus observaciones.
 
 ---
-
-## Notas para el equipo antes de la defensa
-
-- **Cifras clave a memorizar:** 16 entrevistas, 167 códigos abiertos, 50 códigos axiales, 7 categorías, 8 códigos de IA, 4/16 de revisión obligatoria, saturación al 2.67%.
-- **Puntos de honestidad metodológica que refuerzan credibilidad ante el tribunal:** la corrección de 47→50 códigos y de 6/16→4/16 no son errores que ocultar, sino evidencia de rigor — se pueden mencionar con seguridad si preguntan por inconsistencias en el manuscrito.
-- **Pendientes reales del proyecto:** cuestionario cuantitativo sin alcanzar n≥60 por perfil, actas de member checking en trámite de carga, y scripts de análisis como esqueleto no reproducible — mantener esta misma redacción si el tribunal indaga, evitando la frase "ningún trabajo pendiente" de la diapositiva 12 al responder directamente sobre este punto.
-- **Alcance a defender con firmeza:** los hallazgos aplican solo al módulo de IA diagnóstica de SGCV-IA en la clínica estudiada; no se generalizan a otros dominios clínicos ni a otras clínicas.
-
-- Confirmar que los 5 integrantes hablan al menos 4 minutos cada uno (gatekeeper G7).
-- Tener el MVP corriendo en segundo plano antes de empezar, para no perder tiempo con el despliegue durante la demostración.
-- No presentar como definitivo ningún resultado, cifra o tabla que no exista en el repositorio o en los datos crudos — cualquier cifra mencionada en la defensa debe poder mostrarse si el tribunal la pide (regla de integridad de la Sección "Advertencia sobre la defensa").
-- Llevar impreso o accesible el folleto de una hoja con el resumen y los resultados principales.
