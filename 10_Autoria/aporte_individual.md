@@ -137,6 +137,8 @@ Robyn Willian Amagua Sacón — Fecha: 12/09/2026
 
 ---
 
+---
+
 ## Jhon Alexander Mesías Quijije (Verificador)
 
 ### Responsabilidad asignada en el reparto de trabajo
@@ -183,6 +185,12 @@ Según `06_Experimento/README.md`: **Verificador**. El historial de commits mues
 | **Verificación previa** *(nuevo)* | `7387f01` |
 | **Resincronización del pipeline de `07_Datos`** *(nuevo)* | `aee9c22`, `d488e93` |
 | **Mantenimiento documental** *(nuevo)* | `9d7019e`, `f348fe1`, `c8486a9`, `78e4722`, `c2e7cea`/`3dcca76`/`3f586bf` |
+
+**[PENDIENTE — Mesías Quijije: confirmar su responsabilidad asignada y aportar evidencia sobre el catálogo de RF/RNF si corresponde.]**
+
+### Firma
+
+Jhon Alexander Mesías Quijije — Fecha: 12-09-2026
 
 ## Anthony Alfredo Vera Gómez (Responsable C8/C9 — Prototipo funcional MVP y Protocolo experimental)
 
@@ -241,60 +249,7 @@ Extraídos y **verificados el 12/09/2026 mediante clonado directo del repositori
 
 Anthony Alfredo Vera Gómez — Fecha: 12/09/2026
 
----
 
-## Jhon Alexander Mesías Quijije (Verificador)
-
-### Responsabilidad asignada en el reparto de trabajo
-
-Según `06_Experimento/README.md`: **Verificador**. El historial de commits muestra el paquete de ética del proyecto (`08_Etica`), la bibliografía del ERS, su rol como segundo codificador (A7), y — en el periodo más reciente — la gestión de evidencia de walkthrough, member checking y modelado organizacional i*.
-
-### Artefactos de los que es responsable
-
-| Artefacto | Ruta | Descripción del aporte |
-|---|---|---|
-| Doble codificación independiente (A7) | `10_Autoria/doble_codificacion/hoja_codificador2_Mesias.csv` | Codificación independiente de 4 entrevistas (P02, P07, P13, P16 — 25% del corpus), para el cálculo del coeficiente de acuerdo entre codificadores (kappa de Cohen = 0,36). |
-| Paquete de ética del proyecto | `08_Etica/A01_Anexo.pdf` … `A13_Anexo.pdf`, `Aval_Institucional.pdf`, `Categoria_B/*` | Subida y actualización (dos rondas, 28 y 31 de agosto) de los 13 anexos éticos, el aval institucional y los formularios de protección de datos/menores de la Categoría B. |
-| Bibliografía del ERS | `01_ERS/referencias.bib` | Creación completa del archivo (444 líneas, 40 referencias verificadas manualmente contra Crossref/PubMed/arXiv o editorial). |
-| Metadatos de citación — primer DOI real | `CITATION.cff` | Reemplazó el marcador `PENDIENTE` del campo `doi` por el primer DOI real de Zenodo y agregó el identificador Software Heritage (SWHID). |
-| Evidencia cifrada de las grabaciones de walkthrough (inicial) | `02_Evidencias/00_Restringido/evidencias_walkthrough.7z.001`–`.004` | Empaquetado y subida (8 de septiembre) de las grabaciones cifradas de walkthrough (~280 MB en 4 partes) con sus checksums SHA-256. |
-| Diagramas UML — versión inicial (superada) | `03_Modelado/Diagramas_UML/` | Primera versión de varios diagramas UML, posteriormente rehecha por Vera Gómez; ya no está en el repositorio (reemplazada, no eliminada sin registro). |
-| **Actas de validación Walkthrough (W01–W06)** *(nuevo)* | `02_Evidencias/Validacion_Walkthrough/` | Subida de las 6 actas de walkthrough, con corrección posterior del acta W06. |
-| **Evidencia cifrada de walkthrough (videos)** *(nuevo)* | `02_Evidencias/00_Restringido/` | Empaquetado y subida de las grabaciones cifradas en video de las 6 sesiones (W01–W06) y corrección de nombre de un checksum duplicado. |
-| **Member Checking (acta y consentimientos)** *(nuevo)* | `02_Evidencias/Member_Checking/` | Subida del acta de member checking (P03, P09, P15) y sus 3 consentimientos informados; corrigió nombres de archivo duplicados. |
-| **Diagramas organizacionales i\*** *(nuevo)* | `03_Modelado/Organizacional_iStar/` | Subida de 4 scripts: `Diagrama_Contexto.py`, `Matriz_Poder_Interes.py`, `iStar_SD.py`, `iStar_SR.py`. |
-| **Revisión de la doble codificación (A7)** *(nuevo)* | `10_Autoria/doble_codificacion/` | Recreó la carpeta y revisó `calcular_kappa.py`, `resultado_kappa.csv` y `resultado_doble_codificacion.md` (eliminó entradas duplicadas) sobre la versión inicial de Marcillo Ponce. |
-| **Notas de campo (reorganización)** *(nuevo)* | `10_Autoria/notas_campo/` | Reorganizó y renombró las 16 notas de campo (P01–P16) en varias rondas hasta una estructura consistente; actualizó el README de la carpeta. |
-| **Verificación previa** *(nuevo)* | `10_Autoria/verificacion_previa.pdf` | Subida del documento de verificación previa. |
-| **Resincronización del pipeline de `07_Datos`** *(nuevo)* | `07_Datos/registro_deposito.md`, `checksums_datos.sha256`, `README_datos.md` | Regeneró checksums y registro de depósito con los datos actuales; resincronizó el pipeline con los datos definitivos (n=210) y eliminó un resultado duplicado. |
-| **Mantenimiento documental** *(nuevo)* | `10_Autoria/aporte_individual.md`, `.mailmap` | 4 revisiones de `aporte_individual.md`; actualizaciones al `.mailmap` en paralelo al trabajo de Amagua Sacón. |
-
-### Identificadores de commit
-
-| Artefacto | Commit(s) |
-|---|---|
-| Doble codificación — hoja propia (A7) | `374a5b2` |
-| Paquete de ética (1ª ronda, 28 ago) | `f21b690`…`14c4f10`, `0bdf258`/`93e056e`, `69fcf04`, `b436ac8`/`f25a10e`/`fce6a6d`, `c63d055` |
-| Paquete de ética (2ª ronda, 31 ago) | `c9d30a4`…`c818841`, `48769b0`/`464a0ef`, `684491a`, `2af95a0`/`53f150c`/`37e0601`, `e0be44e`/`f34556b` |
-| `referencias.bib` (ERS) | `e0336cd` |
-| `CITATION.cff` — primer DOI real | `ab8b84b`, `ee56436` |
-| Evidencia cifrada de walkthrough (inicial) | `ffa3832` |
-| Diagramas UML — versión inicial (superada) | `310c79d`, `0153406`, `64627a7`, `4ca25ba`, `c64924a`, `84d65ee`, `3e3b0e5`, `f5adbdc`, `3472f41`, `aff63a9`, `136c809`, `e17e84b`, `c681dd4` |
-| **Actas de validación Walkthrough** *(nuevo)* | `589c0c2`, `e844850`, `e1bc900`, `ce43f2e`, `17fa9b5`, `85557dc`, `03955f4`, `3a55573`, `c1bbd40` |
-| **Evidencia cifrada de walkthrough (videos)** *(nuevo)* | `8c6401f`/`c291851`, `ce17627` |
-| **Member Checking** *(nuevo)* | `76c070e`, `9eb811c`, `ca71bcf`, `aa0e33a` |
-| **Diagramas organizacionales i\*** *(nuevo)* | `3c0dc4c` |
-| **Revisión de la doble codificación** *(nuevo)* | `07669dd`, `b08d935`/`89b4f14`/`d9c0023`, `95bed21`/`bd32c87`, `4540b6d`/`79c0ee2`/`cdc2b38`/`5f02e3c` |
-| **Notas de campo (reorganización)** *(nuevo)* | `b2d5945`, `aee7cae`, `dc700ea`, `5b6a494`, `db39292`, `96a49a5`, `63e16e8`, `6d52633`, `808a192`, `70336af`, `616ad20`/`28c9d9e` |
-| **Verificación previa** *(nuevo)* | `7387f01` |
-| **Resincronización del pipeline de `07_Datos`** *(nuevo)* | `aee9c22`, `d488e93` |
-| **Mantenimiento documental** *(nuevo)* | `9d7019e`, `f348fe1`, `c8486a9`, `78e4722`, `c2e7cea`/`3dcca76`/`3f586bf` |
-
-**[PENDIENTE — Mesías Quijije: confirmar su responsabilidad asignada y aportar evidencia sobre el catálogo de RF/RNF si corresponde.]**
-
-### Firma
-
-Jhon Alexander Mesías Quijije — Fecha: 12-09-2026
 
 
 ---
