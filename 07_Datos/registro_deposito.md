@@ -1,6 +1,6 @@
 # Registro de depósito de datos — SGCV-IA
 
-Generado automáticamente por `07_Datos/scripts/generar_checksums.R` el 2026-09-12 04:33:31 UTC.
+Generado automáticamente por `07_Datos/scripts/generar_checksums.R` el 2026-09-12 04:53:52 UTC.
 
 Este registro documenta el estado final de los datos crudos y los resultados
 del pipeline de análisis en el momento del depósito. Si cualquiera de estos
@@ -45,6 +45,6 @@ sha256sum -c 07_Datos/checksums_datos.sha256
 | `07_Datos/datos_crudos/encuesta_respuestas_crudas.csv` | `9f13478ba78f9c9391db410ff0f8838b5e49b8c5ce6666a3bb991e57febb75e7` |
 | `07_Datos/resultados/conteo_codigos_categorias.csv` | `91683ef1c07d1b0ea3335a156118089e7b5e832ee5111f59c61ed0f79b4c6584` |
 | `07_Datos/resultados/curva_saturacion.csv` | `f5b9522d47f1c3d5407a7e0f9626c636141ebf65939277c9050cedcee7b22aeb` |
-| `07_Datos/resultados/justificacion_n210.md` | `2430e3fe6d89d1f4a5ac370f168dedebab5bc1c594c4cb75d966e1294c5c213e` |
-| `07_Datos/resultados/perfil_participantes_agregado.csv` | `a021cef37bb9b9013a1d2ca3dec21c9ddbb61061ee7addc29efb34725f174ffa` |
-| `07_Datos/resultados/saturacion_reporte.md` | `3570e3b0431741af9766301db0e1cd371971da686c45d5074ab8d812230ed91c` |
+| `07_Datos/resultados/justificacion_muestra.md` | `ed84227d4588fe5557852944c4aa5317b72b25d17b78cd3546b4b073fed1e893` |
+| `07_Datos/resultados/perfil_participantes_agregado.csv` | `ce9a5c616b71ba803dbd6b01797173a000768bf70b7cebf8df018dfb942f4a0a` |
+| `07_Datos/resultados/saturacion_reporte.md` | `a64be5139e5f7beb64aa5fb5efde4c91c72e80cd79ace690bc577fd76598576a` |

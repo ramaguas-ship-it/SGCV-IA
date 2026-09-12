@@ -32,7 +32,7 @@ La carpeta separa los **datos crudos**, los **resultados procesados**, los **scr
 │   ├── curva_saturacion.csv
 │   ├── encuesta_limpia.csv
 │   ├── encuesta_procesada.csv
-│   ├── justificacion_n210.md
+│   ├── justificacion_muestra.md
 │   ├── perfil_participantes_agregado.csv
 │   ├── reporte_limpieza.md
 │   ├── saturacion_reporte.md
@@ -144,7 +144,7 @@ La curva de saturación se calcula siguiendo el orden P01–P16.
 
 ### Tamaño de muestra
 
-`resultados/justificacion_n210.md`
+`resultados/justificacion_muestra.md`
 
 La encuesta cuenta con:
 

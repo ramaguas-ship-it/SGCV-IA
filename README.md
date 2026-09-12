@@ -334,7 +334,7 @@ Después de disponer de los archivos correspondientes, puede verificarse su inte
 
 ### Estado actual
 
-**⚠️ Pipeline ejecutable, pero desincronizado con los datos crudos actuales — pendiente de regenerar antes del corte.**
+**✅ Pipeline sincronizado: `run_all.R` se corrió sobre los datos actuales (n=210) el 11 de septiembre de 2026 y los resultados de `07_Datos/resultados/` reflejan ese estado.**
 
 Los datos crudos ya están depositados en:
 
