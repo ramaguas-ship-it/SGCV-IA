@@ -153,29 +153,30 @@ Según `06_Experimento/README.md`: responsable de C8 (Prototipo funcional MVP) y
 
 ### Identificadores de commit
 
-Extraídos de `git log --author="averag10@uteq.edu.ec"` y `git log --author="anthonyveragomez@gmail.com"` sobre el repositorio real (ambas identidades corresponden a Vera Gómez según `.mailmap`).
+Extraídos y **verificados el 12/09/2026 mediante clonado directo del repositorio real** (`git log --author="Vera Gómez Anthony Alfredo"`, nombre canónico según `.mailmap`, que unifica las identidades `averag10@uteq.edu.ec` y `anthonyveragomez@gmail.com`). Se confirma que todos los commits bajo su identidad tienen cambios de archivo reales (`git diff-tree` no vacío) — no se encontró el patrón de commits vacíos detectado en la sección de Marcillo Ponce.
 
 | Artefacto | Commit(s) |
 |---|---|
 | Protocolo experimental | `c38ab89` |
 | Registro OSF | `6afbb4f` |
-| Casos de uso — subida inicial (nomenclatura en español) | `915834e`, `4e8ca0c`, `2359674`, `6fcf088`, `400056c`, `daa6974`, `193420d`, `39ff860`, `d5ada5b`, `3c7dfaf` |
-| Casos de uso — versión final bilingüe (`.drawio`/`.svg`) | `48ebc9c`, `70df1cf`, `1aea8a9`, `c4c5669`, `f399bea`, `19a7c0c`, `6e1ffe8`, `140067a`, `d0cf7d9`, `774cef8`, `fc67381`, `edc0d33`, `2f7e545`, `0c8152c`, `9b19aa9`, `01774fa`, `83ef355` |
-| Diagramas de secuencia | `49553b5`/`2695b53` (facturación), `7aae45b`/`8f2a95b` (atención clínica), `fdae2cf`/`f92d9d2` (recordatorio) |
-| Diagrama de clases refinado v3.1 | `b4cc9b7` |
-| Diagrama de componente | `b223d5c`/`7645070` |
-| Diagrama de despliegue | `bb79f90`/`43d555a` |
-| Diagramas de estado | `d89e3c3` (cita médica), `f1f2885` (producto) |
-| Mockups MU-001 a MU-033 | `7c618f0`, `a52a134`, `5ba265f`, `09c032e`, `12fab99`, `27589a7`, `2eee8ec`, `3f2362c`, `e244e73`, `8263667`, `519b86d`, `946bf79`, `00c7119`, `277ad48`, `3a74aa3`, `eeca350`, `d9d5b72`, `f90174f`, `557cd3d`, `778d61f`, `bcf28af`, `67f8826`, `21245bc`, `e4bbab5`, `68fffe8`, `660fd16`, `fc431bc`, `2e596d3`, `f91c7bc`, `56b8740`, `ad7f30d` |
-| Backend del MVP (`server.js`, `package.json`) | `dd19137`, `25c936e` |
-| Dockerfile / docker-compose | `70f1e73`, `6ae605e` |
-| Documentación del MVP | `75d2e59`, `31f17b7`, `32b4798` |
+| Casos de uso — subida inicial (nomenclatura en español) | `915834e`, `4e8ca0c`, `2359674`, `6fcf088`, `400056c`, `daa6974`, `193420d`, `39ff860`, `d5ada5b`, `3c7dfaf`, `c7d9ecd`, `a5b149d` |
+| Casos de uso — versión final bilingüe (`.drawio`/`.svg`) | `48ebc9c`, `70df1cf`, `1aea8a9`, `c4c5669`, `f399bea`, `19a7c0c`, `6e1ffe8`, `140067a`, `d0cf7d9`, `774cef8`, `fc67381`, `edc0d33`, `2f7e545`, `0c8152c`, `9b19aa9`, `01774fa`, `83ef355`, `141832d`, `c5eb4ca` |
+| **Verificación:** total real de commits bajo casos de uso (incl. renombres, correcciones y limpieza de duplicados) | **67 commits** confirmados entre el 18/08 y el 01/09/2026 — más de los listados individualmente arriba; disponible el detalle completo fila-por-fila si se requiere para el anexo |
+| Diagramas de secuencia | `49553b5`/`2695b53`/`62a226e` (facturación, incl. corrección de carpeta duplicada), `7aae45b`/`8f2a95b` (atención clínica), `fdae2cf`/`f92d9d2` (recordatorio) |
+| Diagrama de clases refinado v3.1 | `7d35e6c` (drawio), `b4cc9b7` (svg), `07a213e` (rename a png) |
+| Diagrama de componente | `b223d5c` (drawio), `7645070` (svg), `8254049` (rename a png) |
+| Diagrama de despliegue | `bb79f90` (drawio), `43d555a` (svg), `13f038c` (rename a png) |
+| Diagramas de estado | `d89e3c3`/`e8bf29c`/`7d64ffb` (cita médica: drawio/svg/rename png), `cca3769`/`f1f2885`/`aa4f912` (producto: drawio/svg/rename png) |
+| Mockups MU-001 a MU-033 | **66 commits verificados** (más de los 31 listados en la revisión anterior de este documento — hay revisiones y renombres adicionales por archivo no capturados antes); entre ellos: `7c618f0`, `a52a134`, `5ba265f`, `09c032e`, `12fab99`, `27589a7`, `2eee8ec`, `3f2362c`, `e244e73`, `8263667`, `519b86d`, `946bf79`, `00c7119`, `277ad48`, `3a74aa3`, `eeca350`, `d9d5b72`, `f90174f`, `557cd3d`, `778d61f`, `bcf28af`, `67f8826`, `21245bc`, `e4bbab5`, `68fffe8`, `660fd16`, `fc431bc`, `2e596d3`, `f91c7bc`, `56b8740`, `ad7f30d`, `037d149` |
+| Backend del MVP (`server.js`, `package.json`) | `dd19137`, `25c936e` (versión final en `05_MVP/backend/`, minúscula). **Nota:** existió una subida previa duplicada en `05_MVP/Backend/` (mayúscula) — `d475c52`, `95d2dee` — luego eliminada en `688b26d` al reestructurar la carpeta. |
+| Dockerfile / docker-compose | `70f1e73`/`7517362` (Dockerfile, dos subidas), `6ae605e`/`5a130bb` (docker-compose, dos subidas) |
+| Documentación del MVP | `75d2e59` (README inicial), `6ec3d4b`, `31f17b7`, `63801a8`, `32b4798`, `84c6fff`, `e24c503` (revisiones sucesivas), `3c722c5`/`bf01284` (HTML del prototipo, dos subidas) |
 
-**Nota:** la lista de mockups y casos de uso agrupa commits de subida individual por archivo (patrón `Add files via upload` / un archivo por commit); se listan todos los hashes principales por trazabilidad, sin incluir los renombres y borrados intermedios de versiones ya superadas.
+**Nota de verificación adicional:** el instrumento "Guion de validación v2.0" mencionado como retirado en la sección anterior no aparece bajo ninguna identidad de Vera Gómez en el historial completo del repositorio.
 
 ### Firma
 
-Anthony Alfredo Vera Gómez — Fecha: ______________
+Anthony Alfredo Vera Gómez — Fecha: 12/09/2026
 
 ---
 
