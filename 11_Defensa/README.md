@@ -56,8 +56,3 @@ La defensa aborda los principales resultados del proyecto y el componente empír
 * Estado de los artefactos y evidencias.
 * Conclusiones y aspectos pendientes.
 
-### Consideraciones sobre evidencias pendientes
-
-Los elementos que todavía no hayan sido incorporados al repositorio deberán presentarse como **pendientes** durante la defensa. No se considerarán completados hasta contar con su respectiva evidencia y verificación.
-
-La presentación mantiene un enfoque transparente sobre el estado real del proyecto, diferenciando entre los productos terminados, los que se encuentran en preparación y aquellos que todavía requieren evidencia de respaldo.
