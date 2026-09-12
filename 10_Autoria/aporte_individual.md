@@ -262,9 +262,46 @@ Extraídos de `git log --author="cbarrionuevof@uteq.edu.ec"` sobre el repositori
 | `Mapa_de_stakeholders.csv` (versión actual) | `4e30bc0` |
 | Documentos ERS/Trazabilidad 2A (eliminados) | `41b20d7`, `757a91e`, `016cf52`, `f05ac19`, `153bef6`, `048f693` |
 
+### Nota de aclaración — commits del 11 y 12 de septiembre bajo identidad incorrecta
+
+Los siguientes commits, todos correspondientes a trabajo real de Carlos Daniel Barrionuevo Fuentes
+(resincronización del pipeline de `07_Datos/`, regeneración de checksums y correcciones de
+documentación de cierre), aparecen firmados como `jmesiasq-art <jmesiasq@uteq.edu.ec>` porque se
+realizaron desde una terminal Git Bash configurada localmente con la identidad de Jhon Alexander
+Mesías Quijije, en lugar de la propia:
+
+| Commit | Fecha/hora | Descripción |
+|---|---|---|
+| `878777c` | 2026-09-11 23:18 | Regenera checksums.sha256 y checksums_datos.sha256 (primer intento) |
+| `dd2c7bd` | 2026-09-11 23:19 | Merge |
+| `3beda6b` | 2026-09-11 23:32 | Corrige checksums.sha256 de la raíz |
+| `aee9c22` | 2026-09-11 23:34 | Regenera checksums_datos.sha256 y registro_deposito.md |
+| `2fc1823` | 2026-09-11 23:40 | Quita línea de adjunto de GitHub en README_datos.md |
+| `2ed3499` | 2026-09-11 23:43 | Corrige typo scritps -> scripts en 10_Autoria |
+| `d488e93` | 2026-09-12 00:06 | Resincroniza el pipeline de 07_Datos con los datos actuales (n=210) |
+| `432ea81` | 2026-09-12 00:07 | Merge |
+
+El commit `22af379` ("Update desviaciones.md", mismo período) sí aparece correctamente firmado
+como Carlos Daniel Barrionuevo Fuentes porque se realizó editando directamente en la interfaz web
+de GitHub, que usa la cuenta autenticada del navegador en vez del `git config` local de la
+terminal.
+
+**Motivo del error:** ambos integrantes compartieron temporalmente el mismo equipo/terminal
+durante el cierre de la Entrega 4, y no se verificó la identidad de Git configurada antes de
+empezar a commitear.
+
+**Corrección aplicada:** el 12 de septiembre de 2026 se corrigió el `git config` local de esa
+máquina (`user.name` y `user.email`) a la identidad de Carlos Daniel Barrionuevo Fuentes, para que
+los commits posteriores queden correctamente atribuidos. Los commits ya listados arriba no se
+reescribieron (`rebase`/`amend`) para evitar romper las referencias por hash que ya existen en
+este documento y en `10_Autoria/bitacora_sesiones.csv`; en su lugar, quedan aclarados aquí por
+escrito.
+
+**Confirmado por:** Carlos Daniel Barrionuevo Fuentes.
+
 ### Firma
 
-Carlos Daniel Barrionuevo Fuentes — Fecha: ______________
+Carlos Daniel Barrionuevo Fuentes — Fecha: ______________ (aclaración de commits añadida: 12/09/2026)
 
 ---
 
