@@ -332,33 +332,27 @@ Después de disponer de los archivos correspondientes, puede verificarse su inte
 
 ## 🧪 Reproducir el análisis experimental
 
-### Estado actual
-
-**✅ Pipeline sincronizado: `run_all.R` se corrió sobre los datos actuales (n=210) el 11 de septiembre de 2026 y los resultados de `07_Datos/resultados/` reflejan ese estado.**
-
-Los datos crudos ya están depositados en:
-
-```text
-07_Datos/datos_crudos/
-```
-
-e incluyen las 16 transcripciones de entrevista (completas). El archivo `encuesta_respuestas_crudas.csv` **hoy contiene 210 respuestas** de cuestionario (49–56 por cada uno de los 4 perfiles: administrador 56, auxiliar/técnico 55, médico veterinario 50, dueño de mascota 49) 
-
-Se verificó ejecutando el propio `07_Datos/scripts/importar_datos.R` sobre el estado actual del repositorio: importa las 210 filas sin filtrar ninguna, así que el archivo `datos_crudos` creció después de generarse los resultados actualmente commiteados.
-
-Antes del corte hay que:
-
-1. Correr `Rscript 07_Datos/scripts/run_all.R` sobre el `datos_crudos` actual.
-2. Decidir si el manuscrito reporta n=210 (o el subconjunto que corresponda tras limpieza) y actualizar `justificacion_n60.md`, la sección de metodología del manuscrito y este README con la cifra real.
-3. Si se opta por seguir usando un subconjunto de 60, documentar explícitamente el criterio de selección en `07_Datos/desviaciones.md` — un n distinto al que arroja el pipeline, sin ese criterio por escrito, se lee como dato no reproducible.
-
 El pipeline reproducible del paquete de datos vive en:
 
 ```text
 07_Datos/scripts/
 ```
 
-con 6 scripts en R, incluido el orquestador `run_all.R`, que corre todo el pipeline con una sola orden (`Rscript 07_Datos/scripts/run_all.R`) y genera sin intervención manual la curva de saturación, el conteo de códigos por categoría, los checksums de datos y la justificación estadística del tamaño de muestra — una vez que se regenere con los datos actuales.
+con 6 scripts en R, incluido el orquestador `run_all.R`, que corre todo el pipeline con una
+sola orden y genera sin intervención manual la curva de saturación, el conteo de códigos por
+categoría, los checksums de datos y la justificación estadística del tamaño de muestra.
+
+**Estado verificado:** `run_all.R` se ejecutó sobre un clon limpio del repositorio el 12 de
+septiembre de 2026 y reproduce, sin ninguna edición manual, exactamente los archivos ya
+commiteados en `07_Datos/datos_procesados/` y `07_Datos/resultados/` (n=210 respuestas de
+encuesta, 16 transcripciones, 167 códigos abiertos → 50 axiales, saturación 2.67% bajo el
+umbral del 5%).
+
+```bash
+git clone https://github.com/ramaguas-ship-it/SGCV-IA.git
+cd SGCV-IA
+Rscript 07_Datos/scripts/run_all.R
+```
 
 El directorio:
 
@@ -366,9 +360,10 @@ El directorio:
 06_Experimento/scripts_analisis/
 ```
 
-contiene por ahora **1 solo script** (`03_curva_saturacion_codigos_abiertos.R`, curva de saturación a nivel de código abierto — distinto del script de saturación axial del pipeline anterior). Este directorio quedó pendiente de consolidarse con `07_Datos/scripts/`; por ahora conviven ambos.
-
-Esta sección será actualizada cuando ambos directorios de scripts se unifiquen.
+contiene por ahora **1 solo script** (`03_curva_saturacion_codigos_abiertos.R`, curva de
+saturación a nivel de código abierto — distinto del script de saturación axial del pipeline
+de `07_Datos/`). Este directorio quedó pendiente de consolidarse con `07_Datos/scripts/`; por
+ahora conviven ambos.
 
 ---
 
@@ -419,11 +414,16 @@ Detalle completo del estado por archivo en `09_Publicacion/README.md`.
 
 La carpeta `10_Autoria/` documenta que los artefactos entregados fueron producidos por el propio equipo, según la Guía de Desarrollo y Consolidación del PFC.
 
-Elementos completos (8 de 12): `bitacora_sesiones.csv`, `declaracion_uso_ia.md`, `aporte_individual.md`, `exif_inventario.csv`, `doble_codificacion/`, `fotos_equipo/`, `correspondencia/`, `.mailmap` (raíz).
+**Completa (12 de 12):** `bitacora_sesiones.csv`, `declaracion_uso_ia.md`,
+`aporte_individual.md`, `exif_inventario.csv`, `doble_codificacion/`, `fotos_equipo/`,
+`correspondencia/`, `.mailmap` (raíz), `capturas/` (19 imágenes, los 5 integrantes con 3 o
+más cada uno), `notas_campo/` (16 notas de campo, una por participante), las fuentes
+editables de los diagramas ya referenciadas explícitamente desde el `README.md` de esta
+carpeta (viven en `03_Modelado/Diagramas_UML/` y `03_Modelado/Organizacional_iStar/`),
+`grabaciones/` (con los videos de sesión de trabajo ya incorporados) y
+`verificacion_previa.pdf` (Sección 11 de la guía).
 
-Parcial: `capturas/` — solo 7 imágenes cubriendo a 3 de los 5 integrantes (Robyn, Vera, Mesías); faltan las de Marcillo y Barrionuevo (mínimo: 3 por integrante).
-
-Pendientes: `notas_campo/` (carpeta inexistente), `grabaciones/` (solo tiene un `Sesiones.md`, sin video real), fuentes editables de diagramas referenciadas explícitamente desde aquí (ya existen como `.drawio` en `03_Modelado/Diagramas_UML/`, falta enlazarlas) y `verificacion_previa.pdf` (Sección 11 de la guía).
+No quedan elementos pendientes en esta carpeta.
 
 ---
 
@@ -435,7 +435,12 @@ Los materiales de la presentación final se encuentran en:
 11_Defensa/
 ```
 
-Incluye `presentacion.pptx`, `presentacion.pdf` y `guion.md` con el reparto de tiempos por integrante. Pendientes: `video_defensa.mp4` y `folleto_una_hoja.pdf`.
+Los 5 archivos están completos: `presentacion.pptx`, `presentacion.pdf`, `guion.md` (con el
+reparto de tiempos por integrante), `video_defensa.mp4` y `folleto_una_hoja.pdf`.
+
+> Pendiente aparte de esta carpeta: `guion.md` y `presentacion.pptx` todavía citan el DOI de
+> Zenodo y el OSF antiguos (ver nota de consistencia en "Identificadores externos"); corregir
+> antes de la defensa.
 
 ---
 
@@ -511,15 +516,14 @@ El proyecto diferencia entre artefactos disponibles y elementos todavía pendien
 Actualmente:
 
 * El ERS/SRS está disponible.
-* La evidencia de campo está protegida y mayormente completa (16 entrevistas, 16 consentimientos), **con una salvedad pendiente**: 6 de los 6 documentos de la organización cliente.
+* La evidencia de campo está protegida y completa (16 entrevistas, 16 consentimientos, 6 de 6 documentos de la organización cliente).
 * El modelado y la trazabilidad se encuentran documentados.
 * El MVP se encuentra documentado y funcional.
 * El protocolo experimental está registrado.
-* Los datos crudos del componente empírico están depositados en `07_Datos/`, pero **crecieron de 60 a 210 respuestas de encuesta después de generar los resultados actualmente commiteados**.
-* El pipeline de `07_Datos/scripts/` es técnicamente ejecutable con una sola orden (`run_all.R`), pero **no reproduce hoy los números citados en el manuscrito** hasta que se regenere; los scripts de `06_Experimento/scripts_analisis/` (saturación a nivel de código abierto) siguen además pendientes de consolidarse con ese pipeline.
-* El manuscrito tiene contenido sustantivo, con pendientes puntuales antes del envío (ORCID y verificación cruzada de codificación ya resueltos) y depende de que se resuelva el punto anterior antes de darlo por cerrado.
-* La evidencia de autoría (`10_Autoria/`) está mayormente completa: 8 de 12 elementos listos, 1 parcial (`capturas/`) y 3 pendientes (`notas_campo/`, `grabaciones/` reales, `verificacion_previa.pdf`).
-* Los materiales de defensa (`11_Defensa/`) están parcialmente completos.
+* Los datos crudos del componente empírico están depositados en `07_Datos/` (n=210 respuestas de encuesta, 16 transcripciones) y el pipeline de `07_Datos/scripts/` reproduce, con una sola orden y sin intervención manual, exactamente los resultados actualmente commiteados.
+* El manuscrito tiene contenido sustantivo, con pendientes puntuales antes del envío (ORCID y verificación cruzada de codificación ya resueltos); los scripts de `06_Experimento/scripts_analisis/` (saturación a nivel de código abierto) siguen pendientes de consolidarse con el pipeline de `07_Datos/`.
+* La evidencia de autoría (`10_Autoria/`) está completa: 12 de 12 elementos.
+* Los materiales de defensa (`11_Defensa/`) están completos (5 de 5 archivos), con la salvedad de que `guion.md` y `presentacion.pptx` aún citan el DOI/OSF antiguos y deben corregirse antes de la defensa.
 
 ---
 
@@ -535,10 +539,10 @@ Actualmente:
 | MVP                   | ✅ Documentado y funcional  |
 | Registro experimental | ✅ Disponible               |
 | Datos crudos          | ✅ Depositados |
-| Scripts de análisis   | ✅ Ejecutables |
+| Scripts de análisis   | ✅ Ejecutables y verificados (reproducen los resultados commiteados) |
 | Manuscrito final      |  ✅ Contenido sustantivo, pendientes puntuales |
-| Evidencia de autoría  | 🟡 Parcial (11 de 12 elementos) |
-| Materiales de defensa | 🟡 Parcial (3 de 5 archivos) |
+| Evidencia de autoría  | ✅ Completa (12 de 12 elementos) |
+| Materiales de defensa | ✅ Completo (5 de 5 archivos) |
 | Zenodo                | ✅ DOI disponible           |
 | Software Heritage     | ✅ Identificador disponible |
 | Etiquetas de línea base | ✅ `v1.0-mvp-demo` y `v2B` anotadas |
@@ -635,10 +639,6 @@ Se recomienda utilizar la información definida en `CITATION.cff` para realizar 
 ---
 
 ## Estado del proyecto
-
-**SGCV-IA se encuentra en desarrollo académico y evolución controlada.**
-
-Este README refleja el estado declarado de los artefactos disponibles en el repositorio y distingue entre contenido disponible, contenido protegido y componentes que todavía se encuentran pendientes de implementación, ejecución o finalización.
 
 **SGCV-IA se encuentra en desarrollo académico y evolución controlada.**
 
