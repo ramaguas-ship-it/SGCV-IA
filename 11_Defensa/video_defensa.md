@@ -14,7 +14,7 @@ El video de la defensa se encuentra disponible mediante un enlace externo, debid
 ### Video de defensa
 
 **Ver video de la defensa**
-
+Enlace: https://github.com/ramaguas-ship-it/SGCV-IA/releases/download/Defensa/Defensa.SGCV.mp4
 > El enlace permite acceder directamente a la grabación de la defensa.
 
 ## Nota
