@@ -27,3 +27,21 @@ Proyecto SGCV-IA. Conforme a la Guía de Desarrollo (Sección 5, ítem 6) y a la
 ## Notas sobre el formato de este registro
 
 Toda desviación adicional que se identifique antes del corte de la Entrega 4 debe agregarse a este archivo como una nueva entrada numerada, siguiendo la misma estructura (protocolo registrado, qué establecía, qué se ejecutó en su lugar, motivo, consecuencia, fecha, quién la confirmó y quién la verificó). No se elimina ni se reescribe una entrada ya registrada; si una desviación se resuelve posteriormente (por ejemplo, si las Rondas 1 y 2 llegaran a ejecutarse antes del corte), se agrega una nota de actualización fechada al final de la entrada correspondiente, sin borrar el registro original.
+
+## Desviación 2 — Tamaño de muestra de la encuesta ampliado de n=60 a n=210 sin registro previo
+
+**Protocolo registrado:** Guía de Desarrollo y Consolidación del PFC (Sección 5), que establecía un mínimo de n≥60 respuestas de cuestionario, distribuidas entre los 4 perfiles de participante (médico veterinario, dueño de mascota, técnico, administrador).
+
+**Qué establecía el plan original:** recolectar 60 respuestas como mínimo estadísticamente justificado, documentado en `justificacion_n60.md`, calculado antes de cerrar la recolección.
+
+**Qué se ejecutó en su lugar:** entre el 8 y el 10 de septiembre de 2026, la recolección de la encuesta continuó más allá del umbral de 60 y llegó a 210 respuestas (commit `2d5d6b6`, 2026-09-10). El archivo `justificacion_n210.md` que documenta la adecuación estadística de n=210 se generó el 11 de septiembre de 2026, es decir, después de que la muestra ya había crecido — no como una decisión de diseño tomada de antemano, sino como una justificación de una muestra que ya existía. Además, el commit que registra el crecimiento de la encuesta (`2d5d6b6`) lleva un mensaje de commit que no describe el cambio real ("Update print statement from 'Hello' to 'Goodbye'"), lo cual se señala aquí para dejarlo aclarado en vez de que quede como una inconsistencia sin explicar en el historial.
+
+**Motivo de la desviación:** [completar: motivo real — por ejemplo, "el formulario de Google Forms permaneció abierto más tiempo del planeado y se decidió incluir todas las respuestas recibidas en vez de truncar a 60, para no descartar datos válidos ya recolectados" o el motivo verdadero que corresponda].
+
+**Consecuencia:** el tamaño muestral final (n=210) supera con holgura el mínimo exigido por la guía (n≥60) y el margen de error alcanzado (~6.8%) es adecuado para un nivel de confianza del 95%. Los resultados y tablas de `07_Datos/resultados/` fueron regenerados con `run_all.R` sobre el conjunto completo de 210 respuestas el [completar fecha real de la regeneración], por lo que el manuscrito y el README reportan la cifra real (n=210) y no la cifra original de la propuesta (n=60).
+
+**Fecha de identificación de la desviación:** 11 de septiembre de 2026.
+
+**Confirmado por:** [nombre de quien decidió/confirmó ampliar la muestra], por escrito.
+
+**Verificado por:** [nombre de quien verificó, contrastando el historial de Git (`git log --follow` sobre `encuesta_respuestas_crudas.csv`) contra la fecha de `justificacion_n210.md`].
