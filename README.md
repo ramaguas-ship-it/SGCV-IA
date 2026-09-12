@@ -537,7 +537,7 @@ Actualmente:
 | Datos crudos          | ✅ Depositados |
 | Scripts de análisis   | ✅ Ejecutables |
 | Manuscrito final      |  ✅ Contenido sustantivo, pendientes puntuales |
-| Evidencia de autoría  | 🟡 Parcial (8 de 12 elementos) |
+| Evidencia de autoría  | 🟡 Parcial (11 de 12 elementos) |
 | Materiales de defensa | 🟡 Parcial (3 de 5 archivos) |
 | Zenodo                | ✅ DOI disponible           |
 | Software Heritage     | ✅ Identificador disponible |
