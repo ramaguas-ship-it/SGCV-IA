@@ -176,7 +176,7 @@ Extraídos y **verificados el 12/09/2026 mediante clonado directo del repositori
 
 ### Firma
 
-Anthony Alfredo Vera Gómez — Fecha: ______________
+Anthony Alfredo Vera Gómez — Fecha: 12/09/2026
 
 ---
 
