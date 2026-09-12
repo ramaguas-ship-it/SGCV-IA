@@ -59,6 +59,6 @@ TR-57,LOPDP,Art. 4,OE-01,Equipo de desarrollo,EV-12,RST-07,CU-03,HU-27,CA-27,Bac
 TR-58,LOPDP,Art. 20,OE-02,Equipo de desarrollo,"EV-01,EV-02,EV-13",RST-08,CU-06,HU-17,CA-17,Módulo IA Diagnóstico,MU-010_Sugerencia_IA
 TR-59,—,Sec. 1.2,Transversal,Equipo de desarrollo,—,RST-09,Transversal,—,—,Infraestructura/Backend,No aplica
 TR-60,LOPDP,"Art. 47, 48",Transversal (LOPDP),Comité de ética / protección de datos (LOPDP),—,RST-10,Transversal,—,—,Infraestructura/Backend,No aplica
-TR-61,—,—,OE-02,Médico veterinario,—,RNF-19,CU-06,—,—,Módulo IA Diagnóstico,MU-010_Sugerencia_IA
-TR-62,—,—,OE-02,Equipo de desarrollo,—,RNF-20,CU-06,—,—,Módulo IA Diagnóstico,MU-010_Sugerencia_IA
+TR-61,—,—,OE-02,Equipo de desarrollo,—,RNF-19,CU-06,HU-28,CA-28,Módulo IA Diagnóstico,MU-010_Sugerencia_IA
+TR-62,—,—,OE-02,Equipo de desarrollo,—,RNF-20,CU-06,HU-29,CA-29,Módulo IA Diagnóstico,MU-010_Sugerencia_IA
 TR-63,—,"RST-05, RST-08 (supervisión humana)",OE-02,Médico veterinario,"EV-01,EV-02",RNF-21,CU-06,HU-17,CA-17,Módulo IA Diagnóstico,MU-010_Sugerencia_IA
