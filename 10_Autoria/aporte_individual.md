@@ -302,7 +302,7 @@ escrito.
 
 ### Firma
 
-Carlos Daniel Barrionuevo Fuentes — Fecha: ______________ (aclaración de commits añadida: 12/09/2026)
+Carlos Daniel Barrionuevo Fuentes — Fecha: 12/09/2026
 
 ---
 
