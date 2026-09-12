@@ -11,7 +11,7 @@ La estructura de la defensa y la distribución de responsabilidades ya se encuen
 | `presentacion.pdf`     | Diapositivas finales en formato PDF                          | Equipo          | Finalizado     |
 | `presentacion.pptx`    | Versión editable de las diapositivas                         | Equipo          | Finalizado     |
 | `guion.pdf`            | Guion de exposición con tiempos por diapositiva e integrante | Equipo          | finalizado     |
-| `video_defensa.mp4`    | Grabación de la defensa                                      | Equipo          | Finalizado     |
+| `video_defensa.md`    | Grabación de la defensa                                      | Equipo          | Finalizado     |
 | `folleto_una_hoja.pdf` | Resumen estructurado para el tribunal                        | Equipo          | Finalizado     |
 
 ### Requisitos de la defensa
